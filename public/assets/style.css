@@ -159,20 +159,55 @@ body {
     position: relative;
 }
 
-.fe-header .header-bottom > div {
-    overflow-y: hidden;
-    overflow-x: auto; /* Thử auto thay vì scroll */
-    width: 100%; /* Đảm bảo phần tử chứa có đủ không gian */
-    padding: 0;
-    box-sizing: border-box;
-}
 .fe-header .header-bottom .menu {
-    /* position: relative; */
-    /* overflow-y: hidden;
-    overflow-x: scroll; */
+    flex-wrap: wrap;
         margin: 0 auto;
     width: fit-content;
 }
+
+
+.has-sub-menu::before {
+    content: "";
+    display: none !important;
+    width: 100%;
+    left: 0;
+    top: 30px;
+    height: 100px;
+    position: absolute;
+    display: block;
+    background-color: transparent !important;
+    z-index: 999;
+}
+
+.menu-item.has-sub-menu:hover::before {
+    display: block !important;
+}
+
+.fe-header .header-bottom .sub-menu.sub-menu-list .sub-menu-item.sub-menu-item-2 {
+    width: 100%;
+    position: relative;
+}
+
+.fe-header .header-bottom .sub-menu.sub-menu-list .sub-menu-item.sub-menu-item-2 ul {
+    padding-left: 20px;
+}
+
+.fe-header .sub-menu-item-2:hover ul {
+    display: block;
+}
+
+.fe-header .sub-menu-item-2 ul {
+    display: none;
+}
+
+.fe-header .sub-menu-item-2 > i{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    z-index: 999;
+    color: var(--mainColor);
+}
+
 
 .fe-header .header-bottom .menu a {
     display: block;
@@ -225,8 +260,8 @@ body {
     font-size: initial !important;
     background: #fff;
     border: 1px solid var(--mainColor);
-    z-index: 9;
-    top: 40px;
+    z-index: 9999;
+    top: 100%;
     transform: translateY(40px) scale(.9); 
     opacity: 0;
     pointer-events: none;
@@ -1227,4 +1262,13 @@ button.slick-arrow.slick-disabled {
       transform: scale(1); } 
     }
 
-    
+    @media (max-width : 1400px){
+        .header-bottom {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .menu  {
+            column-gap: 20px;
+        }
+    }
