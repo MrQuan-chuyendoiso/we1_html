@@ -210,6 +210,11 @@ label{
 .modal-backdrop {
     z-index: 10040;
 }
+.modal-backdrop:nth-child(2), 
+.modal-backdrop:nth-child(3) {
+    display: none !important;
+    pointer-events: none !important;
+}
 .modal {
     z-index: 10060;
 }
