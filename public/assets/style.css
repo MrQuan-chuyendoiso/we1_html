@@ -160,7 +160,6 @@ body {
 }
 
 .fe-header .header-bottom {
-    max-width: calc(100% - 100px);
     position: relative;
 }
 
@@ -278,8 +277,8 @@ body {
 }
 
 .mega {
-    max-width: 100% !important;
-    width: fit-content !important;
+    max-width: calc(100% - 200px) !important;
+    width: 100% !important;
     left: 16px;
     right: 16px;
     flex-direction: initial;
