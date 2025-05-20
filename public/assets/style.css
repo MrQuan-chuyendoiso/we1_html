@@ -363,7 +363,7 @@ body {
 
 .fe-header .header-main {
     background: linear-gradient(90deg, var(--mainColor), var(--mainColor2));
-    font-size: 16px;
+    font-size: 14px;
     transition: all 0.3s ease;
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -1343,4 +1343,83 @@ button.slick-arrow.slick-disabled {
     .menu {
         column-gap: 20px;
     }
+}
+
+
+/* header botton 2 */
+.fe-header .header-bottom-2 .btn-in-head {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.fe-header .header-bottom-2 .header-logo img {
+    min-width: 107px;
+    max-height: 40px;
+    width: 107px !important;
+}
+
+.fe-header .header-bottom-2 .sub-logo-mb h6 {
+    font-size: 16px;
+    color: #08adba;
+    text-align: left;
+    margin-top: 7px;
+}
+
+.fe-header .header-bottom-2 .cs-logo-mb {
+    margin-left: 70px;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.fe-header .header-bottom-2  {
+    background-color: var(--background-color-main);
+    box-shadow: 0px 6px 6px -6px rgba(0, 0, 0, 0.7);
+}
+
+.fe-header .header-bottom-2 >.container>.row {
+    height: 60px;
+}
+
+.fe-header .header-bottom-2  .navbar-light a, .fe-header .header-bottom-2  .navbar-light .navbar-nav a {
+    color: #FFF;
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.fe-header .header-bottom-2  .navbar-light .dropdown-menu a, .fe-header .header-bottom-2  .navbar-light .navbar-nav .dropdown-menu a {
+    color: #FFF;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+
+.fe-header .header-bottom-2  .navbar-light .navbar-nav .dropdown-menu a {
+    color: #212529;
+}
+
+.fe-header .header-bottom-2 >.container>.navbar {
+    padding: 0;
+}
+
+.fe-header .header-bottom-2.header-background-text-color {
+    background-color: #ba0d0d !important;
+    color: #ffffff !important;
+}
+
+.fe-header .header-bottom-2 .nav-item.dropdown:hover > .dropdown-menu {
+    display: block !important;
+}
+
+
+@media (max-width: 991px) {
+        .fe-header .header-bottom-2 .navbar-light a, .fe-header .header-bottom-2 .navbar-light .navbar-nav a {
+            color: rgba(0, 0, 0, .55) !important;
+            font-weight: 600;
+        }
+
+        .navbar-collapse.show {
+            transform: translateX(0);
+        }
 }
