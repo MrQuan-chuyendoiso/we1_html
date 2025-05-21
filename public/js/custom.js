@@ -82,6 +82,14 @@ $(document).ready(function () {
     fade: true,
     autoplay: true,
     autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          dots: false,
+        },
+      },
+    ],
   });
 
   $(".products-slider").slick({
@@ -415,5 +423,11 @@ $(document).ready(function () {
     preloader: false,
     fixedContentPos: false
   });
+
+  $('.btn-search').click(function() {
+    $(this).toggleClass('active');  // Toggle 'active' class on btn-search
+    $('.header-search').toggleClass('active');  // Toggle 'active' class on header-search
+  });
+  
 
 });
