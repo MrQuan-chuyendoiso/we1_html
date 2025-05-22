@@ -293,9 +293,9 @@ body {
     margin-right: auto;
 }
 
-.fe-header .header-bottom a {
+/* .fe-header .header-bottom a {
     white-space: nowrap;
-}
+} */
 
 @media(min-width:769px) {
     .fe-header .header-bottom .sub-menu.sub-menu-list .sub-menu-item {
