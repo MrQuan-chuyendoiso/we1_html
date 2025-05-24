@@ -57,6 +57,27 @@ $(document).ready(function () {
       },
     ],
   });
+  $(".slide_banner-4").slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    adaptiveHeight: true,
+    arrows: false,
+    dots: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+    ],
+  });
   $(".slide_banner-2").slick({
     slidesToShow: 2,
     slidesToScroll: 1,
@@ -429,5 +450,25 @@ $(document).ready(function () {
     $('.header-search').toggleClass('active');  // Toggle 'active' class on header-search
   });
   
+  $('.image-link').magnificPopup({
+    type: 'image',
+    mainClass: 'mfp-fade',
+    removalDelay: 160,
+    preloader: false,
+    fixedContentPos: false,
+    closeOnContentClick: true,
+    closeBtnInside: true,
+    gallery: {
+        enabled: true
+    },
+    callbacks: {
+        elementParse: function(item) {
+            // Use data-image-src if available, otherwise fall back to href
+            item.src = item.el.attr('data-image-src') || item.el.find('a').attr('href');
+        }
+    }
+});
+
+
 
 });
