@@ -1660,3 +1660,10 @@ button.slick-arrow.slick-disabled {
     font-size: 12px;
     display: block;
 }
+.mfp-zoom-out-cur {
+    overflow: hidden;
+}
+.mfp-wrap {
+    top: 0 !important;
+    position: fixed !important;
+}
