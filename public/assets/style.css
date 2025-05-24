@@ -1468,3 +1468,195 @@ button.slick-arrow.slick-disabled {
 .navbar-light .navbar-nav a.nav-link {
     color: var(--textColor);
 }
+
+
+/* About Us Section Styles */
+.aboutus .box-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.aboutus .item {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.aboutus .item .wrap {
+    overflow: hidden;
+}
+
+.aboutus .image {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 4/3;
+}
+/* Box info container */
+.aboutus .box-info {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-height: 40px; /* Initially hidden */
+    background-color: rgba(2, 47, 102, .6);
+    color: white;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    height: 100%;
+}
+
+/* On hover, expand the box-info and make it visible */
+.aboutus .item:hover .box-info {
+    max-height: 400px; /* Arbitrary large value, adjust as necessary */
+    opacity: 1;
+}
+
+/* Title of the box */
+.aboutus .box-title {
+    background-color: rgb(2, 47, 102);
+    color: white;
+}
+
+/* Box description */
+.aboutus .box-desc {
+    max-height: 0; /* Initially collapsed */
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* On hover, expand description and make it visible */
+.aboutus .item:hover .box-desc {
+    max-height: 500px; /* Arbitrary max-height, adjust to your content */
+    opacity: 1;
+    visibility: visible;
+    padding-top: 10px;
+    transition: all 0.5s linear;
+}
+
+/* Paragraph style within the description box */
+.aboutus .box-desc p {
+    color: white;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;
+}
+
+
+/* Button Styles */
+.aboutus button, .section-custom button {
+    margin: 0 8px;
+}
+
+.section-custom button {
+    display: block;
+    text-align: center;
+    border: 1px solid;
+    padding: 4px 12px;
+    border-radius: 16px;
+}
+
+/* Quote Section Styles */
+.quote .row {
+    margin: 0;
+    color: white;
+}
+
+.quote img {
+    width: 100%;
+}
+
+.quote .item {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding: 0;
+}
+
+.quote .item .info {
+    padding: 20px;
+}
+
+/* News Section Styles */
+.news img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.news a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Outstanding Section Styles */
+.outstanding {
+    position: relative;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.outstanding, .outstanding img {
+    height: 100%;
+}
+
+.outstanding:hover::before {
+    content: '';
+    border-radius: 8px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+}
+/* Initial state of the paragraph */
+.outstanding .info p {
+    max-height: 0; /* Start with a limited height */
+    opacity: 0;
+    overflow: hidden;
+    color: white;
+    transition: max-height 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+/* Hover state - transition the max-height and opacity */
+.outstanding:hover .info p {
+    max-height: 500px; /* Or any value large enough to contain the content */
+    opacity: 1;
+}
+
+/* Information link styling */
+.outstanding .info a {
+    color: white;
+}
+
+
+/* Right Item Hover Effect */
+.right-item {
+    position: relative;
+}
+
+.right-item::after {
+    position: absolute;
+    bottom: 0;
+    content: "";
+    width: 0;
+    left: 18px;
+    right: 12px;
+    height: 2px;
+    background-color: transparent;
+    transition: width 1s ease-in-out, background-color 1s ease-in-out;
+}
+
+.right-item:hover::after {
+    width: 95%;
+    background-color: #333;
+}
+
+.header-action .text {
+    font-size: 12px;
+    display: block;
+}
