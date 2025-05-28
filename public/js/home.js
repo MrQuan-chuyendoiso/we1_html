@@ -439,3 +439,314 @@ $(document).ready(function(){
         $(this).attr('aria-label', 'Page')
     });
 });
+
+
+$(document).ready(function () {
+            var sync1 = $('#sync1');
+            var sync2 = $('#sync2');
+            var sync2ItemsCount = sync2.find('.owl-item').length;
+
+            sync1.owlCarousel({
+                loop: true,
+                items: 1,
+                nav: true,
+                dots: false,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplayHoverPause: true,
+                navText: [
+                    '<svg width="100%" height="100%" viewBox="0 0 11 20"><path style="fill:none;stroke-width: 1px;stroke: #000;" d="M9.554,1.001l-8.607,8.607l8.607,8.606"></path></svg>',
+                    '<svg width="100%" height="100%" viewBox="0 0 11 20"><path style="fill:none;stroke-width: 1px;stroke: #000;" d="M1.054,18.214l8.606,-8.606l-8.606,-8.607"></path></svg>'
+                ]
+            });
+
+            sync2.owlCarousel({
+                items: Math.min(sync2ItemsCount, 5),
+                nav: false,
+                dots: false,
+                responsive: {
+                    0: {
+                        items: Math.min(sync2ItemsCount, 2)
+                    },
+                    600: {
+                        items: Math.min(sync2ItemsCount, 4)
+                    }
+                }
+            });
+
+            sync1.on('changed.owl.carousel', function (event) {
+                var currentIndex = (event.item.index - event.relatedTarget._clones.length / 2) % sync2ItemsCount;
+                currentIndex = currentIndex < 0 ? sync2ItemsCount + currentIndex : currentIndex;
+                
+                sync2.find('.owl-item').removeClass('current');
+                sync2.find('.owl-item').eq(currentIndex).addClass('current');
+                
+                if (sync2ItemsCount > 4) {
+                    var visibleItemsCount = sync2.find('.owl-item.active').length;
+                    var halfVisibleItemsCount = Math.floor(visibleItemsCount / 2);
+                    var sync2CenterIndex = sync2.find('.owl-item.active').eq(halfVisibleItemsCount).index();
+
+                    if (currentIndex > sync2CenterIndex) {
+                        sync2.trigger('next.owl.carousel');
+                    } else if (currentIndex < sync2CenterIndex) {
+                        sync2.trigger('prev.owl.carousel');
+                    }
+                }
+            });
+
+            sync2.find('.owl-item').eq(0).addClass('current');
+            sync2.trigger('refresh.owl.carousel');
+
+            sync2.on('click', '.owl-item', function () {
+                var index = $(this).index();
+                sync1.trigger('to.owl.carousel', [index, 300, true]);
+                sync1.trigger('stop.owl.autoplay'); 
+                sync1.trigger('play.owl.autoplay', [5000]); 
+            });
+        });
+
+        $(document).ready(function(){
+            $(".owl-carousel.new-posts").owlCarousel({
+                items: 3,
+                margin: 15,
+                loop: true,
+                nav: true,
+                dots: false,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplayHoverPause: true,
+                navText: [
+                '<svg width="100%" height="100%" viewBox="0 0 11 20"><path style="fill:none;stroke-width: 1px;stroke: #000;" d="M9.554,1.001l-8.607,8.607l8.607,8.606"></path></svg>',
+                '<svg width="100%" height="100%" viewBox="0 0 11 20"><path style="fill:none;stroke-width: 1px;stroke: #000;" d="M1.054,18.214l8.606,-8.606l-8.606,-8.607"></path></svg>'
+                ],
+                responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 2
+                },
+                1024: {
+                    items: 3
+                }
+                }
+            });
+        });
+
+                // console.log(document.body.clientWidth);
+        // console.log(window.innerWidth);
+        if(document.body.clientWidth < 768){
+            $('.class-pc-banner').remove();
+        }else{
+            $('.class-mb-banner').remove();
+        }
+
+        $(document).ready(function () {
+            $('#div-tin-4-chay-ngang').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                navText:["<div class='nav-btn prev-slide'><i class='fa fa-angle-left'></i></div>","<div class='nav-btn next-slide'><i class='fa fa-angle-right'></i></div>"],
+                autoplay: true,
+                autoplayTimeout: 2000,
+                dots: false,
+                responsive: {
+                    0: {
+                        items: 2
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 4
+                    }
+                }
+            });
+        });
+
+        function getCurrentDomain() {
+		const currentUrl = window.location.href;
+		const url = new URL(currentUrl);
+		const parts = url.hostname.split('.');
+		if (parts.length >= 2) {
+			return parts[parts.length - 2] + '.' + parts[parts.length - 1];
+		} else {
+			return url.hostname;
+		}
+	}
+
+	function setCookie(key, value, expiry, domain) {
+		const expires = new Date();
+		expires.setTime(expires.getTime() + (expiry * 24 * 60 * 60 * 1000));
+		document.cookie = key + '=' + value + ';expires=' + expires.toUTCString();
+		document.cookie = key + '=' + value + ';expires=' + expires.toUTCString() + ';domain=.' + domain;
+	}
+
+	function googleTranslateElementInit() {
+		const currentDomain = getCurrentDomain();
+		setCookie('googtrans', `/vi/`, 1, currentDomain);
+		new google.translate.TranslateElement({
+			pageLanguage: 'vi',
+			layout: google.translate.TranslateElement.InlineLayout.VERTICAL
+		}, 'google_translate_element');
+	}
+
+	function xemThemMenuDoc(e){
+		if ($(".li-xem-them").is(":visible")) {
+			$(e).text('Xem thêm');
+			$('.li-xem-them').toggle();
+		} else {
+			$(e).text('Thu nhỏ');
+			$('.li-xem-them').toggle();
+		}
+	} 
+
+	window.onload = function() {
+		googleTranslateElementInit();
+	};
+
+    $(document).ready(function() {
+		$('Header .menu ul li .toggle_child').on('click', function () {
+			$(this).siblings('ul.sub-menu').toggle();
+		});
+		$('.bar_toggle').on('click', function () {
+			$('Header .menu').toggle();
+		});
+		$('.search_toggle').on('click', function () {
+			$('Header .search').toggle();
+		});
+		// Show or hide the scroll top button based on scroll position
+		$(window).scroll(function() {
+			if ($(this).scrollTop() > 100) {
+				$('.scroll-top-btn').fadeIn();
+			} else {
+				$('.scroll-top-btn').fadeOut();
+			}
+		});
+
+		// Scroll to the top when the button is clicked
+		$('.scroll-top-btn').click(function() {
+			$('html, body').animate({ scrollTop: 0 }, 100);
+			return false;
+		});
+
+		$(".nav-item.dropdown").hover(
+			function () {
+				if ($(window).width() >= 991) {
+					$(this).addClass("show");
+					$(this).children(".dropdown-menu").addClass("show");
+				}
+			},
+			function () {
+				if ($(window).width() >= 991) {
+					$(this).removeClass("show");
+					$(this).children(".dropdown-menu").removeClass("show");
+				}
+			}
+		);
+
+		$(".navbar-toggler").on("click", function () {
+			$(".overlay").toggleClass("active");
+			$(".mobile-menu").toggleClass("active");
+		});
+
+		$(".overlay").on("click", function () {
+			$(".overlay").removeClass("active");
+			$(".mobile-menu").removeClass("active");
+		});
+
+		$(".dropdown .dropdown-menu").click(function(event) {
+			event.stopPropagation();
+		});
+
+		$(".dropdown").click(function(event) {
+			if ($(window).width() < 991) {
+				event.preventDefault();
+				// $(this).siblings().removeClass("show");
+				// $(this).siblings().find(".dropdown-menu").removeClass("show");
+
+				// $(this).toggleClass("show");
+				// $(this).children(".dropdown-menu").toggleClass("show");
+			}
+		});
+
+		$('.btn-dang-nhap-user').on('click', function() {
+			$('#loginModal').modal('show');
+		});
+
+		$("#btn-login").click(function(){
+			var formStatus = $("#form-login").validate({
+				rules: {
+					account: "required",
+					password: "required",
+				},
+				messages:{
+					account: "Nhập tên đăng nhập.",
+					password: "Nhập mật khẩu.",
+				},
+				onfocusout: false,
+				invalidHandler: function(form, validator) {
+					var errors = validator.numberOfInvalids();
+					if (errors) {
+						validator.errorList[0].element.focus();
+					}
+				}
+			}).form();
+			if(true == formStatus){
+				popup_load_on();
+				var form_data = new FormData($("#form-login")[0]);
+				$.ajax({
+					url: "dang-nhap-tai-khoan",
+					data: form_data,
+					type: 'POST',
+					contentType: false,
+					processData: false,
+					success: function (result) {
+						//console.log(result);
+						popup_load_off();
+						if(result.status == 'true'){
+							$('.login-error').html(`<p>${result.message}</p>`)
+							var previousPage = window.location.href;
+							if (previousPage) {
+								window.location.href = previousPage;
+							} else {
+								window.location.href = "tai-khoan-cua-toi";
+							}
+						}else{
+							$('.login-error').html(`<p style="color: red">${result.message}</p>`)
+						}
+					}
+				});
+			}
+		});
+
+		$("#loginModal .close").on("click", function () {
+			$('#loginModal').modal('hide');
+		})
+
+		$('.image-link').on('click', function() {
+			var imageSrc = $(this).data('image-src');
+			$('#modalImage').attr('src', imageSrc);
+			$('#imageModal').modal('show');
+		});
+
+		//
+					let header = $(".header-top");
+			let headerHeight = header.outerHeight();
+			let isFixed = false;
+
+			$(window).scroll(function() {
+				let currentScrollPos = $(window).scrollTop();
+				if (currentScrollPos > 60 && currentScrollPos < headerHeight) {
+					header.css('top', '-90px')
+				}
+				if (currentScrollPos > headerHeight && !isFixed) {
+					header.removeClass('top').addClass('fixed');
+					header.css('top', 0)
+					isFixed = true;
+				} else if (currentScrollPos <= headerHeight && isFixed) {
+					header.removeClass('fixed').addClass('top');
+					isFixed = false;
+				}
+			});
+			});

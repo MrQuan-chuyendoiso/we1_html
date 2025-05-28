@@ -36,6 +36,10 @@
     --bg_fl_2: #ff5c00;
 }
 
+main {
+    overflow-x: hidden; 
+}
+
 body {
     font-family: 'Roboto', sans-serif !important;
 }
@@ -1148,6 +1152,11 @@ a {
     left: 8px;
 }
 
+.row>* {
+    padding-left:  0 !important;
+    padding-right: 0 !important;
+}
+
 .slick-slider .slick-arrow {
     width: 30px;
     height: 60px;
@@ -1165,6 +1174,7 @@ a {
     opacity: .9;
     border-radius: 5px;
     z-index: 1;
+    padding: 0;
 }
 
 .product-category .nav-tabs {
