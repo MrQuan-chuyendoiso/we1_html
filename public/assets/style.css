@@ -1151,11 +1151,11 @@ a {
 .slick-slider .slick-prev {
     left: 8px;
 }
-
+/* 
 .row>* {
     padding-left:  0 !important;
     padding-right: 0 !important;
-}
+} */
 
 .slick-slider .slick-arrow {
     width: 30px;
