@@ -11,7 +11,10 @@ body {
 .new-home-banner .col {
     padding: 10px 5px 10px 5px;
 }
-
+.products-rate.row {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
 .new-home-banner .owl-carousel .owl-item img {
     height: 511px;
     object-fit: cover;
