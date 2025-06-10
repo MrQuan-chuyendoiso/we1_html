@@ -1,0 +1,246 @@
+@charset "UTF-8";
+.slick-arrow {
+  opacity: 1;
+  visibility: visible;
+  margin-top: 0;
+}
+.slick-arrow:before {
+  font: normal normal normal 20px/1 FontAwesome;
+  display: block;
+  color: #000 !important;
+}
+.slick-arrow.slick-next {
+  right: 0;
+}
+.slick-arrow.slick-next:before {
+  content: "";
+}
+.slick-arrow.slick-prev {
+  left: 0;
+}
+.slick-arrow.slick-prev:before {
+  content: "";
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.preview-slide {
+  padding: 4px;
+}
+
+.main-slider {
+  border: 1px solid #eee;
+}
+
+.swiper-container-thumbs {
+  padding: 0;
+  margin-top: 8px;
+}
+
+.swiper-slide-thumb {
+  padding: 0 4px;
+  transition: all 0.3s;
+}
+.swiper-slide-thumb img {
+  border: 1px solid #eee;
+}
+.swiper-slide-thumb.slick-current {
+  opacity: 1;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+.color-primary {
+  color: var(--background-color-main);
+}
+
+.product-info {
+  margin-top: 24px;
+  color: #333;
+}
+.product-info-head {
+  padding: 12px 0 8px;
+  border-bottom: 1px solid var(--background-color-main);
+}
+.product-info-ttl {
+  font-weight: bold;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: var(--background-color-main);
+  margin-bottom: 8px;
+}
+.product-info-content {
+  font-size: 14px;
+}
+.product-info-content > ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.product-info-content > ul > li {
+  width: 50%;
+}
+.product-title {
+  color: var(--background-color-main);
+  font-size: 24px;
+  font-weight: bold;
+}
+.product-sub {
+  font-style: italic;
+  font-weight: 500;
+  color: #888;
+  margin-top: 4px;
+  font-size: 14px;
+}
+.product-price {
+  margin-top: 32px;
+  display: flex;
+  border: 1px solid var(--background-color-main);
+  border-radius: 8px;
+  color: #333;
+  padding: 12px;
+}
+.product-price .col {
+  width: 50%;
+  text-align: center;
+}
+.product-price .col:first-child {
+  border-right: 1px solid var(--background-color-main);
+}
+.product-price .price-total,
+.product-price .timeline {
+  font-size: 20px;
+  font-weight: bold;
+  color: red;
+  padding: 4px 0;
+}
+.product-price .price-total {
+  color: red;
+}
+.product-price .timeline {
+  color: var(--background-color-main);
+}
+.product-price .text-sub {
+  font-size: 14px;
+  font-style: italic;
+  color: #888;
+}
+
+.info-item-row {
+  display: flex;
+  gap: 16px;
+  margin-top: 12px;
+  border-top: 1px solid #eee;
+  padding-top: 12px;
+}
+@media (max-width: 767px) {
+  .info-item-row {
+    flex-direction: column;
+    gap: 4px;
+  }
+}
+.info-item-dt {
+  flex-shrink: 0;
+  width: 80px;
+  font-weight: bold;
+  color: #555;
+  margin-top: 4px;
+}
+@media (max-width: 767px) {
+  .info-item-dt {
+    margin-top: 0;
+    font-size: 16px;
+  }
+}
+.info-item-dd {
+  flex-grow: 1;
+}
+
+.select-option {
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  background-color: #eaeaea;
+  color: #555;
+  width: 100%;
+  display: block;
+}
+@media (max-width: 767px) {
+  .select-option {
+    padding: 8px 12px;
+  }
+}
+
+.list-option {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.list-option span {
+  display: block;
+  padding: 4px 12px;
+  font-size: 14px;
+  background-color: #eaeaea;
+  border-radius: 4px;
+  color: #555;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+@media (max-width: 767px) {
+  .list-option span {
+    padding: 8px 12px;
+  }
+}
+.list-option span:hover {
+  background-color: #ddd;
+}
+.list-option span.active {
+  color: #fff;
+  background-color: var(--background-color-main);
+}
+
+.btn-main {
+  height: 40px;
+  line-height: 40px;
+  border-radius: 4px;
+  border: none;
+  box-shadow: none;
+  transition: all 0.3s;
+  display: inline-flex !important;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+.btn-main:hover {
+  opacity: 0.8;
+}
+.btn-main i {
+  font-size: 20px;
+}
+
+.btn-primary,
+.btn-primary:hover {
+  background-color: var(--background-color-main) !important;
+  color: #fff;
+}
+
+.btn-orange,
+.btn-orange:hover {
+  background-color: #ef8528;
+  color: #fff;
+}
+
+.block-buttons {
+  margin-top: 16px;
+}
+.block-buttons button {
+  display: block;
+  width: 100%;
+  height: 52px;
+  line-height: 52px;
+}
