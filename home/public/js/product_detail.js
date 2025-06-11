@@ -108,6 +108,8 @@ $(document).ready(function () {
     $(this).addClass( 'slider-' + numSlick ).slick({
         slidesToShow: 4,
         infinite: true,
+        autoplay: true,
+        pauseOnHover: true,
         arrows: true,
         responsive: [,{
             breakpoint: 960,
