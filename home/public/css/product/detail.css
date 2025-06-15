@@ -202,14 +202,14 @@ button.btn.btn-primary.add_to_cart {
     margin-right: 12px;
     border-radius: 2px;
 }
-.product_list {
+.row.product_list {
     margin-top: 12px;
     padding: 0 6px;
 }
-.product_list > * {
+.row.product_list > * {
     padding: 0 6px;
 }
-.product_list .product .inner {
+.row.product_list .product .inner {
     margin-bottom: 12px;
     background-color: unset;
     box-shadow: unset;

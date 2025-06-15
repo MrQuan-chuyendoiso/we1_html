@@ -103,7 +103,7 @@ $(document).ready(function () {
         ],
     });
     var numSlick = 0;
-    $('.product_list').each( function() {
+    $('.row.product_list').each( function() {
     numSlick++;
     $(this).addClass( 'slider-' + numSlick ).slick({
         slidesToShow: 4,
