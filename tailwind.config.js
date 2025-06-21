@@ -26,9 +26,9 @@ module.exports = {
         '18': '18px',
       },
       spacing: {
-        '2': '2px!important',
-        '4': '4px!important',
-        '8': '8px',
+        '2px': '2px!important',
+        '4px': '4px!important',
+        '8px': '8px',
         '12': '12px',
         '16': '16px',
         '20': '20px',
@@ -61,10 +61,10 @@ module.exports = {
         'full': '100%'
        },
        colors: {
-        'primary': '#00436D!important',
+        'primary': '#0282a5!important',
         'primary2': '#002F4D!important',
         'second': '#EC0505',
-        'grey':'#E5E5E5',
+        'gray':'#eee',
         'blue':'#005EAA'
        },
        borderRadius: {

@@ -10,32 +10,41 @@ html(lang="en")
         title Document
         
         link(href='https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700', rel='stylesheet', type='text/css')
-        link(href='https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700', rel='stylesheet', type='text/css')
         link(href='ajax/libs/font-awesome/6.4.2/css/all.min.css', rel='stylesheet', type='text/css')
 
         link(href='public/assets/css/bootstrap.min.css', rel='stylesheet', type='text/css')
-        link(rel='stylesheet', href='public/assets/css/slick.css', type='text/css')
-        link(rel='stylesheet', href='public/assets/css/slick-lightbox.css')
-        link(rel='stylesheet', href='public/assets/css/slick-theme.css', type='text/css')
+        //- link(rel="stylesheet", href="css/bootstrap.css")
+        //- link(rel='stylesheet', href='public/assets/css/slick.css', type='text/css')
+        //- link(rel='stylesheet', href='public/assets/css/slick-lightbox.css')
+        //- link(rel='stylesheet', href='public/assets/css/slick-theme.css', type='text/css')
+        
+        link(rel="stylesheet", href="css/slick-theme.css")
+        link(rel="stylesheet", href="css/slick.css")
+        link(rel="stylesheet", href="css/slick-lightbox.css")
+
         link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css')
-        link(href='public/assets/style.css', rel='stylesheet', type='text/css')
-        link(href='public/assets/style-2.css', rel='stylesheet', type='text/css')
-        link(rel='stylesheet', href='public/css/dist/common.css')
-        // home
-        link(href='public/assets/home.css', rel='stylesheet', type='text/css')
-        link(rel='stylesheet', href='public/css/dist/home.css')
-        // product
-        link(rel='stylesheet', href='public/css/product/base.css', type='text/css')
-        link(rel='stylesheet', href='public/css/product/detail.css', type='text/css')
-        link(rel='stylesheet', href='public/css/dist/product.css', type='text/css')
+
+        
+        link(rel="stylesheet", href="css/tailwin-dist.css")
+        //- link(rel='stylesheet', href='public/css/dist/common.css')
+        //- link(href='public/assets/style.css', rel='stylesheet', type='text/css')
+        //- link(href='public/assets/style-2.css', rel='stylesheet', type='text/css')
+
+        //- home
+        //- link(href='public/assets/home.css', rel='stylesheet', type='text/css')
+        //- link(rel='stylesheet', href='public/css/dist/home.css')
+
+        //- product
+        //- link(rel='stylesheet', href='public/css/product/base.css', type='text/css')
+        //- link(rel='stylesheet', href='public/css/product/detail.css', type='text/css')
+        //- link(rel='stylesheet', href='public/css/dist/product.css', type='text/css')
         
         //- link(rel="stylesheet" href="css/aos.css")
         //- link(rel="stylesheet", href="css/slick-theme.css")
         //- link(rel="stylesheet", href="css/slick.css")
         //- link(rel="stylesheet", href="css/slick-lightbox.css")
-        //- link(rel="stylesheet", href="css/bootstrap.css")
-        //- link(rel="stylesheet", href="css/tailwin-dist.css")
-        //- link(rel="stylesheet", href="css/style.css")
+        link(rel="stylesheet", href="css/style-old.css")
+        link(rel="stylesheet", href="css/style.css")
     block vars
     body(class=`${bodyClass}`)
         +header(page)
@@ -59,16 +68,18 @@ html(lang="en")
         block modal
 
         script(src='public/assets/js/jquery.min.js')
+        script(src='public/assets/js/jquery.validate.min.js')
+        script(src='public/assets/js/additional-methods.min.js')
         script(type='text/javascript', src='https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit')
         script(src='public/assets/js/bootstrap.bundle.min.js')
         script(src='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js')
-        script(src='public/assets/js/slick.min.js')
-        script(src='public/assets/js/slick-lightbox.js')
-        
+        //- script(src='public/assets/js/slick.min.js')
+        //- script(src='public/assets/js/slick-lightbox.js')
+        script(src="js/slick.min.js")
+        script(src="js/slick-lightbox.min.js")
+
         //- <script src="ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
         //- validate js
-        script(src='public/assets/js/jquery.validate.min.js')
-        script(src='public/assets/js/additional-methods.min.js')
         script(src='public/js/home.js')
         script(src='public/js/home-custom.js')
         script(src='public/js/contact.js')
@@ -77,9 +88,6 @@ html(lang="en")
         script(src='public/js/product_detail.js')
     //- script(src='js/aos.js')
     //- script(src="js/jquery-3.7.1.min.js")
-    //- script(src="js/slick.min.js")
-    //- script(src="js/slick.js")
-    //- script(src="js/slick-lightbox.min.js")
     //- script(src="js/bootstrap.bundle.min.js")
     //- script(src="js/js.js")
     block js

@@ -1,4 +1,5 @@
 extends layout/_layout.pug
+
 include component/_home_banner-nav.pug
 include component/_home_aboutus.pug
 include component/_home_quote.pug
@@ -11,6 +12,9 @@ include component/_home_banner3.pug
 include component/_home_category-featured.pug
 include component/_home_video.pug
 include component/_home_product_list.pug
+include component/_home_partner.pug
+
+include component/_product_detail.pug
 
 block vars
     - var bodyClass = 'home'
@@ -35,32 +39,89 @@ block body
     +home_product-category4()
     +home_video()
     +home_product_list()
+    +home_partner()
+    section(class="xl:py-70 py-32 bg-white")
+        mixin item-gellary(clName, text)
+            div(class="xl:mt-32 mt-24")
+                p= text
+                .slider.slider-gallery(class=`${clName}`)
+                    each item in [1,2,3,4,5,6,7,8,9,10,11,12,13,13,15,16,17,18,19,20]
+                        div 
+                            .item-gallery-thumb.bg-gray.p-8px.rounded-8.border.border-primary.border-1 
+                                .imgDrop.ratio-6-4.rounded-4  
+                                    img(src="https://we1.io.vn/admin/public/images/service/1744444200201-Ban-giam-doc.jpg", alt="")
+                                .content.mt-8px.text-center
+                                    .text-14.color-primary Máy A50
+                                    .text-12 ( khách lắp tại Sông Lô - Việt Trì)
+        .container 
+            h2.title_section  HÌNH ẢNH LẮP ĐẶT THỰC TẾ
+            
+            +item-gellary('slider-gallery-row2','Rows 2')
+            +item-gellary('slider-gallery-column6','Rows 1 - Column 6')
+            +item-gellary('slider-gallery-column8','Rows 1 - Column 8')
+            +item-gellary('slider-gallery-column4','Rows 1 - Column 4')
+            .view_more.text-center.mt-3.position-relative
+                a.rounded-pill.py-2.px-4.btn-outline-primary(href='gallery-detail.html' title='Xem thêm') Xem thêm
+
     
     
-    section.py-5
-        .container
-            .container.title_section.mb-4(style='margin-bottom: 0; color: #212529 !important; text-align: center;')
-                p Một số đối tác tiêu biểu của chúng tôi
-            .slide_banner-4
-                .mx-2.custom-article-item.position-relative.rounded-10.modal-open
-                    img.mx-auto(src='https://vip2.io.vn/admin/public/images/homeSetting/172554341669/icon_vnr-246x90.png' alt width='150')
-                .mx-2.custom-article-item.position-relative.rounded-10.modal-open
-                    img.mx-auto(src='https://vip2.io.vn/admin/public/images/homeSetting/172554341683/icon_vnpt-246x90.png' alt width='150')
-                .mx-2.custom-article-item.position-relative.rounded-10.modal-open
-                    img.mx-auto(src='https://vip2.io.vn/admin/public/images/homeSetting/172554341641/icon_Aeon-246x90.png' alt width='150')
-                .mx-2.custom-article-item.position-relative.rounded-10.modal-open
-                    img.mx-auto(src='https://vip2.io.vn/admin/public/images/homeSetting/172554341669/icon_vnr-246x90.png' alt width='150')
-                .mx-2.custom-article-item.position-relative.rounded-10.modal-open
-                    img.mx-auto(src='https://vip2.io.vn/admin/public/images/homeSetting/172554341633/icon_vtb-246x90.png' alt width='150')
+   
     
     .mt-24 ------------ MAI DETAIL ----------
     
-    +product-detail()
+    +product_detail()
 
 
 block js 
     //- script(src='js/js-banner.js')
     //- script(src='js/countUp.js')
     script.
-        
+        $(document).ready(function(){
+            numSlick = 0;
+            galleryImages(".slider-gallery-row2", 6, 5, 2);
+            galleryImages(".slider-gallery-column6", 6, 5, 1);
+            galleryImages(".slider-gallery-column8", 8, 5, 1);
+            galleryImages(".slider-gallery-column4", 4, 4, 1);
+            function galleryImages($sliderName, $toshow, $toshow_1024, $rows) {
+                $($sliderName).each( function() {
+                    numSlick++;
+                    $(this).addClass( 'slider-' + numSlick ).slick({
+                        slidesToShow: $toshow,
+                        rows: $rows,
+                        slidesToScroll: 1,
+                        arrow: true,
+                        responsive: [
+                        {
+                            breakpoint: 1024,
+                            settings: {
+                            slidesToShow: $toshow_1024,
+                            }
+                        },{
+                            breakpoint: 991,
+                            settings: {
+                            slidesToShow: 4,
+                            }
+                        },{
+                            breakpoint: 768,
+                            settings: {
+                            slidesToShow: 3,
+                            }
+                        }
+                        ,{
+                            breakpoint: 576,
+                            settings: {
+                            slidesToShow: 2,
+                            }
+                        }
+                        ]
+                    });
+                    $(this).addClass( 'slider-' + numSlick ).slickLightbox({
+                        src: 'src',
+                        itemSelector: '.imgDrop img',
+                        background: 'rgba(0, 0, 0, .7)'
+                    });
+                });
+            };
+            
+        });
         

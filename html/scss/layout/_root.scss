@@ -1,24 +1,36 @@
 :root {
-    --primary:#00436D;
-    --primary2:#002F4D;
-    --blue:#005EAA;
-    --second:#EC0505;
-
-    --font-body:"Inter", sans-serif,
-    --bg-body: #fff;
-    --color-body: #202020;
-
-    --bg-header: #00436D;
-    --color-header: #fff;
-    --color-toggler:#fff;
-
-    --field-bg: #fff;
-    --field-label: #fff;
-    --field-h-2xl: 68px;
-    --field-h-xl: 55px;
-    --field-h-lg: 48px;
-    --field-h: 40px;
-    --field-placeholder: #5E5E5E;
-    --submit-bg: var(--second);
-    --submit-color:#fff;
+    --primary:#0282a5;
+    --mainColor: #0282a5;
+    --footerTextHover: #ffab4e;
+    --textColor: #212529;
+    --navColor: #e5fbf1;
+    --mainColor: #0282a5;
+    --footerTextHover: #ffab4e;
+    --navColor: #e5fbf1;
+    --menuWidth: calc(100% - 20px);
+    --leftColBackground: #fff;
+    --lightLeftColBackground: #f1f4f6;
+    --darkLeftColBackground: #22272b;
+    --mainColor2: #92dbef;
+    --navColor: #e5fbf1;
+    --navTextColor: #0282a5;
+    --menuHover: #ffab50;
+    --bgBottomTitle: url(https://file.hstatic.net/200000865177/file/bottom-title_a9e686b….png);
+    --footerBg: #0282a5;
+    --footerText: #ffffff;
+    --footerTextHover: #ffab4e;
+    --accentColor1: #929292;
+    --accentColor2: #fd8400;
+    --toastSuccessBg: #d1e7dd;
+    --toastSuccessCl: #0f5132;
+    --toastWarningBg: #fff3cd;
+    --toastWarningCl: #664d03;
+    --toastErrorBg: #f8d7da;
+    --toastErrorCl: #842029;
+    --toastSystemBg: #d3d3d4;
+    --toastSystemCl: #141619;
+    --overlayimg: url(https://file.hstatic.net/200000865177/file/cursor-close_4c96d09….png);
+    --cl_tit_fl: #ffffff;
+    --bg_fl_1: #ff8e4d;
+    --bg_fl_2: #ff5c00;
 }

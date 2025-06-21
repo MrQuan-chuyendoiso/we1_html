@@ -643,22 +643,22 @@ $(document).ready(function(){
 		});
 
 		//
-					let header = $(".header-top");
-			let headerHeight = header.outerHeight();
-			let isFixed = false;
+        // let header = $(".header-top");
+        // let headerHeight = header.outerHeight();
+        // let isFixed = false;
 
-			$(window).scroll(function() {
-				let currentScrollPos = $(window).scrollTop();
-				if (currentScrollPos > 60 && currentScrollPos < headerHeight) {
-					header.css('top', '-90px')
-				}
-				if (currentScrollPos > headerHeight && !isFixed) {
-					header.removeClass('top').addClass('fixed');
-					header.css('top', 0)
-					isFixed = true;
-				} else if (currentScrollPos <= headerHeight && isFixed) {
-					header.removeClass('fixed').addClass('top');
-					isFixed = false;
-				}
-			});
-			});
+        // $(window).scroll(function() {
+        //     let currentScrollPos = $(window).scrollTop();
+        //     if (currentScrollPos > 60 && currentScrollPos < headerHeight) {
+        //             header.css('top', '-90px')
+        //         }
+        //         if (currentScrollPos > headerHeight && !isFixed) {
+        //             header.removeClass('top').addClass('fixed');
+        //             header.css('top', 0)
+        //             isFixed = true;
+        //         } else if (currentScrollPos <= headerHeight && isFixed) {
+        //             header.removeClass('fixed').addClass('top');
+        //             isFixed = false;
+        //         }
+        //     });
+        });
