@@ -1,0 +1,124 @@
+@import '_root.scss';
+@import '_minxin.scss';
+.text-96 {
+    line-height: 1.2;
+    font-size: 32px;
+    @include min_sm {
+        font-size: 48px;
+    }
+    @include min_md {
+        font-size: 50px;
+    }
+    // @include min_lg {
+    //     font-size: 72px;
+    // }
+    // @include min_xl {
+    //     font-size: 96px;
+    // }
+    @include min_lg {
+        font-size: 6vw;
+    }
+}
+.text-64 {
+    font-size: 32px;
+    @include min_md {
+        font-size: 40px;
+    }
+    // @include min_lg {
+    //     font-size: 48px;
+    // }
+    // @include min_xl {
+    //     font-size: 64px;
+    // }
+    @include min_lg {
+        font-size: 3.8vw;
+    }
+}
+.text-40 {
+    font-size: 28px;
+    @include min_md {
+        font-size: 36px;
+    }
+    @include min_xl {
+        font-size: 40px;
+    }
+    @include min_2xl {
+        font-size: 2.5vw;
+    }
+}
+.text-32,
+.content-des h2 {
+    font-size: 20px;
+    @include min_md {
+        font-size: 28px;
+    }
+    @include min_xl {
+        font-size: 32px;
+    }
+    @include min_2xl {
+        font-size: 2.05vw;
+    }
+}
+.text-24,
+.content-des h3 {
+    font-size: 18px;
+    @include min_md {
+        font-size: 20px;
+    }
+    @include min_xl {
+        font-size: 24px;
+    }
+    @include min_2xl {
+        font-size: 1.35vw;
+    }
+}
+.text-20,
+.content-des h4 {
+    font-size: 16px;
+    @include min_md {
+        font-size: 18px;
+    }
+    @include min_xl {
+        font-size: 20px;
+    }
+    @include min_2xl {
+        font-size: 1.25vw;
+    }
+}
+.text-14 {
+    font-size: 14px;
+    // @include min_md {
+    //     font-size: 18px;
+    // }
+    // @include min_xl {
+    //     font-size: 20px;
+    // }
+    @include min_lg {
+        font-size: 0.85vw;
+    }
+}
+
+
+
+.content-des {
+    p {
+        margin-bottom: 16px;
+    }
+    ul {
+        list-style:disc;
+        margin-left: 16px;
+        li {
+            margin-bottom: 8px;
+            &::marker {
+                font-size: 8px;
+            }
+        }
+        img {
+            max-width: 100%;
+        }
+    }
+    h1,h2,h3,h4,h5,h6 {
+        font-weight: bold;
+        margin-bottom: 12px;
+    }
+}

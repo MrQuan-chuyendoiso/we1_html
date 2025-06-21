@@ -1,0 +1,46 @@
+
+@import '_root.scss';
+@import '_minxin.scss';
+.form-field {
+    .wrap {
+        .input {
+            display: block;
+            width: 100%;
+            background-color: var(--field-bg);
+            color: var(--color-body);
+            padding: 8px 16px;
+            margin-top: 8px;
+            border: 1px solid #fff;
+            &:focus {
+                border-color: var(--primary);
+            }
+            &::placeholder {
+                color: var(--field-placeholder);
+            }
+            &:focus-visible {
+                outline: none;
+            }
+        }
+    }
+}
+.btn-submit {
+    background-color: var(--submit-bg);
+    color: var(--submit-color);
+    border-radius: 8px;
+    width: 100%;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.form-field .wrap .input,
+.btn-submit {
+    height: var(--field-h);
+    @include min_lg {
+        height: var(--field-h-lg);
+    }
+    @include min_xl {
+        height: var(--field-h-xl);
+    }
+    @include min_2xl {
+        height: var(--field-h-2xl);
+    }
+}

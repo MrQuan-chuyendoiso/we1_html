@@ -1,0 +1,20 @@
+$name: '';
+.icon {
+	display: block;
+    i {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+	@each $item in $name {
+	  &-#{$item} {
+		background-image: url(../images/icon/icon_#{$item}.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+	  }
+	}
+  &-primary {filter: brightness(0) saturate(100%) invert(20%) sepia(26%) saturate(5105%) hue-rotate(181deg) brightness(87%) contrast(103%);}
+  &-color-white {filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(8%) hue-rotate(164deg) brightness(104%) contrast(103%);}
+  &-color-black {filter: brightness(0) saturate(100%) invert(0%) sepia(95%) saturate(18%) hue-rotate(340deg) brightness(102%) contrast(105%);}
+}

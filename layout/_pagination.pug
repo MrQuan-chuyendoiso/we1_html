@@ -1,0 +1,25 @@
+mixin pagination(clName)
+    ul#pagination.pagination(class=`${clName}`)
+        ul.page-numbers
+            li
+                a.prev.page-numbers(href='#') <
+            li
+                a.page-numbers(href='#') 1
+            li
+                span.page-numbers.current(aria-current='page') 2
+            li
+                a.page-numbers(href='#3') 3
+            li
+                a.page-numbers(href='#4') 4
+            li
+                a.page-numbers(href='#5') 5
+            li
+                a.page-numbers(href='#6') 6
+            li
+                a.page-numbers(href='#7') 7
+            li
+                span.page-numbers.dots …
+            li
+                a.page-numbers(href='#21') 21
+            li
+                a.next.page-numbers(href='#3') >

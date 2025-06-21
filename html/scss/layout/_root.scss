@@ -1,0 +1,24 @@
+:root {
+    --primary:#00436D;
+    --primary2:#002F4D;
+    --blue:#005EAA;
+    --second:#EC0505;
+
+    --font-body:"Inter", sans-serif,
+    --bg-body: #fff;
+    --color-body: #202020;
+
+    --bg-header: #00436D;
+    --color-header: #fff;
+    --color-toggler:#fff;
+
+    --field-bg: #fff;
+    --field-label: #fff;
+    --field-h-2xl: 68px;
+    --field-h-xl: 55px;
+    --field-h-lg: 48px;
+    --field-h: 40px;
+    --field-placeholder: #5E5E5E;
+    --submit-bg: var(--second);
+    --submit-color:#fff;
+}
