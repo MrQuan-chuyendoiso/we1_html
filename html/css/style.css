@@ -67,6 +67,7 @@
 .imgDrop {
   position: relative;
   overflow: hidden;
+  display: block;
 }
 .imgDrop.has-backdrop:before {
   position: absolute;
