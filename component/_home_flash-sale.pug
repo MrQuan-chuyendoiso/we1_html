@@ -1,0 +1,162 @@
+mixin home_flash-sale()
+    section.flash-sale.mt-2.mb-3.mb-lg-4.bg-white
+        .container.px-3
+            .rounded-3(style='background: linear-gradient(var(--bg_fl_1) 0%, var(--bg_fl_2));')
+                .d-flex.flex-wrap.gap-2.px-2.pt-3.pb-2.rounded-3.mx-2.justify-content-between.align-content-center.ml-0.mr-0
+                    div
+                        a.position-relative.d-flex.align-content-center.gap-2(href='https://mew-cosmetics.myharavan.com/pages/flash-sale' title='Flash Sale')
+                            .d-flex.justify-content-center.align-items-center
+                                img.d-block(width='25px' height='25px' alt='icon-flash-sale' src='https://file.hstatic.net/200000823693/file/flash_11b2c7ab01f347fdb5018fb85b0955e7.gif')
+                            span.text-uppercase.fs-4.text-light.fw-bold  Flash Sale
+                    .d-flex.align-content-center
+                        p.mb-0.d-flex.align-content-center.text-light.mt-2
+                            | Giảm ngay 20% tổng giá trị đơn hàng. Số lượng có hạn
+                    .countdown
+                        .d-flex.gap-3.align-content-center.text-center
+                            .rounded-circle.border-2.border-light.px-3
+                                p#days.mb-0.text-light
+                                    | 00
+                                p.mb-0.text-light Days
+                            .rounded-circle.border-2.border-light
+                                p#hours.mb-0.text-light
+                                    | 00
+                            .rounded-circle.border-2.border-light
+                                p#minutes.mb-0.text-light
+                                    | 00
+                            .rounded-circle.border-2.border-light
+                                p#seconds.mb-0.text-light
+                                    | 00
+                .row.mx-2.products-slider
+                    .item.col-2
+                        .product-item.p-2.rounded-3.bg-white.position-relative
+                            span.sale-label.sale-top-right.position-absolute.font-weight-bold Giảm 25%
+                            button.position-absolute.rounded-circle.shadow-sm.wishlist-btn(type='button' data-alias='1054104574' title='Thêm vào yêu thích' data-wishlist-item-infor='{"title": "Kem Nền Maybelline Tươi Mướt Chống Nắng SPF50","url": "/products/kem-nen-maybelline-tuoi-muot-chong-nang-spf50"}')
+                                i.fa-solid.fa-heart
+                            button.btn.p-2.btn-addToCart.d-flex.justify-content-center.align-items-center.rounded-10(title='Thêm vào giỏ' type='button')
+                                i.fa-solid.fa-bag-shopping
+                            div
+                                img.w-100(src='https://product.hstatic.net/200000865177/product/google-shopping-gel-rua-mat-svr_2594e470c0fa42fca3e91b69bfcf1df7_large.png' alt)
+                            div
+                                p.mb-0.text-center
+                                    strong.text-main SVR
+                                a(href='/products/gel-rua-mat-svr-khong-chua-xa-phong-cho-da-dau-400ml-sebiaclear-gel-moussant' title='Gel Rửa Mặt SVR Không Chứa Xà Phòng Cho Da Dầu 400ml Sebiaclear Gel Moussant')
+                                    p.item-title.text-center.text-dark.font-weight-normal.mb-0
+                                        | Gel Rửa Mặt SVR Không Chứa Xà Phòng Cho Da Dầu 400ml Sebiaclear Gel Moussant
+                                .align-items-center.d-flex.gap-2.item-price.justify-content-center.mt-1.position-relative
+                                    span.special-price.font-weight-bold.position-relative.mr-2
+                                        | 429,000₫
+                                    del.old-price  625,000₫
+                    .item.col-2
+                        .product-item.p-2.rounded-3.bg-white.position-relative
+                            span.sale-label.sale-top-right.position-absolute.font-weight-bold Giảm 25%
+                            button.position-absolute.rounded-circle.shadow-sm.wishlist-btn(type='button' data-alias='1054104574' title='Thêm vào yêu thích' data-wishlist-item-infor='{"title": "Kem Nền Maybelline Tươi Mướt Chống Nắng SPF50","url": "/products/kem-nen-maybelline-tuoi-muot-chong-nang-spf50"}')
+                                i.fa-solid.fa-heart
+                            button.btn.p-2.btn-addToCart.d-flex.justify-content-center.align-items-center.rounded-10(title='Thêm vào giỏ' type='button')
+                                i.fa-solid.fa-bag-shopping
+                            div
+                                img.w-100(src='https://product.hstatic.net/200000865177/product/google-shopping-gel-rua-mat-svr_2594e470c0fa42fca3e91b69bfcf1df7_large.png' alt)
+                            div
+                                p.mb-0.text-center
+                                    strong.text-main SVR
+                                a(href='/products/gel-rua-mat-svr-khong-chua-xa-phong-cho-da-dau-400ml-sebiaclear-gel-moussant' title='Gel Rửa Mặt SVR Không Chứa Xà Phòng Cho Da Dầu 400ml Sebiaclear Gel Moussant')
+                                    p.item-title.text-center.text-dark.font-weight-normal.mb-0
+                                        | Gel Rửa Mặt SVR Không Chứa Xà Phòng Cho Da Dầu 400ml Sebiaclear Gel Moussant
+                                .align-items-center.d-flex.gap-2.item-price.justify-content-center.mt-1.position-relative
+                                    span.special-price.font-weight-bold.position-relative.mr-2
+                                        | 429,000₫
+                                    del.old-price  625,000₫
+                    .item.col-2
+                        .product-item.p-2.rounded-3.bg-white.position-relative
+                            span.sale-label.sale-top-right.position-absolute.font-weight-bold Giảm 25%
+                            button.position-absolute.rounded-circle.shadow-sm.wishlist-btn(type='button' data-alias='1054104574' title='Thêm vào yêu thích' data-wishlist-item-infor='{"title": "Kem Nền Maybelline Tươi Mướt Chống Nắng SPF50","url": "/products/kem-nen-maybelline-tuoi-muot-chong-nang-spf50"}')
+                                i.fa-solid.fa-heart
+                            button.btn.p-2.btn-addToCart.d-flex.justify-content-center.align-items-center.rounded-10(title='Thêm vào giỏ' type='button')
+                                i.fa-solid.fa-bag-shopping
+                            div
+                                img.w-100(src='https://product.hstatic.net/200000865177/product/google-shopping-gel-rua-mat-svr_2594e470c0fa42fca3e91b69bfcf1df7_large.png' alt)
+                            div
+                                p.mb-0.text-center
+                                    strong.text-main SVR
+                                a(href='/products/gel-rua-mat-svr-khong-chua-xa-phong-cho-da-dau-400ml-sebiaclear-gel-moussant' title='Gel Rửa Mặt SVR Không Chứa Xà Phòng Cho Da Dầu 400ml Sebiaclear Gel Moussant')
+                                    p.item-title.text-center.text-dark.font-weight-normal.mb-0
+                                        | Gel Rửa Mặt SVR Không Chứa Xà Phòng Cho Da Dầu 400ml Sebiaclear Gel Moussant
+                                .align-items-center.d-flex.gap-2.item-price.justify-content-center.mt-1.position-relative
+                                    span.special-price.font-weight-bold.position-relative.mr-2
+                                        | 429,000₫
+                                    del.old-price  625,000₫
+                    .item.col-2
+                        .product-item.p-2.rounded-3.bg-white.position-relative
+                            span.sale-label.sale-top-right.position-absolute.font-weight-bold Giảm 25%
+                            button.position-absolute.rounded-circle.shadow-sm.wishlist-btn(type='button' data-alias='1054104574' title='Thêm vào yêu thích' data-wishlist-item-infor='{"title": "Kem Nền Maybelline Tươi Mướt Chống Nắng SPF50","url": "/products/kem-nen-maybelline-tuoi-muot-chong-nang-spf50"}')
+                                i.fa-solid.fa-heart
+                            button.btn.p-2.btn-addToCart.d-flex.justify-content-center.align-items-center.rounded-10(title='Thêm vào giỏ' type='button')
+                                i.fa-solid.fa-bag-shopping
+                            div
+                                img.w-100(src='https://product.hstatic.net/200000865177/product/google-shopping-gel-rua-mat-svr_2594e470c0fa42fca3e91b69bfcf1df7_large.png' alt)
+                            div
+                                p.mb-0.text-center
+                                    strong.text-main SVR
+                                a(href='/products/gel-rua-mat-svr-khong-chua-xa-phong-cho-da-dau-400ml-sebiaclear-gel-moussant' title='Gel Rửa Mặt SVR Không Chứa Xà Phòng Cho Da Dầu 400ml Sebiaclear Gel Moussant')
+                                    p.item-title.text-center.text-dark.font-weight-normal.mb-0
+                                        | Gel Rửa Mặt SVR Không Chứa Xà Phòng Cho Da Dầu 400ml Sebiaclear Gel Moussant
+                                .align-items-center.d-flex.gap-2.item-price.justify-content-center.mt-1.position-relative
+                                    span.special-price.font-weight-bold.position-relative.mr-2
+                                        | 429,000₫
+                                    del.old-price  625,000₫
+                    .item.col-2
+                        .product-item.p-2.rounded-3.bg-white.position-relative
+                            span.sale-label.sale-top-right.position-absolute.font-weight-bold Giảm 25%
+                            button.position-absolute.rounded-circle.shadow-sm.wishlist-btn(type='button' data-alias='1054104574' title='Thêm vào yêu thích' data-wishlist-item-infor='{"title": "Kem Nền Maybelline Tươi Mướt Chống Nắng SPF50","url": "/products/kem-nen-maybelline-tuoi-muot-chong-nang-spf50"}')
+                                i.fa-solid.fa-heart
+                            button.btn.p-2.btn-addToCart.d-flex.justify-content-center.align-items-center.rounded-10(title='Thêm vào giỏ' type='button')
+                                i.fa-solid.fa-bag-shopping
+                            div
+                                img.w-100(src='https://product.hstatic.net/200000865177/product/google-shopping-gel-rua-mat-svr_2594e470c0fa42fca3e91b69bfcf1df7_large.png' alt)
+                            div
+                                p.mb-0.text-center
+                                    strong.text-main SVR
+                                a(href='/products/gel-rua-mat-svr-khong-chua-xa-phong-cho-da-dau-400ml-sebiaclear-gel-moussant' title='Gel Rửa Mặt SVR Không Chứa Xà Phòng Cho Da Dầu 400ml Sebiaclear Gel Moussant')
+                                    p.item-title.text-center.text-dark.font-weight-normal.mb-0
+                                        | Gel Rửa Mặt SVR Không Chứa Xà Phòng Cho Da Dầu 400ml Sebiaclear Gel Moussant
+                                .align-items-center.d-flex.gap-2.item-price.justify-content-center.mt-1.position-relative
+                                    span.special-price.font-weight-bold.position-relative.mr-2
+                                        | 429,000₫
+                                    del.old-price  625,000₫
+                    .item.col-2
+                        .product-item.p-2.rounded-3.bg-white.position-relative
+                            span.sale-label.sale-top-right.position-absolute.font-weight-bold Giảm 25%
+                            button.position-absolute.rounded-circle.shadow-sm.wishlist-btn(type='button' data-alias='1054104574' title='Thêm vào yêu thích' data-wishlist-item-infor='{"title": "Kem Nền Maybelline Tươi Mướt Chống Nắng SPF50","url": "/products/kem-nen-maybelline-tuoi-muot-chong-nang-spf50"}')
+                                i.fa-solid.fa-heart
+                            button.btn.p-2.btn-addToCart.d-flex.justify-content-center.align-items-center.rounded-10(title='Thêm vào giỏ' type='button')
+                                i.fa-solid.fa-bag-shopping
+                            div
+                                img.w-100(src='https://product.hstatic.net/200000865177/product/google-shopping-gel-rua-mat-svr_2594e470c0fa42fca3e91b69bfcf1df7_large.png' alt)
+                            div
+                                p.mb-0.text-center
+                                    strong.text-main SVR
+                                a(href='/products/gel-rua-mat-svr-khong-chua-xa-phong-cho-da-dau-400ml-sebiaclear-gel-moussant' title='Gel Rửa Mặt SVR Không Chứa Xà Phòng Cho Da Dầu 400ml Sebiaclear Gel Moussant')
+                                    p.item-title.text-center.text-dark.font-weight-normal.mb-0
+                                        | Gel Rửa Mặt SVR Không Chứa Xà Phòng Cho Da Dầu 400ml Sebiaclear Gel Moussant
+                                .align-items-center.d-flex.gap-2.item-price.justify-content-center.mt-1.position-relative
+                                    span.special-price.font-weight-bold.position-relative.mr-2
+                                        | 429,000₫
+                                    del.old-price  625,000₫
+                    .item.col-2
+                        .product-item.p-2.rounded-3.bg-white.position-relative
+                            span.sale-label.sale-top-right.position-absolute.font-weight-bold Giảm 25%
+                            button.position-absolute.rounded-circle.shadow-sm.wishlist-btn(type='button' data-alias='1054104574' title='Thêm vào yêu thích' data-wishlist-item-infor='{"title": "Kem Nền Maybelline Tươi Mướt Chống Nắng SPF50","url": "/products/kem-nen-maybelline-tuoi-muot-chong-nang-spf50"}')
+                                i.fa-solid.fa-heart
+                            button.btn.p-2.btn-addToCart.d-flex.justify-content-center.align-items-center.rounded-10(title='Thêm vào giỏ' type='button')
+                                i.fa-solid.fa-bag-shopping
+                            div
+                                img.w-100(src='https://product.hstatic.net/200000865177/product/google-shopping-gel-rua-mat-svr_2594e470c0fa42fca3e91b69bfcf1df7_large.png' alt)
+                            div
+                                p.mb-0.text-center
+                                    strong.text-main SVR
+                                a(href='/products/gel-rua-mat-svr-khong-chua-xa-phong-cho-da-dau-400ml-sebiaclear-gel-moussant' title='Gel Rửa Mặt SVR Không Chứa Xà Phòng Cho Da Dầu 400ml Sebiaclear Gel Moussant')
+                                    p.item-title.text-center.text-dark.font-weight-normal.mb-0
+                                        | Gel Rửa Mặt SVR Không Chứa Xà Phòng Cho Da Dầu 400ml Sebiaclear Gel Moussant
+                                .align-items-center.d-flex.gap-2.item-price.justify-content-center.mt-1.position-relative
+                                    span.special-price.font-weight-bold.position-relative.mr-2
+                                        | 429,000₫
+                                    del.old-price  625,000₫

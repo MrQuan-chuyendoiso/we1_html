@@ -1,0 +1,218 @@
+mixin home_product_list()
+    section.product_list.item_frame(style='background-color: #e6e6e6; margin: 0;')
+        .container
+            .item_frame_background
+                .item_frame_header.d-flex.justify-content-between.align-items-center
+                    a.item_frame_title.d-flex.justify-content-center.align-items-center.header-boder-color(href='/san-pham')
+                        span.d-flex.align-items-center.me-1
+                        h2(style='color: #000000 !important;')
+                            | SẢN PHẨM
+                    .d-flex.justify-content-between
+                        ul.sub_menu_title.d-none.d-md-flex
+                            li
+                                a(href='/nap-be-cap/nap-be-cap-composite') NẮP BỂ CÁP COMPOSITE
+                            li
+                                a(href='/nap-be-cap/nap-be-cap-gang') NẮP BỂ CÁP GANG
+                        a.item_frame_more(href='/san-pham')
+                            // Xem thêm <i class="fa fa-angle-right"></i>
+                            i.fa-solid.fa-eye
+                .item_frame_header.d-flex.justify-content-between.align-items-center.d-md-none
+                    .d-flex.justify-content-between(style='overflow-x: auto;')
+                        ul.d-flex.sub_menu_title
+                            li
+                                a(href='/nap-be-cap/nap-be-cap-composite') NẮP BỂ CÁP COMPOSITE
+                            li
+                                a(href='/nap-be-cap/nap-be-cap-gang') NẮP BỂ CÁP GANG
+                .products-rate.row
+                    .col-6.col-sm-6.col-md-2.product.is-sale.header-boder-color
+                        .inner.p-2.rounded-3
+                            a.product-thumbnail(href='https://we1.io.vn/diem- danh-ai-nhan-dien-khuon-mat-ai')
+                                img.rounded-3(loading='lazy' width='255' height='330' src='https://we1.io.vn/admin/public/images/product/1744794260762-Điểm- danh-AI---Nhận-diện-khuôn-mặt-AI.jpg' alt='Điểm danh AI - Nhận diện khuôn mặt AI')
+                            .inner-prod
+                                h3.product-title
+                                    a(href='https://we1.io.vn/diem- danh-ai-nhan-dien-khuon-mat-ai')
+                                        | Điểm danh AI - Nhận diện khuôn mặt AI
+                                .product-rate
+                                    ul
+                                        li
+                                            i.fa.fa-star(aria-hidden='true')
+                                        li
+                                            i.fa.fa-star(aria-hidden='true')
+                                        li
+                                            i.fa.fa-star(aria-hidden='true')
+                                        li
+                                            i.fa.fa-star(aria-hidden='true')
+                                        li
+                                            i.fa.fa-star(aria-hidden='true')
+                                .product-meta
+                                    span.product-price.product-sale-price
+                                        | 350.000 
+                                        sup đ
+                    .col-6.col-sm-6.col-md-2.product.is-sale.header-boder-color
+                        .inner.p-2.rounded-3
+                            a.product-thumbnail(href='https://we1.io.vn/may-say-9kh')
+                                img.rounded-3(loading='lazy' width='255' height='330' src='https://we1.io.vn/admin/public/images/product/1744794695194-Máy-giặt-10kg.jpg' alt='Máy sấy 9kh')
+                            .inner-prod
+                                h3.product-title
+                                    a(href='https://we1.io.vn/may-say-9kh')
+                                        | Máy sấy 9kh
+                                .product-rate
+                                    ul
+                                        li
+                                            i.fa.fa-star(aria-hidden='true')
+                                        li
+                                            i.fa.fa-star(aria-hidden='true')
+                                        li
+                                            i.fa.fa-star(aria-hidden='true')
+                                        li
+                                            i.fa.fa-star(aria-hidden='true')
+                                        li
+                                            i.fa.fa-star(aria-hidden='true')
+                                .product-meta
+                                    span.product-price.product-sale-price
+                                        | 10.000.000 
+                                        sup đ
+                    .col-6.col-sm-6.col-md-2.product.is-sale.header-boder-color
+                        .inner.p-2.rounded-3
+                            a.product-thumbnail(href='https://we1.io.vn/cong-to-dien-tu-wifi-thong-minh-1-pha')
+                                img.rounded-3(loading='lazy' width='255' height='330' src='https://we1.io.vn/admin/public/images/product/1744794129111-cong-to-dien-thong-minh.jpg' alt='Công Tơ Điện Tử Wifi Thông Minh 1 Pha')
+                            .inner-prod
+                                h3.product-title
+                                    a(href='https://we1.io.vn/cong-to-dien-tu-wifi-thong-minh-1-pha')
+                                        | Công Tơ Điện Tử Wifi Thông Minh 1 Pha
+                                .product-rate
+                                    ul
+                                        li
+                                            i.fa.fa-star(aria-hidden='true')
+                                        li
+                                            i.fa.fa-star(aria-hidden='true')
+                                        li
+                                            i.fa.fa-star(aria-hidden='true')
+                                        li
+                                            i.fa.fa-star(aria-hidden='true')
+                                        li
+                                            i.fa.fa-star(aria-hidden='true')
+                                .product-meta
+                                    span.product-price.product-sale-price
+                                        | 1.200.000 
+                                        sup đ
+                    .col-6.col-sm-6.col-md-2.product.is-sale.header-boder-color
+                        .inner.p-2.rounded-3
+                            a.product-thumbnail(href='https://we1.io.vn/may-giat-10kg')
+                                img.rounded-3(loading='lazy' width='255' height='330' src='https://we1.io.vn/admin/public/images/product/1744794604874-Máy-giặt-10kg.jpg' alt='Máy giặt 10kg')
+                            .inner-prod
+                                h3.product-title
+                                    a(href='https://we1.io.vn/may-giat-10kg')
+                                        | Máy giặt 10kg
+                                .product-rate
+                                    ul
+                                        li
+                                            i.fa.fa-star(aria-hidden='true')
+                                        li
+                                            i.fa.fa-star(aria-hidden='true')
+                                        li
+                                            i.fa.fa-star(aria-hidden='true')
+                                        li
+                                            i.fa.fa-star(aria-hidden='true')
+                                        li
+                                            i.fa.fa-star(aria-hidden='true')
+                                .product-meta
+                                    span.product-price.product-sale-price
+                                        | 10.000.000 
+                                        sup đ
+                    .col-6.col-sm-6.col-md-2.product.is-sale.header-boder-color
+                        .inner.p-2.rounded-3
+                            a.product-thumbnail(href='https://we1.io.vn/sac-pin-dien-thoai-thanh-toan-qr')
+                                img.rounded-3(loading='lazy' width='255' height='330' src='https://we1.io.vn/admin/public/images/product/174479490026Sạc-pin-điện-thoại-thanh-toán-QR-1.jpg' alt='Sạc pin điện thoại thanh toán QR')
+                            .inner-prod
+                                h3.product-title
+                                    a(href='https://we1.io.vn/sac-pin-dien-thoai-thanh-toan-qr')
+                                        | Sạc pin điện thoại thanh toán QR
+                                .product-rate
+                                    ul
+                                        li
+                                            i.fa.fa-star(aria-hidden='true')
+                                        li
+                                            i.fa.fa-star(aria-hidden='true')
+                                        li
+                                            i.fa.fa-star(aria-hidden='true')
+                                        li
+                                            i.fa.fa-star(aria-hidden='true')
+                                        li
+                                            i.fa.fa-star(aria-hidden='true')
+                                .product-meta
+                                    span.product-price.product-sale-price
+                                        | 400.000 
+                                        sup đ
+                    .col-6.col-sm-6.col-md-2.product.is-sale.header-boder-color
+                        .inner.p-2.rounded-3
+                            a.product-thumbnail(href='https://we1.io.vn/dong-ho-nuoc-thong-minh')
+                                img.rounded-3(loading='lazy' width='255' height='330' src='https://we1.io.vn/admin/public/images/product/1744794434333-Đồng-hồ-nước-thông-minh.jpg' alt='Đồng hồ nước thông minh')
+                            .inner-prod
+                                h3.product-title
+                                    a(href='https://we1.io.vn/dong-ho-nuoc-thong-minh')
+                                        | Đồng hồ nước thông minh
+                                .product-rate
+                                    ul
+                                        li
+                                            i.fa.fa-star(aria-hidden='true')
+                                        li
+                                            i.fa.fa-star(aria-hidden='true')
+                                        li
+                                            i.fa.fa-star(aria-hidden='true')
+                                        li
+                                            i.fa.fa-star(aria-hidden='true')
+                                        li
+                                            i.fa.fa-star(aria-hidden='true')
+                                .product-meta
+                                    span.product-price.product-sale-price
+                                        | 6.900.000 
+                                        sup đ
+                    .col-6.col-sm-6.col-md-2.product.is-sale.header-boder-color
+                        .inner.p-2.rounded-3
+                            a.product-thumbnail(href='https://we1.io.vn/sac-pin-xe-o-to-dien-thanh-toan-qr')
+                                img.rounded-3(loading='lazy' width='255' height='330' src='https://we1.io.vn/admin/public/images/product/1744795751257-tram-sac-oto-2.jpg' alt='Sạc pin xe ô tô điện thanh toán QR')
+                            .inner-prod
+                                h3.product-title
+                                    a(href='https://we1.io.vn/sac-pin-xe-o-to-dien-thanh-toan-qr')
+                                        | Sạc pin xe ô tô điện thanh toán QR
+                                .product-rate
+                                    ul
+                                        li
+                                            i.fa.fa-star(aria-hidden='true')
+                                        li
+                                            i.fa.fa-star(aria-hidden='true')
+                                        li
+                                            i.fa.fa-star(aria-hidden='true')
+                                        li
+                                            i.fa.fa-star(aria-hidden='true')
+                                        li
+                                            i.fa.fa-star(aria-hidden='true')
+                                .product-meta
+                                    span.product-price.product-sale-price
+                                        b.text-dark 0936 87 6667
+                    .col-6.col-sm-6.col-md-2.product.is-sale.header-boder-color
+                        .inner.p-2.rounded-3
+                            a.product-thumbnail(href='https://we1.io.vn/sac-pin-xe-may-dien-thanh-toan-qr')
+                                img.rounded-3(loading='lazy' width='255' height='330' src='https://we1.io.vn/admin/public/images/product/1744795153305-xac-xe-may-dien-1.jpg' alt='Sạc pin xe máy điện thanh toán QR')
+                            .inner-prod
+                                h3.product-title
+                                    a(href='https://we1.io.vn/sac-pin-xe-may-dien-thanh-toan-qr')
+                                        | Sạc pin xe máy điện thanh toán QR
+                                .product-rate
+                                    ul
+                                        li
+                                            i.fa.fa-star(aria-hidden='true')
+                                        li
+                                            i.fa.fa-star(aria-hidden='true')
+                                        li
+                                            i.fa.fa-star(aria-hidden='true')
+                                        li
+                                            i.fa.fa-star(aria-hidden='true')
+                                        li
+                                            i.fa.fa-star(aria-hidden='true')
+                                .product-meta
+                                    span.product-price.product-sale-price
+                                        | Liên hệ
+                                    span.product-price.product-sale-price
+                                        b.text-dark 0936 87 6667
