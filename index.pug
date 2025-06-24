@@ -47,7 +47,7 @@ block body
                 .slider.slider-gallery(class=`${clName}`)
                     each item in [1,2,3,4,5,6,7,8,9,10,11,12,13,13,15,16,17,18,19,20]
                         div 
-                            .item-gallery-thumb.bg-gray.p-8px.rounded-8.border.border-primary.border-1 
+                            a(href="https://we1.io.vn/admin/public/images/service/1744444200201-Ban-giam-doc.jpg").item-gallery-thumb.bg-light.p-8px.rounded-8.border.border-primary.border-1 
                                 .imgDrop.ratio-6-4.rounded-4  
                                     img(src="https://we1.io.vn/admin/public/images/service/1744444200201-Ban-giam-doc.jpg", alt="")
                                 .content.mt-8px.text-center
@@ -55,12 +55,16 @@ block body
                                     .text-12 ( khách lắp tại Sông Lô - Việt Trì)
         .container 
             h2.title_section  HÌNH ẢNH LẮP ĐẶT THỰC TẾ
-            
+            .row.justify-center(class="xl:mt-32 mt-24") 
+                .col-12.col-lg-9 
+                    .text-center Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        | Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a 
+                        | galley of type and scrambled it to make a type specimen book.
             +item-gellary('slider-gallery-row2','Rows 2')
             +item-gellary('slider-gallery-column6','Rows 1 - Column 6')
             +item-gellary('slider-gallery-column8','Rows 1 - Column 8')
             +item-gellary('slider-gallery-column4','Rows 1 - Column 4')
-            .view_more.text-center.mt-3.position-relative
+            .view_more.text-center.mt-24.position-relative
                 a.rounded-pill.py-2.px-4.btn-outline-primary(href='gallery-detail.html' title='Xem thêm') Xem thêm
 
     
@@ -90,6 +94,9 @@ block js
                         rows: $rows,
                         slidesToScroll: 1,
                         arrow: true,
+                        autoplay: true,
+                        pauseOnHover: true,
+                        //- rtl: true,
                         responsive: [
                         {
                             breakpoint: 1024,
@@ -116,9 +123,13 @@ block js
                         ]
                     });
                     $(this).addClass( 'slider-' + numSlick ).slickLightbox({
-                        src: 'src',
-                        itemSelector: '.imgDrop img',
-                        background: 'rgba(0, 0, 0, .7)'
+                        itemSelector: 'a',
+                        //- src: 'img', // lấy ảnh từ <img>
+                        captions: true,
+                        caption: function (el) {
+                            return $(el).find('.content').html() || '';
+                        },
+                        captionPosition: 'bottom'
                     });
                 });
             };

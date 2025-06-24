@@ -1,15 +1,11 @@
 module.exports = {
  content: [
-    './docs/**/*.{html,js}',
-  ],
-    safelist: [
-    'justify-center',
-    'justify-start',
-    'justify-end',
-    'flex',
-    'p-4',
-    'text-white'
-  ],
+  './**/*.{html,pug,php,js}',  // bao hết tất cả các thư mục con
+  '!./wp-admin/**/*',
+  '!./wp-includes/**/*',
+  '!./node_modules/**/*',
+  '!./Prepros Export/**/*',
+],
   plugins: [require('@tailwindcss/typography')],
   theme: {
     extend: {

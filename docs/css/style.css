@@ -256,11 +256,20 @@
   display: block;
 }
 .item-gallery-thumb:hover {
-  background-color: var(--primary);
+  background-color: var(--primary) !important;
   color: #fff;
 }
 .item-gallery-thumb:hover .color-primary {
   color: #fff;
+}
+
+.slick-lightbox-slick-caption {
+  display: block;
+}
+.slick-lightbox-slick-caption .color-primary {
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 :root {
