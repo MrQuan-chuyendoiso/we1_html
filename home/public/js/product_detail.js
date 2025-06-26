@@ -146,6 +146,7 @@ $(document).ready(function () {
         arrows: false,
         asNavFor: '.main-slider',
         focusOnSelect: true,
+        autoplay: false,
         responsive: [{
             breakpoint: 1200,
             settings: {

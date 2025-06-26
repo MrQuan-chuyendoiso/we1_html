@@ -1,3 +1,13 @@
 @import '../layout/root';
 @import '../layout/minxin';
-.style {}
+
+.slide .image {
+    width: 100%!important;
+    height: 100%!important;
+}
+.slide .imgDrop {
+    margin-bottom: 0!important;
+}
+.slick-lightbox-slick-item-inner {
+    max-width: 900px;
+}

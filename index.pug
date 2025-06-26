@@ -40,19 +40,22 @@ block body
     +home_video()
     +home_product_list()
     +home_partner()
-    section(class="xl:py-70 py-32 bg-white")
+    section(class="py-36 bg-white")
         mixin item-gellary(clName, text)
             div(class="xl:mt-32 mt-24")
-                p= text
+                //- p= text
                 .slider.slider-gallery(class=`${clName}`)
                     each item in [1,2,3,4,5,6,7,8,9,10,11,12,13,13,15,16,17,18,19,20]
                         div 
-                            a(href="https://we1.io.vn/admin/public/images/service/1744444200201-Ban-giam-doc.jpg").item-gallery-thumb.bg-light.p-8px.rounded-8.border.border-primary.border-1 
-                                .imgDrop.ratio-6-4.rounded-4  
-                                    img(src="https://we1.io.vn/admin/public/images/service/1744444200201-Ban-giam-doc.jpg", alt="")
+                            a(href=`${item === 1 ? "https://we1.io.vn/admin/public/images/service/1744444200201-Ban-giam-doc.jpg":"https://file.hstatic.net/200000865177/file/banner_product_1_1_7c6e3429f65c4ba3be014ded4b6ecefc.jpg"}`).item-gallery-thumb.bg-light.p-8px.rounded-8.border.border-primary.border-1 
+                                .imgDrop.ratio-4-3.rounded-4  
+                                    if(item === 1) 
+                                        img(src="https://we1.io.vn/admin/public/images/service/1744444200201-Ban-giam-doc.jpg", alt="")
+                                    else 
+                                        img(src="https://file.hstatic.net/200000865177/file/banner_product_1_1_7c6e3429f65c4ba3be014ded4b6ecefc.jpg", alt="")
                                 .content.mt-8px.text-center
                                     .text-14.color-primary Máy A50
-                                    .text-12 ( khách lắp tại Sông Lô - Việt Trì)
+                                    .text-12  khách lắp tại Sông Lô - Việt Trì
         .container 
             h2.title_section  HÌNH ẢNH LẮP ĐẶT THỰC TẾ
             .row.justify-center(class="xl:mt-32 mt-24") 
@@ -113,8 +116,7 @@ block js
                             settings: {
                             slidesToShow: 3,
                             }
-                        }
-                        ,{
+                        },{
                             breakpoint: 576,
                             settings: {
                             slidesToShow: 2,

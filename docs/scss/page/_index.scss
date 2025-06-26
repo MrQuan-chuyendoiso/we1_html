@@ -16,6 +16,16 @@
     .color-primary {
         color: #fff;
         font-weight: bold;
-        font-size: 18px;
+        @include min_lg {
+            font-size: 24px;
+        }
     }
+    .text-12 {
+        @include min_lg {
+            font-size: 18px;
+        }
+    }
+}
+.slick-lightbox-slick-img {
+    max-width: 900px;
 }
