@@ -60,7 +60,8 @@ module.exports = {
         'primary2': '#002F4D!important',
         'second': '#EC0505',
         'gray':'#eee',
-        'blue':'#005EAA'
+        'blue':'#005EAA',
+        'orange':'#ef8528',
        },
        borderRadius: {
         '4':'4px',

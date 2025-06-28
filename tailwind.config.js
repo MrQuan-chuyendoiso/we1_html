@@ -60,11 +60,14 @@ module.exports = {
         'full': '100%'
        },
        colors: {
+        'white':'#fff!important',
         'primary': '#0282a5!important',
         'primary2': '#002F4D!important',
         'second': '#EC0505',
         'gray':'#eee',
-        'blue':'#005EAA'
+        'blue':'#005EAA',
+        'orange':'#ef8528',
+        'gray2': '#f3f4f6'
        },
        borderRadius: {
         '4':'4px',
