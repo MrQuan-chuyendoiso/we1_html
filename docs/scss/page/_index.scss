@@ -30,7 +30,7 @@
     max-width: 900px;
 }
 .item_frame_header {
-    padding-right: 0;
+    padding: 0;
     @include max_sm {
         padding-left: 0;
         .item_frame_title  {
@@ -175,6 +175,8 @@
     }
 }
 .product_list {
+    margin-top: 0;
+    padding: 0;
     .slick-arrow {
         @include max_sm {
             top: 30%;

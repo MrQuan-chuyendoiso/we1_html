@@ -1,6 +1,6 @@
 
 mixin heading(arr, ttl)
-    .item_frame_header.gap-x-24.flex(class="max-sm:flex-col sm:align-items-center")
+    .item_frame_header.gap-x-24.flex.gap-y-8px(class="max-sm:flex-col sm:align-items-center")
         a.item_frame_title.header-boder-color.flex-shrink-0(href='/san-pham')
             //- span.d-flex.align-items-center.me-1
             h2.text-nowrap(style='color: #000000 !important;')
@@ -33,9 +33,9 @@ mixin home_product_list(arr1, ttl, classSlick)
     .wrapper
         //- - var arr1 = [1,2,3,4,5,6,7,8]
         +heading(arr1, ttl)
-        .row(class=`${classSlick}`)
-            each item in [1,2,3,4,5,6,7,8,9,10]
-                .col-6.col-sm-6.col-md-2.product.is-sale.header-boder-color
+        .product_list.item_frame(class=`${classSlick}`)
+            each item in [1,2,3,4,5,6,7,8,9,10,11,12,13,14]
+                .product.is-sale.header-boder-color
                     .inner.p-2.rounded-3
                         a.product-thumbnail(href='#')
                             img.rounded-3(loading='lazy' width='255' height='330' src='https://product.hstatic.net/200000865177/product/google-shopping-gel-rua-mat-svr_2594e470c0fa42fca3e91b69bfcf1df7_large.png' alt='Điểm danh AI - Nhận diện khuôn mặt AI')

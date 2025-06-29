@@ -325,7 +325,7 @@ a, button, img {
 }
 
 .item_frame_header {
-  padding-right: 0;
+  padding: 0;
 }
 @media (max-width: 640px) {
   .item_frame_header {
@@ -500,6 +500,10 @@ a, button, img {
   }
 }
 
+.product_list {
+  margin-top: 0;
+  padding: 0;
+}
 @media (max-width: 640px) {
   .product_list .slick-arrow {
     top: 30%;

@@ -38,9 +38,13 @@ block body
     +home_category-featured6_2()
     +home_product-category4()
     +home_video()
-    section.product_list.item_frame(style='background-color: #e6e6e6; margin: 0;')
+    section(style='background-color: #e6e6e6;' class="sm:py-60 py-32")
         .container
-            +home_product_list(true,'SẢN PHẨM','products-rate ')
+            .bg-white.rounded-8.pb-12.box-shadow(class='sm:px-16')
+                +home_product_list(true,'SẢN PHẨM','products-list-row1')
+            .mt-24
+            .bg-white.rounded-8.pb-12.box-shadow(class='sm:px-16')
+                +home_product_list(true,'SẢN PHẨM','products-list-row2')
     +home_partner()
     section(class="py-36 bg-white")
         mixin item-gellary(clName, text)
@@ -85,9 +89,12 @@ block js
     //- script(src='js/js-banner.js')
     //- script(src='js/countUp.js')
     +js_home_product_list()
+    +js_product_detail()
     script.
         $(document).ready(function(){
             numSlick = 0;
+            sliderList(".products-list-row1", 5, 4, 1);
+            sliderList(".products-list-row2", 5, 4, 2);
             galleryImages(".slider-gallery-row2", 6, 5, 2);
             galleryImages(".slider-gallery-column6", 6, 5, 1);
             galleryImages(".slider-gallery-column8", 8, 5, 1);
@@ -138,6 +145,5 @@ block js
                     });
                 });
             };
-            
         });
         

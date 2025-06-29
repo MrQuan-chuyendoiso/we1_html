@@ -129,3 +129,44 @@ $(document).ready(function () {
     });
   }
 });
+// =========================
+// new update 6/2025
+// ===========================
+numSlick = 0;
+function sliderList($sliderName, $toshow, $toshow_1024, $rows) {
+    $($sliderName).each( function() {
+        numSlick++;
+        $(this).addClass( 'slider-' + numSlick ).slick({
+            slidesToShow: $toshow,
+            rows: $rows,
+            slidesToScroll: 1,
+            arrow: true,
+            autoplay: true,
+            pauseOnHover: true,
+            //- rtl: true,
+            responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                slidesToShow: $toshow_1024,
+                }
+            },{
+                breakpoint: 991,
+                settings: {
+                slidesToShow: 4,
+                }
+            },{
+                breakpoint: 768,
+                settings: {
+                slidesToShow: 3,
+                }
+            },{
+                breakpoint: 576,
+                settings: {
+                slidesToShow: 2,
+                }
+            }
+            ]
+        });
+    });
+};

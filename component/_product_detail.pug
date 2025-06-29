@@ -429,10 +429,10 @@ mixin product_detail()
                                                         input(type='hidden' value='to-yen-dao' name='product_slug')
                                                         input(type='hidden' value name='parent_id')
                         //- .background-content.p-b-0
-                        .bg-white.rounded-8.box-shadow.mt-12.px-4px
-                            +home_product_list('','SẢN PHẨM CÙNG CHUYÊN MỤC','row product_list')
-                        .bg-white.rounded-8.box-shadow.mt-12.px-4px
-                            +home_product_list('','SẢN PHẨM MỚI','row product_list')
+                        .bg-white.rounded-8.box-shadow.mt-12.px-8px.pb-12.box-shadow
+                            +home_product_list('','SẢN PHẨM CÙNG CHUYÊN MỤC','product_related')
+                        .bg-white.rounded-8.box-shadow.mt-12.px-8px.pb-12.box-shadow
+                            +home_product_list('','SẢN PHẨM MỚI','product_new')
                        
                     .col-12.col-xl-3.col-lg-12.sidebar.d-none.d-lg-block.max-lg-mt-12.lg-pl-0
                         .background-sidebar
@@ -716,3 +716,7 @@ mixin product_detail()
                                     | Bạn chưa có tài khoản,
                                     a.btn.btn-link(href='dang-ky-tai-khoan' style='padding: 0;') BẤM ĐÂY
                                     |                                             để đăng ký mới
+mixin js_product_detail()
+    script.
+        sliderList(".product_related", 4, 4, 1);
+        sliderList(".product_new", 4, 4, 1);
