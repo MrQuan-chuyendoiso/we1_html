@@ -167,16 +167,17 @@
         }
     }
 }
-.products-rate.row {
-    @include max_sm {
-        margin-left: 10px;
-        margin-right: 10px;
-        padding-bottom: 16px;
+.slick-slider {
+    .product_list {
+        margin-top: 0;
+        padding: 0;
     }
 }
 .product_list {
-    margin-top: 0;
-    padding: 0;
+    &.slick-slide {
+        padding: 4px!important;
+        margin-top: 0;
+    }
     .slick-arrow {
         @include max_sm {
             top: 30%;
