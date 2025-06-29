@@ -38,7 +38,9 @@ block body
     +home_category-featured6_2()
     +home_product-category4()
     +home_video()
-    +home_product_list()
+    section.product_list.item_frame(style='background-color: #e6e6e6; margin: 0;')
+        .container
+            +home_product_list(true,'SẢN PHẨM','products-rate ')
     +home_partner()
     section(class="py-36 bg-white")
         mixin item-gellary(clName, text)

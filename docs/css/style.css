@@ -462,7 +462,6 @@ a, button, img {
   }
 }
 .item_frame_header .menu-slider-wrapper ul li a {
-  text-transform: uppercase;
   font-size: 13px;
   background-color: #f3f4f6;
   display: block;
