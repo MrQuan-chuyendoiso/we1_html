@@ -1,6 +1,6 @@
 module.exports = {
  content: [
-    './docs/**/*.{html,js}',
+    './docs/public/**/*.{html,js}',
   ],
     safelist: [
     'justify-center',

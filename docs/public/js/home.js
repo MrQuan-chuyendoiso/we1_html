@@ -642,7 +642,7 @@ $(document).ready(function(){
 			$('#imageModal').modal('show');
 		});
 
-		//
+		
         // let header = $(".header-top");
         // let headerHeight = header.outerHeight();
         // let isFixed = false;

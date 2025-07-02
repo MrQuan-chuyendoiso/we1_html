@@ -1,19 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!-- start seo-->
+    <title>Mỹ phẩm</title>
+    <meta name="keywords" content="Mỹ phẩm">
+    <meta name="description" content="Mỹ phẩm">
+    <meta name="robots" content="index,follow,max-snippet:-1,max-video-preview:-1,max-image-preview:large">
+    <link rel="icon" type="image/x-icon" href="admin/public/images/footer/17408141534560x60.png">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet" type="text/css">
     <link href="ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="public/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/slick-theme.css">
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/slick-lightbox.css">
+    <link rel="stylesheet" href="public/assets/css/slick.css" type="text/css">
+    <link rel="stylesheet" href="public/assets/css/slick-lightbox.css">
+    <link rel="stylesheet" href="public/assets/css/slick-theme.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
-    <link rel="stylesheet" href="css/tailwin-dist.css">
-    <link rel="stylesheet" href="css/style-old.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="public/assets/style.css" rel="stylesheet" type="text/css">
+    <link href="public/assets/style-2.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="public/css/tailwin-dist.css">
+    <!-- home-->
+    <link href="public/assets/home.css" rel="stylesheet" type="text/css">
+    <!-- product-->
+    <link rel="stylesheet" href="public/css/product/base.css" type="text/css">
+    <link rel="stylesheet" href="public/css/product/detail.css" type="text/css">
+    <link rel="stylesheet" href="public/css/style.css">
   </head>
   <body>
     <header class="fe-header w-100" style="background: white;">
@@ -1212,46 +1225,34 @@
           </svg><span class="tit d-block font-weight-bold text-center pr-1 pr-sm-2 pl-1 pl-sm-2">Giỏ hàng</span><span class="btn-cart-indicator position-absolute d-none text-center"></span>
           <div class="js-buy-alert position-absolute"></div></a></div>
     </footer>
-    <div class="modal fade" id="formSearch" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-body">
-            <form class="flex" role="search">
-              <div class="flex-grow-1">
-                <input class="w-full form-control h-40 border border-gray px-16 focus:outline-none focus:border-primary" type="search" placeholder="Nhập từ khóa" aria-label="Search">
-              </div>
-              <input class="h-40 w-90 flex-shrink-0 bg-gray-c6" type="submit" value="Tìm kiếm">
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
     <script src="public/assets/js/jquery.min.js"></script>
-    <script src="public/assets/js/jquery.validate.min.js"></script>
-    <script src="public/assets/js/additional-methods.min.js"></script>
-    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script src="public/assets/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/slick-lightbox.min.js"></script>
+    <script src="public/assets/js/slick.min.js"></script>
+    <script src="public/assets/js/slick-lightbox.js"></script>
+    <!-- <script src="ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>-->
+    <!-- validate js-->
+    <script src="public/assets/js/jquery.validate.min.js"></script>
+    <script src="public/assets/js/additional-methods.min.js"></script>
     <script src="public/js/home.js"></script>
     <script src="public/js/home-custom.js"></script>
     <script src="public/js/contact.js"></script>
     <script src="public/js/quote_and_promotion.js"></script>
     <script src="public/js/custom.js"></script>
     <script src="public/js/product_detail.js"></script>
+    <script>
+      $(document).ready(function(){
+          $('.row').slickLightbox({
+              itemSelector: 'a',
+              //- src: 'img', // lấy ảnh từ <img>
+              captions: true,
+              caption: function (el) {
+                  return $(el).find('.content').html() || '';
+              },
+              captionPosition: 'bottom'
+          });
+      });
+    </script>
   </body>
-  <script>
-    $(document).ready(function(){
-        $('.row').slickLightbox({
-            itemSelector: 'a',
-            //- src: 'img', // lấy ảnh từ <img>
-            captions: true,
-            caption: function (el) {
-                return $(el).find('.content').html() || '';
-            },
-            captionPosition: 'bottom'
-        });
-    });
-  </script>
 </html>

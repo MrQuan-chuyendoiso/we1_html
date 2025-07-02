@@ -1,11 +1,15 @@
 module.exports = {
  content: [
-  './**/*.{html,pug,php,js}',  // bao hết tất cả các thư mục con
-  '!./wp-admin/**/*',
-  '!./wp-includes/**/*',
-  '!./node_modules/**/*',
-  '!./Prepros Export/**/*',
-],
+    './docs/public/**/*.{html,js}',
+  ],
+    safelist: [
+    'justify-center',
+    'justify-start',
+    'justify-end',
+    'flex',
+    'p-4',
+    'text-white'
+  ],
   plugins: [require('@tailwindcss/typography')],
   theme: {
     extend: {
@@ -56,12 +60,14 @@ module.exports = {
         'full': '100%'
        },
        colors: {
+        'white':'#fff!important',
         'primary': '#0282a5!important',
         'primary2': '#002F4D!important',
         'second': '#EC0505',
         'gray':'#eee',
         'blue':'#005EAA',
         'orange':'#ef8528',
+        'gray2': '#f3f4f6'
        },
        borderRadius: {
         '4':'4px',

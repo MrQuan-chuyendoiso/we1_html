@@ -5,53 +5,42 @@ include _footer.pug
 doctype html
 html(lang="en")
     head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Document
-        
-        link(href='https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700', rel='stylesheet', type='text/css')
-        link(href='ajax/libs/font-awesome/6.4.2/css/all.min.css', rel='stylesheet', type='text/css')
-
-        link(href='public/assets/css/bootstrap.min.css', rel='stylesheet', type='text/css')
-        //- link(rel="stylesheet", href="css/bootstrap.css")
-        //- link(rel='stylesheet', href='public/assets/css/slick.css', type='text/css')
-        //- link(rel='stylesheet', href='public/assets/css/slick-lightbox.css')
-        //- link(rel='stylesheet', href='public/assets/css/slick-theme.css', type='text/css')
-        
-        link(rel="stylesheet", href="css/slick-theme.css")
-        link(rel="stylesheet", href="css/slick.css")
-        link(rel="stylesheet", href="css/slick-lightbox.css")
-
-        link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css')
-
-        
-        link(rel="stylesheet", href="css/tailwin-dist.css")
-        //- link(rel='stylesheet', href='public/css/dist/common.css')
-        //- link(href='public/assets/style.css', rel='stylesheet', type='text/css')
-        //- link(href='public/assets/style-2.css', rel='stylesheet', type='text/css')
-
-        //- home
-        //- link(href='public/assets/home.css', rel='stylesheet', type='text/css')
-        //- link(rel='stylesheet', href='public/css/dist/home.css')
-
-        //- product
-        //- link(rel='stylesheet', href='public/css/product/base.css', type='text/css')
-        //- link(rel='stylesheet', href='public/css/product/detail.css', type='text/css')
-        //- link(rel='stylesheet', href='public/css/dist/product.css', type='text/css')
-        
-        //- link(rel="stylesheet" href="css/aos.css")
-        //- link(rel="stylesheet", href="css/slick-theme.css")
-        //- link(rel="stylesheet", href="css/slick.css")
-        //- link(rel="stylesheet", href="css/slick-lightbox.css")
-        link(rel="stylesheet", href="css/style-old.css")
-        link(rel="stylesheet", href="css/style.css")
+        meta(http-equiv='X-UA-Compatible' content='IE=edge,chrome=1')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        meta(http-equiv='Content-Type' content='text/html; charset=utf-8')
+        // start seo
+        title Mỹ phẩm
+        meta(name='keywords' content='Mỹ phẩm')
+        meta(name='description' content='Mỹ phẩm')
+        meta(name='robots' content='index,follow,max-snippet:-1,max-video-preview:-1,max-image-preview:large')
+        link(rel='icon' type='image/x-icon' href='admin/public/images/footer/17408141534560x60.png')
+        link(href='https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700' rel='stylesheet' type='text/css')
+        link(href='https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700' rel='stylesheet' type='text/css')
+        link(href='ajax/libs/font-awesome/6.4.2/css/all.min.css' rel='stylesheet' type='text/css')
+        link(href='public/assets/css/bootstrap.min.css' rel='stylesheet' type='text/css')
+        link(rel='stylesheet' href='public/assets/css/slick.css' type='text/css')
+        link(rel='stylesheet' href='public/assets/css/slick-lightbox.css')
+        link(rel='stylesheet' href='public/assets/css/slick-theme.css' type='text/css')
+        link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css')
+        link(href='public/assets/style.css' rel='stylesheet' type='text/css')
+        link(href='public/assets/style-2.css' rel='stylesheet' type='text/css')
+        //- link(rel='stylesheet' href='public/css/dist/common.css')
+        link(rel="stylesheet", href="public/css/tailwin-dist.css")
+        // home
+        link(href='public/assets/home.css' rel='stylesheet' type='text/css')
+        //- link(rel='stylesheet' href='public/css/dist/home.css')
+        // product
+        link(rel='stylesheet' href='public/css/product/base.css' type='text/css')
+        link(rel='stylesheet' href='public/css/product/detail.css' type='text/css')
+        //- link(rel='stylesheet' href='public/css/dist/product.css' type='text/css')
+        link(rel="stylesheet", href="public/css/style.css")
     block vars
     body(class=`${bodyClass}`)
         +header(page)
         main 
             block body
         +footer()
-        #formSearch.modal.fade(tabindex='-1', aria-labelledby='exampleModalLabel', aria-hidden='true')
+        //- #formSearch.modal.fade(tabindex='-1', aria-labelledby='exampleModalLabel', aria-hidden='true')
             .modal-dialog
                 .modal-content
                     //- .modal-header
@@ -68,27 +57,80 @@ html(lang="en")
         block modal
 
         script(src='public/assets/js/jquery.min.js')
-        script(src='public/assets/js/jquery.validate.min.js')
-        script(src='public/assets/js/additional-methods.min.js')
-        script(src='https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit' type='text/javascript', )
+        script(type='text/javascript' src='https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit')
         script(src='public/assets/js/bootstrap.bundle.min.js')
         script(src='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js')
-        //- script(src='public/assets/js/slick.min.js')
-        //- script(src='public/assets/js/slick-lightbox.js')
-        script(src="js/slick.min.js")
-        script(src="js/slick-lightbox.min.js")
-
-        //- <script src="ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-        //- validate js
+        script(src='public/assets/js/slick.min.js')
+        script(src='public/assets/js/slick-lightbox.js')
+        // <script src="ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        // validate js
+        script(src='public/assets/js/jquery.validate.min.js')
+        script(src='public/assets/js/additional-methods.min.js')
         script(src='public/js/home.js')
         script(src='public/js/home-custom.js')
         script(src='public/js/contact.js')
         script(src='public/js/quote_and_promotion.js')
         script(src='public/js/custom.js')
         script(src='public/js/product_detail.js')
-    //- script(src='js/aos.js')
-    //- script(src="js/jquery-3.7.1.min.js")
-    //- script(src="js/bootstrap.bundle.min.js")
-    //- script(src="js/js.js")
-    block js
-    //- script(src="js/bootstrap.min.js")Save Typing
+
+        block js
+            //- script(src="js/bootstrap.min.js")Save Typing
+            block js
+            +js_home_product_list()
+            +js_product_detail()
+            script.
+                $(document).ready(function(){
+                    numSlick = 0;
+                    sliderList(".products-list-row1", 5, 4, 1);
+                    sliderList(".products-list-row2", 5, 4, 2);
+                    galleryImages(".slider-gallery-row2", 6, 5, 2);
+                    galleryImages(".slider-gallery-column6", 6, 5, 1);
+                    galleryImages(".slider-gallery-column8", 8, 5, 1);
+                    galleryImages(".slider-gallery-column4", 4, 4, 1);
+                    function galleryImages($sliderName, $toshow, $toshow_1024, $rows) {
+                        $($sliderName).each( function() {
+                            numSlick++;
+                            $(this).addClass( 'slider-' + numSlick ).slick({
+                                slidesToShow: $toshow,
+                                rows: $rows,
+                                slidesToScroll: 1,
+                                arrow: true,
+                                autoplay: true,
+                                pauseOnHover: true,
+                                //- rtl: true,
+                                responsive: [
+                                {
+                                    breakpoint: 1024,
+                                    settings: {
+                                    slidesToShow: $toshow_1024,
+                                    }
+                                },{
+                                    breakpoint: 991,
+                                    settings: {
+                                    slidesToShow: 4,
+                                    }
+                                },{
+                                    breakpoint: 768,
+                                    settings: {
+                                    slidesToShow: 3,
+                                    }
+                                },{
+                                    breakpoint: 576,
+                                    settings: {
+                                    slidesToShow: 2,
+                                    }
+                                }
+                                ]
+                            });
+                            $(this).addClass( 'slider-' + numSlick ).slickLightbox({
+                                itemSelector: 'a',
+                                //- src: 'img', // lấy ảnh từ <img>
+                                captions: true,
+                                caption: function (el) {
+                                    return $(el).find('.content').html() || '';
+                                },
+                                captionPosition: 'bottom'
+                            });
+                        });
+                    };
+                });

@@ -143,6 +143,7 @@ $(document).ready(function () {
     });
     $('.swiper-container-thumbs').slick({
         slidesToShow: 5,
+        arrows: false,
         asNavFor: '.main-slider',
         focusOnSelect: true,
         autoplay: false,
