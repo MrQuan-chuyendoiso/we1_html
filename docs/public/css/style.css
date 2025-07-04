@@ -674,7 +674,8 @@ a, button, img {
 }
 
 .slick-lightbox-slick-img {
-  max-width: 900px;
+  max-width: 80dvw!important;
+  max-height: 80dvh!important;
 }
 
 .item_frame_header.p-0 {
