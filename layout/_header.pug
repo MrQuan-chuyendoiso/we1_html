@@ -567,11 +567,11 @@ mixin header(page)
 						.header-logo.d-lg-none.py-1
 							a(href='https://vip2.io.vn')
 								img(src='https://vip2.io.vn/admin/public/images/footer/17342295786428x160.png' alt='logo' style='width: 150px !important; max-height: unset;')
-						.header-card.d-lg-none.d-flex.gap-3
+						.header-card.d-lg-none.d-flex.gap-1
 							a.d-flex(href='https://vip2.io.vn/gio-hang')
 								.icon
 									i.fa.fa-shopping-cart.text-dark.fs-5(aria-hidden='true')
-							//- button.btn.btn-search.p-0.border-0(type='button')
+							button.btn.btn-search.p-0.border-0(type='button')
 								i.fa.fa-search.text-dark.fs-5(aria-hidden='true')
 						.header-search.col-7.d-lg-none.w-100.mb-2.border
 							form.form-inline(action='https://vip2.io.vn/tat-ca-san-pham' method='GET')
@@ -1009,10 +1009,10 @@ mixin header(page)
 		#offcanvasExample3.offcanvas.offcanvas-start.offcanvasExample3(data-bs-scroll='false' data-bs-backdrop='true' tabindex='-1' aria-labelledby='offcanvasExampleLabel')
 			.offcanvas-header.pb-1.position-relative.px-1.pt-2.mx-3
 				h5#offcanvasExampleLabel.offcanvas-title.mx-auto
-					img.w-100(width='200' src='https://we1.io.vn/admin/public/images/header/174679621770428x160.png' alt='logo')
+					img.w-100(width='250' src='https://we1.io.vn/admin/public/images/header/174679621770428x160.png' alt='logo')
 				button#btn-close-sidebar.btn-close.position-absolute.z-1.end-0(type='button' data-bs-dismiss='offcanvas' aria-label='Close')
 					i.icon-close
-			.px-3.d-flex.py-2.gap-2
+			.px-3.py-2
 				.header-search.d-block.w-100
 					form.form-inline(action='tat-ca-san-pham' method='GET')
 						.input-group.flex-nowrap
@@ -1020,15 +1020,7 @@ mixin header(page)
 							.input-group-append.bg-light
 								button.btn(type='submit' aria-label='Tìm kiếm Sản phẩm & Dịch vụ ?')
 									i.fa.fa-search(aria-hidden='true')
-				.btn-language.dropdown-language
-					p.d-flex.align-items-center.justify-content-center.gap-2.mb-0
-						span Ngôn ngữ
-						i.fa-solid.fa-caret-down
-					ul.dropdown-menu
-						li
-							a.dropdown-item(href='#') Tiếng việt
-						li
-							a.dropdown-item(href='#') Tiếng anh
+				
 			.offcanvas-body.pt-1.px-3.d-flex.justify-content-between.flex-column
 				ul.border-top
 					li.menu-item.d-flex.align-items-center.py-2.has-sub-menu.toggle-menu-list
@@ -1273,13 +1265,24 @@ mixin header(page)
 							p.mb-1
 								b HCM: 
 								| Lầu 6, 182 Lê Đại Hành, P.15, Quận 11, Tp.HCM
-					.py-2.border-top.text-dark
-						p.mb-2.position-relative.fw-bold
+					
+					.border-top.text-dark
+						p.mt-2.position-relative.fw-bold
 							| Phương thức thanh toán
-						.footer-column-1
-							.payment-accept.gap-2.mx-0
-								img.first.lazy.loaded(width='40px' src='https://file.hstatic.net/200000823693/file/payment-1_2c94a9495fa04f4ab8b11be786441266.png' alt='payment-1')
-								img.lazy.loaded(width='40px' src='https://file.hstatic.net/200000823693/file/payment-2_bdbf0ab7d5d24e138faa24e497b38a9b.png' alt='payment-2')
-								img.lazy.loaded(width='40px' src='https://file.hstatic.net/200000823693/file/payment-3_3a8dba86bfd74a85be3db17837d4c9c6.png' alt='payment-3')
-								img.lazy.loaded(width='40px' src='https://file.hstatic.net/200000823693/file/payment-4_f03f301a303c448db851de3e9e91ade2.png' alt='payment-4')
+						.d-flex.py-2.gap-4
+							.footer-column-1
+								.payment-accept.gap-1.mx-0
+									img.first.lazy.loaded(width='47px' src='https://file.hstatic.net/200000823693/file/payment-1_2c94a9495fa04f4ab8b11be786441266.png' alt='payment-1')
+									img.lazy.loaded(width='47px' src='https://file.hstatic.net/200000823693/file/payment-2_bdbf0ab7d5d24e138faa24e497b38a9b.png' alt='payment-2')
+									img.lazy.loaded(width='47px' src='https://file.hstatic.net/200000823693/file/payment-3_3a8dba86bfd74a85be3db17837d4c9c6.png' alt='payment-3')
+									img.lazy.loaded(width='47px' src='https://file.hstatic.net/200000823693/file/payment-4_f03f301a303c448db851de3e9e91ade2.png' alt='payment-4')
+							.btn-language.dropdown-language
+								p.d-flex.align-items-center.justify-content-center.gap-2.mb-0
+									span Ngôn ngữ
+									i.fa-solid.fa-caret-down
+								ul.dropdown-menu
+									li
+										a.dropdown-item(href='#') Tiếng việt
+									li
+										a.dropdown-item(href='#') Tiếng anh
 

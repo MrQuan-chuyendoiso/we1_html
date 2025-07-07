@@ -494,14 +494,14 @@ $(document).ready(function(){
 		document.cookie = key + '=' + value + ';expires=' + expires.toUTCString() + ';domain=.' + domain;
 	}
 
-	function googleTranslateElementInit() {
-		const currentDomain = getCurrentDomain();
-		setCookie('googtrans', `/vi/`, 1, currentDomain);
-		new google.translate.TranslateElement({
-			pageLanguage: 'vi',
-			layout: google.translate.TranslateElement.InlineLayout.VERTICAL
-		}, 'google_translate_element');
-	}
+	// function googleTranslateElementInit() {
+	// 	const currentDomain = getCurrentDomain();
+	// 	setCookie('googtrans', `/vi/`, 1, currentDomain);
+	// 	new google.translate.TranslateElement({
+	// 		pageLanguage: 'vi',
+	// 		layout: google.translate.TranslateElement.InlineLayout.VERTICAL
+	// 	}, 'google_translate_element');
+	// }
 
 	function xemThemMenuDoc(e){
 		if ($(".li-xem-them").is(":visible")) {
