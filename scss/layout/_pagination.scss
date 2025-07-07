@@ -1,0 +1,27 @@
+.pagination {
+    .page-numbers {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+        @include min_md {
+            gap: 8px;
+        }
+        li {
+            span, a {
+                width: 24px;
+                height: 24px;
+                border-radius: 4px;
+                display: block;
+                text-align: center;
+                line-height: 24px;
+                &:hover {background-color: #eee;}
+                &.current {
+                    background-color: #000;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

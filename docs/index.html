@@ -440,9 +440,7 @@
               -->
               <div class="header-logo d-lg-none py-1"><a href="https://vip2.io.vn"><img src="https://vip2.io.vn/admin/public/images/footer/17342295786428x160.png" alt="logo" style="width: 150px !important; max-height: unset;"/></a></div>
               <div class="header-card d-lg-none d-flex gap-3"><a class="d-flex" href="https://vip2.io.vn/gio-hang">
-                  <div class="icon"><i class="fa fa-shopping-cart text-dark fs-5" aria-hidden="true"></i></div></a>
-                <button class="btn btn-search p-0 border-0" type="button"><i class="fa fa-search text-dark fs-5" aria-hidden="true"></i></button>
-              </div>
+                  <div class="icon"><i class="fa fa-shopping-cart text-dark fs-5" aria-hidden="true"></i></div></a></div>
               <div class="header-search col-7 d-lg-none w-100 mb-2 border">
                 <form class="form-inline" action="https://vip2.io.vn/tat-ca-san-pham" method="GET">
                   <div class="input-group d-flex">
@@ -460,7 +458,7 @@
       <div class="offcanvas offcanvas-start" id="offcanvasExample" data-bs-scroll="false" data-bs-backdrop="true" style="background: var(--mainColor);" tabindex="-1" aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header pb-1 mb-2 position-relative mx-3">
           <h5 class="offcanvas-title mx-auto" id="offcanvasExampleLabel"><img class="w-100" width="200" src="https://we1.io.vn/admin/public/images/header/174679621770428x160.png" alt="logo"/></h5>
-          <button class="btn-close position-absolute z-1 end-0" id="btn-close-sidebar" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <button class="btn-close position-absolute z-1 end-0" id="btn-close-sidebar" type="button" data-bs-dismiss="offcanvas" aria-label="Close"><i class="icon-close"></i></button>
         </div>
         <div class="px-3">
           <div class="header-search d-block w-100">
@@ -636,7 +634,7 @@
       </div>
       <div class="offcanvas offcanvas-start offcanvasExample2" id="offcanvasExample2" data-bs-scroll="false" data-bs-backdrop="true" tabindex="-1" aria-labelledby="offcanvasExample2Label">
         <!-- <div class="offcanvas offcanvas-start offcanvasExample2 show" tabindex="-1" id="offcanvasExample2" aria-labelledby="offcanvasExample2Label" style="visibility: visible;" aria-modal="true" role="dialog">-->
-        <button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button><a class="btn-see-all">Xem tất cả</a>
+        <button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"><i class="icon-close"></i></button><a class="btn-see-all">Xem tất cả</a>
         <div class="offcanvas-body d-flex">
           <ul class="nav nav-tabs d-flex flex-column" role="tablist">
             <li class="nav-item"><a class="position-relative d-flex flex-column justify-content-center align-items-center text-center p-2" href="/pages/flash-sale" title="Flash sale"><img class="lazy d-block pb-2 m-auto loaded" width="40px" src="https://file.hstatic.net/200000865177/file/flash-sale_4044cd2cd4d94bfa8ae21f1f7011afec.png" data-src="https://file.hstatic.net/200000865177/file/flash-sale_4044cd2cd4d94bfa8ae21f1f7011afec.png" onerror="this.src='https://file.hstatic.net/200000865177/file/favicon_f440e3bdba814cfa965706de2409feae.png'" alt="icon-/pages/flash-sale"/><span class="text">Flash sale</span></a></li>
@@ -737,11 +735,11 @@
         </div>
       </div>
       <div class="offcanvas offcanvas-start offcanvasExample3" id="offcanvasExample3" data-bs-scroll="false" data-bs-backdrop="true" tabindex="-1" aria-labelledby="offcanvasExampleLabel">
-        <div class="offcanvas-header pb-1 mb-2 position-relative px-1 pt-2 mx-3">
+        <div class="offcanvas-header pb-1 position-relative px-1 pt-2 mx-3">
           <h5 class="offcanvas-title mx-auto" id="offcanvasExampleLabel"><img class="w-100" width="200" src="https://we1.io.vn/admin/public/images/header/174679621770428x160.png" alt="logo"/></h5>
-          <button class="btn-close position-absolute z-1 end-0" id="btn-close-sidebar" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <button class="btn-close position-absolute z-1 end-0" id="btn-close-sidebar" type="button" data-bs-dismiss="offcanvas" aria-label="Close"><i class="icon-close"></i></button>
         </div>
-        <div class="px-3">
+        <div class="px-3 d-flex py-2 gap-2">
           <div class="header-search d-block w-100">
             <form class="form-inline" action="tat-ca-san-pham" method="GET">
               <div class="input-group flex-nowrap">
@@ -752,8 +750,15 @@
               </div>
             </form>
           </div>
+          <div class="btn-language dropdown-language">
+            <p class="d-flex align-items-center justify-content-center gap-2 mb-0"><span>Ngôn ngữ</span><i class="fa-solid fa-caret-down"></i></p>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Tiếng việt</a></li>
+              <li><a class="dropdown-item" href="#">Tiếng anh</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="offcanvas-body pt-2 mt-2 px-3 d-flex justify-content-between flex-column">
+        <div class="offcanvas-body pt-1 px-3 d-flex justify-content-between flex-column">
           <ul class="border-top">
             <li class="menu-item d-flex align-items-center py-2 has-sub-menu toggle-menu-list"><a class="menu-link py-1 d-flex align-items-center gap-1 text-dark text-uppercase" href="#"><img class="item-img" src="https://file.hstatic.net/200000865177/file/cam-nang_7b1c2041fc624dbbb73509f39a24a55f.png" alt="alt"/>                                Ấn phẩm văn phòng</a><i class="fa-solid fa-caret-down text-dark px-1"></i>
               <ul class="sub-menu sub-menu-list">
@@ -882,23 +887,16 @@
               </ul>
             </li>
           </ul>
-          <div class="foo_mid border-top text-dark">
-            <div class="d-flex py-2 gap-4"><a class="text-dark d-flex gap-1 align-items-center" href="#"><img src="./admin/public/images/header/Hotline.png" alt="alt" width="60"/>
-                <div class="d-flex flex-column fw-bold"><span class="text-red">Hotel & Zalo</span><span class="text-main fs-5">0909090909</span></div></a></div>
-            <div class="border-top d-flex py-2 gap-4"><a class="text-main d-flex gap-1 align-items-center" href="#"><img src="./admin/public/images/header/login.png" alt="alt" width="20" height="20"/><span>Đăng nhập</span></a><a class="text-main d-flex gap-1 align-items-center" href="https://vip2.io.vn/dang-ky-tai-khoan"><img src="./admin/public/images/header/register.png" alt="alt" width="20" height="20"/><span>Đăng ký</span></a></div>
-            <div class="py-2 border-top text-dark d-flex gap-3">
-              <p class="position-relative mb-0 fw-bold text-main">Ngôn ngữ</p>
-              <div class="footer-column-1">
-                <div class="payment-accept gap-2 d-flex gap-2 mx-0"><img class="flag lazy loaded" width="35px" src="https://flagcdn.com/fr.svg" alt="France Flag"/><img class="flag lazy loaded" width="35px" src="https://flagcdn.com/vn.svg" alt="Vietnam Flag"/></div>
-              </div>
-            </div>
+          <div class="foo_mid border-top text-dark"><a class="btn-hotline d-flex gap-2 align-items-center" href="#"><img src="./admin/public/images/header/icon-hotline.png" alt="alt" width="36"/>
+              <div class="d-flex flex-column fw-bold"><span class="text-sub">Holine & Zalo</span><span class="fs-5">0909090909</span></div></a>
+            <div class="border-top d-flex py-2 gap-2"><a class="btn-login d-flex gap-2 align-items-center" href="#"><img src="./admin/public/images/header/icon-login.png" alt="alt" width="20" height="20"/><span>Đăng nhập</span></a><a class="btn-login d-flex gap-2 align-items-center" href="https://vip2.io.vn/dang-ky-tai-khoan"><img src="./admin/public/images/header/icon-register.png" alt="alt" width="20" height="20"/><span>Đăng ký</span></a></div>
             <div class="py-2 border-top">
               <p class="mb-2 position-relative fw-bold">Kết nối mạng xã hội</p>
               <div class="d-flex position-relative social mb-1 mx-0 gap-1"><a class="position-relative iso sitdown modal-open d-inline-block facebook mr-1" href="href" target="_blank" title="Facebook"><img class="lazy loaded" src="https://file.hstatic.net/200000785527/file/facebook_ce742afdcdea4026a633915bdfdce6f5.png" alt="facebook" width="32" height="32"/></a><a class="position-relative iso sitdown modal-open d-inline-block twitter mr-1" href="href" target="_blank" title="Twitter"><img class="lazy loaded" src="https://file.hstatic.net/200000785527/file/twitter_b15cb1006ec04c63855aef2dec8fac47.png" alt="twitter" width="32" height="32"/></a><a class="position-relative iso sitdown modal-open d-inline-block instagram mr-1" href="href" target="_blank" title="Instagram+"><img class="lazy loaded" src="https://file.hstatic.net/200000785527/file/instagram_45effdfd0d0e47d986a7c8b1a8e2ab01.png" alt="instagram" width="32" height="32"/></a><a class="position-relative iso sitdown modal-open d-inline-block youtube mr-1" href="href" target="_blank" title="Youtube"><img class="lazy loaded" src="https://file.hstatic.net/200000785527/file/youtube_749d73527fb94f2c8d005d2ffdb1ca10.png" alt="youtube" width="32" height="32"/></a><a class="position-relative iso sitdown modal-open d-inline-block shopee mr-1" href="href" target="_blank" title="Shopee"><img class="lazy loaded" src="https://file.hstatic.net/200000785527/file/shopee_efcb449798c24dd4a4a312f1ad9e3e8d.png" alt="Shopee" width="32" height="32"/></a><a class="position-relative iso sitdown modal-open d-inline-block lazada mr-1" href="href" target="_blank" title="Lazada"><img class="lazy loaded" src="https://file.hstatic.net/200000785527/file/lazada_0080ef48005044af8ba3f720097866f7.jpg" alt="Lazada" width="32" height="32"/></a></div>
             </div>
             <div class="mb-2 border-top">
               <address class="my-2">
-                <h5 class="mb-2">Công ty TNHH công nghệ VPlus Việt Nam</h5>
+                <h5 class="mb-2"><strong>Công ty TNHH công nghệ VPlus Việt Nam</strong></h5>
                 <p class="mb-1"><b>SDT: </b><a class="text-dark" href="tel:1900636099" title="1900.636.099">1900.636.099</a></p>
                 <p class="m-0"><b>Email: </b><a class="text-dark" href="mailto:support@haravan.com" title="support@haravan.com">support@haravan.com</a></p>
                 <p class="mb-1"><b>Hà Nội: </b>Tầng 3, tòa nhà The Artemis, số 03 Lê Trọng Tấn, Khương Mai, Thanh Xuân, Hà Nội</p>
@@ -920,7 +918,7 @@
       <section class="banner-nav">
         <div class="container">
           <div class="row">
-            <div class="col-12 col-md-4 col-lg-3 col-xl-3 p-r-0">
+            <div class="col-12 col-md-4 col-lg-3 col-xl-3 p-r-0 block-only-sp">
               <div class="inner">
                 <div class="sidebar" id="sidebar-category">
                   <h3><i class="fa-solid fa-list margin-right-10"></i>Danh mục sản phẩm</h3>
@@ -972,7 +970,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-8 col-lg-9 p-l-0">
+            <div class="col-12 col-lg-9 p-l-0">
               <div class="inner-right">
                 <div class="header-bottom-2">
                   <div class="container">

@@ -571,7 +571,7 @@ mixin header(page)
 							a.d-flex(href='https://vip2.io.vn/gio-hang')
 								.icon
 									i.fa.fa-shopping-cart.text-dark.fs-5(aria-hidden='true')
-							button.btn.btn-search.p-0.border-0(type='button')
+							//- button.btn.btn-search.p-0.border-0(type='button')
 								i.fa.fa-search.text-dark.fs-5(aria-hidden='true')
 						.header-search.col-7.d-lg-none.w-100.mb-2.border
 							form.form-inline(action='https://vip2.io.vn/tat-ca-san-pham' method='GET')
@@ -585,6 +585,7 @@ mixin header(page)
 				h5#offcanvasExampleLabel.offcanvas-title.mx-auto
 					img.w-100(width='200' src='https://we1.io.vn/admin/public/images/header/174679621770428x160.png' alt='logo')
 				button#btn-close-sidebar.btn-close.position-absolute.z-1.end-0(type='button' data-bs-dismiss='offcanvas' aria-label='Close')
+					i.icon-close
 			.px-3
 				.header-search.d-block.w-100
 					form.form-inline(action='tat-ca-san-pham' method='GET')
@@ -834,6 +835,7 @@ mixin header(page)
 		#offcanvasExample2.offcanvas.offcanvas-start.offcanvasExample2(data-bs-scroll='false' data-bs-backdrop='true' tabindex='-1' aria-labelledby='offcanvasExample2Label')
 			// <div class="offcanvas offcanvas-start offcanvasExample2 show" tabindex="-1" id="offcanvasExample2" aria-labelledby="offcanvasExample2Label" style="visibility: visible;" aria-modal="true" role="dialog">
 			button.btn-close(type='button' data-bs-dismiss='offcanvas' aria-label='Close')
+				i.icon-close
 			a.btn-see-all Xem tất cả
 			.offcanvas-body.d-flex
 				ul.nav.nav-tabs.d-flex.flex-column(role='tablist')
@@ -1005,11 +1007,12 @@ mixin header(page)
 								a(href='/collections/trang-diem-mat-1' title='Review Mỹ phẩm')
 									| Review Mỹ phẩm
 		#offcanvasExample3.offcanvas.offcanvas-start.offcanvasExample3(data-bs-scroll='false' data-bs-backdrop='true' tabindex='-1' aria-labelledby='offcanvasExampleLabel')
-			.offcanvas-header.pb-1.mb-2.position-relative.px-1.pt-2.mx-3
+			.offcanvas-header.pb-1.position-relative.px-1.pt-2.mx-3
 				h5#offcanvasExampleLabel.offcanvas-title.mx-auto
 					img.w-100(width='200' src='https://we1.io.vn/admin/public/images/header/174679621770428x160.png' alt='logo')
 				button#btn-close-sidebar.btn-close.position-absolute.z-1.end-0(type='button' data-bs-dismiss='offcanvas' aria-label='Close')
-			.px-3
+					i.icon-close
+			.px-3.d-flex.py-2.gap-2
 				.header-search.d-block.w-100
 					form.form-inline(action='tat-ca-san-pham' method='GET')
 						.input-group.flex-nowrap
@@ -1017,7 +1020,16 @@ mixin header(page)
 							.input-group-append.bg-light
 								button.btn(type='submit' aria-label='Tìm kiếm Sản phẩm & Dịch vụ ?')
 									i.fa.fa-search(aria-hidden='true')
-			.offcanvas-body.pt-2.mt-2.px-3.d-flex.justify-content-between.flex-column
+				.btn-language.dropdown-language
+					p.d-flex.align-items-center.justify-content-center.gap-2.mb-0
+						span Ngôn ngữ
+						i.fa-solid.fa-caret-down
+					ul.dropdown-menu
+						li
+							a.dropdown-item(href='#') Tiếng việt
+						li
+							a.dropdown-item(href='#') Tiếng anh
+			.offcanvas-body.pt-1.px-3.d-flex.justify-content-between.flex-column
 				ul.border-top
 					li.menu-item.d-flex.align-items-center.py-2.has-sub-menu.toggle-menu-list
 						a.menu-link.py-1.d-flex.align-items-center.gap-1.text-dark.text-uppercase(href='#')
@@ -1196,23 +1208,33 @@ mixin header(page)
 											li.px-3.py-2.text-dark
 												| - Bìa đựng hồ sơ cao cấp
 				.foo_mid.border-top.text-dark
-					.d-flex.py-2.gap-4
-						a.text-dark.d-flex.gap-1.align-items-center(href='#')
-							img(src='./admin/public/images/header/Hotline.png' alt width='60')
-							.d-flex.flex-column.fw-bold
-								span.text-red Hotel & Zalo
-								span.text-main.fs-5 0909090909
-					.border-top.d-flex.py-2.gap-4
-						a.text-main.d-flex.gap-1.align-items-center(href='#')
-							img(src='./admin/public/images/header/login.png' alt width='20' height='20')
+					//- .d-flex.py-2.gap-2
+					a.btn-hotline.d-flex.gap-2.align-items-center(href='#')
+						img(src='./admin/public/images/header/icon-hotline.png' alt width='36')
+						.d-flex.flex-column.fw-bold
+							span.text-sub Holine & Zalo
+							span.fs-5 0909090909
+						
+					.border-top.d-flex.py-2.gap-2
+						a.btn-login.d-flex.gap-2.align-items-center(href='#')
+							img(src='./admin/public/images/header/icon-login.png' alt width='20' height='20')
 							span Đăng nhập
-						a.text-main.d-flex.gap-1.align-items-center(href='https://vip2.io.vn/dang-ky-tai-khoan')
-							img(src='./admin/public/images/header/register.png' alt width='20' height='20')
+						a.btn-login.d-flex.gap-2.align-items-center(href='https://vip2.io.vn/dang-ky-tai-khoan')
+							img(src='./admin/public/images/header/icon-register.png' alt width='20' height='20')
 							span Đăng ký
-					.py-2.border-top.text-dark.d-flex.gap-3
-						p.position-relative.mb-0.fw-bold.text-main
+					//- .py-2.border-top.text-dark.d-flex.gap-3
+						.dropdown-language
+							p.d-flex.align-items-center.justify-content-end.gap-1.mb-0
+								span Ngôn ngữ
+								i.fa-solid.fa-caret-down
+							ul.dropdown-menu
+								li
+									a.dropdown-item(href='#') Tiếng việt
+								li
+									a.dropdown-item(href='#') Tiếng anh
+						//- p.position-relative.mb-0.fw-bold.text-main
 							| Ngôn ngữ
-						.footer-column-1
+						//- .footer-column-1
 							.payment-accept.gap-2.d-flex.gap-2.mx-0
 								img.flag.lazy.loaded(width='35px' src='https://flagcdn.com/fr.svg' alt='France Flag')
 								img.flag.lazy.loaded(width='35px' src='https://flagcdn.com/vn.svg' alt='Vietnam Flag')
@@ -1235,7 +1257,7 @@ mixin header(page)
 					.mb-2.border-top
 						address.my-2
 							h5.mb-2
-								| Công ty TNHH công nghệ VPlus Việt Nam
+								strong Công ty TNHH công nghệ VPlus Việt Nam
 							p.mb-1
 								b SDT: 
 								a.text-dark(href='tel:1900636099' title='1900.636.099') 1900.636.099
