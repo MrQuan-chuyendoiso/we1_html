@@ -2142,7 +2142,8 @@ ul {
 .post-item:hover {
   color: #333;
   background-color: rgba(2, 130, 165, 0.05);
-  border-color: var(--primary);
+  -webkit-box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 .post-item:hover .images .icon {
   opacity: 1;
