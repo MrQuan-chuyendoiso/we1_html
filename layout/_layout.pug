@@ -36,6 +36,17 @@ html(lang="en")
         block css 
         link(rel="stylesheet", href="public/css/style.css")
     block vars
+    mixin block-white(ttl)
+        section(style='background-color: #e6e6e6;' class="py-32")
+            .container
+                .bg-white.rounded-8.pb-12.box-shadow(class='sm:px-16')
+                    .item_frame_header.gap-x-24.flex.gap-y-8px.p-0(class="max-sm:flex-col sm:align-items-center")
+                        a.item_frame_title.header-boder-color.flex-shrink-0(href='/san-pham')
+                            //- span.d-flex.align-items-center.me-1
+                            h2.text-nowrap(style='color: #000000 !important;')
+                                |#{ttl}
+                    if block
+                        block
     body(class=`${bodyClass}`)
         +header(page)
         main 
@@ -75,63 +86,3 @@ html(lang="en")
         script(src='public/js/product_detail.js')
 
         block js
-            //- script(src="js/bootstrap.min.js")Save Typing
-            block js
-            +js_home_product_list()
-            +js_product_detail()
-            script.
-                $(document).ready(function(){
-                    numSlick = 0;
-                    sliderList(".products-list-row1", 5, 4, 1);
-                    sliderList(".products-list-row2", 5, 4, 2);
-                    galleryImages(".slider-gallery-row2", 6, 5, 2);
-                    galleryImages(".slider-gallery-column6", 6, 5, 1);
-                    galleryImages(".slider-gallery-column8", 8, 5, 1);
-                    galleryImages(".slider-gallery-column4", 4, 4, 1);
-                    function galleryImages($sliderName, $toshow, $toshow_1024, $rows) {
-                        $($sliderName).each( function() {
-                            numSlick++;
-                            $(this).addClass( 'slider-' + numSlick ).slick({
-                                slidesToShow: $toshow,
-                                rows: $rows,
-                                slidesToScroll: 1,
-                                arrow: true,
-                                autoplay: true,
-                                pauseOnHover: true,
-                                //- rtl: true,
-                                responsive: [
-                                {
-                                    breakpoint: 1024,
-                                    settings: {
-                                    slidesToShow: $toshow_1024,
-                                    }
-                                },{
-                                    breakpoint: 991,
-                                    settings: {
-                                    slidesToShow: 4,
-                                    }
-                                },{
-                                    breakpoint: 768,
-                                    settings: {
-                                    slidesToShow: 3,
-                                    }
-                                },{
-                                    breakpoint: 576,
-                                    settings: {
-                                    slidesToShow: 2,
-                                    }
-                                }
-                                ]
-                            });
-                            $(this).addClass( 'slider-' + numSlick ).slickLightbox({
-                                itemSelector: 'a',
-                                //- src: 'img', // lấy ảnh từ <img>
-                                captions: true,
-                                caption: function (el) {
-                                    return $(el).find('.content').html() || '';
-                                },
-                                captionPosition: 'bottom'
-                            });
-                        });
-                    };
-                });

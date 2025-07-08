@@ -3920,6 +3920,7 @@ block body
             .mt-24
             .bg-white.rounded-8.pb-12.box-shadow(class='sm:px-16')
                 +home_product_list(true,'SẢN PHẨM','products-list-row2')
+    
     //- +home_partner()
     section(class="py-36 bg-white")
         mixin item-gellary(clName, text)
@@ -3950,3 +3951,82 @@ block body
             +item-gellary('slider-gallery-column4','Rows 1 - Column 4')
             .view_more.text-center.mt-24.position-relative
                 a.rounded-pill.py-2.px-4.btn-outline-primary(href='gallery-detail.html' title='Xem thêm') Xem thêm
+    // Tin tức
+    +block-white("TƯ VẤN KIẾN THỨC")
+        .slick-news.slick-aqual 
+            each item in ['ĐÂY LÀ CHỮ TITLE IN HOA','Đây là title dài Đây là title dài Đây là title dài Đây là title dài Đây là title dài Đây là title dài Đây là title dài','Test 1','Test 2','Test 3']
+                div
+                    a(href="#").post-item.block.bg-gray.rounded-8.overflow-hidden
+                        .images
+                            .imgDrop.ratio-4-3.has-backdrop 
+                                img(src="https://vip2.io.vn/admin/public/images/homeSetting/1734232973100/MỘT SỐ HÌNH ẢNH THỢ THI CÔNG 2.jpg", alt="")
+                            span.icon.w-32.h-32.flex.items-center.justify-center.bg-primary.text-white 
+                                i.fa-solid.fa-arrow-right
+                        .post-text.p-12 
+                            h4.post-title.text-16.font-bold= item
+                            .post-des.trim.trim-2.text-14 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form
+
+block js
+    //- script(src="js/bootstrap.min.js")Save Typing
+    +js_home_product_list()
+    +js_product_detail()
+    script.
+        $(document).ready(function(){
+            numSlick = 0;
+            sliderList(".products-list-row1", 5, 4, 1);
+            sliderList(".products-list-row2", 5, 4, 2);
+            sliderList(".slick-news ", 4, 4, 1);
+
+            galleryImages(".slider-gallery-row2", 6, 5, 2);
+            galleryImages(".slider-gallery-column6", 6, 5, 1);
+            galleryImages(".slider-gallery-column8", 8, 5, 1);
+            galleryImages(".slider-gallery-column4", 4, 4, 1);
+            function galleryImages($sliderName, $toshow, $toshow_1024, $rows) {
+                $($sliderName).each( function() {
+                    numSlick++;
+                    $(this).addClass( 'slider-' + numSlick ).slick({
+                        slidesToShow: $toshow,
+                        rows: $rows,
+                        slidesToScroll: 1,
+                        arrow: true,
+                        autoplay: true,
+                        pauseOnHover: true,
+                        //- rtl: true,
+                        responsive: [
+                        {
+                            breakpoint: 1024,
+                            settings: {
+                            slidesToShow: $toshow_1024,
+                            }
+                        },{
+                            breakpoint: 991,
+                            settings: {
+                            slidesToShow: 4,
+                            }
+                        },{
+                            breakpoint: 768,
+                            settings: {
+                            slidesToShow: 3,
+                            }
+                        },{
+                            breakpoint: 576,
+                            settings: {
+                            slidesToShow: 2,
+                            }
+                        }
+                        ]
+                    });
+                    $(this).addClass( 'slider-' + numSlick ).slickLightbox({
+                        itemSelector: 'a',
+                        //- src: 'img', // lấy ảnh từ <img>
+                        captions: true,
+                        caption: function (el) {
+                            return $(el).find('.content').html() || '';
+                        },
+                        captionPosition: 'bottom'
+                    });
+                });
+            };
+        });
+
+            

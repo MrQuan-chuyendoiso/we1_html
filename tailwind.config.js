@@ -2,15 +2,6 @@ module.exports = {
  content: [
     './docs/**/*.{html,js}'
   ],
-    safelist: [
-    'justify-center',
-    'justify-start',
-    'justify-end',
-    'justify-between',
-    'flex',
-    'p-4',
-    'text-white'
-  ],
   plugins: [require('@tailwindcss/typography')],
   theme: {
     extend: {
@@ -65,7 +56,7 @@ module.exports = {
         'primary': '#0282a5!important',
         'primary2': '#002F4D!important',
         'second': '#EC0505',
-        'gray':'#eee',
+        'gray':'#e6e6e6',
         'blue':'#005EAA',
         'orange':'#ef8528',
         'gray2': '#f3f4f6'
