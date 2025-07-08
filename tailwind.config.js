@@ -1,11 +1,12 @@
 module.exports = {
  content: [
-    './docs/public/**/*.{html,js}',
+    './docs/**/*.{html,js}'
   ],
     safelist: [
     'justify-center',
     'justify-start',
     'justify-end',
+    'justify-between',
     'flex',
     'p-4',
     'text-white'

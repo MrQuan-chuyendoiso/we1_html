@@ -8,12 +8,12 @@ block vars
     - var page = ''
 block body 
     //- +product_detail()
-    .container-fluid.p-0.banner-main
+    //- .container-fluid.p-0.banner-main
         .swiper-initialized
             .swiper-wrapper
     .container.margin-top-20.margin-bottom-10
         .row
-            .col-3.sidebar.d-none.d-lg-block
+            .col-3.sidebar.d-none.d-lg-block.block-only-sp
                 //- .background-sidebar
                 a.shiny-cta.style-full.w-full(href='#')
                     i.fa-solid.fa-headset
@@ -28,7 +28,7 @@ block body
                         h5.title-sidebar DANH MỤC SẢN PHẨM
                         ul.list-group.list-group-flush.list-group-product.more-content
                             li.list-group-item
-                                .d-flex.justify-content-between.align-items-center
+                                .d-flex.justify-content-between
                                     a(href='/dong-ho-thoi-trang')
                                         span.title.level-1 ĐỒNG HỒ THỜI TRANG
                                     i.fa-solid.fa-angle-down.nav-toggle
@@ -67,7 +67,7 @@ block body
                                         a.d-flex.align-items-center.justify-content-between.flex-1(href='/dong-ho-thoi-trang/dong-ho-co')
                                             span.title.level-2 Đồng Hồ Cơ
                             li.list-group-item
-                                .d-flex.justify-content-between.align-items-center
+                                .d-flex.justify-content-between
                                     a(href='/an-pham-tem-nhan')
                                         span.title.level-1 ẤN PHẨM TEM NHÃN
                                     i.fa-solid.fa-angle-down.nav-toggle
@@ -82,13 +82,13 @@ block body
                                         a.d-flex.align-items-center.justify-content-between.flex-1(href='/an-pham-tem-nhan/tem-quang-cao')
                                             span.title.level-2 Tem quảng cáo
                             li.list-group-item
-                                .d-flex.justify-content-between.align-items-center
+                                .d-flex.justify-content-between
                                     a(href='/an-pham-f-b-cap-1-')
                                         span.title.level-1 ẤN PHẨM F&B (CẤP 1)
                                     i.fa-solid.fa-angle-down.nav-toggle
                                 ul.list-group-flush.collapse.navbar-collapse.toggleMenu
                                     li.list-group-item
-                                        .d-flex.justify-content-between.align-items-center
+                                        .d-flex.justify-content-between
                                             a(href='/')
                                                 span.title.level-2 Danh thiếp - Namecards (Cấp 2)
                                             i.fa-solid.fa-angle-down.nav-toggle
@@ -103,7 +103,7 @@ block body
                                                 a.d-flex.align-items-center.justify-content-between.flex-1(href='/an-pham-f-b-cap-1-/danh-thiep-namecards-cap-2-/danh-thiep-gap-doi-cap-3-')
                                                     span.title.level-3 Danh Thiếp Gấp Đôi (Cấp 3)
                                     li.list-group-item
-                                        .d-flex.justify-content-between.align-items-center
+                                        .d-flex.justify-content-between
                                             a(href='/')
                                                 span.title.level-2 Túi giấy - Paper bags (Cấp 2)
                                             i.fa-solid.fa-angle-down.nav-toggle
@@ -121,7 +121,7 @@ block body
                                                 a.d-flex.align-items-center.justify-content-between.flex-1(href='/an-pham-f-b-cap-1-/tui-giay-paper-bags-cap-2-/tui-giay-co-san-cap-3-')
                                                     span.title.level-3 Túi Giấy Có Sẵn (Cấp 3)
                                     li.list-group-item
-                                        .d-flex.justify-content-between.align-items-center
+                                        .d-flex.justify-content-between
                                             a(href='/')
                                                 span.title.level-2 Phiếu Quà Tặng - Gift Vouchers (Cấp 2)
                                             i.fa-solid.fa-angle-down.nav-toggle
@@ -133,7 +133,7 @@ block body
                                                 a.d-flex.align-items-center.justify-content-between.flex-1(href='/an-pham-f-b-cap-1-/phieu-qua-tang-gift-vouchers-cap-2-/phieu-qua-tang-gia-re-in-nhanh-cap-3-')
                                                     span.title.level-3 Phiếu Quà Tặng Giá Rẻ in nhanh (Cấp 3)
                                     li.list-group-item
-                                        .d-flex.justify-content-between.align-items-center
+                                        .d-flex.justify-content-between
                                             a(href='/')
                                                 span.title.level-2 Tờ rơi - Flyers (Cấp 2)
                                             i.fa-solid.fa-angle-down.nav-toggle
@@ -148,13 +148,13 @@ block body
                                                 a.d-flex.align-items-center.justify-content-between.flex-1(href='/an-pham-f-b-cap-1-/to-roi-flyers-cap-2-/to-gap-so-luong-it-in-nhanh-cap-3-')
                                                     span.title.level-3 Tờ gấp số lượng ít in nhanh (Cấp 3)
                             li.list-group-item
-                                .d-flex.justify-content-between.align-items-center
+                                .d-flex.justify-content-between
                                     a(href='/an-pham-van-phong-cap-1-')
                                         span.title.level-1 ẤN PHẨM VĂN PHÒNG (CẤP 1)
                                     i.fa-solid.fa-angle-down.nav-toggle
                                 ul.list-group-flush.collapse.navbar-collapse.toggleMenu
                                     li.list-group-item
-                                        .d-flex.justify-content-between.align-items-center
+                                        .d-flex.justify-content-between
                                             a(href='/')
                                                 span.title.level-2 Danh thiếp Giấy mỹ thuật in nhanh (Cấp 2)
                                             i.fa-solid.fa-angle-down.nav-toggle
@@ -181,7 +181,7 @@ block body
                                         a.d-flex.align-items-center.justify-content-between.flex-1(href='/an-pham-van-phong-cap-1-/bao-thu-envelopes-cap-2-')
                                             span.title.level-2 Bao thư - Envelopes (Cấp 2)
                                     li.list-group-item
-                                        .d-flex.justify-content-between.align-items-center
+                                        .d-flex.justify-content-between
                                             a(href='/')
                                                 span.title.level-2 Áo thun đồng phục (Cấp 2)
                                             i.fa-solid.fa-angle-down.nav-toggle
@@ -199,7 +199,7 @@ block body
                                         a.d-flex.align-items-center.justify-content-between.flex-1(href='/an-pham-van-phong-cap-1-/giay-ghi-chu-cap-2-')
                                             span.title.level-2 Giấy ghi chú (Cấp 2)
                                     li.list-group-item
-                                        .d-flex.justify-content-between.align-items-center
+                                        .d-flex.justify-content-between
                                             a(href='/')
                                                 span.title.level-2 Bìa đựng hồ sơ - Folders (Cấp 2)
                                             i.fa-solid.fa-angle-down.nav-toggle
@@ -217,7 +217,7 @@ block body
                                         a.d-flex.align-items-center.justify-content-between.flex-1(href='/an-pham-van-phong-cap-1-/so-tay-ghi-chu-cap-2-')
                                             span.title.level-2 Sổ tay ghi chú (Cấp 2)
                                     li.list-group-item
-                                        .d-flex.justify-content-between.align-items-center
+                                        .d-flex.justify-content-between
                                             a(href='/')
                                                 span.title.level-2 Bút văn phòng (cấp 2)
                                             i.fa-solid.fa-angle-down.nav-toggle
@@ -295,9 +295,11 @@ block body
                                     p.price Trên 20 Triệu
                         .content-item.value-filter.d-none
                         .content-item
-                            .d-xxl-flex.align-items-center.justify-content-between
-                                p.mb-2.mb-xxl-0 Hiển thị 0–24 của 5 kết quả
-                                .filter.d-flex.flex-wrap.align-items-center.justify-content-lg-end
+                            .flex.flex-wrap.gap-y-24.justify-between.items-center.gap-y-16.text-14
+                                p.mb-0 Hiển thị 0–24 của 
+                                    span.color-primary.font-bold.text-18.mx-1 5
+                                    |  kết quả
+                                .filter.d-flex.flex-wrap.align-items-center.justify-content-lg-end.gap-x-24.font-medium
                                     .form-check.filter-item
                                         input#bestseller.form-check-input(type='radio' name='orderby' value='randum')
                                         label.form-check-label(for='bestseller')
@@ -318,14 +320,79 @@ block body
                     //- .content-item
                         .description
                     .content-item
-                        .row.gap-y-24
+                        .row.gap-y-12(class="sm:gap-y-24")
                             each item in [1,2,3,4,5,6,7,8,9,10,12,12]
-                                +product_item('col-md-3 col-6 ')
+                                .col-md-3.col-6
+                                    +product_item("")
                             
                             
-                    .content-item
+                    .content-item.mt-12
                         .showListPage.d-flex.justify-content-center
+                            .pagination.m-t-20
+                                a(href='#') «
+                                a(href='#') ‹
+                                a.selected(href='#') 1
+                                a(href='#') 2
+                                a(href='#') 3
+                                span ...
+                                a(href='#') 99
+                                a(href='#') 100
+                                a(href='#') ›
+                                a(href='#') »
 
+
+block modal 
+    #consultModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true')
+        .modal-dialog.modal-lg.modal-dialog-centered(role='document')
+            .modal-content
+                .modal-header
+                    h5.modal-title Yêu cầu tư vấn
+                    button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                .modal-body
+                    .container-fluid
+                        .row
+                            .col-12.col-sm-6.margin-bottom-20
+                                img.product-image-img(loading='lazy' width='100%' src alt)
+                                h6.margin-top-20.product-name-html
+                            .col-12.col-sm-6
+                                form#form-contact-modal.contact-form(action='https://we1.io.vn/lien-he/gui' method='post')
+                                    .row
+                                        .contact-error.text-center
+                                    .row
+                                        .col-12
+                                            .form-group
+                                                input#name.form-control.input-style-2(type='text' name='name' value placeholder='Tên của bạn')
+                                                span.alert.alert-error
+                                        .col-12
+                                            .form-group
+                                                input#phone.form-control.input-style-2(type='text' name='phone' value placeholder='Số điện thoại *')
+                                                span.alert.alert-error
+                                        .col-12
+                                            .form-group
+                                                input#email.form-control.input-style-2(type='email' name='email' value placeholder='Email')
+                                                span.alert.alert-error
+                                        .col-12
+                                            .form-group
+                                                input#yeu-cau-subject.form-control.input-style-2(type='text' name='subject' value placeholder='Subject *')
+                                                span.alert.alert-error
+                                        .col-12
+                                            textarea#comment.form-control.input-style-2(name='content' placeholder='Nội dung' cols='30' rows='5')
+                                            .contact-sub-btn.margin-top-20
+                                                input#web.form-control.input-style-2(type='hidden' name='link' value='https://we1.io.vn/dong-ho-thoi-trang/dong-ho-nam' placeholder='Website trang này')
+                                                button#btn-consult.btn.header-background-text-color(type='button' onclick='guiYeuCauTuVan()')
+                                                    b Gửi yêu cầu
+    #consultModalSuccess.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true')
+        .modal-dialog.modal-dialog-centered(role='document')
+            .modal-content
+                .modal-header
+                    .d-flex
+                        .text-center
+                            p Bạn đã gửi yêu cầu thành công, chúng tôi sẽ liên hệ lại sớm nhất.
+                            p Cảm ơn quý khách!
+                        button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close' style='margin-left: 10px')
 
 block js 
     //- +js_product_detail()
+    script(src="public/js/sidebar-accodion-catedory.js")
+    script.
+        

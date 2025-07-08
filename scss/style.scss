@@ -861,7 +861,8 @@ a, button, img {
   background-color: var(--primary);
 }
 
-.slick-slider .product_list {
+.slick-slider .product_list,
+.row>.col-6>.product_list {
   margin-top: 0;
   padding: 0;
 }
@@ -1663,4 +1664,116 @@ main {
         display: flex;
         align-items: center;
     }
+}
+.list-group-flush.collapse {
+    visibility: visible;
+}
+
+
+.title-sidebar {
+    font-weight: 700;
+    border-bottom: 3px solid;
+    border-color: var(--background-color-main);
+    color: var(--background-color-main);
+    padding: 0 0 4px 0;
+    text-transform: uppercase;
+    margin: -12px -12px 0;
+    background-color: var(--primary);
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 8px 8px 0 0;
+}
+.product_list_sidebar .product:hover {
+    border-color: var(--primary);
+}
+.breadcrumb {
+  font-size: 14px;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #ddd;
+  &-item {
+    a {
+      color: #333;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      display: flex;
+      align-items: center;
+      i {
+        width: 24px;
+        height: 24px;
+        font-size: 12px;
+        background-color: #ddd;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &::before {
+          display: block;
+        }
+      }
+      &:hover {
+        color: var(--primary);
+      }
+    }
+    &:last-child {
+      color: #666;
+      font-weight: 400;
+    }
+    &+.breadcrumb-item {
+      display: flex;
+      align-items: center;
+      padding-left: 0;
+      &::before {
+        content:"";
+        width: 6px;
+        padding: 0;
+        height: 6px;
+        transform: rotate(45deg);
+        border: solid #333;
+        border-width: 1px 1px 0 0;
+        margin: 0 8px;
+      }
+    }
+  }
+}
+.pagination  {
+  a, span {
+    font-size: 13px;
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    color: var(--primary)!important;
+    border: 1px solid var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 32px;
+    text-decoration: none;
+    border-radius: 50%;
+    margin: 2px;
+    transition: all 0.2s linear;
+    &.selected {
+      background-color: var(--primary);
+      color: #fff!important;
+    }
+  }
+  span {
+    border: none;
+    margin: 0;
+    width: 28px;
+  }
+}
+.row {
+  @include max_sm {
+    margin-left: -4px;
+    padding-right: -4px;
+  }
+  &>* {
+  @include max_sm {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+}
 }
