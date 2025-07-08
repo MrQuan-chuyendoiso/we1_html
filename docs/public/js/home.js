@@ -513,9 +513,9 @@ $(document).ready(function(){
 		}
 	} 
 
-	window.onload = function() {
-		googleTranslateElementInit();
-	};
+	// window.onload = function() {
+	// 	googleTranslateElementInit();
+	// };
 
     $(document).ready(function() {
 		$('Header .menu ul li .toggle_child').on('click', function () {

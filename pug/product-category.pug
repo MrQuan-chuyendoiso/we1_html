@@ -1,0 +1,331 @@
+extends ../layout/_layout.pug
+include ../component/_home_product_list.pug
+
+block css 
+    link(rel="stylesheet", href="public/css/style-2.css")
+block vars
+    - var bodyClass = ''
+    - var page = ''
+block body 
+    //- +product_detail()
+    .container-fluid.p-0.banner-main
+        .swiper-initialized
+            .swiper-wrapper
+    .container.margin-top-20.margin-bottom-10
+        .row
+            .col-3.sidebar.d-none.d-lg-block
+                //- .background-sidebar
+                a.shiny-cta.style-full.w-full(href='#')
+                    i.fa-solid.fa-headset
+                    span  012345678
+
+                
+                .background-sidebar
+                    .col-12.position-relative
+                        h5.title-sidebar Đồng Hồ Nam
+                .background-sidebar
+                    .col-12.position-relative
+                        h5.title-sidebar DANH MỤC SẢN PHẨM
+                        ul.list-group.list-group-flush.list-group-product.more-content
+                            li.list-group-item
+                                .d-flex.justify-content-between.align-items-center
+                                    a(href='/dong-ho-thoi-trang')
+                                        span.title.level-1 ĐỒNG HỒ THỜI TRANG
+                                    i.fa-solid.fa-angle-down.nav-toggle
+                                ul.list-group-flush.collapse.navbar-collapse.toggleMenu
+                                    li.list-group-item
+                                        a.d-flex.align-items-center.justify-content-between.flex-1(href='/dong-ho-thoi-trang/dong-ho-nam')
+                                            span.title.level-2 Đồng Hồ Nam
+                                    li.list-group-item
+                                        a.d-flex.align-items-center.justify-content-between.flex-1(href='/dong-ho-thoi-trang/dong-ho-nu')
+                                            span.title.level-2 Đồng Hồ Nữ
+                                    li.list-group-item
+                                        a.d-flex.align-items-center.justify-content-between.flex-1(href='/dong-ho-thoi-trang/dong-ho-doi')
+                                            span.title.level-2 Đồng Hồ Đôi
+                                    li.list-group-item
+                                        a.d-flex.align-items-center.justify-content-between.flex-1(href='/dong-ho-thoi-trang/dong-ho-99k')
+                                            span.title.level-2 Đồng Hồ 99K
+                                    li.list-group-item
+                                        a.d-flex.align-items-center.justify-content-between.flex-1(href='/dong-ho-thoi-trang/dong-ho-mau-den')
+                                            span.title.level-2 Đồng Hồ Màu Đen
+                                    li.list-group-item
+                                        a.d-flex.align-items-center.justify-content-between.flex-1(href='/dong-ho-thoi-trang/dong-ho-mau-vang')
+                                            span.title.level-2 Đồng Hồ Màu Vàng
+                                    li.list-group-item
+                                        a.d-flex.align-items-center.justify-content-between.flex-1(href='/dong-ho-thoi-trang/dong-ho-mau-trang')
+                                            span.title.level-2 Đồng Hồ Màu Trắng
+                                    li.list-group-item
+                                        a.d-flex.align-items-center.justify-content-between.flex-1(href='/dong-ho-thoi-trang/dong-ho-day-da')
+                                            span.title.level-2 Đồng Hồ Dây Da
+                                    li.list-group-item
+                                        a.d-flex.align-items-center.justify-content-between.flex-1(href='/dong-ho-thoi-trang/dong-ho-day-demi')
+                                            span.title.level-2 Đồng Hồ Dây Demi
+                                    li.list-group-item
+                                        a.d-flex.align-items-center.justify-content-between.flex-1(href='/dong-ho-thoi-trang/dong-ho-rong-phuong')
+                                            span.title.level-2 Đồng hồ Rồng Phượng
+                                    li.list-group-item
+                                        a.d-flex.align-items-center.justify-content-between.flex-1(href='/dong-ho-thoi-trang/dong-ho-co')
+                                            span.title.level-2 Đồng Hồ Cơ
+                            li.list-group-item
+                                .d-flex.justify-content-between.align-items-center
+                                    a(href='/an-pham-tem-nhan')
+                                        span.title.level-1 ẤN PHẨM TEM NHÃN
+                                    i.fa-solid.fa-angle-down.nav-toggle
+                                ul.list-group-flush.collapse.navbar-collapse.toggleMenu
+                                    li.list-group-item
+                                        a.d-flex.align-items-center.justify-content-between.flex-1(href='/an-pham-tem-nhan/tem-chong-hang-gia')
+                                            span.title.level-2 Tem chống hàng giả
+                                    li.list-group-item
+                                        a.d-flex.align-items-center.justify-content-between.flex-1(href='/an-pham-tem-nhan/tem-logo')
+                                            span.title.level-2 Tem Logo
+                                    li.list-group-item
+                                        a.d-flex.align-items-center.justify-content-between.flex-1(href='/an-pham-tem-nhan/tem-quang-cao')
+                                            span.title.level-2 Tem quảng cáo
+                            li.list-group-item
+                                .d-flex.justify-content-between.align-items-center
+                                    a(href='/an-pham-f-b-cap-1-')
+                                        span.title.level-1 ẤN PHẨM F&B (CẤP 1)
+                                    i.fa-solid.fa-angle-down.nav-toggle
+                                ul.list-group-flush.collapse.navbar-collapse.toggleMenu
+                                    li.list-group-item
+                                        .d-flex.justify-content-between.align-items-center
+                                            a(href='/')
+                                                span.title.level-2 Danh thiếp - Namecards (Cấp 2)
+                                            i.fa-solid.fa-angle-down.nav-toggle
+                                        ul.list-group-flush.collapse.navbar-collapse.toggleMenu
+                                            li.list-group-item
+                                                a.d-flex.align-items-center.justify-content-between.flex-1(href='/an-pham-f-b-cap-1-/danh-thiep-namecards-cap-2-/danh-thiep-giay-cap-3-')
+                                                    span.title.level-3 Danh thiếp Giấy  (Cấp 3)
+                                            li.list-group-item
+                                                a.d-flex.align-items-center.justify-content-between.flex-1(href='/an-pham-f-b-cap-1-/danh-thiep-namecards-cap-2-/danh-thiep-chuan-cap-3-')
+                                                    span.title.level-3 Danh thiếp chuẩn (Cấp 3)
+                                            li.list-group-item
+                                                a.d-flex.align-items-center.justify-content-between.flex-1(href='/an-pham-f-b-cap-1-/danh-thiep-namecards-cap-2-/danh-thiep-gap-doi-cap-3-')
+                                                    span.title.level-3 Danh Thiếp Gấp Đôi (Cấp 3)
+                                    li.list-group-item
+                                        .d-flex.justify-content-between.align-items-center
+                                            a(href='/')
+                                                span.title.level-2 Túi giấy - Paper bags (Cấp 2)
+                                            i.fa-solid.fa-angle-down.nav-toggle
+                                        ul.list-group-flush.collapse.navbar-collapse.toggleMenu
+                                            li.list-group-item
+                                                a.d-flex.align-items-center.justify-content-between.flex-1(href='/an-pham-f-b-cap-1-/tui-giay-paper-bags-cap-2-/tui-giay-kraft-cap-3-')
+                                                    span.title.level-3 Túi giấy kraft (Cấp 3)
+                                            li.list-group-item
+                                                a.d-flex.align-items-center.justify-content-between.flex-1(href='/an-pham-f-b-cap-1-/tui-giay-paper-bags-cap-2-/tui-giay-chuan-cap-3-')
+                                                    span.title.level-3 Túi giấy chuẩn (Cấp 3)
+                                            li.list-group-item
+                                                a.d-flex.align-items-center.justify-content-between.flex-1(href='/an-pham-f-b-cap-1-/tui-giay-paper-bags-cap-2-/tui-giay-quai-hot-xoai-cap-3-')
+                                                    span.title.level-3 Túi giấy quai hột xoài (Cấp 3)
+                                            li.list-group-item
+                                                a.d-flex.align-items-center.justify-content-between.flex-1(href='/an-pham-f-b-cap-1-/tui-giay-paper-bags-cap-2-/tui-giay-co-san-cap-3-')
+                                                    span.title.level-3 Túi Giấy Có Sẵn (Cấp 3)
+                                    li.list-group-item
+                                        .d-flex.justify-content-between.align-items-center
+                                            a(href='/')
+                                                span.title.level-2 Phiếu Quà Tặng - Gift Vouchers (Cấp 2)
+                                            i.fa-solid.fa-angle-down.nav-toggle
+                                        ul.list-group-flush.collapse.navbar-collapse.toggleMenu
+                                            li.list-group-item
+                                                a.d-flex.align-items-center.justify-content-between.flex-1(href='/an-pham-f-b-cap-1-/phieu-qua-tang-gift-vouchers-cap-2-/the-tich-diem-in-nhanh-cap-3-')
+                                                    span.title.level-3 Thẻ Tích Điểm in nhanh (Cấp 3)
+                                            li.list-group-item
+                                                a.d-flex.align-items-center.justify-content-between.flex-1(href='/an-pham-f-b-cap-1-/phieu-qua-tang-gift-vouchers-cap-2-/phieu-qua-tang-gia-re-in-nhanh-cap-3-')
+                                                    span.title.level-3 Phiếu Quà Tặng Giá Rẻ in nhanh (Cấp 3)
+                                    li.list-group-item
+                                        .d-flex.justify-content-between.align-items-center
+                                            a(href='/')
+                                                span.title.level-2 Tờ rơi - Flyers (Cấp 2)
+                                            i.fa-solid.fa-angle-down.nav-toggle
+                                        ul.list-group-flush.collapse.navbar-collapse.toggleMenu
+                                            li.list-group-item
+                                                a.d-flex.align-items-center.justify-content-between.flex-1(href='/an-pham-f-b-cap-1-/to-roi-flyers-cap-2-/to-roi-so-luong-it-in-nhanh-cap-3-')
+                                                    span.title.level-3 Tờ rơi số lượng ít in nhanh (Cấp 3)
+                                            li.list-group-item
+                                                a.d-flex.align-items-center.justify-content-between.flex-1(href='/an-pham-f-b-cap-1-/to-roi-flyers-cap-2-/to-roi-cao-cap-in-nhanh-cap-3-')
+                                                    span.title.level-3 Tờ rơi cao cấp in nhanh (Cấp 3)
+                                            li.list-group-item
+                                                a.d-flex.align-items-center.justify-content-between.flex-1(href='/an-pham-f-b-cap-1-/to-roi-flyers-cap-2-/to-gap-so-luong-it-in-nhanh-cap-3-')
+                                                    span.title.level-3 Tờ gấp số lượng ít in nhanh (Cấp 3)
+                            li.list-group-item
+                                .d-flex.justify-content-between.align-items-center
+                                    a(href='/an-pham-van-phong-cap-1-')
+                                        span.title.level-1 ẤN PHẨM VĂN PHÒNG (CẤP 1)
+                                    i.fa-solid.fa-angle-down.nav-toggle
+                                ul.list-group-flush.collapse.navbar-collapse.toggleMenu
+                                    li.list-group-item
+                                        .d-flex.justify-content-between.align-items-center
+                                            a(href='/')
+                                                span.title.level-2 Danh thiếp Giấy mỹ thuật in nhanh (Cấp 2)
+                                            i.fa-solid.fa-angle-down.nav-toggle
+                                        ul.list-group-flush.collapse.navbar-collapse.toggleMenu
+                                            li.list-group-item
+                                                a.d-flex.align-items-center.justify-content-between.flex-1(href='/an-pham-van-phong-cap-1-/danh-thiep-giay-my-thuat-in-nhanh-cap-2-/danh-thiep-chuan-xin-cap-3-')
+                                                    span.title.level-3 Danh thiếp chuẩn xịn (Cấp 3)
+                                            li.list-group-item
+                                                a.d-flex.align-items-center.justify-content-between.flex-1(href='/an-pham-van-phong-cap-1-/danh-thiep-giay-my-thuat-in-nhanh-cap-2-/danh-thiep-ngoc-trai-cap-3-')
+                                                    span.title.level-3 Danh Thiếp Ngọc Trai (Cấp 3)
+                                            li.list-group-item
+                                                a.d-flex.align-items-center.justify-content-between.flex-1(href='/an-pham-van-phong-cap-1-/danh-thiep-giay-my-thuat-in-nhanh-cap-2-/danh-thiep-giay-nhua-cap-3-')
+                                                    span.title.level-3 Danh Thiếp Giấy Nhựa (Cấp 3)
+                                            li.list-group-item
+                                                a.d-flex.align-items-center.justify-content-between.flex-1(href='/an-pham-van-phong-cap-1-/danh-thiep-giay-my-thuat-in-nhanh-cap-2-/danh-thiep-bo-goc-chuan-cap-3-')
+                                                    span.title.level-3 Danh Thiếp Bo Góc Chuẩn (Cấp 3)
+                                            li.list-group-item
+                                                a.d-flex.align-items-center.justify-content-between.flex-1(href='/an-pham-van-phong-cap-1-/danh-thiep-giay-my-thuat-in-nhanh-cap-2-/danh-thiep-vuong-bo-goc-cap-3-')
+                                                    span.title.level-3 Danh Thiếp Vuông Bo Góc (Cấp 3)
+                                            li.list-group-item
+                                                a.d-flex.align-items-center.justify-content-between.flex-1(href='/an-pham-van-phong-cap-1-/danh-thiep-giay-my-thuat-in-nhanh-cap-2-/danh-thiep-highlight-cap-3-')
+                                                    span.title.level-3 Danh Thiếp Highlight (Cấp 3)
+                                    li.list-group-item
+                                        a.d-flex.align-items-center.justify-content-between.flex-1(href='/an-pham-van-phong-cap-1-/bao-thu-envelopes-cap-2-')
+                                            span.title.level-2 Bao thư - Envelopes (Cấp 2)
+                                    li.list-group-item
+                                        .d-flex.justify-content-between.align-items-center
+                                            a(href='/')
+                                                span.title.level-2 Áo thun đồng phục (Cấp 2)
+                                            i.fa-solid.fa-angle-down.nav-toggle
+                                        ul.list-group-flush.collapse.navbar-collapse.toggleMenu
+                                            li.list-group-item
+                                                a.d-flex.align-items-center.justify-content-between.flex-1(href='/an-pham-van-phong-cap-1-/ao-thun-dong-phuc-cap-2-/ao-thun-dong-phuc-co-tru-cap-3-')
+                                                    span.title.level-3 Áo thun đồng phục cổ trụ (Cấp 3)
+                                            li.list-group-item
+                                                a.d-flex.align-items-center.justify-content-between.flex-1(href='/an-pham-van-phong-cap-1-/ao-thun-dong-phuc-cap-2-/ao-thun-dong-phuc-co-tron-cap-3-')
+                                                    span.title.level-3 Áo thun đồng phục cổ tròn (Cấp 3)
+                                            li.list-group-item
+                                                a.d-flex.align-items-center.justify-content-between.flex-1(href='/an-pham-van-phong-cap-1-/ao-thun-dong-phuc-cap-2-/ao-thun-dong-phuc-co-trai-tim-cap-3-')
+                                                    span.title.level-3 Áo thun đồng phục cổ trái tim (Cấp 3)
+                                    li.list-group-item
+                                        a.d-flex.align-items-center.justify-content-between.flex-1(href='/an-pham-van-phong-cap-1-/giay-ghi-chu-cap-2-')
+                                            span.title.level-2 Giấy ghi chú (Cấp 2)
+                                    li.list-group-item
+                                        .d-flex.justify-content-between.align-items-center
+                                            a(href='/')
+                                                span.title.level-2 Bìa đựng hồ sơ - Folders (Cấp 2)
+                                            i.fa-solid.fa-angle-down.nav-toggle
+                                        ul.list-group-flush.collapse.navbar-collapse.toggleMenu
+                                            li.list-group-item
+                                                a.d-flex.align-items-center.justify-content-between.flex-1(href='/an-pham-van-phong-cap-1-/bia-dung-ho-so-folders-cap-2-/bia-dung-ho-so-1-tay-gap-cap-3-')
+                                                    span.title.level-3 Bìa đựng hồ sơ 1 tay gấp (Cấp 3)
+                                            li.list-group-item
+                                                a.d-flex.align-items-center.justify-content-between.flex-1(href='/an-pham-van-phong-cap-1-/bia-dung-ho-so-folders-cap-2-/bia-dung-ho-so-2-tay-gap-cap-3-')
+                                                    span.title.level-3 Bìa đựng hồ sơ 2 tay gấp (Cấp 3)
+                                            li.list-group-item
+                                                a.d-flex.align-items-center.justify-content-between.flex-1(href='/an-pham-van-phong-cap-1-/bia-dung-ho-so-folders-cap-2-/bia-dung-ho-so-cao-cap-cap-3-')
+                                                    span.title.level-3 Bìa đựng hồ sơ cao cấp (Cấp 3)
+                                    li.list-group-item
+                                        a.d-flex.align-items-center.justify-content-between.flex-1(href='/an-pham-van-phong-cap-1-/so-tay-ghi-chu-cap-2-')
+                                            span.title.level-2 Sổ tay ghi chú (Cấp 2)
+                                    li.list-group-item
+                                        .d-flex.justify-content-between.align-items-center
+                                            a(href='/')
+                                                span.title.level-2 Bút văn phòng (cấp 2)
+                                            i.fa-solid.fa-angle-down.nav-toggle
+                                        ul.list-group-flush.collapse.navbar-collapse.toggleMenu
+                                            li.list-group-item
+                                                a.d-flex.align-items-center.justify-content-between.flex-1(href='/an-pham-van-phong-cap-1-/but-van-phong-cap-2-/but-bi-van-phong-cap-3-')
+                                                    span.title.level-3 Bút BI văn phòng (cấp 3)
+                                            li.list-group-item
+                                                a.d-flex.align-items-center.justify-content-between.flex-1(href='/an-pham-van-phong-cap-1-/but-van-phong-cap-2-/but-may-van-phong-cap-3-')
+                                                    span.title.level-3 Bút MÁY văn phòng (cấp 3)
+                                            li.list-group-item
+                                                a.d-flex.align-items-center.justify-content-between.flex-1(href='/an-pham-van-phong-cap-1-/but-van-phong-cap-2-/but-vo-go-van-phong-cap-3-')
+                                                    span.title.level-3 Bút VỎ GỖ văn phòng (cấp 3)
+                        .read-more-btn.more
+                            | Xem thêm 
+                            i.fa-solid.fa-caret-down
+                        .read-more-btn.hide
+                            | Ẩn bớt nội dung 
+                            i.fa-solid.fa-caret-up
+                .section_banner.mb-3
+                    a.d-block.w-100.h-50.rounded-10(href='#')
+                        img.img-cover(src='https://file.hstatic.net/200000865177/file/banner2_01842c737462439f9eb31b8921c2ddd1.jpg' alt='Banner Right 2')
+
+                .background-sidebar
+                    .col-12
+                        h5.title-sidebar SẢN PHẨM MỚI
+                        .product_list_sidebar
+                            a.d-flex.align-items-center.product(href='https://we1.io.vn/dong-ho-co/dong-ho-co-anh-chu-nhat-doc')
+                                .col-4
+                                    img.image(src='https://product.hstatic.net/200000865177/product/google-shopping-gel-rua-mat-svr_2594e470c0fa42fca3e91b69bfcf1df7_large.png' alt='Đồng hồ cơ ảnh chữ nhật dọc' width='100%')
+                                .col-8
+                                    h5.title Đồng hồ cơ ảnh chữ nhật dọc
+                                    span.price
+                                        | 320.000 đ
+                            
+                .background-sidebar
+                    .col-12
+                        h5.title-sidebar SẢN PHẨM BÁN CHẠY
+                        .product_list_sidebar
+                            each item in [1,2,3,4,5]
+                                a.d-flex.align-items-center.product(href='#')
+                                    .col-4
+                                        img.image(src='https://product.hstatic.net/200000865177/product/google-shopping-gel-rua-mat-svr_2594e470c0fa42fca3e91b69bfcf1df7_large.png' alt='Nắp hố ga composite thân vuông dương' width='100%')
+                                    .col-8
+                                        h5.title Nắp hố ga composite thân vuông dương
+                                        span.price
+                                            | 400.000 đ
+                            
+            .col-12.col-lg-9
+                .background-content
+                    .content-item.p-t-0
+                        nav(aria-label='breadcrumb')
+                            ol.breadcrumb
+                                li.breadcrumb-item
+                                    a(href='/')
+                                        i.fa.fa-home(aria-hidden='true')
+                                        |  Trang chủ
+                                li.breadcrumb-item
+                                    a(href='/dong-ho-thoi-trang') ĐỒNG HỒ THỜI TRANG
+                                li.breadcrumb-item Đồng Hồ Nam
+                        h1(style='visibility: hidden;opacity: 0;position: absolute;') Đồng Hồ Nam
+                    form#formFilter(action method='get')
+                        .content-item.p-t-0.d-none
+                            .item-data.d-flex.align-items-center.flex-wrap
+                                h5.col-2.col-sm-1.content-item-title.margin-top-10 GIÁ
+                                .col-4.col-md-3.col-lg-2.item.filter-price(data-price-from='1' data-price-to='3000000' data-price-name='Đến 3 Triệu')
+                                    p.price Dưới 3 Triệu
+                                .col-5.col-md-3.col-lg-2.item.filter-price(data-price-from='3000000' data-price-to='5000000' data-price-name='Từ 3 - 5 Triệu')
+                                    p.price Từ 3 - 5 Triệu
+                                .col-5.col-md-3.col-lg-3.col-xl-2.item.filter-price(data-price-from='5000000' data-price-to='10000000' data-price-name='Từ 5 - 10 Triệu')
+                                    p.price Từ 5 - 10 Triệu
+                                .col-5.col-md-3.col-lg-3.col-xl-2.item.filter-price(data-price-from='10000000' data-price-to='20000000' data-price-name='Từ 10 - 20 Triệu')
+                                    p.price Từ 10 - 20 Triệu
+                                .col-5.col-md-3.col-lg-2.item.filter-price(data-price-from='20000000' data-price-to='200000000' data-price-name='Trên 20 Triệu')
+                                    p.price Trên 20 Triệu
+                        .content-item.value-filter.d-none
+                        .content-item
+                            .d-xxl-flex.align-items-center.justify-content-between
+                                p.mb-2.mb-xxl-0 Hiển thị 0–24 của 5 kết quả
+                                .filter.d-flex.flex-wrap.align-items-center.justify-content-lg-end
+                                    .form-check.filter-item
+                                        input#bestseller.form-check-input(type='radio' name='orderby' value='randum')
+                                        label.form-check-label(for='bestseller')
+                                            | Bán chạy nhất
+                                    .form-check.filter-item
+                                        input#created_at.form-check-input(type='radio' name='orderby' value='date')
+                                        label.form-check-label(for='created_at')
+                                            | Mới nhất
+                                    .form-check.filter-item
+                                        input#price_asc.form-check-input(type='radio' name='orderby' value='price')
+                                        label.form-check-label(for='price_asc')
+                                            | Giá thấp đến cao
+                                    .form-check.filter-item
+                                        input#price_desc.form-check-input(type='radio' name='orderby' value='price-desc')
+                                        label.form-check-label(for='price_desc')
+                                            | Giá cao đến thấp
+                .background-content
+                    //- .content-item
+                        .description
+                    .content-item
+                        .row.gap-y-24
+                            each item in [1,2,3,4,5,6,7,8,9,10,12,12]
+                                +product_item('col-md-3 col-6 ')
+                            
+                            
+                    .content-item
+                        .showListPage.d-flex.justify-content-center
+
+
+block js 
+    //- +js_product_detail()

@@ -1,6 +1,6 @@
 
-mixin product_item()
-    .product_list.item_frame
+mixin product_item(clname)
+    .product_list.item_frame(class=`${clname}`)
         .product.is-sale.header-boder-color
             .inner.p-2.rounded-3
                 a.product-thumbnail(href='#')
@@ -38,6 +38,7 @@ mixin product_item()
                         button.btn-product.p-4px.bg-gray2.text-orange.text-14.rounded-4(class="hover:bg-orange hover:text-white") 
                             i.fa-solid.fa-headset.mr-4px
                             |Yêu cầu tư vấn
+
 mixin heading(arr, ttl)
     .item_frame_header.gap-x-24.flex.gap-y-8px.p-0(class="max-sm:flex-col sm:align-items-center")
         a.item_frame_title.header-boder-color.flex-shrink-0(href='/san-pham')

@@ -374,6 +374,15 @@ a, button, img {
   background-image: -webkit-gradient(linear, left top, right top, from(#333), to(#9b0422));
   background-image: linear-gradient(to right, #333, #9b0422);
 }
+.shiny-cta.style-full {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  padding: 8px 24px;
+}
+.shiny-cta.style-full i {
+  font-size: 24px;
+}
 
 .shiny-cta:hover {
   color: #fff;
@@ -510,7 +519,6 @@ a, button, img {
   height: 100%;
   background-color: #fff;
   border-radius: 8px 0 8px 8px;
-  height: 500px;
 }
 
 .sidebar h3 {
