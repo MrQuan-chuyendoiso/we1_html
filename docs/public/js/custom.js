@@ -191,3 +191,17 @@ function sliderSmallItem($sliderName, $toshow, $toshow_991, $rows) {
         });
     });
 };
+function setEqualHeightSlickItems() {
+  var maxHeight = 0;
+  // Tìm thằng cao nhất
+  $('.slick-row-2 .post-item').each(function () {
+    var thisHeight = $(this).outerHeight();
+    if (thisHeight > maxHeight) maxHeight = thisHeight;
+  });
+  // Gán lại chiều cao
+  $('.slick-row-2 .post-item').css('height', maxHeight + 'px');
+}
+// Gọi khi slick đã khởi tạo
+$('.slick-row-2').on('setPosition', function () {
+  setEqualHeightSlickItems();
+});
