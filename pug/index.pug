@@ -3952,10 +3952,10 @@ block body
             .view_more.text-center.mt-24.position-relative
                 a.rounded-pill.py-2.px-4.btn-outline-primary(href='gallery-detail.html' title='Xem thêm') Xem thêm
     // Tin tức
-    +block-white("TƯ VẤN KIẾN THỨC")
+    +block-white("TƯ VẤN KIẾN THỨC", true)
         .slick-news.slick-aqual 
             each item in ['ĐÂY LÀ CHỮ TITLE IN HOA','Đây là title dài Đây là title dài Đây là title dài Đây là title dài Đây là title dài Đây là title dài Đây là title dài','Test 1','Test 2','Test 3']
-                div.pb-8
+                div.pb-12
                     a(href="#").post-item.block.bg-gray.rounded-8.overflow-hidden
                         .images
                             .imgDrop.ratio-4-3.has-backdrop 
@@ -3963,9 +3963,26 @@ block body
                             span.icon.w-32.h-32.flex.items-center.justify-center.bg-primary.text-white 
                                 i.fa-solid.fa-arrow-right
                         .post-text.p-12 
-                            h4.post-title.text-16.font-bold= item
-                            .post-des.trim.trim-2.text-14 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form
-
+                            h4.post-title.text-16.font-bold.trim.trim-2= item
+                            .post-des.trim.trim-2.text-14.mt-1(class="max-sm:hidden") There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form
+       
+        mixin slicknew-2(clname)
+            .mt-40 
+            .slick-news-2.slick-aqual(class=`${clname}`)
+                each item in ['ĐÂY LÀ CHỮ TITLE IN HOA','Đây là title dài Đây là title dài Đây là title dài Đây là title dài Đây là title dài Đây là title dài Đây là title dài','Test 1','Test 2','Test 3','Test 1','Test 2','Test 3']
+                    div.pb-12
+                        a(href="#").post-item.flex.bg-gray.rounded-8.overflow-hidden
+                            .images.flex-shrink-0.w-150(sm:w-170)
+                                .imgDrop.ratio-4-3.has-backdrop 
+                                    img(src="https://vip2.io.vn/admin/public/images/homeSetting/1734232973100/MỘT SỐ HÌNH ẢNH THỢ THI CÔNG 2.jpg", alt="")
+                                span.icon.w-32.h-32.flex.items-center.justify-center.bg-primary.text-white 
+                                    i.fa-solid.fa-arrow-right
+                            .post-text.p-12.flex-grow-1 
+                                h4.post-title.text-16.font-bold.trim.trim-2= item
+                                .post-des.trim.trim-2.text-14.mt-1 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form
+        +slicknew-2('slick-news-22')
+        +slicknew-2('slick-news-23')
+        +slicknew-2('slick-news-24')
 block js
     //- script(src="js/bootstrap.min.js")Save Typing
     +js_home_product_list()
@@ -3976,6 +3993,9 @@ block js
             sliderList(".products-list-row1", 5, 4, 1);
             sliderList(".products-list-row2", 5, 4, 2);
             sliderList(".slick-news ", 4, 4, 1);
+            sliderSmallItem(".slick-news-22 ", 2, 1, 2);
+            sliderSmallItem(".slick-news-23 ", 2, 1, 3);
+            sliderSmallItem(".slick-news-24 ", 2, 1, 4);
 
             galleryImages(".slider-gallery-row2", 6, 5, 2);
             galleryImages(".slider-gallery-column6", 6, 5, 1);

@@ -171,3 +171,23 @@ function sliderList($sliderName, $toshow, $toshow_1024, $rows) {
         });
     });
 };
+function sliderSmallItem($sliderName, $toshow, $toshow_991, $rows) {
+    $($sliderName).each( function() {
+        numSlick++;
+        $(this).addClass( 'slider-' + numSlick ).slick({
+            slidesToShow: $toshow,
+            rows: $rows,
+            slidesToScroll: 1,
+            arrow: true,
+            autoplay: true,
+            pauseOnHover: true,
+            //- rtl: true,
+            responsive: [{
+                breakpoint: 991,
+                settings: {
+                slidesToShow: $toshow_991,
+                }
+            }]
+        });
+    });
+};

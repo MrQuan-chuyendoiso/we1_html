@@ -36,15 +36,19 @@ html(lang="en")
         block css 
         link(rel="stylesheet", href="public/css/style.css")
     block vars
-    mixin block-white(ttl)
+    mixin block-white(ttl, btnMore)
         section(style='background-color: #e6e6e6;' class="py-32")
             .container
                 .bg-white.rounded-8.pb-12.box-shadow(class='sm:px-16')
-                    .item_frame_header.gap-x-24.flex.gap-y-8px.p-0(class="max-sm:flex-col sm:align-items-center")
+                    .item_frame_header.gap-x-24.flex.gap-y-8px.p-0.items-center.justify-between(class="max-sm:flex-col sm:align-items-center")
                         a.item_frame_title.header-boder-color.flex-shrink-0(href='/san-pham')
                             //- span.d-flex.align-items-center.me-1
                             h2.text-nowrap(style='color: #000000 !important;')
                                 |#{ttl}
+                        if(btnMore === true)
+                            a.button.flex.items-center.gap-2.text-14.bg-gray2.px-16.py-8px(href="#" class="hover:bg-primary hover:text-white")
+                                | Xem thêm 
+                                i.fa-solid.fa-chevron-right.text-12
                     if block
                         block
     body(class=`${bodyClass}`)

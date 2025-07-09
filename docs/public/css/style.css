@@ -1033,6 +1033,7 @@ a, button, img {
   .product_list > .product .list-action {
     border-radius: 8px 8px 0 0;
     padding: 0 8px;
+    margin: 0 -0.5em;
   }
   .product_list > .product .list-action button {
     width: 33.33%;
@@ -1652,11 +1653,6 @@ ul {
 }
 
 @media (max-width: 992px) {
-  .banner-nav .p-l-0 {
-    padding-left: calc(var(--bs-gutter-x) / 2) !important;
-  }
-}
-@media (max-width: 992px) {
   .banner-nav .header-bottom-2 {
     display: none;
   }
@@ -2134,11 +2130,6 @@ ul {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-@media (max-width: 640px) {
-  .post-item .post-des {
-    display: none;
-  }
-}
 .post-item:hover {
   color: #333;
   background-color: rgba(2, 130, 165, 0.05);
@@ -2173,4 +2164,8 @@ ul {
     padding-right: 8px;
     margin-top: 8px;
   }
+}
+
+.slick-news-2 .slick-slide > div:first-child {
+  margin-bottom: 0 !important;
 }

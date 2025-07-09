@@ -915,6 +915,7 @@ a, button, img {
   .product_list > .product .list-action {
     border-radius: 8px 8px 0 0;
     padding: 0 8px;
+    margin: 0 -0.5em;
   }
   .product_list > .product .list-action button {
     width: 33.33%;
@@ -1493,11 +1494,11 @@ main {
     max-width: 100vw;
 }
 .banner-nav {
-    .p-l-0 {
-        @include max_991 {
-            padding-left: calc(var(--bs-gutter-x) / 2)!important;
-        }
-    }
+    // .p-l-0 {
+    //     @include max_991 {
+    //         padding-left: calc(var(--bs-gutter-x) / 2)!important;
+    //     }
+    // }
     .header-bottom-2 {
         @include max_991 {display: none;}
         .mobile-menu {
@@ -1892,11 +1893,11 @@ main {
   .imgDrop img {
     transition: all .3s;
   }
-  .post-des {
-    @include max_sm {
-      display: none;
-    }
-  }
+  // .post-des {
+  //   @include max_sm {
+  //     display: none;
+  //   }
+  // }
   &:hover {
     color: #333;
     background-color: rgba(2,130,165,.05);
@@ -1934,6 +1935,15 @@ main {
       padding-left: 8px;
       padding-right: 8px;
       margin-top: 8px;
+    }
+  }
+}
+.slick-news-2 {
+  .slick-slide {
+    &>div {
+      &:first-child {
+        margin-bottom: 0!important;
+      }
     }
   }
 }
