@@ -102,69 +102,70 @@ $(document).ready(function () {
         }
         ],
     });
+    
     var numSlick = 0;
     $('.row.product_list').each( function() {
-    numSlick++;
-    $(this).addClass( 'slider-' + numSlick ).slick({
-        slidesToShow: 4,
-        infinite: true,
-        autoplay: true,
-        pauseOnHover: true,
-        arrows: true,
-        responsive: [,{
-            breakpoint: 960,
-            settings: {
-                slidesToShow: 3,
+        numSlick++;
+        $(this).addClass( 'slider-' + numSlick ).slick({
+            slidesToShow: 4,
+            infinite: true,
+            autoplay: true,
+            pauseOnHover: true,
+            arrows: true,
+            responsive: [,{
+                breakpoint: 960,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },{
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },{
+                breakpoint: 540,
+                settings: {
+                    slidesToShow: 2,
+                }
             }
-        },{
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 3,
-            }
-        },{
-            breakpoint: 540,
-            settings: {
-                slidesToShow: 2,
-            }
-        }
-        ],
+            ],
+        });
     });
-    });
-    $('.main-slider').slick({
-        slidesToShow: 1,
-        infinite: true,
-        arrows: true,
-        autoplay: true,
-        asNavFor: '.swiper-container-thumbs'
-    });
-    $('.main-slider').slickLightbox({
-        itemSelector        : 'a',
-        navigateByKeyboard  : true
-    });
-    $('.swiper-container-thumbs').slick({
-        slidesToShow: 5,
-        arrows: false,
-        asNavFor: '.main-slider',
-        focusOnSelect: true,
-        autoplay: false,
-        responsive: [{
-            breakpoint: 1200,
-            settings: {
-                slidesToShow: 5,
-            }
-        },{
-            breakpoint: 960,
-            settings: {
-                slidesToShow: 4,
-            }
-        },{
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 3,
-            }
-        }
-        ],
-    });
+    $('.main-slider').each(function(index) {
+        var $mainSlider = $(this);
+        var $thumbSlider = $('.swiper-container-thumbs').eq(index);
+
+        $mainSlider.slick({
+            slidesToShow: 1,
+            infinite: true,
+            arrows: true,
+            autoplay: true,
+             fade: true,
+             cssEase: 'linear',
+            asNavFor: $thumbSlider
+        });
+
+        $mainSlider.slickLightbox({
+            itemSelector: 'a',
+            navigateByKeyboard: true,
+        });
+
+        $thumbSlider.slick({
+            slidesToShow: 5,
+            arrows: false,
+            centerMode: true,
+            centerPadding: '0px',
+            asNavFor: $mainSlider,
+            autoplay: false,
+            focusOnSelect: true,
+            responsive: [
+            { breakpoint: 1200, settings: { slidesToShow: 5 } },
+            { breakpoint: 960, settings: { slidesToShow: 4 } },
+            { breakpoint: 768, settings: { slidesToShow: 3 } }
+            ]
+        });
+        });
+
 
 
     // dánh giá
