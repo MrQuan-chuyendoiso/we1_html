@@ -133,6 +133,9 @@ $(document).ready(function () {
 // =========================
 // new update 6/2025
 // ===========================
+$( document ).ready(function() {
+    console.log( "ready!" );
+});
 numSlick = 0;
 function sliderList($sliderName, $toshow, $toshow_1024, $rows) {
     $($sliderName).each( function() {
