@@ -67,7 +67,7 @@ mixin header(page)
 									.icon(style='border-color: white;')
 										button.btn.btn-toggle-menu(type='button' data-bs-toggle='offcanvas' data-bs-target='#offcanvasExample' aria-controls='offcanvasExample')
 											i.fa-solid.fa-bars.text-light.fs-5.mt-1
-						.logo.d-flex.align-items-center.justify-content-center.justify-content-md-start
+						#logo.logo.d-flex.align-items-center.justify-content-center.justify-content-md-start
 							a(href='https://html.we1.io.vn')
 								img.w-100(src='https://we1.io.vn/admin/public/images/header/174679621770428x160.png' alt='logo')
 					#header-search.d-none.d-md-flex.align-content-center.gap-2.wrap-header-search.px-0.col-12.col-sm-4.col-md-5.col-lg-6.col-xl-4
@@ -166,424 +166,425 @@ mixin header(page)
 										i.fa-solid.fa-cart-shopping.text-light
 								.text.text-left.text-light.d-none.d-xl-block
 									small.d-none.d-xl-block.ml-lg-1 Giỏ hàng
-		.header-bottom.d-none.d-lg-block.container-fluid.px-5(style='border-color: red; background: white;')
-			.px-5
-				ul.menu.mb-0.d-flex.row-gap-2.align-items-center.justify-content-center
-					li.menu-item.d-flex.align-items-center.py-1.px-2.has-sub-menu
-						a.menu-link.py-1.px-2.d-flex.align-items-center.gap-1(href='#')
-							img.item-img(src='https://file.hstatic.net/200000865177/file/cam-nang_7b1c2041fc624dbbb73509f39a24a55f.png' alt)
-							|                                 ẤN PHẨM F&B
-						i.fa-solid.fa-caret-down
-						ul.sub-menu.sub-menu-list.mega
-							li.sub-menu-item
-								ul.menu-list
-									// Danh thiếp - Namecards
-									li.px-3.py-2.text-dark
-										| Danh thiếp - Namecards
-									li.px-3.py-2.text-dark
-										| Danh thiếp Giấy mỹ thuật
-									li.px-3.py-2.text-dark
-										| Danh thiếp chuẩn
-									li.px-3.py-2.text-dark
-										| Danh Thiếp Kỹ Thuật Số
-									li.px-3.py-2.text-dark
-										| Danh Thiếp Thông Minh
-									li.px-3.py-2.text-dark
-										| Danh Thiếp Dập Nổi/ Chìm
-									li.px-3.py-2.text-dark
-										| Danh Thiếp Ngọc Trai
-									li.px-3.py-2.text-dark
-										| Danh Thiếp Giấy Nhựa
-									li.px-3.py-2.text-dark
-										| Danh Thiếp Bo Góc Chuẩn
-									li.px-3.py-2.text-dark
-										| Danh Thiếp Vuông Bo Góc
-									li.px-3.py-2.text-dark
-										| Danh Thiếp Highlight
-									li.px-3.py-2.text-dark
-										| Danh Thiếp Gấp Đôi
-									li.px-3.py-2.text-dark
-										| Danh Thiếp Vuông
-							li.sub-menu-item
-								ul.menu-list
-									// Bao thư - Envelopes
-									li.px-3.py-2.text-dark
-										| Bao thư - Envelopes
-									li.px-3.py-2.text-dark
-										| Bao thư lấy ngay
-									li.px-3.py-2.text-dark
-										| Bao thư nhỏ
-									li.px-3.py-2.text-dark
-										| Bao thư trung
-									li.px-3.py-2.text-dark
-										| Bao thư lớn
-									li.px-3.py-2.text-dark
-										| Bao thư giấy Kraft
-									li.px-3.py-2.text-dark
-										| Bao thư cửa sổ kính
-							li.sub-menu-item
-								ul.menu-list
-									// Áo thun đồng phục
-									li.px-3.py-2.text-dark
-										| Áo thun đồng phục
-									li.px-3.py-2.text-dark
-										| Áo thun đồng phục cổ trụ
-									li.px-3.py-2.text-dark
-										| Áo thun đồng phục cổ tròn
-									// Giấy ghi chú - Block notes
-									li.px-3.py-2.text-dark
-										| Giấy ghi chú - Block notes
-									li.px-3.py-2.text-dark
-										| Giấy ghi chú
-									// Giấy tiêu đề - Letterheads
-									li.px-3.py-2.text-dark
-										| Giấy tiêu đề - Letterheads
-									li.px-3.py-2.text-dark
-										| Giấy tiêu đề số lượng ít
-									li.px-3.py-2.text-dark
-										| Giấy tiêu đề số lượng lớn
-									// Bìa đựng hồ sơ - Folders
-									li.px-3.py-2.text-dark
-										| Bìa đựng hồ sơ - Folders
-									li.px-3.py-2.text-dark
-										| Bìa đựng hồ sơ 1 tay gấp
-									li.px-3.py-2.text-dark
-										| Bìa đựng hồ sơ 2 tay gấp
-									li.px-3.py-2.text-dark
-										| Bìa đựng hồ sơ cao cấp
-					li.menu-item.d-flex.align-items-center.py-1.px-2.has-sub-menu
-						a.menu-link.py-1.px-2.d-flex.align-items-center.gap-1(href='#')
-							img.item-img(src='https://file.hstatic.net/200000865177/file/cam-nang_7b1c2041fc624dbbb73509f39a24a55f.png' alt)
-							|                                 ẤN PHẨM VĂN PHÒNG
-						i.fa-solid.fa-caret-down
-						ul.sub-menu.sub-menu-list.mega
-							li.sub-menu-item
-								ul.menu-list
-									// Danh thiếp - Namecards
-									li.px-3.py-2.text-dark
-										| Danh thiếp - Namecards
-									li.px-3.py-2.text-dark
-										| Danh thiếp Giấy mỹ thuật
-									li.px-3.py-2.text-dark
-										| Danh thiếp chuẩn
-									li.px-3.py-2.text-dark
-										| Danh Thiếp Kỹ Thuật Số
-									li.px-3.py-2.text-dark
-										| Danh Thiếp Thông Minh
-									li.px-3.py-2.text-dark
-										| Danh Thiếp Dập Nổi/ Chìm
-									li.px-3.py-2.text-dark
-										| Danh Thiếp Ngọc Trai
-									li.px-3.py-2.text-dark
-										| Danh Thiếp Giấy Nhựa
-									li.px-3.py-2.text-dark
-										| Danh Thiếp Bo Góc Chuẩn
-									li.px-3.py-2.text-dark
-										| Danh Thiếp Vuông Bo Góc
-									li.px-3.py-2.text-dark
-										| Danh Thiếp Highlight
-									li.px-3.py-2.text-dark
-										| Danh Thiếp Gấp Đôi
-									li.px-3.py-2.text-dark
-										| Danh Thiếp Vuông
-							li.sub-menu-item
-								ul.menu-list
-									// Danh thiếp - Namecards
-									li.px-3.py-2.text-dark
-										| Danh thiếp - Namecards
-							li.sub-menu-item
-								ul.menu-list
-									// Danh thiếp - Namecards
-									li.px-3.py-2.text-dark
-										| Danh thiếp - Namecards
-									li.px-3.py-2.text-dark
-										| Danh thiếp Giấy mỹ thuật
-									li.px-3.py-2.text-dark
-										| Danh thiếp chuẩn
-									li.px-3.py-2.text-dark
-										| Danh Thiếp Kỹ Thuật Số
-									li.px-3.py-2.text-dark
-										| Danh Thiếp Thông Minh
-									li.px-3.py-2.text-dark
-										| Danh Thiếp Dập Nổi/ Chìm
-									li.px-3.py-2.text-dark
-										| Danh Thiếp Ngọc Trai
-									li.px-3.py-2.text-dark
-										| Danh Thiếp Giấy Nhựa
-									li.px-3.py-2.text-dark
-										| Danh Thiếp Bo Góc Chuẩn
-									li.px-3.py-2.text-dark
-										| Danh Thiếp Vuông Bo Góc
-									li.px-3.py-2.text-dark
-										| Danh Thiếp Highlight
-									li.px-3.py-2.text-dark
-										| Danh Thiếp Gấp Đôi
-									li.px-3.py-2.text-dark
-										| Danh Thiếp Vuông
-							li.sub-menu-item
-								ul.menu-list
-									// Danh thiếp - Namecards
-									li.px-3.py-2.text-dark
-										| Danh thiếp - Namecards
-							li.sub-menu-item
-								ul.menu-list
-									// Bao thư - Envelopes
-									li.px-3.py-2.text-dark
-										| Bao thư - Envelopes
-									li.px-3.py-2.text-dark
-										| Bao thư lấy ngay
-									li.px-3.py-2.text-dark
-										| Bao thư nhỏ
-									li.px-3.py-2.text-dark
-										| Bao thư trung
-									li.px-3.py-2.text-dark
-										| Bao thư lớn
-									li.px-3.py-2.text-dark
-										| Bao thư giấy Kraft
-									li.px-3.py-2.text-dark
-										| Bao thư cửa sổ kính
-							li.sub-menu-item
-								ul.menu-list
-									// Áo thun đồng phục
-									li.px-3.py-2.text-dark
-										| Áo thun đồng phục
-					li.menu-item.d-flex.align-items-center.py-1.px-2.has-sub-menu
-						a.menu-link.py-1.px-2(href='#') ẤN PHẨM TIẾP THỊ
-						i.fa-solid.fa-caret-down
-						ul.sub-menu
-							li.px-3.py-2.text-dark
-								a.menu-link(href='about.html') Giới thiệu
-							li.px-3.py-2.text-dark
-								a.menu-link(href='team.html') Đội ngũ
-							li.px-3.py-2.text-dark
-								a.menu-link(href='about.html') Giới thiệu
-							li.px-3.py-2.text-dark
-								a.menu-link(href='team.html') Đội ngũ
-							li.px-3.py-2.text-dark
-								a.menu-link(href='about.html') Giới thiệu
-							li.px-3.py-2.text-dark
-								a.menu-link(href='team.html') Đội ngũ
-							li.px-3.py-2.text-dark
-								a.menu-link(href='about.html') Giới thiệu
-							li.px-3.py-2.text-dark
-								a.menu-link(href='team.html') Đội ngũ
-							li.px-3.py-2.text-dark
-								a.menu-link(href='about.html') Giới thiệu
-							li.px-3.py-2.text-dark
-								a.menu-link(href='team.html') Đội ngũ
-							li.px-3.py-2.text-dark
-								a.menu-link(href='about.html') Giới thiệu
-							li.px-3.py-2.text-dark
-								a.menu-link(href='team.html') Đội ngũ
-							li.px-3.py-2.text-dark
-								a.menu-link(href='about.html') Giới thiệu
-							li.px-3.py-2.text-dark
-								a.menu-link(href='team.html') Đội ngũ
-					li.menu-item.d-flex.align-items-center.py-1.px-2.has-sub-menu
-						a.menu-link.py-1.px-2(href='#') ẤN PHẨM BAO BÌ
-						i.fa-solid.fa-caret-down
-						ul.sub-menu
-							li.px-3.py-2.text-dark
-								a.menu-link(href='about.html') Giới thiệu
-							li.px-3.py-2.text-dark
-								a.menu-link(href='team.html') Đội ngũ
-					li.menu-item.d-flex.align-items-center.py-1.px-2.has-sub-menu
-						a.menu-link.py-1.px-2(href='#') ẤN PHẨM CÁ NHÂN
-						i.fa-solid.fa-caret-down
-						ul.sub-menu
-							li.px-3.py-2.text-dark
-								a.menu-link(href='about.html') Giới thiệu
-							li.px-3.py-2.text-dark
-								a.menu-link(href='team.html') Đội ngũ
-					li.menu-item.d-flex.align-items-center.py-1.px-2.has-sub-menu
-						a.menu-link.py-1.px-2(href='#') ÁO THUN 
-						i.fa-solid.fa-caret-down
-						ul.sub-menu
-							li.px-3.py-2.text-dark
-								a.menu-link(href='about.html') Giới thiệu
-							li.px-3.py-2.text-dark
-								a.menu-link(href='team.html') Đội ngũ
-					li.menu-item.d-flex.align-items-center.py-1.px-2.has-sub-menu
-						a.menu-link.py-1.px-2(href='#')  ẤN PHẨM KHÁC
-						i.fa-solid.fa-caret-down
-						ul.sub-menu
-							li.px-3.py-2.text-dark
-								a.menu-link(href='about.html') Giới thiệu
-							li.px-3.py-2.text-dark
-								a.menu-link(href='team.html') Đội ngũ
-					li.menu-item.d-flex.align-items-center.py-1.px-2
-						a.menu-link.py-1.px-2(href='#')  IN NHANH
-					li.menu-item.d-flex.align-items-center.py-1.px-2
-						a.menu-link.py-1.px-2(href='#')  IN NHANH
-					li.menu-item.d-flex.align-items-center.py-1.px-2
-						a.menu-link.py-1.px-2(href='#')  IN NHANH
-					li.menu-item.d-flex.align-items-center.py-1.px-2
-						a.menu-link.py-1.px-2(href='#')  IN NHANH
-					li.menu-item.d-flex.align-items-center.py-1.px-2
-						a.menu-link.py-1.px-2(href='#')  IN NHANH
-					li.menu-item.d-flex.align-items-center.py-1.px-2.has-sub-menu
-						a.menu-link.py-1.px-2(href='#')  ẤN PHẨM KHÁC
-						i.fa-solid.fa-caret-down
-						ul.sub-menu
-							li.px-3.py-2.text-dark
-								a.menu-link(href='about.html') Giới thiệu
-							li.px-3.py-2.text-dark
-								a.menu-link(href='team.html') Đội ngũ
-		.header-bottom-2.bg-light
-			.container.px-2
-				nav.navbar.navbar-expand-lg.navbar-light
-					.container-fluid.align-items-center.pr-2
-						.col-lg-12.lg-flex-1
-							button.btn.btn-toggle-menu.d-lg-none(type='button' data-bs-toggle='offcanvas' data-bs-target='#offcanvasExample3' aria-controls='offcanvasExample3')
-								i.fa-solid.fa-bars.text-dark.fs-4.mt-1
-							.mobile-menu
-								ul.navbar-nav.me-auto.mb-2.mb-lg-0.justify-content-center.mobile-align-items-start.align-items-center.gap-lg-3.height-lg-45
-									li.nav-item.active
-										a.nav-link.d-flex.justify-content-center.align-items-center.text-uppercase(href='/')
-											span.me-1
-												i.fa-solid.fa-house
-											span  Trang Chủ 
-									li.nav-item.dropdown
-										a.nav-link.d-flex.justify-content-center.align-items-center.dropdown-toggle.text-uppercase(href='/nuoc-giat-xa')
-											span.me-1  
-											span  Nước Giặt Xả 
-										ul.dropdown-menu(aria-labelledby='navbarDropdown')
-											li.nav-item.dropdown
-												a.dropdown-item.dropdown-toggle.childMenu.fw-bold(href='/danh-muc-san-pham/tonmat-cach-am-cach-nhiet')
-													span.me-1  
-													span Tonmat cách âm - cách nhiệt
-												ul.dropdown-menu.submenu-level-2(aria-labelledby='navbarDropdownSubmenu')
-													li.nav-item
-														a.dropdown-item(href='/danh-muc-san-pham/tonmat-cach-am-cach-nhiet/tonmat-spec')
-															span.me-1  
-															span Tonmat SPEC
-													li.nav-item
-														a.dropdown-item(href='/danh-muc-san-pham/tonmat-cach-am-cach-nhiet/tonmat-apec')
-															span.me-1  
-															span Tonmat APEC
-													li.nav-item
-														a.dropdown-item(href='/danh-muc-san-pham/tonmat-cach-am-cach-nhiet/tonmat-eco')
-															span.me-1  
-															span Tonmat ECO
-											li
-												a.dropdown-item.fw-bold(href='/danh-muc-san-pham/tonmat-panel')
-													span.me-1  
-													span Tonmat Panel
-											li
-												a.dropdown-item.fw-bold(href='/danh-muc-san-pham/tranmat-tran-vach')
-													span.me-1  
-													span Tranmat: Trần - Vách
-											li.nav-item.dropdown
-												a.dropdown-item.fw-bold.dropdown-toggle.childMenu(href='/danh-muc-san-pham/gach-mat')
-													span.me-1  
-													span Gạch mát
-												ul.dropdown-menu.submenu-level-2(aria-labelledby='navbarDropdownSubmenu')
-													li.nav-item
-														a.dropdown-item(href='/danh-muc-san-pham/gach-mat/gach-mat')
-															span.me-1  
-															span Gạch mát
-													li.nav-item
-														a.dropdown-item(href='/danh-muc-san-pham/gach-mat/phu-kien-gach-mat')
-															span.me-1  
-															span Phụ kiện Gạch mát
-											li
-												a.dropdown-item.fw-bold(href='/danh-muc-san-pham/ton-cong-trinh')
-													span.me-1  
-													span Tôn công trình
-											li
-												a.dropdown-item.fw-bold(href='/danh-muc-san-pham/ton-nhua')
-													span.me-1  
-													span Tôn nhựa
-											li
-												a.dropdown-item.fw-bold(href='/danh-muc-san-pham/tam-lop-sinh-thai-onduline')
-													span.me-1  
-													span Tấm lợp sinh thái Onduline
-											li
-												a.dropdown-item.fw-bold(href='/danh-muc-san-pham/vat-lieu-chong-nong-cach-am-cach-nhiet')
-													span.me-1  
-													span Vật liệu chống nóng cách âm cách nhiệt
-									li.nav-item
-										a.nav-link.d-flex.justify-content-center.align-items-center.text-uppercase(href='/nuoc-rua-chen')
-											span.me-1  
-											span  Nước Rửa Chén 
-									li.nav-item
-										a.nav-link.d-flex.justify-content-center.align-items-center.text-uppercase(href='/nuoc-lau-san')
-											span.me-1  
-											span  Nước Lau Sàn 
-									li.nav-item
-										a.nav-link.d-flex.justify-content-center.align-items-center.text-uppercase(href='/gioi-thieu')
-											span.me-1  
-											span  Giới Thiệu 
-									li.nav-item
-										a.nav-link.d-flex.justify-content-center.align-items-center.text-uppercase(href='/tin-tuc')
-											span.me-1  
-											span  Tin tức 
-									li.nav-item
-										a.nav-link.d-flex.justify-content-center.align-items-center.text-uppercase(href='/lien-he')
-											span.me-1  
-											span  Liên Hệ 
-									li.nav-item
-										a.nav-link.d-flex.justify-content-center.align-items-center.text-uppercase(href='product-detail.html')
-											span.me-1  
-											span  Product detail
-									li.nav-item
-										a.nav-link.d-flex.justify-content-center.align-items-center.text-uppercase(href='product-category.html')
-											span.me-1  
-											span  Category
-								.language.d-flex.flex-column.d-lg-none(style='margin: 0 20px;')
-									a(href='https://vip2.io.vn/lang/vi')
-										img(src='https://vip2.io.vn/public/assets/images/vi.jpg' alt='VI' width='38' height='25' style='width: 38px !important;')
-									a(href='https://vip2.io.vn/lang/en')
-										img(src='https://vip2.io.vn/public/assets/images/en.jpg' alt='EN' width='38' height='25' style='width: 38px !important; margin-top: 10px;')
-									a(href='https://vip2.io.vn/lang/ja')
-										img(src='https://vip2.io.vn/public/assets/images/ja.jpg' alt='EN' width='38' height='25' style='width: 38px !important; margin-top: 10px;')
-									ul.navbar-nav.me-auto.mb-2.mb-lg-0
-										li.nav-item.d-lg-none
-											a.nav-link.btn-dang-nhap-user(href='#')
-												span Đăng nhập
-										li.nav-item.d-lg-none
-											a.nav-link(href='https://vip2.io.vn/dang-ky-tai-khoan')
-												span Đăng ký
-								.language.header-search.d-flex.flex-column.d-lg-none(style='margin: 0 20px;')
-									form.form-inline(action='https://vip2.io.vn/tat-ca-san-pham' method='GET')
-										.input-group
-											input.form-control(type='text' name='search' placeholder='Tìm sản phẩm?')
-											.input-group-append
-												button.btn(type='submit' aria-label='Tìm sản phẩm')
-													i.fa.fa-search(aria-hidden='true')
-						//
-							<div class="d-none d-lg-flex justify-content-end">
-							<div class="language d-flex justify-content-end">
-							<a href="https://vip2.io.vn/lang/vi">
-							<img src="https://vip2.io.vn/public/assets/images/vi.jpg" alt="VI" width="38"
-							height="25" style="width: 38px !important; margin-right: 4px;">
-							</a>
-							<a href="https://vip2.io.vn/lang/en">
-							<img src="https://vip2.io.vn/public/assets/images/en.jpg" alt="EN" width="38"
-							height="25" style="width: 38px !important; margin-right: 4px;">
-							</a>
-							<a href="https://vip2.io.vn/lang/ja">
-							<img src="https://vip2.io.vn/public/assets/images/ja.jpg" alt="EN" width="38"
-							height="25" style="width: 38px !important;">
-							</a>
-							</div>
-							</div>
-						.header-logo.d-lg-none.py-1
-							a(href='https://vip2.io.vn')
-								img(src='https://vip2.io.vn/admin/public/images/footer/17342295786428x160.png' alt='logo' style='width: 150px !important; max-height: unset;')
-						.header-card.d-lg-none.d-flex.gap-1
-							a.d-flex(href='https://vip2.io.vn/gio-hang')
-								.icon
-									i.fa.fa-shopping-cart.text-dark.fs-5(aria-hidden='true')
-							button.btn.btn-search.p-0.border-0(type='button')
-								i.fa.fa-search.text-dark.fs-5(aria-hidden='true')
-						.header-search.col-7.d-lg-none.w-100.mb-2.border
-							form.form-inline(action='https://vip2.io.vn/tat-ca-san-pham' method='GET')
-								.input-group.d-flex
-									input.form-control(type='text' name='search' placeholder='Tìm sản phẩm?')
-									.input-group-append
-										button.btn(type='submit' aria-label='Tìm sản phẩm')
-											i.fa.fa-search(aria-hidden='true')
+		#header-sticky
+			.header-bottom-item.header-bottom.d-none.d-lg-block.container-fluid.px-5(style='border-color: red; background: white;')
+				.px-5
+					ul.menu.mb-0.d-flex.row-gap-2.align-items-center.justify-content-center
+						li.menu-item.d-flex.align-items-center.py-1.px-2.has-sub-menu
+							a.menu-link.py-1.px-2.d-flex.align-items-center.gap-1(href='#')
+								img.item-img(src='https://file.hstatic.net/200000865177/file/cam-nang_7b1c2041fc624dbbb73509f39a24a55f.png' alt)
+								|                                 ẤN PHẨM F&B
+							i.fa-solid.fa-caret-down
+							ul.sub-menu.sub-menu-list.mega
+								li.sub-menu-item
+									ul.menu-list
+										// Danh thiếp - Namecards
+										li.px-3.py-2.text-dark
+											| Danh thiếp - Namecards
+										li.px-3.py-2.text-dark
+											| Danh thiếp Giấy mỹ thuật
+										li.px-3.py-2.text-dark
+											| Danh thiếp chuẩn
+										li.px-3.py-2.text-dark
+											| Danh Thiếp Kỹ Thuật Số
+										li.px-3.py-2.text-dark
+											| Danh Thiếp Thông Minh
+										li.px-3.py-2.text-dark
+											| Danh Thiếp Dập Nổi/ Chìm
+										li.px-3.py-2.text-dark
+											| Danh Thiếp Ngọc Trai
+										li.px-3.py-2.text-dark
+											| Danh Thiếp Giấy Nhựa
+										li.px-3.py-2.text-dark
+											| Danh Thiếp Bo Góc Chuẩn
+										li.px-3.py-2.text-dark
+											| Danh Thiếp Vuông Bo Góc
+										li.px-3.py-2.text-dark
+											| Danh Thiếp Highlight
+										li.px-3.py-2.text-dark
+											| Danh Thiếp Gấp Đôi
+										li.px-3.py-2.text-dark
+											| Danh Thiếp Vuông
+								li.sub-menu-item
+									ul.menu-list
+										// Bao thư - Envelopes
+										li.px-3.py-2.text-dark
+											| Bao thư - Envelopes
+										li.px-3.py-2.text-dark
+											| Bao thư lấy ngay
+										li.px-3.py-2.text-dark
+											| Bao thư nhỏ
+										li.px-3.py-2.text-dark
+											| Bao thư trung
+										li.px-3.py-2.text-dark
+											| Bao thư lớn
+										li.px-3.py-2.text-dark
+											| Bao thư giấy Kraft
+										li.px-3.py-2.text-dark
+											| Bao thư cửa sổ kính
+								li.sub-menu-item
+									ul.menu-list
+										// Áo thun đồng phục
+										li.px-3.py-2.text-dark
+											| Áo thun đồng phục
+										li.px-3.py-2.text-dark
+											| Áo thun đồng phục cổ trụ
+										li.px-3.py-2.text-dark
+											| Áo thun đồng phục cổ tròn
+										// Giấy ghi chú - Block notes
+										li.px-3.py-2.text-dark
+											| Giấy ghi chú - Block notes
+										li.px-3.py-2.text-dark
+											| Giấy ghi chú
+										// Giấy tiêu đề - Letterheads
+										li.px-3.py-2.text-dark
+											| Giấy tiêu đề - Letterheads
+										li.px-3.py-2.text-dark
+											| Giấy tiêu đề số lượng ít
+										li.px-3.py-2.text-dark
+											| Giấy tiêu đề số lượng lớn
+										// Bìa đựng hồ sơ - Folders
+										li.px-3.py-2.text-dark
+											| Bìa đựng hồ sơ - Folders
+										li.px-3.py-2.text-dark
+											| Bìa đựng hồ sơ 1 tay gấp
+										li.px-3.py-2.text-dark
+											| Bìa đựng hồ sơ 2 tay gấp
+										li.px-3.py-2.text-dark
+											| Bìa đựng hồ sơ cao cấp
+						li.menu-item.d-flex.align-items-center.py-1.px-2.has-sub-menu
+							a.menu-link.py-1.px-2.d-flex.align-items-center.gap-1(href='#')
+								img.item-img(src='https://file.hstatic.net/200000865177/file/cam-nang_7b1c2041fc624dbbb73509f39a24a55f.png' alt)
+								|                                 ẤN PHẨM VĂN PHÒNG
+							i.fa-solid.fa-caret-down
+							ul.sub-menu.sub-menu-list.mega
+								li.sub-menu-item
+									ul.menu-list
+										// Danh thiếp - Namecards
+										li.px-3.py-2.text-dark
+											| Danh thiếp - Namecards
+										li.px-3.py-2.text-dark
+											| Danh thiếp Giấy mỹ thuật
+										li.px-3.py-2.text-dark
+											| Danh thiếp chuẩn
+										li.px-3.py-2.text-dark
+											| Danh Thiếp Kỹ Thuật Số
+										li.px-3.py-2.text-dark
+											| Danh Thiếp Thông Minh
+										li.px-3.py-2.text-dark
+											| Danh Thiếp Dập Nổi/ Chìm
+										li.px-3.py-2.text-dark
+											| Danh Thiếp Ngọc Trai
+										li.px-3.py-2.text-dark
+											| Danh Thiếp Giấy Nhựa
+										li.px-3.py-2.text-dark
+											| Danh Thiếp Bo Góc Chuẩn
+										li.px-3.py-2.text-dark
+											| Danh Thiếp Vuông Bo Góc
+										li.px-3.py-2.text-dark
+											| Danh Thiếp Highlight
+										li.px-3.py-2.text-dark
+											| Danh Thiếp Gấp Đôi
+										li.px-3.py-2.text-dark
+											| Danh Thiếp Vuông
+								li.sub-menu-item
+									ul.menu-list
+										// Danh thiếp - Namecards
+										li.px-3.py-2.text-dark
+											| Danh thiếp - Namecards
+								li.sub-menu-item
+									ul.menu-list
+										// Danh thiếp - Namecards
+										li.px-3.py-2.text-dark
+											| Danh thiếp - Namecards
+										li.px-3.py-2.text-dark
+											| Danh thiếp Giấy mỹ thuật
+										li.px-3.py-2.text-dark
+											| Danh thiếp chuẩn
+										li.px-3.py-2.text-dark
+											| Danh Thiếp Kỹ Thuật Số
+										li.px-3.py-2.text-dark
+											| Danh Thiếp Thông Minh
+										li.px-3.py-2.text-dark
+											| Danh Thiếp Dập Nổi/ Chìm
+										li.px-3.py-2.text-dark
+											| Danh Thiếp Ngọc Trai
+										li.px-3.py-2.text-dark
+											| Danh Thiếp Giấy Nhựa
+										li.px-3.py-2.text-dark
+											| Danh Thiếp Bo Góc Chuẩn
+										li.px-3.py-2.text-dark
+											| Danh Thiếp Vuông Bo Góc
+										li.px-3.py-2.text-dark
+											| Danh Thiếp Highlight
+										li.px-3.py-2.text-dark
+											| Danh Thiếp Gấp Đôi
+										li.px-3.py-2.text-dark
+											| Danh Thiếp Vuông
+								li.sub-menu-item
+									ul.menu-list
+										// Danh thiếp - Namecards
+										li.px-3.py-2.text-dark
+											| Danh thiếp - Namecards
+								li.sub-menu-item
+									ul.menu-list
+										// Bao thư - Envelopes
+										li.px-3.py-2.text-dark
+											| Bao thư - Envelopes
+										li.px-3.py-2.text-dark
+											| Bao thư lấy ngay
+										li.px-3.py-2.text-dark
+											| Bao thư nhỏ
+										li.px-3.py-2.text-dark
+											| Bao thư trung
+										li.px-3.py-2.text-dark
+											| Bao thư lớn
+										li.px-3.py-2.text-dark
+											| Bao thư giấy Kraft
+										li.px-3.py-2.text-dark
+											| Bao thư cửa sổ kính
+								li.sub-menu-item
+									ul.menu-list
+										// Áo thun đồng phục
+										li.px-3.py-2.text-dark
+											| Áo thun đồng phục
+						li.menu-item.d-flex.align-items-center.py-1.px-2.has-sub-menu
+							a.menu-link.py-1.px-2(href='#') ẤN PHẨM TIẾP THỊ
+							i.fa-solid.fa-caret-down
+							ul.sub-menu
+								li.px-3.py-2.text-dark
+									a.menu-link(href='about.html') Giới thiệu
+								li.px-3.py-2.text-dark
+									a.menu-link(href='team.html') Đội ngũ
+								li.px-3.py-2.text-dark
+									a.menu-link(href='about.html') Giới thiệu
+								li.px-3.py-2.text-dark
+									a.menu-link(href='team.html') Đội ngũ
+								li.px-3.py-2.text-dark
+									a.menu-link(href='about.html') Giới thiệu
+								li.px-3.py-2.text-dark
+									a.menu-link(href='team.html') Đội ngũ
+								li.px-3.py-2.text-dark
+									a.menu-link(href='about.html') Giới thiệu
+								li.px-3.py-2.text-dark
+									a.menu-link(href='team.html') Đội ngũ
+								li.px-3.py-2.text-dark
+									a.menu-link(href='about.html') Giới thiệu
+								li.px-3.py-2.text-dark
+									a.menu-link(href='team.html') Đội ngũ
+								li.px-3.py-2.text-dark
+									a.menu-link(href='about.html') Giới thiệu
+								li.px-3.py-2.text-dark
+									a.menu-link(href='team.html') Đội ngũ
+								li.px-3.py-2.text-dark
+									a.menu-link(href='about.html') Giới thiệu
+								li.px-3.py-2.text-dark
+									a.menu-link(href='team.html') Đội ngũ
+						li.menu-item.d-flex.align-items-center.py-1.px-2.has-sub-menu
+							a.menu-link.py-1.px-2(href='#') ẤN PHẨM BAO BÌ
+							i.fa-solid.fa-caret-down
+							ul.sub-menu
+								li.px-3.py-2.text-dark
+									a.menu-link(href='about.html') Giới thiệu
+								li.px-3.py-2.text-dark
+									a.menu-link(href='team.html') Đội ngũ
+						li.menu-item.d-flex.align-items-center.py-1.px-2.has-sub-menu
+							a.menu-link.py-1.px-2(href='#') ẤN PHẨM CÁ NHÂN
+							i.fa-solid.fa-caret-down
+							ul.sub-menu
+								li.px-3.py-2.text-dark
+									a.menu-link(href='about.html') Giới thiệu
+								li.px-3.py-2.text-dark
+									a.menu-link(href='team.html') Đội ngũ
+						li.menu-item.d-flex.align-items-center.py-1.px-2.has-sub-menu
+							a.menu-link.py-1.px-2(href='#') ÁO THUN 
+							i.fa-solid.fa-caret-down
+							ul.sub-menu
+								li.px-3.py-2.text-dark
+									a.menu-link(href='about.html') Giới thiệu
+								li.px-3.py-2.text-dark
+									a.menu-link(href='team.html') Đội ngũ
+						li.menu-item.d-flex.align-items-center.py-1.px-2.has-sub-menu
+							a.menu-link.py-1.px-2(href='#')  ẤN PHẨM KHÁC
+							i.fa-solid.fa-caret-down
+							ul.sub-menu
+								li.px-3.py-2.text-dark
+									a.menu-link(href='about.html') Giới thiệu
+								li.px-3.py-2.text-dark
+									a.menu-link(href='team.html') Đội ngũ
+						li.menu-item.d-flex.align-items-center.py-1.px-2
+							a.menu-link.py-1.px-2(href='#')  IN NHANH
+						li.menu-item.d-flex.align-items-center.py-1.px-2
+							a.menu-link.py-1.px-2(href='#')  IN NHANH
+						li.menu-item.d-flex.align-items-center.py-1.px-2
+							a.menu-link.py-1.px-2(href='#')  IN NHANH
+						li.menu-item.d-flex.align-items-center.py-1.px-2
+							a.menu-link.py-1.px-2(href='#')  IN NHANH
+						li.menu-item.d-flex.align-items-center.py-1.px-2
+							a.menu-link.py-1.px-2(href='#')  IN NHANH
+						li.menu-item.d-flex.align-items-center.py-1.px-2.has-sub-menu
+							a.menu-link.py-1.px-2(href='#')  ẤN PHẨM KHÁC
+							i.fa-solid.fa-caret-down
+							ul.sub-menu
+								li.px-3.py-2.text-dark
+									a.menu-link(href='about.html') Giới thiệu
+								li.px-3.py-2.text-dark
+									a.menu-link(href='team.html') Đội ngũ
+			.header-bottom-item.header-bottom-2.bg-light
+				.container.px-2
+					nav.navbar.navbar-expand-lg.navbar-light
+						.container-fluid.align-items-center.pr-2
+							.col-lg-12.lg-flex-1
+								button.btn.btn-toggle-menu.d-lg-none(type='button' data-bs-toggle='offcanvas' data-bs-target='#offcanvasExample3' aria-controls='offcanvasExample3')
+									i.fa-solid.fa-bars.text-dark.fs-4.mt-1
+								.mobile-menu
+									ul.navbar-nav.me-auto.mb-2.mb-lg-0.justify-content-center.mobile-align-items-start.align-items-center.gap-lg-3.height-lg-45
+										li.nav-item.active
+											a.nav-link.d-flex.justify-content-center.align-items-center.text-uppercase(href='/')
+												span.me-1
+													i.fa-solid.fa-house
+												span  Trang Chủ 
+										li.nav-item.dropdown
+											a.nav-link.d-flex.justify-content-center.align-items-center.dropdown-toggle.text-uppercase(href='/nuoc-giat-xa')
+												span.me-1  
+												span  Nước Giặt Xả 
+											ul.dropdown-menu(aria-labelledby='navbarDropdown')
+												li.nav-item.dropdown
+													a.dropdown-item.dropdown-toggle.childMenu.fw-bold(href='/danh-muc-san-pham/tonmat-cach-am-cach-nhiet')
+														span.me-1  
+														span Tonmat cách âm - cách nhiệt
+													ul.dropdown-menu.submenu-level-2(aria-labelledby='navbarDropdownSubmenu')
+														li.nav-item
+															a.dropdown-item(href='/danh-muc-san-pham/tonmat-cach-am-cach-nhiet/tonmat-spec')
+																span.me-1  
+																span Tonmat SPEC
+														li.nav-item
+															a.dropdown-item(href='/danh-muc-san-pham/tonmat-cach-am-cach-nhiet/tonmat-apec')
+																span.me-1  
+																span Tonmat APEC
+														li.nav-item
+															a.dropdown-item(href='/danh-muc-san-pham/tonmat-cach-am-cach-nhiet/tonmat-eco')
+																span.me-1  
+																span Tonmat ECO
+												li
+													a.dropdown-item.fw-bold(href='/danh-muc-san-pham/tonmat-panel')
+														span.me-1  
+														span Tonmat Panel
+												li
+													a.dropdown-item.fw-bold(href='/danh-muc-san-pham/tranmat-tran-vach')
+														span.me-1  
+														span Tranmat: Trần - Vách
+												li.nav-item.dropdown
+													a.dropdown-item.fw-bold.dropdown-toggle.childMenu(href='/danh-muc-san-pham/gach-mat')
+														span.me-1  
+														span Gạch mát
+													ul.dropdown-menu.submenu-level-2(aria-labelledby='navbarDropdownSubmenu')
+														li.nav-item
+															a.dropdown-item(href='/danh-muc-san-pham/gach-mat/gach-mat')
+																span.me-1  
+																span Gạch mát
+														li.nav-item
+															a.dropdown-item(href='/danh-muc-san-pham/gach-mat/phu-kien-gach-mat')
+																span.me-1  
+																span Phụ kiện Gạch mát
+												li
+													a.dropdown-item.fw-bold(href='/danh-muc-san-pham/ton-cong-trinh')
+														span.me-1  
+														span Tôn công trình
+												li
+													a.dropdown-item.fw-bold(href='/danh-muc-san-pham/ton-nhua')
+														span.me-1  
+														span Tôn nhựa
+												li
+													a.dropdown-item.fw-bold(href='/danh-muc-san-pham/tam-lop-sinh-thai-onduline')
+														span.me-1  
+														span Tấm lợp sinh thái Onduline
+												li
+													a.dropdown-item.fw-bold(href='/danh-muc-san-pham/vat-lieu-chong-nong-cach-am-cach-nhiet')
+														span.me-1  
+														span Vật liệu chống nóng cách âm cách nhiệt
+										li.nav-item
+											a.nav-link.d-flex.justify-content-center.align-items-center.text-uppercase(href='/nuoc-rua-chen')
+												span.me-1  
+												span  Nước Rửa Chén 
+										li.nav-item
+											a.nav-link.d-flex.justify-content-center.align-items-center.text-uppercase(href='/nuoc-lau-san')
+												span.me-1  
+												span  Nước Lau Sàn 
+										li.nav-item
+											a.nav-link.d-flex.justify-content-center.align-items-center.text-uppercase(href='/gioi-thieu')
+												span.me-1  
+												span  Giới Thiệu 
+										li.nav-item
+											a.nav-link.d-flex.justify-content-center.align-items-center.text-uppercase(href='/tin-tuc')
+												span.me-1  
+												span  Tin tức 
+										li.nav-item
+											a.nav-link.d-flex.justify-content-center.align-items-center.text-uppercase(href='/lien-he')
+												span.me-1  
+												span  Liên Hệ 
+										li.nav-item
+											a.nav-link.d-flex.justify-content-center.align-items-center.text-uppercase(href='product-detail.html')
+												span.me-1  
+												span  Product detail
+										li.nav-item
+											a.nav-link.d-flex.justify-content-center.align-items-center.text-uppercase(href='product-category.html')
+												span.me-1  
+												span  Category
+									.language.d-flex.flex-column.d-lg-none(style='margin: 0 20px;')
+										a(href='https://vip2.io.vn/lang/vi')
+											img(src='https://vip2.io.vn/public/assets/images/vi.jpg' alt='VI' width='38' height='25' style='width: 38px !important;')
+										a(href='https://vip2.io.vn/lang/en')
+											img(src='https://vip2.io.vn/public/assets/images/en.jpg' alt='EN' width='38' height='25' style='width: 38px !important; margin-top: 10px;')
+										a(href='https://vip2.io.vn/lang/ja')
+											img(src='https://vip2.io.vn/public/assets/images/ja.jpg' alt='EN' width='38' height='25' style='width: 38px !important; margin-top: 10px;')
+										ul.navbar-nav.me-auto.mb-2.mb-lg-0
+											li.nav-item.d-lg-none
+												a.nav-link.btn-dang-nhap-user(href='#')
+													span Đăng nhập
+											li.nav-item.d-lg-none
+												a.nav-link(href='https://vip2.io.vn/dang-ky-tai-khoan')
+													span Đăng ký
+									.language.header-search.d-flex.flex-column.d-lg-none(style='margin: 0 20px;')
+										form.form-inline(action='https://vip2.io.vn/tat-ca-san-pham' method='GET')
+											.input-group
+												input.form-control(type='text' name='search' placeholder='Tìm sản phẩm?')
+												.input-group-append
+													button.btn(type='submit' aria-label='Tìm sản phẩm')
+														i.fa.fa-search(aria-hidden='true')
+							//
+								<div class="d-none d-lg-flex justify-content-end">
+								<div class="language d-flex justify-content-end">
+								<a href="https://vip2.io.vn/lang/vi">
+								<img src="https://vip2.io.vn/public/assets/images/vi.jpg" alt="VI" width="38"
+								height="25" style="width: 38px !important; margin-right: 4px;">
+								</a>
+								<a href="https://vip2.io.vn/lang/en">
+								<img src="https://vip2.io.vn/public/assets/images/en.jpg" alt="EN" width="38"
+								height="25" style="width: 38px !important; margin-right: 4px;">
+								</a>
+								<a href="https://vip2.io.vn/lang/ja">
+								<img src="https://vip2.io.vn/public/assets/images/ja.jpg" alt="EN" width="38"
+								height="25" style="width: 38px !important;">
+								</a>
+								</div>
+								</div>
+							.header-logo.d-lg-none.py-1
+								a(href='https://vip2.io.vn')
+									img(src='https://vip2.io.vn/admin/public/images/footer/17342295786428x160.png' alt='logo' style='width: 150px !important; max-height: unset;')
+							.header-card.d-lg-none.d-flex.gap-1
+								a.d-flex(href='https://vip2.io.vn/gio-hang')
+									.icon
+										i.fa.fa-shopping-cart.text-dark.fs-5(aria-hidden='true')
+								button.btn.btn-search.p-0.border-0(type='button')
+									i.fa.fa-search.text-dark.fs-5(aria-hidden='true')
+							.header-search.col-7.d-lg-none.w-100.mb-2.border
+								form.form-inline(action='https://vip2.io.vn/tat-ca-san-pham' method='GET')
+									.input-group.d-flex
+										input.form-control(type='text' name='search' placeholder='Tìm sản phẩm?')
+										.input-group-append
+											button.btn(type='submit' aria-label='Tìm sản phẩm')
+												i.fa.fa-search(aria-hidden='true')
 		#offcanvasExample.offcanvas.offcanvas-start(data-bs-scroll='false' data-bs-backdrop='true' style='background: var(--mainColor);' tabindex='-1' aria-labelledby='offcanvasExampleLabel')
 			.offcanvas-header.pb-1.mb-2.position-relative.mx-3
 				h5#offcanvasExampleLabel.offcanvas-title.mx-auto

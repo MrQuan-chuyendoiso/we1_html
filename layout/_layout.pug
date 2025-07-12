@@ -55,6 +55,42 @@ html(lang="en")
         +header(page)
         main 
             block body
+            .scroll-top-btn(style='display: block;')
+                i.fa.fa-arrow-up
+                span.hover-text Top
+
+            .link_chat_social.position-fixed
+                .link_cart.link-is-scroll
+                    a
+                        .phone-vr-img-circle(style='width: 50px; height: 50px; position: relative;')
+                            .phone-vr-circle-fill
+                            i.fa-solid.fa-cart-plus(style='position: absolute; animation: phonering-alo-circle-img-anim 1s infinite ease-in-out; bottom: 12px; left: 12px; font-size: 24px; color: #ffffff;')
+                .link_login.link-is-scroll
+                    a(href title='Đặt lịch' data-bs-toggle='modal' data-bs-target='#popup-dat-lich')
+                        .phone-vr-img-circle(style='width: 50px; height: 50px; position: relative;')
+                            .phone-vr-circle-fill
+                            i.fa-solid.fa-user(style='position: absolute; animation: phonering-alo-circle-img-anim 1s infinite ease-in-out; bottom: 12px; left: 12px; font-size: 24px; color: #ffffff;')
+                .link_dat_lich
+                    a(href title='Đặt lịch' data-bs-toggle='modal' data-bs-target='#popup-dat-lich')
+                        .phone-vr-img-circle(style='width: 50px; height: 50px; position: relative;')
+                            .phone-vr-circle-fill
+                            i.fa-solid.fa-calendar-days(style='position: absolute; animation: phonering-alo-circle-img-anim 1s infinite ease-in-out; bottom: 12px; left: 12px; font-size: 30px; color: #ffffff;')
+                .link_chat_facebook
+                    a(href='https://www.m.me/514902838382434' target='_blank')
+                        .phone-vr-img-circle
+                            .phone-vr-circle-fill
+                            img(loading='lazy' src='https://we1.io.vn/public/assets/images/link_chat_facebook.png' alt='link_chat')
+                .link_chat_zalo
+                    a(href='https://www.zalo.me/0847865568' target='_blank')
+                        .phone-vr-img-circle
+                            .phone-vr-circle-fill
+                            img(loading='lazy' src='https://we1.io.vn/public/assets/images/link_chat_zalo.png' alt='link_chat')
+                .link_call
+                    a(href='tel:0847 865 568' target='_blank')
+                        .phone-vr-img-circle
+                            .phone-vr-circle-fill
+                            img(loading='lazy' src='https://we1.io.vn/public/assets/images/call.png' alt='link_chat')
+
         +footer()
         //- #formSearch.modal.fade(tabindex='-1', aria-labelledby='exampleModalLabel', aria-hidden='true')
             .modal-dialog

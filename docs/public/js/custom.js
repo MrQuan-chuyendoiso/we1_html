@@ -80,16 +80,16 @@ $(document).ready(function () {
   }
 
   // Scroll padding change
-  $(window).on('scroll resize', function () {
-    const scrollTop = $(this).scrollTop();
-    const windowWidth = $(window).width();
-    if (windowWidth >= 768 && $('#header-main').length) {
-      $('#header-main').css({
-        'padding-top': scrollTop > 35 ? '0.4rem' : '1rem',
-        'padding-bottom': scrollTop > 35 ? '0.4rem' : '1rem'
-      });
-    }
-  });
+  // $(window).on('scroll resize', function () {
+  //   const scrollTop = $(this).scrollTop();
+  //   const windowWidth = $(window).width();
+  //   if (windowWidth >= 768 && $('#header-main').length) {
+  //     $('#header-main').css({
+  //       'padding-top': scrollTop > 35 ? '0.4rem' : '1rem',
+  //       'padding-bottom': scrollTop > 35 ? '0.4rem' : '1rem'
+  //     });
+  //   }
+  // });
 
   if ($('.popup-youtube, .popup-vimeo').length) {
     $('.popup-youtube, .popup-vimeo').magnificPopup({
@@ -208,3 +208,60 @@ function setEqualHeightSlickItems() {
 $('.slick-row-2').on('setPosition', function () {
   setEqualHeightSlickItems();
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const headerMain   = document.querySelector("#header-sticky");
+  const headerWrap   = document.querySelector(".fe-header");
+  const originalLogo = document.querySelector("#logo");
+
+  if (!headerMain || !headerWrap || !originalLogo) return;
+
+  // Tạo clone header sticky
+  const stickyClone = headerMain.cloneNode(true);
+  stickyClone.classList.add("sticky-header-clone");
+  stickyClone.id = "header-main-sticky";
+
+  // Thêm bg-sticky vào đầu
+  const bgDiv = document.createElement("div");
+  bgDiv.className = "bg-sticky";
+  stickyClone.prepend(bgDiv);
+
+  // Gắn vào DOM
+  headerWrap.appendChild(stickyClone);
+
+  // Clone logo 2 lần cho 2 .header-bottom-item
+  const logoHTML = originalLogo.outerHTML.replace('id="logo"', 'class="stick-logo"');
+  const items = stickyClone.querySelectorAll(".header-bottom-item");
+
+  items.forEach((item, index) => {
+    if (!item.querySelector(".stick-logo")) {
+      item.insertAdjacentHTML("afterbegin", logoHTML);
+    }
+  });
+
+  // Animation sticky
+  const triggerY = headerWrap.offsetTop + headerWrap.offsetHeight;
+  let lastY = window.scrollY;
+  let visible = false;
+
+  window.addEventListener("scroll", () => {
+    const y = window.scrollY;
+    const sticky = document.querySelector("#header-main-sticky");
+
+    if (y > triggerY && !visible) {
+      sticky.classList.add("show");
+      headerWrap.classList.add("scrolling");
+      visible = true;
+    } else if (y <= triggerY && visible) {
+      sticky.classList.remove("show");
+      headerWrap.classList.remove("scrolling");
+      visible = false;
+    }
+
+    document.body.classList.toggle("is-scrolling", y > lastY);
+    lastY = y;
+  });
+});
+
+
+

@@ -2169,3 +2169,327 @@ ul {
 .slick-news-2 .slick-slide > div:first-child {
   margin-bottom: 0 !important;
 }
+
+.fe-header {
+  position: relative;
+  top: 0;
+}
+
+.sticky-header-clone {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: -webkit-transform 0.4s ease;
+  transition: -webkit-transform 0.4s ease;
+  transition: transform 0.4s ease;
+  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
+  z-index: 9999;
+}
+.sticky-header-clone .bg-sticky {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  opacity: 0.95;
+  pointer-events: none;
+}
+
+.sticky-header-clone.show {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+#header-main-sticky {
+  border-bottom: 1px solid var(--primary);
+}
+#header-main-sticky .header-bottom,
+#header-main-sticky .header-bottom-2 {
+  padding: 8px 16px !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-color: transparent !important;
+  border-top: 1px solid #eee !important;
+  position: relative;
+  z-index: 1;
+}
+#header-main-sticky .header-bottom .logo,
+#header-main-sticky .header-bottom-2 .logo {
+  width: 190px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+@media (max-width: 992px) {
+  #header-sticky {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    left: 0;
+    right: 0;
+  }
+}
+
+/**/
+.scroll-top-btn {
+  position: fixed;
+  bottom: 48px;
+  right: 20px;
+  background-color: #201E1F;
+  color: #fff;
+  border: 2px solid #FFFFFF;
+  border-radius: 3px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 99;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.scroll-top-btn .fa-arrow-up {
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+}
+
+.scroll-top-btn:hover .fa-arrow-up {
+  -webkit-transform: translateY(-34px);
+          transform: translateY(-34px);
+}
+
+.hover-text {
+  display: block;
+  margin-top: 10px;
+  font-weight: 500;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+}
+
+.scroll-top-btn:hover .hover-text {
+  -webkit-transform: translateY(-34px);
+          transform: translateY(-34px);
+}
+
+.scroll-top-btn i {
+  font-size: 16px;
+}
+
+.link_chat_social {
+  bottom: 116px;
+  right: 20px;
+  z-index: 999999;
+}
+
+.link_chat_social img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 8px;
+}
+
+@media (max-width: 575px) {
+  .link_chat_social {
+    bottom: 72px;
+    right: 0;
+  }
+  .scroll-top-btn {
+    display: none !important;
+  }
+  .link_chat_social img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 6px;
+  }
+  .phone-vr-circle-fill {
+    width: 40px !important;
+    height: 40px !important;
+    border: unset !important;
+  }
+}
+.link_chat_social > * {
+  margin-top: 26px;
+}
+
+.link_chat_social .link_call .phone-vr-circle-fill {
+  -webkit-box-shadow: 0 0 0 0 #92e968;
+          box-shadow: 0 0 0 0 #92e968;
+  background-color: rgb(162, 243, 124);
+}
+
+.link_chat_social .link_chat_zalo .phone-vr-circle-fill {
+  -webkit-box-shadow: 0 0 0 0 #6badf3;
+          box-shadow: 0 0 0 0 #6badf3;
+  background-color: rgb(118, 176, 237);
+}
+
+.link_chat_social .link_chat_facebook .phone-vr-circle-fill {
+  -webkit-box-shadow: 0 0 0 0 #8daaf1;
+          box-shadow: 0 0 0 0 #8daaf1;
+  background-color: rgb(106, 148, 253);
+}
+
+.link_chat_social .link_chat_email .phone-vr-circle-fill {
+  -webkit-box-shadow: 0 0 0 0 #ffcca0;
+          box-shadow: 0 0 0 0 #ffcca0;
+  background-color: rgb(255, 191, 138);
+}
+
+.phone-vr-img-circle img {
+  -webkit-animation: phonering-alo-circle-img-anim 1s infinite ease-in-out;
+          animation: phonering-alo-circle-img-anim 1s infinite ease-in-out;
+}
+
+@-webkit-keyframes phonering-alo-circle-img-anim {
+  0% {
+    -webkit-transform: rotate(0) scale(1) skew(1deg);
+            transform: rotate(0) scale(1) skew(1deg);
+  }
+  10% {
+    -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+            transform: rotate(-25deg) scale(1) skew(1deg);
+  }
+  20% {
+    -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+            transform: rotate(25deg) scale(1) skew(1deg);
+  }
+  30% {
+    -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+            transform: rotate(-25deg) scale(1) skew(1deg);
+  }
+  40% {
+    -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+            transform: rotate(25deg) scale(1) skew(1deg);
+  }
+  50% {
+    -webkit-transform: rotate(0) scale(1) skew(1deg);
+            transform: rotate(0) scale(1) skew(1deg);
+  }
+  100% {
+    -webkit-transform: rotate(0) scale(1) skew(1deg);
+            transform: rotate(0) scale(1) skew(1deg);
+  }
+}
+
+@keyframes phonering-alo-circle-img-anim {
+  0% {
+    -webkit-transform: rotate(0) scale(1) skew(1deg);
+            transform: rotate(0) scale(1) skew(1deg);
+  }
+  10% {
+    -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+            transform: rotate(-25deg) scale(1) skew(1deg);
+  }
+  20% {
+    -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+            transform: rotate(25deg) scale(1) skew(1deg);
+  }
+  30% {
+    -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+            transform: rotate(-25deg) scale(1) skew(1deg);
+  }
+  40% {
+    -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+            transform: rotate(25deg) scale(1) skew(1deg);
+  }
+  50% {
+    -webkit-transform: rotate(0) scale(1) skew(1deg);
+            transform: rotate(0) scale(1) skew(1deg);
+  }
+  100% {
+    -webkit-transform: rotate(0) scale(1) skew(1deg);
+            transform: rotate(0) scale(1) skew(1deg);
+  }
+}
+.phone-vr-circle-fill {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  -webkit-box-shadow: 0 0 0 0 #fd4b4b;
+          box-shadow: 0 0 0 0 #fd4b4b;
+  background-color: rgb(253, 75, 75);
+  border-radius: 50%;
+  border: 23px solid transparent;
+  -webkit-animation: zoom 1.3s infinite ease-in-out;
+          animation: zoom 1.3s infinite ease-in-out;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+}
+
+@-webkit-keyframes zoom {
+  0% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  70% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-box-shadow: 0 0 0 15px transparent;
+            box-shadow: 0 0 0 15px transparent;
+  }
+  100% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    -webkit-box-shadow: 0 0 0 0 transparent;
+            box-shadow: 0 0 0 0 transparent;
+  }
+}
+
+@keyframes zoom {
+  0% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  70% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-box-shadow: 0 0 0 15px transparent;
+            box-shadow: 0 0 0 15px transparent;
+  }
+  100% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    -webkit-box-shadow: 0 0 0 0 transparent;
+            box-shadow: 0 0 0 0 transparent;
+  }
+}
+.phone-vr-img-circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.phone-vr-img-circle i {
+  position: static !important;
+}
+
+.link-is-scroll {
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.is-scrolling .link-is-scroll {
+  opacity: 1;
+}
