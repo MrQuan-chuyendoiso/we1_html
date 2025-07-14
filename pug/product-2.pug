@@ -1,0 +1,16 @@
+extends ../layout/_layout2.pug
+//- include ../component/_product_detail.pug
+
+block vars
+    - var bodyClass = ''
+    - var page = 'index'
+block body
+    //- section.sec-banner 
+        .container
+        .banner_slide
+            div
+                a.d-block.w-100.rounded-10(href='#' title='Banner 1')
+                    img.img-cover(src='./public/assets/images/slide2_01af15a43aa946beb009a32ade31afc9.jpg' alt='Banner 1')
+            div
+                a.d-block.w-100.rounded-10(href='#' title='Banner 2')
+                    img.img-cover(src='./public/assets/images/slide_56749911034a4ecb841b932a9f8c9f32.jpg' alt='Banner 2')

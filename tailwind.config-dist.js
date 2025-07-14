@@ -20,8 +20,9 @@ module.exports = {
         '2px': '2px!important',
         '4px': '4px!important',
         '8px': '8px',
+        '10px': '10px!important',
         '12': '12px',
-        '16': '16px',
+        '16': '16px!important',
         '20': '20px',
         '24': '24px',
         '28': '28px',
@@ -29,6 +30,7 @@ module.exports = {
         '36': '36px',
         '40': '40px',
         '44': '44px',
+        '46': '46px',
         '48': '48px',
         '52': '52px',
         '60': '60px',
@@ -59,7 +61,8 @@ module.exports = {
         'gray':'#e6e6e6',
         'blue':'#005EAA',
         'orange':'#ef8528',
-        'gray2': '#f3f4f6'
+        'gray2': '#f3f4f6',
+        'white-opacity':'rgba(255,255,255,.2)',
        },
        borderRadius: {
         '4':'4px',

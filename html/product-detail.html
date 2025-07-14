@@ -30,7 +30,7 @@
   </head>
   <body>
     <header class="fe-header w-100" style="background: white;">
-      <div class="header-top d-none d-md-block" style="border-bottom: 1px solid red;">
+      <div class="header-top d-none d-md-block">
         <div class="container-fluid px-3 px-sm-5 py-2">
           <div class="infomation d-flex flex-wrap justify-content-between gap-2 bi bi-heartpy-[2px]">
             <div class="d-flex flex-wrap gap-2 infomation-left"><a class="d-flex justify-content-center align-items-center text-dark gap-2 text-dark text-decoration-none" href="#"><i class="fa-solid fa-phone"></i><span> 0987654321 </span></a><a class="d-flex justify-content-center align-items-center text-dark gap-2 text-dark text-decoration-none" href="#"><i class="fa-solid fa-location-dot"></i><span> Dong anh, Ha Noi </span></a><a class="d-flex justify-content-center align-items-center text-dark gap-2 text-dark text-decoration-none" href="#"><i class="fa-solid fa-envelope"></i><span> mrquan@gmail.com </span></a></div>
@@ -46,7 +46,7 @@
           </div>
         </div>
       </div>
-      <div class="header-main px-3 d-flex align-items-center justify-content-between" id="header-main" style="border-color: red; background: var(--mainColor); padding-top: 1rem; padding-bottom: 1rem;">
+      <div class="header-main px-3 d-flex align-items-center justify-content-between" id="header-main" style="background: var(--mainColor); padding-top: 1rem; padding-bottom: 1rem;">
         <div class="container">
           <div class="row align-items-center justify-content-between w-100 wrap-menu">
             <div class="d-md-none col-2 px-0">
@@ -68,7 +68,7 @@
                   </div>
                 </div>
               </div>
-              <div class="logo d-flex align-items-center justify-content-center justify-content-md-start" id="logo"><a href="https://html.we1.io.vn"><img class="w-100" src="https://we1.io.vn/admin/public/images/header/174679621770428x160.png" alt="logo"/></a></div>
+              <div class="logo d-flex align-items-center justify-content-center justify-content-md-start" id="logo"><a href="./docs"><img class="w-100" src="./public/assets/images/174679621770428x160.png" alt="logo"/></a></div>
             </div>
             <div class="d-none d-md-flex align-content-center gap-2 wrap-header-search px-0 col-12 col-sm-4 col-md-5 col-lg-6 col-xl-4" id="header-search"><a class="d-none align-content-center justify-content-center text-light" data-bs-toggle="offcanvas" href="#offcanvasExample2" role="button" aria-controls="offcanvasExample2">
                 <svg class="mt-2" width="24px" height="24px" viewBox="0 -0.5 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -181,7 +181,7 @@
         </div>
       </div>
       <div id="header-sticky">
-        <div class="header-bottom-item header-bottom d-none d-lg-block container-fluid px-5" style="border-color: red; background: white;">
+        <div class="header-bottom-item header-bottom d-none d-lg-block container-fluid px-5" style="background: white;">
           <div class="px-5">
             <ul class="menu mb-0 d-flex row-gap-2 align-items-center justify-content-center">
               <li class="menu-item d-flex align-items-center py-1 px-2 has-sub-menu"><a class="menu-link py-1 px-2 d-flex align-items-center gap-1" href="#"><img class="item-img" src="https://file.hstatic.net/200000865177/file/cam-nang_7b1c2041fc624dbbb73509f39a24a55f.png" alt="alt"/>                                ẤN PHẨM F&B</a><i class="fa-solid fa-caret-down"></i>
@@ -457,285 +457,6 @@
                 </div>
               </div>
             </nav>
-          </div>
-        </div>
-      </div>
-      <div class="offcanvas offcanvas-start" id="offcanvasExample" data-bs-scroll="false" data-bs-backdrop="true" style="background: var(--mainColor);" tabindex="-1" aria-labelledby="offcanvasExampleLabel">
-        <div class="offcanvas-header pb-1 mb-2 position-relative mx-3">
-          <h5 class="offcanvas-title mx-auto" id="offcanvasExampleLabel"><img class="w-100" width="200" src="https://we1.io.vn/admin/public/images/header/174679621770428x160.png" alt="logo"/></h5>
-          <button class="btn-close position-absolute z-1 end-0" id="btn-close-sidebar" type="button" data-bs-dismiss="offcanvas" aria-label="Close"><i class="icon-close"></i></button>
-        </div>
-        <div class="px-3">
-          <div class="header-search d-block w-100">
-            <form class="form-inline" action="tat-ca-san-pham" method="GET">
-              <div class="input-group flex-nowrap">
-                <input class="form-control" type="text" name="search" placeholder="Tìm kiếm Sản phẩm &amp; Dịch vụ ?"/>
-                <div class="input-group-append bg-light">
-                  <button class="btn" type="submit" aria-label="Tìm kiếm Sản phẩm &amp; Dịch vụ ?"><i class="fa fa-search" aria-hidden="true"></i></button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="offcanvas-body pt-2 mt-2 px-3 d-flex justify-content-between flex-column">
-          <ul class="border-top">
-            <li class="menu-item d-flex align-items-center py-2 has-sub-menu toggle-menu-list"><a class="menu-link py-1 d-flex align-items-center gap-1 text-light text-uppercase" href="#"><img class="item-img" src="https://file.hstatic.net/200000865177/file/cam-nang_7b1c2041fc624dbbb73509f39a24a55f.png" alt="alt"/>                                Ấn phẩm văn phòng</a><i class="fa-solid fa-caret-down text-light px-1"></i>
-              <ul class="sub-menu sub-menu-list">
-                <li class="sub-menu-item">
-                  <ul class="menu-list sub-menu-list-1">
-                    <!-- Danh thiếp - Namecards-->
-                    <li class="py-2 text-light toggle-menu-list-2"><a class="fw-bold text-light" href="#"> Danh thiếp - Namecards</a><i class="fa-solid fa-caret-down text-light"></i>
-                      <ul class="sub-menu-list-2">
-                        <li class="px-3 py-2 text-light">- Danh thiếp Giấy mỹ thuật</li>
-                        <li class="px-3 py-2 text-light">- Danh thiếp chuẩn</li>
-                        <li class="px-3 py-2 text-light">- Danh Thiếp Kỹ Thuật Số</li>
-                        <li class="px-3 py-2 text-light">- Danh Thiếp Thông Minh</li>
-                        <li class="px-3 py-2 text-light">- Danh Thiếp Dập Nổi/ Chìm</li>
-                        <li class="px-3 py-2 text-light">- Danh Thiếp Ngọc Trai</li>
-                        <li class="px-3 py-2 text-light">- Danh Thiếp Giấy Nhựa</li>
-                        <li class="px-3 py-2 text-light">- Danh Thiếp Bo Góc Chuẩn</li>
-                        <li class="px-3 py-2 text-light">- Danh Thiếp Vuông Bo Góc</li>
-                        <li class="px-3 py-2 text-light">- Danh Thiếp Highlight</li>
-                        <li class="px-3 py-2 text-light">- Danh Thiếp Gấp Đôi</li>
-                        <li class="px-3 py-2 text-light">- Danh Thiếp Vuông</li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-                <li class="sub-menu-item">
-                  <ul class="menu-list sub-menu-list-1">
-                    <!-- Bao thư - Envelopes-->
-                    <li class="py-2 text-light toggle-menu-list-2"><a class="fw-bold text-light" href="#"> Bao thư - Envelopes</a><i class="fa-solid fa-caret-down text-light"></i>
-                      <ul class="sub-menu-list-2">
-                        <li class="px-3 py-2 text-light">- Bao thư lấy ngay</li>
-                        <li class="px-3 py-2 text-light">- Bao thư nhỏ</li>
-                        <li class="px-3 py-2 text-light">- Bao thư trung</li>
-                        <li class="px-3 py-2 text-light">- Bao thư lớn</li>
-                        <li class="px-3 py-2 text-light">- Bao thư giấy Kraft</li>
-                        <li class="px-3 py-2 text-light">- Bao thư cửa sổ kính</li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-                <li class="sub-menu-item">
-                  <ul class="menu-list sub-menu-list-1">
-                    <!-- Áo thun đồng phục-->
-                    <li class="py-2 text-light toggle-menu-list-2"><a class="fw-bold text-light" href="href"> Áo thun đồng phục</a><i class="fa-solid fa-caret-down text-light"></i>
-                      <ul class="sub-menu-list-2">
-                        <li class="px-3 py-2 text-light">- Áo thun đồng phục cổ trụ</li>
-                        <li class="px-3 py-2 text-light">- Áo thun đồng phục cổ tròn</li>
-                        <!-- Giấy ghi chú - Block notes-->
-                        <li class="px-3 py-2 text-light">- Giấy ghi chú - Block notes</li>
-                        <li class="px-3 py-2 text-light">- Giấy ghi chú</li>
-                        <!-- Giấy tiêu đề - Letterheads-->
-                        <li class="px-3 py-2 text-light">- Giấy tiêu đề - Letterheads</li>
-                        <li class="px-3 py-2 text-light">- Giấy tiêu đề số lượng ít</li>
-                        <li class="px-3 py-2 text-light">- Giấy tiêu đề số lượng lớn</li>
-                        <!-- Bìa đựng hồ sơ - Folders-->
-                        <li class="px-3 py-2 text-light">- Bìa đựng hồ sơ - Folders</li>
-                        <li class="px-3 py-2 text-light">- Bìa đựng hồ sơ 1 tay gấp</li>
-                        <li class="px-3 py-2 text-light">- Bìa đựng hồ sơ 2 tay gấp</li>
-                        <li class="px-3 py-2 text-light">- Bìa đựng hồ sơ cao cấp</li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li class="menu-item d-flex align-items-center py-2 has-sub-menu toggle-menu-list"><a class="menu-link py-1 d-flex align-items-center gap-1 text-light text-uppercase" href="#"><img class="item-img" src="https://file.hstatic.net/200000865177/file/cam-nang_7b1c2041fc624dbbb73509f39a24a55f.png" alt="alt"/>                                Ấn phẩm</a><i class="fa-solid fa-caret-down text-light px-1"></i>
-              <ul class="sub-menu sub-menu-list">
-                <li class="sub-menu-item">
-                  <ul class="menu-list sub-menu-list-1">
-                    <!-- Danh thiếp - Namecards-->
-                    <li class="py-2 text-light toggle-menu-list-2"><a class="fw-bold text-light" href="#"> Danh thiếp - Namecards</a><i class="fa-solid fa-caret-down text-light"></i>
-                      <ul class="sub-menu-list-2">
-                        <li class="px-3 py-2 text-light">- Danh thiếp Giấy mỹ thuật</li>
-                        <li class="px-3 py-2 text-light">- Danh thiếp chuẩn</li>
-                        <li class="px-3 py-2 text-light">- Danh Thiếp Kỹ Thuật Số</li>
-                        <li class="px-3 py-2 text-light">- Danh Thiếp Thông Minh</li>
-                        <li class="px-3 py-2 text-light">- Danh Thiếp Dập Nổi/ Chìm</li>
-                        <li class="px-3 py-2 text-light">- Danh Thiếp Ngọc Trai</li>
-                        <li class="px-3 py-2 text-light">- Danh Thiếp Giấy Nhựa</li>
-                        <li class="px-3 py-2 text-light">- Danh Thiếp Bo Góc Chuẩn</li>
-                        <li class="px-3 py-2 text-light">- Danh Thiếp Vuông Bo Góc</li>
-                        <li class="px-3 py-2 text-light">- Danh Thiếp Highlight</li>
-                        <li class="px-3 py-2 text-light">- Danh Thiếp Gấp Đôi</li>
-                        <li class="px-3 py-2 text-light">- Danh Thiếp Vuông</li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-                <li class="sub-menu-item">
-                  <ul class="menu-list sub-menu-list-1">
-                    <!-- Bao thư - Envelopes-->
-                    <li class="py-2 text-light toggle-menu-list-2"><a class="fw-bold text-light" href="#"> Bao thư - Envelopes</a><i class="fa-solid fa-caret-down text-light"></i>
-                      <ul class="sub-menu-list-2">
-                        <li class="px-3 py-2 text-light">- Bao thư lấy ngay</li>
-                        <li class="px-3 py-2 text-light">- Bao thư nhỏ</li>
-                        <li class="px-3 py-2 text-light">- Bao thư trung</li>
-                        <li class="px-3 py-2 text-light">- Bao thư lớn</li>
-                        <li class="px-3 py-2 text-light">- Bao thư giấy Kraft</li>
-                        <li class="px-3 py-2 text-light">- Bao thư cửa sổ kính</li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-                <li class="sub-menu-item">
-                  <ul class="menu-list sub-menu-list-1">
-                    <!-- Áo thun đồng phục-->
-                    <li class="py-2 text-light toggle-menu-list-2"><a class="fw-bold text-light" href="#">Áo thun đồng phục</a><i class="fa-solid fa-caret-down text-light"></i>
-                      <ul class="sub-menu-list-2">
-                        <li class="px-3 py-2 text-light">- Áo thun đồng phục cổ trụ</li>
-                        <li class="px-3 py-2 text-light">- Áo thun đồng phục cổ tròn</li>
-                        <!-- Giấy ghi chú - Block notes-->
-                        <li class="px-3 py-2 text-light">- Giấy ghi chú - Block notes</li>
-                        <li class="px-3 py-2 text-light">- Giấy ghi chú</li>
-                        <!-- Giấy tiêu đề - Letterheads-->
-                        <li class="px-3 py-2 text-light">- Giấy tiêu đề - Letterheads</li>
-                        <li class="px-3 py-2 text-light">- Giấy tiêu đề số lượng ít</li>
-                        <li class="px-3 py-2 text-light">- Giấy tiêu đề số lượng lớn</li>
-                        <!-- Bìa đựng hồ sơ - Folders-->
-                        <li class="px-3 py-2 text-light">- Bìa đựng hồ sơ - Folders</li>
-                        <li class="px-3 py-2 text-light">- Bìa đựng hồ sơ 1 tay gấp</li>
-                        <li class="px-3 py-2 text-light">- Bìa đựng hồ sơ 2 tay gấp</li>
-                        <li class="px-3 py-2 text-light">- Bìa đựng hồ sơ cao cấp</li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <div class="foo_mid border-top pt-2">
-            <div class="border-bottom mb-2 d-flex py-2 gap-4"><a class="text-light d-flex gap-1 align-items-center" href="#"><img src="./admin/public/images/header/login.png" alt="alt" width="20" height="20"/><span>Đăng nhập</span></a><a class="text-light d-flex gap-1 align-items-center" href="https://vip2.io.vn/dang-ky-tai-khoan"><img src="./admin/public/images/header/register.png" alt="alt" width="20" height="20"/><span>Đăng ký</span></a></div>
-            <div class="mb-2">
-              <address class="vcard mb-2 text-light">
-                <h5 class="mb-2">Công ty TNHH công nghệ VPlus Việt Nam</h5>
-                <p class="mb-1"><b>Hà Nội: </b>Tầng 3, tòa nhà The Artemis, số 03 Lê Trọng Tấn, Khương Mai, Thanh Xuân, Hà Nội</p>
-                <p class="mb-1"><b>Hotline: </b><a class="text-light" href="tel:1900636099" title="1900.636.099">1900.636.099</a></p>
-                <p class="mb-1"><b>HCM: </b>Lầu 6, 182 Lê Đại Hành, P.15, Quận 11, Tp.HCM</p>
-                <p class="mb-1"><b>Hotline: </b><a class="text-light" href="tel:1900636099" title="1900.636.099">1900.636.099</a></p>
-                <p class="m-0"><b>Email: </b><a class="text-light" href="mailto:support@haravan.com" title="support@haravan.com">support@haravan.com</a></p>
-              </address>
-            </div>
-            <div class="mb-2 pt-2 border-top text-light">
-              <p class="mb-2 position-relative fw-bold">Kết nối mạng xã hội</p>
-              <div class="d-flex position-relative social mb-1 mx-0 gap-1"><a class="position-relative iso sitdown modal-open d-inline-block facebook mr-1" href="href" target="_blank" title="Facebook"><img class="lazy loaded" src="https://file.hstatic.net/200000785527/file/facebook_ce742afdcdea4026a633915bdfdce6f5.png" alt="facebook" width="32" height="32"/></a><a class="position-relative iso sitdown modal-open d-inline-block twitter mr-1" href="href" target="_blank" title="Twitter"><img class="lazy loaded" src="https://file.hstatic.net/200000785527/file/twitter_b15cb1006ec04c63855aef2dec8fac47.png" alt="twitter" width="32" height="32"/></a><a class="position-relative iso sitdown modal-open d-inline-block instagram mr-1" href="href" target="_blank" title="Instagram+"><img class="lazy loaded" src="https://file.hstatic.net/200000785527/file/instagram_45effdfd0d0e47d986a7c8b1a8e2ab01.png" alt="instagram" width="32" height="32"/></a><a class="position-relative iso sitdown modal-open d-inline-block youtube mr-1" href="href" target="_blank" title="Youtube"><img class="lazy loaded" src="https://file.hstatic.net/200000785527/file/youtube_749d73527fb94f2c8d005d2ffdb1ca10.png" alt="youtube" width="32" height="32"/></a><a class="position-relative iso sitdown modal-open d-inline-block shopee mr-1" href="href" target="_blank" title="Shopee"><img class="lazy loaded" src="https://file.hstatic.net/200000785527/file/shopee_efcb449798c24dd4a4a312f1ad9e3e8d.png" alt="Shopee" width="32" height="32"/></a><a class="position-relative iso sitdown modal-open d-inline-block lazada mr-1" href="href" target="_blank" title="Lazada"><img class="lazy loaded" src="https://file.hstatic.net/200000785527/file/lazada_0080ef48005044af8ba3f720097866f7.jpg" alt="Lazada" width="32" height="32"/></a></div>
-            </div>
-            <div class="mb-2 pt-2 border-top text-light">
-              <p class="mb-2 position-relative fw-bold">Phương thức thanh toán</p>
-              <div class="footer-column-1">
-                <div class="payment-accept gap-2 mx-0"><img class="first lazy loaded" width="40px" src="https://file.hstatic.net/200000823693/file/payment-1_2c94a9495fa04f4ab8b11be786441266.png" alt="payment-1"/><img class="lazy loaded" width="40px" src="https://file.hstatic.net/200000823693/file/payment-2_bdbf0ab7d5d24e138faa24e497b38a9b.png" alt="payment-2"/><img class="lazy loaded" width="40px" src="https://file.hstatic.net/200000823693/file/payment-3_3a8dba86bfd74a85be3db17837d4c9c6.png" alt="payment-3"/><img class="lazy loaded" width="40px" src="https://file.hstatic.net/200000823693/file/payment-4_f03f301a303c448db851de3e9e91ade2.png" alt="payment-4"/></div>
-              </div>
-            </div>
-            <div class="mb-2 pt-2 border-top text-light">
-              <p class="mb-2 position-relative fw-bold">Ngôn ngữ</p>
-              <div class="footer-column-1">
-                <div class="payment-accept gap-2 mx-0"><img class="flag lazy loaded" width="30px" src="https://flagcdn.com/jp.svg" alt="Japan Flag"/><img class="flag lazy loaded" width="30px" src="https://flagcdn.com/fr.svg" alt="France Flag"/><img class="flag lazy loaded" width="30px" src="https://flagcdn.com/vn.svg" alt="Vietnam Flag"/></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="offcanvas offcanvas-start offcanvasExample2" id="offcanvasExample2" data-bs-scroll="false" data-bs-backdrop="true" tabindex="-1" aria-labelledby="offcanvasExample2Label">
-        <!-- <div class="offcanvas offcanvas-start offcanvasExample2 show" tabindex="-1" id="offcanvasExample2" aria-labelledby="offcanvasExample2Label" style="visibility: visible;" aria-modal="true" role="dialog">-->
-        <button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"><i class="icon-close"></i></button><a class="btn-see-all">Xem tất cả</a>
-        <div class="offcanvas-body d-flex">
-          <ul class="nav nav-tabs d-flex flex-column" role="tablist">
-            <li class="nav-item"><a class="position-relative d-flex flex-column justify-content-center align-items-center text-center p-2" href="/pages/flash-sale" title="Flash sale"><img class="lazy d-block pb-2 m-auto loaded" width="40px" src="https://file.hstatic.net/200000865177/file/flash-sale_4044cd2cd4d94bfa8ae21f1f7011afec.png" data-src="https://file.hstatic.net/200000865177/file/flash-sale_4044cd2cd4d94bfa8ae21f1f7011afec.png" onerror="this.src='https://file.hstatic.net/200000865177/file/favicon_f440e3bdba814cfa965706de2409feae.png'" alt="icon-/pages/flash-sale"/><span class="text">Flash sale</span></a></li>
-            <li class="nav-item"><a class="nav-link active" href="#makeup" role="tab" data-toggle="tab" title="Trang điểm"><img class="lazy d-block pb-2 m-auto loaded" width="40px" src="https://file.hstatic.net/200000865177/file/makeup_3d9cbc2014c84a5fadd1d84ed23123d0.png" alt="icon-/collections/trang-diem"/><span class="text">Trang điểm</span></a></li>
-            <li class="nav-item"><a class="nav-link" href="#skincare" role="tab" data-toggle="tab" title="Dưỡng da"><img class="lazy d-block pb-2 m-auto loaded" width="40px" src="https://file.hstatic.net/200000865177/file/hand-mirror_f5dd52fde8cf4027bbda4903b1cbe857.png" alt="icon-/collections/duong-da"/><span class="text">Dưỡng da</span></a></li>
-            <li class="nav-item"><a class="nav-link" href="#personal-care" role="tab" data-toggle="tab" title="Chăm sóc cá nhân"><img class="lazy d-block pb-2 m-auto loaded" width="40px" src="https://file.hstatic.net/200000865177/file/cosmetics_2c6aaba2133741afa4031920f76131fc.png" alt="icon-/collections/cham-soc-ca-nhan"/><span class="text">Chăm sóc cá nhân</span></a></li>
-            <li class="nav-item"><a class="nav-link" href="#magazine" role="tab" data-toggle="tab" title="Tạp chí Mew"><img class="lazy d-block pb-2 m-auto loaded" width="40px" src="https://file.hstatic.net/200000865177/file/magazine_ae549082d91c4cd697cd40c55009265b.png" alt="icon-/blogs/all"/><span class="text">Tạp chí Mew</span></a></li>
-            <li class="nav-item"><a class="nav-link" href="/pages/about-us" title="Về chúng tôi"><img class="lazy d-block pb-2 m-auto loaded" width="40px" src="https://file.hstatic.net/200000865177/file/website_37cb5dc28d5347a6bc1d2db1a52012d3.png" alt="icon-/pages/about-us"/><span class="text">Về chúng tôi</span></a></li>
-            <li class="nav-item"><a class="nav-link" href="/pages/lien-he" title="Liên hệ"><img class="lazy d-block pb-2 m-auto loaded" width="40px" src="https://file.hstatic.net/200000865177/file/communicate_fc44de1f820a49629e36ef92b1f61a98.png" alt="icon-/pages/lien-he"/><span class="text">Liên hệ</span></a></li>
-          </ul>
-          <!-- Tab panes-->
-          <div class="tab-content">
-            <div class="tab-pane fade in active" id="makeup" role="tabpanel">
-              <ul>
-                <li class="text-title"><a href="/collections/trang-diem-mat-1" title="Trang điểm mặt">Trang điểm mặt</a></li>
-                <li><a href="/collections/kem-nen" title="Kem nền">Kem nền</a></li>
-                <li><a href="/collections/che-khuyet-diem" title="Che khuyết điểm">Che khuyết điểm</a></li>
-                <li><a href="/collections/kem-lot" title="Kem lót">Kem lót</a></li>
-                <li><a href="/collections/phan-ma-hong" title="Phấn má hồng">Phấn má hồng</a></li>
-                <li><a href="/collections/phan-nuoc-cushion" title="Phấn nước Cushion">Phấn nước Cushion</a></li>
-                <li><a href="/collections/phan-phu" title="Phấn phủ">Phấn phủ</a></li>
-                <li><a href="/collections/tao-khoi-highlighter" title="Tạo khối - Highlighter">Tạo khối - Highlighter</a></li>
-                <li class="text-title"><a href="/collections/trang-diem-mat" title="Trang điểm mắt">Trang điểm mắt</a></li>
-                <li><a href="/collections/mascara" title="Mascara">Mascara</a></li>
-                <li><a href="/collections/ke-chan-may" title="Kẻ chân mày">Kẻ chân mày</a></li>
-                <li><a href="/collections/phan-mat" title="Phấn mắt">Phấn mắt</a></li>
-                <li><a href="/collections/ke-vien-mat" title="Kẻ viền mắt">Kẻ viền mắt</a></li>
-                <li><a href="/collections/phu-kien-trang-diem" title="Phụ kiện trang điểm">Phụ kiện trang điểm</a></li>
-                <li><a href="/collections/bong-mut-trang-diem" title="Bông mút trang điểm">Bông mút trang điểm</a></li>
-                <li><a href="/collections/bong-cotton" title="Bông Cotton">Bông Cotton</a></li>
-                <li><a href="/collections/phu-kien-trang-diem-khac" title="Phụ kiện trang điểm khác">Phụ kiện trang điểm khác</a></li>
-                <li class="text-title"><a href="/collections/trang-diem-moi" title="Trang điểm môi">Trang điểm môi</a></li>
-                <li><a href="/collections/son-thoi" title="Son thoi">Son thoi</a></li>
-                <li><a href="/collections/son-tint" title="Son tint">Son tint</a></li>
-                <li><a href="/collections/son-bong" title="Son bóng">Son bóng</a></li>
-                <li><a href="/collections/son-duong-moi" title="Son dưỡng môi">Son dưỡng môi</a></li>
-              </ul>
-            </div>
-            <div class="tab-pane fade" id="skincare" role="tabpanel">
-              <ul>
-                <li class="text-title"><a href="/collections/trang-diem-mat-1" title="Trang điểm mặt">Trang điểm mặt</a></li>
-                <li><a href="/collections/kem-nen" title="Kem nền">Kem nền</a></li>
-                <li><a href="/collections/che-khuyet-diem" title="Che khuyết điểm">Che khuyết điểm</a></li>
-                <li><a href="/collections/kem-lot" title="Kem lót">Kem lót</a></li>
-                <li><a href="/collections/phan-ma-hong" title="Phấn má hồng">Phấn má hồng</a></li>
-                <li><a href="/collections/phan-nuoc-cushion" title="Phấn nước Cushion">Phấn nước Cushion</a></li>
-                <li><a href="/collections/phan-phu" title="Phấn phủ">Phấn phủ</a></li>
-                <li><a href="/collections/tao-khoi-highlighter" title="Tạo khối - Highlighter">Tạo khối - Highlighter</a></li>
-                <li class="text-title"><a href="/collections/trang-diem-mat" title="Trang điểm mắt">Trang điểm mắt</a></li>
-                <li><a href="/collections/mascara" title="Mascara">Mascara</a></li>
-                <li><a href="/collections/ke-chan-may" title="Kẻ chân mày">Kẻ chân mày</a></li>
-                <li><a href="/collections/phan-mat" title="Phấn mắt">Phấn mắt</a></li>
-                <li><a href="/collections/ke-vien-mat" title="Kẻ viền mắt">Kẻ viền mắt</a></li>
-                <li><a href="/collections/phu-kien-trang-diem" title="Phụ kiện trang điểm">Phụ kiện trang điểm</a></li>
-                <li><a href="/collections/bong-mut-trang-diem" title="Bông mút trang điểm">Bông mút trang điểm</a></li>
-                <li><a href="/collections/bong-cotton" title="Bông Cotton">Bông Cotton</a></li>
-                <li><a href="/collections/phu-kien-trang-diem-khac" title="Phụ kiện trang điểm khác">Phụ kiện trang điểm khác</a></li>
-                <li class="text-title"><a href="/collections/trang-diem-moi" title="Trang điểm môi">Trang điểm môi</a></li>
-                <li><a href="/collections/son-thoi" title="Son thoi">Son thoi</a></li>
-                <li><a href="/collections/son-tint" title="Son tint">Son tint</a></li>
-                <li><a href="/collections/son-bong" title="Son bóng">Son bóng</a></li>
-                <li><a href="/collections/son-duong-moi" title="Son dưỡng môi">Son dưỡng môi</a></li>
-              </ul>
-            </div>
-            <div class="tab-pane fade" id="personal-care" role="tabpanel">
-              <ul>
-                <!-- Chăm sóc body-->
-                <li><a href="/collections/cham-soc-body" title="Chăm sóc body">Chăm sóc body</a>
-                  <ul>
-                    <li><a href="/collections/sua-tam" title="Sữa tắm">Sữa tắm</a></li>
-                    <li><a href="/collections/duong-the" title="Dưỡng thể">Dưỡng thể</a></li>
-                    <li><a href="/collections/tay-te-bao-chet-body" title="Làm sạch tế bào chết cơ thể">Làm sạch tế bào chết cơ thể</a></li>
-                    <li><a href="/collections/phu-kien-cham-soc-body" title="Phụ kiện chăm sóc cơ thể">Phụ kiện chăm sóc cơ thể</a></li>
-                    <li><a href="/collections/nuoc-hoa-body" title="Nước hoa - Xịt thơm body">Nước hoa – Xịt thơm body</a></li>
-                    <li><a href="/collections/cham-soc-tay-chan" title="Chăm sóc tay chân">Chăm sóc tay chân</a></li>
-                    <li><a href="/collections/kem-duong-tay-chan" title="Kem dưỡng tay chân">Kem dưỡng tay chân</a></li>
-                    <li><a href="/collections/mat-na-tay-chan" title="Mặt nạ tay chân">Mặt nạ tay chân</a></li>
-                  </ul>
-                </li>
-                <!-- Chăm sóc tóc-->
-                <li><a href="/collections/cham-soc-toc" title="Chăm sóc tóc">Chăm sóc tóc</a>
-                  <ul>
-                    <li><a href="/collections/dau-goi-dau-xa" title="Dầu gội - Dầu xả">Dầu gội – Dầu xả</a></li>
-                    <li><a href="/collections/duong-toc" title="Dưỡng tóc">Dưỡng tóc</a></li>
-                    <li><a href="/collections/tao-kieu-toc" title="Tạo kiểu tóc">Tạo kiểu tóc</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-            <div class="tab-pane fade" id="magazine" role="tabpanel">
-              <ul>
-                <li class="text-title"><a href="/collections/trang-diem-mat-1" title="Mẹo làm đẹp">Mẹo làm đẹp</a></li>
-                <li class="text-title"><a href="/collections/trang-diem-mat-1" title="Kiến thức sức khỏe">Kiến thức sức khỏe</a></li>
-                <li class="text-title"><a href="/collections/trang-diem-mat-1" title="Review Mỹ phẩm">Review Mỹ phẩm</a></li>
-              </ul>
-            </div>
           </div>
         </div>
       </div>
@@ -2779,6 +2500,20 @@
           </svg><span class="tit d-block font-weight-bold text-center pr-1 pr-sm-2 pl-1 pl-sm-2">Giỏ hàng</span><span class="btn-cart-indicator position-absolute d-none text-center"></span>
           <div class="js-buy-alert position-absolute"></div></a></div>
     </footer>
+    <div class="modal fade" id="formSearch" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <form class="flex" role="search">
+              <div class="flex-grow-1">
+                <input class="w-full form-control h-40 border border-gray px-16 focus:outline-none focus:border-primary" type="search" placeholder="Nhập từ khóa" aria-label="Search">
+              </div>
+              <input class="h-40 w-90 flex-shrink-0 bg-primary text-white" type="submit" value="Tìm kiếm">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="public/assets/js/jquery.min.js"></script>
     <script src="public/assets/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>

@@ -92,7 +92,7 @@ html(lang="en")
                             img(loading='lazy' src='https://we1.io.vn/public/assets/images/call.png' alt='link_chat')
 
         +footer()
-        //- #formSearch.modal.fade(tabindex='-1', aria-labelledby='exampleModalLabel', aria-hidden='true')
+        #formSearch.modal.fade(tabindex='-1', aria-labelledby='exampleModalLabel', aria-hidden='true')
             .modal-dialog
                 .modal-content
                     //- .modal-header
@@ -102,7 +102,7 @@ html(lang="en")
                         form.flex(role='search')
                             .flex-grow-1
                                 input.w-full.form-control.h-40.border.border-gray.px-16(type='search', placeholder='Nhập từ khóa', aria-label='Search' class='focus:outline-none focus:border-primary')
-                            input.h-40.w-90.flex-shrink-0.bg-gray-c6(type="submit" value='Tìm kiếm')
+                            input.h-40.w-90.flex-shrink-0.bg-primary.text-white(type="submit" value='Tìm kiếm')
                     //- .modal-footer
                         button.btn.btn-secondary(type='button', data-bs-dismiss='modal') Close
                         button.btn.btn-primary(type='button') Save changes

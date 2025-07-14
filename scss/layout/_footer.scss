@@ -1,0 +1,162 @@
+
+.fe-footer {
+  background-color: #fff;
+}
+.payment-accept {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.scroll-top-btn {
+    position: fixed;
+    bottom: 48px;
+    right: 20px;
+    background-color: #201E1F;
+    color: #fff;
+    border: 2px solid #FFFFFF;
+    border-radius: 3px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 99;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    overflow: hidden;
+}
+.scroll-top-btn .fa-arrow-up{
+    transition: transform 0.3s, opacity 0.3s;
+}
+.scroll-top-btn:hover .fa-arrow-up{
+    transform: translateY(-34px);
+}
+.hover-text {
+    display: block;
+    margin-top: 10px;
+    font-weight: 500;
+    transition: transform 0.3s, opacity 0.3s;
+}
+.scroll-top-btn:hover .hover-text {
+    transform: translateY(-34px);
+}
+.scroll-top-btn i {
+    font-size: 16px;
+}
+.link_chat_social {
+    bottom: 116px;
+    right: 20px;
+    z-index: 999999;
+}
+.link_chat_social img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+@media (max-width: 575px) {
+    .link_chat_social {
+        bottom: 72px;
+        right: 0;
+    }
+    .scroll-top-btn {
+        display: none!important;
+    }
+    .link_chat_social img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        padding: 6px;
+    }
+    .phone-vr-circle-fill {
+        width: 40px !important;
+        height: 40px !important;
+        border: unset !important;
+    }
+}
+.link_chat_social>* {
+    margin-top: 26px;
+}
+.link_chat_social .link_call .phone-vr-circle-fill {
+    box-shadow: 0 0 0 0 #92e968;
+    background-color: rgb(162 243 124);
+}
+.link_chat_social .link_chat_zalo .phone-vr-circle-fill {
+    box-shadow: 0 0 0 0 #6badf3;
+    background-color: rgb(118 176 237);
+}
+.link_chat_social .link_chat_facebook .phone-vr-circle-fill {
+    box-shadow: 0 0 0 0 #8daaf1;
+    background-color: rgb(106 148 253);
+}
+.link_chat_social .link_chat_email .phone-vr-circle-fill {
+    box-shadow: 0 0 0 0 #ffcca0;
+    background-color: rgb(255 191 138);
+}
+.phone-vr-img-circle img {
+    animation: phonering-alo-circle-img-anim 1s infinite ease-in-out;
+}
+@keyframes phonering-alo-circle-img-anim {
+    0% {
+        transform: rotate(0) scale(1) skew(1deg);
+    }
+    10% {
+        transform: rotate(-25deg) scale(1) skew(1deg);
+    }
+    20% {
+        transform: rotate(25deg) scale(1) skew(1deg);
+    }
+    30% {
+        transform: rotate(-25deg) scale(1) skew(1deg);
+    }
+    40% {
+        transform: rotate(25deg) scale(1) skew(1deg);
+    }
+    50% {
+        transform: rotate(0) scale(1) skew(1deg);
+    }
+    100% {
+        transform: rotate(0) scale(1) skew(1deg);
+    }
+}
+.phone-vr-circle-fill {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    box-shadow: 0 0 0 0 #fd4b4b;
+    background-color: rgb(253, 75, 75);
+    border-radius: 50%;
+    border: 23px solid transparent;
+    animation: zoom 1.3s infinite ease-in-out;
+    transition: all .5s;
+    transform-origin: 50% 50%;
+}
+@keyframes zoom {
+    0% {
+        transform: scale(.9);
+    }
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 15px transparent;
+    }
+    100% {
+        transform: scale(.9);
+        box-shadow: 0 0 0 0 transparent;
+    }
+}
+.phone-vr-img-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.phone-vr-img-circle i {
+  position: static!important;
+}
+.link-is-scroll {
+  opacity: 0;
+  transition: all .3s;
+}
+.is-scrolling {
+  .link-is-scroll {
+    opacity: 1;
+  }
+}

@@ -1,24 +1,6 @@
 mixin header(page)
-	-
-		var arr = [
-			{text:'Главная', link:'index'},
-			{text:'Блог', link:'blog'},
-			{text:'О нас', link:'about'},
-			{text:'Контакты', link:'contact'},
-			//- {text:'Tuyển dụng', link:'recruiment'},
-			//- {text:'Liên hệ', link:'contact.html'},
-		]
-		var arr_category = [
-			{flag:'america', text:'США'},
-			{flag:'en', text:'Британия'},
-			{flag:'canada', text:'Канада'},
-			{flag:'australia', text:'Австралия'},
-			{flag:'japan', text:'Япония'},
-			{flag:'china', text:'Китай'},
-			{flag:'europe', text:'Шенген'}
-		]
 	header.fe-header.w-100(style='background: white;')
-		.header-top.d-none.d-md-block(style='border-bottom: 1px solid red;')
+		.header-top.d-none.d-md-block()
 			.container-fluid.px-3.px-sm-5.py-2
 				.infomation.d-flex.flex-wrap.justify-content-between.gap-2.bi(class='bi-heartpy-[2px]')
 					.d-flex.flex-wrap.gap-2.infomation-left
@@ -51,7 +33,7 @@ mixin header(page)
 									a.dropdown-item(href='#') Tiếng việt
 								li
 									a.dropdown-item(href='#') Tiếng anh
-		#header-main.header-main.px-3.d-flex.align-items-center.justify-content-between(style='border-color: red; background: var(--mainColor); padding-top: 1rem; padding-bottom: 1rem;')
+		#header-main.header-main.px-3.d-flex.align-items-center.justify-content-between(style='background: var(--mainColor); padding-top: 1rem; padding-bottom: 1rem;')
 			.container
 				.row.align-items-center.justify-content-between.w-100.wrap-menu
 					.d-md-none.col-2.px-0
@@ -68,8 +50,8 @@ mixin header(page)
 										button.btn.btn-toggle-menu(type='button' data-bs-toggle='offcanvas' data-bs-target='#offcanvasExample' aria-controls='offcanvasExample')
 											i.fa-solid.fa-bars.text-light.fs-5.mt-1
 						#logo.logo.d-flex.align-items-center.justify-content-center.justify-content-md-start
-							a(href='https://html.we1.io.vn')
-								img.w-100(src='https://we1.io.vn/admin/public/images/header/174679621770428x160.png' alt='logo')
+							a(href='./docs')
+								img.w-100(src='./public/assets/images/174679621770428x160.png' alt='logo')
 					#header-search.d-none.d-md-flex.align-content-center.gap-2.wrap-header-search.px-0.col-12.col-sm-4.col-md-5.col-lg-6.col-xl-4
 						a.d-none.align-content-center.justify-content-center.text-light(data-bs-toggle='offcanvas' href='#offcanvasExample2' role='button' aria-controls='offcanvasExample2')
 							svg.mt-2(width='24px' height='24px' viewBox='0 -0.5 21 21' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink')
@@ -167,7 +149,7 @@ mixin header(page)
 								.text.text-left.text-light.d-none.d-xl-block
 									small.d-none.d-xl-block.ml-lg-1 Giỏ hàng
 		#header-sticky
-			.header-bottom-item.header-bottom.d-none.d-lg-block.container-fluid.px-5(style='border-color: red; background: white;')
+			.header-bottom-item.header-bottom.d-none.d-lg-block.container-fluid.px-5(style='background: white;')
 				.px-5
 					ul.menu.mb-0.d-flex.row-gap-2.align-items-center.justify-content-center
 						li.menu-item.d-flex.align-items-center.py-1.px-2.has-sub-menu
@@ -585,7 +567,7 @@ mixin header(page)
 										.input-group-append
 											button.btn(type='submit' aria-label='Tìm sản phẩm')
 												i.fa.fa-search(aria-hidden='true')
-		#offcanvasExample.offcanvas.offcanvas-start(data-bs-scroll='false' data-bs-backdrop='true' style='background: var(--mainColor);' tabindex='-1' aria-labelledby='offcanvasExampleLabel')
+		//- #offcanvasExample.offcanvas.offcanvas-start(data-bs-scroll='false' data-bs-backdrop='true' style='background: var(--mainColor);' tabindex='-1' aria-labelledby='offcanvasExampleLabel')
 			.offcanvas-header.pb-1.mb-2.position-relative.mx-3
 				h5#offcanvasExampleLabel.offcanvas-title.mx-auto
 					img.w-100(width='200' src='https://we1.io.vn/admin/public/images/header/174679621770428x160.png' alt='logo')
@@ -837,7 +819,7 @@ mixin header(page)
 								img.flag.lazy.loaded(width='30px' src='https://flagcdn.com/jp.svg' alt='Japan Flag')
 								img.flag.lazy.loaded(width='30px' src='https://flagcdn.com/fr.svg' alt='France Flag')
 								img.flag.lazy.loaded(width='30px' src='https://flagcdn.com/vn.svg' alt='Vietnam Flag')
-		#offcanvasExample2.offcanvas.offcanvas-start.offcanvasExample2(data-bs-scroll='false' data-bs-backdrop='true' tabindex='-1' aria-labelledby='offcanvasExample2Label')
+		//- #offcanvasExample2.offcanvas.offcanvas-start.offcanvasExample2(data-bs-scroll='false' data-bs-backdrop='true' tabindex='-1' aria-labelledby='offcanvasExample2Label')
 			// <div class="offcanvas offcanvas-start offcanvasExample2 show" tabindex="-1" id="offcanvasExample2" aria-labelledby="offcanvasExample2Label" style="visibility: visible;" aria-modal="true" role="dialog">
 			button.btn-close(type='button' data-bs-dismiss='offcanvas' aria-label='Close')
 				i.icon-close
@@ -1290,4 +1272,132 @@ mixin header(page)
 										a.dropdown-item(href='#') Tiếng việt
 									li
 										a.dropdown-item(href='#') Tiếng anh
+
+mixin header-2(page)
+	-
+		var arr = [
+			{text:'Trang chủ', link:'index'},
+			{text:'Giới thiệu', link:'about'},
+			{text:'Dịch vụ', link:'services'},
+			{text:'Dự án', link:'project'},
+			{text:'Tin tức', link:'news'},
+			{text:'Tuyển dụng', link:'recruiment'},
+			//- {text:'Liên hệ', link:'contact.html'},
+		]
+	header.header-3 
+		.bg
+		nav.navbar.navbar-expand-lg
+			.container
+				a.logo-brand(href='index.html') 
+					img.block.logo-w(src="./public/assets/images/174679621770428x160.png", alt="")
+					//- img.block.logo-primary(src="images/logo-f.svg", alt="")
+				
+				#menuMain.offcanvas.bg-primary.offcanvas-start(tabindex='-1' aria-labelledby='staticBackdropLabel')
+					.offcanvas-header.p-16
+						a.logo-brand(href='index.html') 
+							img.block.logo-w(src="./public/assets/images/174679621770428x160.png", alt="")
+						button.btn-close(type='button' data-bs-dismiss='offcanvas' aria-label='Close')
+					.offcanvas-body.flex(class="md:justify-between")
+						ul.navbar-nav.justify-end.gap-x-1(class='max-sm:flex max-sm:flex-col')
+							each item, key in arr
+								li.nav-item
+									a.nav-link(aria-current='page' href=`${item.link}.html` class=' max-sm:text-28' class=`${page === item.link ? 'active':''}`)= item.text
+									if(key === 1)
+										ul.nav-submenu
+											li
+												a(href='#') 
+													span Dog Supplies
+												ul.nav-submenu
+													li
+														a(href='#') 
+															span Food & Treats
+													li
+														a(href='#') 
+															span Toys
+													li
+														a(href='#') 
+															span Beds & Furniture
+													li
+														a(href='#') 
+															span Outdoor Supplies
+													li
+														a(href='#') 
+															span Clothing
+														ul.nav-submenu
+															li
+																a(href='#') 
+																	span Sweaters and Hoodies
+															li
+																a(href='#') 
+																	span Raincoats
+															li
+																a(href='#') 
+																	span T-Shirts
+															li
+																a(href='#') 
+																	span Booties
+															li
+																a(href='#') 
+																	span Hats/Caps
+											li
+												a(href='#') 
+													span Cat Supplies
+												ul.nav-submenu
+													li
+														a(href='#') 
+															span Food & Treats
+													li
+														a(href='#') 
+															span Toys
+													li
+														a(href='#') 
+															span Beds & Furniture
+											li
+												a(href='#') 
+													span Bird Supplies
+												ul.nav-submenu
+													li
+														a(href='#') 
+															span Food & Treats
+													li
+														a(href='#') 
+															span Toys
+													li
+														a(href='#') 
+															span Furniture
+											li
+												a(href='#') 
+													span Fish Supplies
+												ul.nav-submenu
+													li
+														a(href='#') 
+															span Food
+													li
+														a(href='#') 
+															span Aquariums
+													li
+														a(href='#') 
+															span Rocks & Decorations
+
+							
+						.group-right.flex.gap-x-8px.items-center(class="md:.ml-auto")
+							a.btn-hotline.text-20.font-bold.btn.bg-grey.rounded-4.px-16.flex.justify-center.items-center.gap-x-8px.text-white.py-10px(href="contact.html" class='hover:bg-primary max-md:py-10px')  
+								i.fa-solid.fa-headset 
+								| 012345678
+							.btn-search.icon.w-46.h-46.rounded-4.bg-grey.p-2.text-white.flex.justify-center.items-center.bg-white-opacity.flex-shrink-0(class='hover:bg-primary' data-bs-toggle="modal" data-bs-target="#formSearch")
+								i.fa-solid.fa-magnifying-glass
+							.btn-user.icon.w-46.h-44.rounded-4.bg-grey.p-2.text-white.flex.justify-center.items-center.bg-white-opacity.flex-shrink-0(class='hover:bg-primary md:h-46' data-bs-toggle="modal" data-bs-target="#formSearch")
+								i.fa-solid.fa-user
+							.language.dropdown.dropdown-hover.rounded-8.text-white
+								.language-btn.flex.justify-center.font-medium.items-center.px-16.py-10px(class="md:px-24 md:py-12" data-bs-toggle='dropdown' aria-expanded='false')
+									| VN
+								ul.dropdown-menu.dropdown-menu-end
+									li
+										a.dropdown-item(href='#') VN
+									li
+										a.dropdown-item(href='#') EN
+									//- li
+										a.dropdown-item(href='#') Something else here
+				button.navbar-toggler.text-white(type='button' data-bs-toggle="offcanvas" href="#offcanvasExample3" role="button" aria-controls="offcanvasExample")
+					span.navbar-toggler-icon
 

@@ -5,51 +5,92 @@ include _footer.pug
 doctype html
 html(lang="en")
     head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Document
-        
-        link(href='https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700', rel='stylesheet', type='text/css')
-        link(href='ajax/libs/font-awesome/6.4.2/css/all.min.css', rel='stylesheet', type='text/css')
-
-        link(href='public/assets/css/bootstrap.min.css', rel='stylesheet', type='text/css')
-        //- link(rel="stylesheet", href="css/bootstrap.css")
-        //- link(rel='stylesheet', href='public/assets/css/slick.css', type='text/css')
-        //- link(rel='stylesheet', href='public/assets/css/slick-lightbox.css')
-        //- link(rel='stylesheet', href='public/assets/css/slick-theme.css', type='text/css')
-        
-        link(rel="stylesheet", href="css/slick-theme.css")
-        link(rel="stylesheet", href="css/slick.css")
-        link(rel="stylesheet", href="css/slick-lightbox.css")
-
-        link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css')
-
-        
-        link(rel="stylesheet", href="css/tailwin-dist.css")
-        //- link(rel='stylesheet', href='public/css/dist/common.css')
-        //- link(href='public/assets/style.css', rel='stylesheet', type='text/css')
-        //- link(href='public/assets/style-2.css', rel='stylesheet', type='text/css')
-
-        //- home
-        //- link(href='public/assets/home.css', rel='stylesheet', type='text/css')
-        //- link(rel='stylesheet', href='public/css/dist/home.css')
-
-        //- product
-        //- link(rel='stylesheet', href='public/css/product/base.css', type='text/css')
-        //- link(rel='stylesheet', href='public/css/product/detail.css', type='text/css')
-        //- link(rel='stylesheet', href='public/css/dist/product.css', type='text/css')
-        
-        //- link(rel="stylesheet" href="css/aos.css")
-        //- link(rel="stylesheet", href="css/slick-theme.css")
-        //- link(rel="stylesheet", href="css/slick.css")
-        //- link(rel="stylesheet", href="css/slick-lightbox.css")
-        link(rel="stylesheet", href="css/style-old.css")
-        link(rel="stylesheet", href="css/style.css")
+        meta(http-equiv='X-UA-Compatible' content='IE=edge,chrome=1')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        meta(http-equiv='Content-Type' content='text/html; charset=utf-8')
+        // start seo
+        title Mỹ phẩm
+        meta(name='keywords' content='Mỹ phẩm')
+        meta(name='description' content='Mỹ phẩm')
+        meta(name='robots' content='index,follow,max-snippet:-1,max-video-preview:-1,max-image-preview:large')
+        link(rel='icon' type='image/x-icon' href='admin/public/images/footer/17408141534560x60.png')
+        link(href='https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700' rel='stylesheet' type='text/css')
+        link(href='https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700' rel='stylesheet' type='text/css')
+        link(href='ajax/libs/font-awesome/6.4.2/css/all.min.css' rel='stylesheet' type='text/css')
+        link(href='public/assets/css/bootstrap.min.css' rel='stylesheet' type='text/css')
+        link(rel='stylesheet' href='public/assets/css/slick.css' type='text/css')
+        link(rel='stylesheet' href='public/assets/css/slick-lightbox.css')
+        link(rel='stylesheet' href='public/assets/css/slick-theme.css' type='text/css')
+        link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css')
+        link(href='public/assets/style.css' rel='stylesheet' type='text/css')
+        link(href='public/assets/style-2.css' rel='stylesheet' type='text/css')
+        //- link(rel='stylesheet' href='public/css/dist/common.css')
+        link(rel="stylesheet", href="public/css/tailwin-dist.css")
+        // home
+        link(href='public/assets/home.css' rel='stylesheet' type='text/css')
+        //- link(rel='stylesheet' href='public/css/dist/home.css')
+        // product
+        link(rel='stylesheet' href='public/css/product/base.css' type='text/css')
+        link(rel='stylesheet' href='public/css/product/detail.css' type='text/css')
+        //- link(rel='stylesheet' href='public/css/dist/product.css' type='text/css')
+        block css 
+        link(rel="stylesheet", href="public/css/style.css")
     block vars
+    mixin block-white(ttl, btnMore)
+        section(style='background-color: #e6e6e6;' class="py-32")
+            .container
+                .bg-white.rounded-8.pb-12.box-shadow(class='sm:px-16')
+                    .item_frame_header.gap-x-24.flex.gap-y-8px.p-0.items-center.justify-between(class="max-sm:flex-col sm:align-items-center")
+                        a.item_frame_title.header-boder-color.flex-shrink-0(href='/san-pham')
+                            //- span.d-flex.align-items-center.me-1
+                            h2.text-nowrap(style='color: #000000 !important;')
+                                |#{ttl}
+                        if(btnMore === true)
+                            a.button.flex.items-center.gap-2.text-14.bg-gray2.px-16.py-8px(href="#" class="max-sm:hidden hover:bg-primary hover:text-white")
+                                | Xem thêm 
+                                i.fa-solid.fa-chevron-right.text-12
+                    if block
+                        block
     body(class=`${bodyClass}`)
-        +header(page)
+        +header-2(page)
         main 
             block body
+            .scroll-top-btn(style='display: block;')
+                i.fa.fa-arrow-up
+                span.hover-text Top
+
+            .link_chat_social.position-fixed
+                .link_cart.link-is-scroll
+                    a
+                        .phone-vr-img-circle(style='width: 50px; height: 50px; position: relative;')
+                            .phone-vr-circle-fill
+                            i.fa-solid.fa-cart-plus(style='position: absolute; animation: phonering-alo-circle-img-anim 1s infinite ease-in-out; bottom: 12px; left: 12px; font-size: 24px; color: #ffffff;')
+                .link_login.link-is-scroll
+                    a(href title='Đặt lịch' data-bs-toggle='modal' data-bs-target='#popup-dat-lich')
+                        .phone-vr-img-circle(style='width: 50px; height: 50px; position: relative;')
+                            .phone-vr-circle-fill
+                            i.fa-solid.fa-user(style='position: absolute; animation: phonering-alo-circle-img-anim 1s infinite ease-in-out; bottom: 12px; left: 12px; font-size: 24px; color: #ffffff;')
+                .link_dat_lich
+                    a(href title='Đặt lịch' data-bs-toggle='modal' data-bs-target='#popup-dat-lich')
+                        .phone-vr-img-circle(style='width: 50px; height: 50px; position: relative;')
+                            .phone-vr-circle-fill
+                            i.fa-solid.fa-calendar-days(style='position: absolute; animation: phonering-alo-circle-img-anim 1s infinite ease-in-out; bottom: 12px; left: 12px; font-size: 30px; color: #ffffff;')
+                .link_chat_facebook
+                    a(href='https://www.m.me/514902838382434' target='_blank')
+                        .phone-vr-img-circle
+                            .phone-vr-circle-fill
+                            img(loading='lazy' src='https://we1.io.vn/public/assets/images/link_chat_facebook.png' alt='link_chat')
+                .link_chat_zalo
+                    a(href='https://www.zalo.me/0847865568' target='_blank')
+                        .phone-vr-img-circle
+                            .phone-vr-circle-fill
+                            img(loading='lazy' src='https://we1.io.vn/public/assets/images/link_chat_zalo.png' alt='link_chat')
+                .link_call
+                    a(href='tel:0847 865 568' target='_blank')
+                        .phone-vr-img-circle
+                            .phone-vr-circle-fill
+                            img(loading='lazy' src='https://we1.io.vn/public/assets/images/call.png' alt='link_chat')
+
         +footer()
         #formSearch.modal.fade(tabindex='-1', aria-labelledby='exampleModalLabel', aria-hidden='true')
             .modal-dialog
@@ -61,34 +102,27 @@ html(lang="en")
                         form.flex(role='search')
                             .flex-grow-1
                                 input.w-full.form-control.h-40.border.border-gray.px-16(type='search', placeholder='Nhập từ khóa', aria-label='Search' class='focus:outline-none focus:border-primary')
-                            input.h-40.w-90.flex-shrink-0.bg-gray-c6(type="submit" value='Tìm kiếm')
+                            input.h-40.w-90.flex-shrink-0.bg-primary.text-white(type="submit" value='Tìm kiếm')
                     //- .modal-footer
                         button.btn.btn-secondary(type='button', data-bs-dismiss='modal') Close
                         button.btn.btn-primary(type='button') Save changes
         block modal
 
         script(src='public/assets/js/jquery.min.js')
-        script(src='public/assets/js/jquery.validate.min.js')
-        script(src='public/assets/js/additional-methods.min.js')
-        script(src='https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit' type='text/javascript', )
+        //- script(type='text/javascript' src='https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit')
         script(src='public/assets/js/bootstrap.bundle.min.js')
         script(src='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js')
-        //- script(src='public/assets/js/slick.min.js')
-        //- script(src='public/assets/js/slick-lightbox.js')
-        script(src="js/slick.min.js")
-        script(src="js/slick-lightbox.min.js")
-
-        //- <script src="ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-        //- validate js
+        script(src='public/assets/js/slick.min.js')
+        script(src='public/assets/js/slick-lightbox.js')
+        // <script src="ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        // validate js
+        script(src='public/assets/js/jquery.validate.min.js')
+        script(src='public/assets/js/additional-methods.min.js')
         script(src='public/js/home.js')
         script(src='public/js/home-custom.js')
         script(src='public/js/contact.js')
         script(src='public/js/quote_and_promotion.js')
         script(src='public/js/custom.js')
         script(src='public/js/product_detail.js')
-    //- script(src='js/aos.js')
-    //- script(src="js/jquery-3.7.1.min.js")
-    //- script(src="js/bootstrap.bundle.min.js")
-    //- script(src="js/js.js")
-    block js
-    //- script(src="js/bootstrap.min.js")Save Typing
+
+        block js
