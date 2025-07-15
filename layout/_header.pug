@@ -1,4 +1,14 @@
 mixin header(page)
+	-
+		var arr = [
+			{text:'Trang chủ', link:'index'},
+			{text:'Giới thiệu', link:'about'},
+			{text:'Dịch vụ', link:'services'},
+			{text:'Dự án', link:'project'},
+			{text:'Tin tức', link:'news'},
+			{text:'Tuyển dụng', link:'recruiment'},
+			//- {text:'Liên hệ', link:'contact.html'},
+		]
 	header.fe-header.w-100(style='background: white;')
 		.header-top.d-none.d-md-block()
 			.container-fluid.px-3.px-sm-5.py-2
@@ -993,6 +1003,123 @@ mixin header(page)
 							li.text-title
 								a(href='/collections/trang-diem-mat-1' title='Review Mỹ phẩm')
 									| Review Mỹ phẩm
+		
+		//- .header-3 
+			.bg
+			nav.navbar.navbar-expand-lg
+				.container
+					a.logo-brand(href='index.html') 
+						img.block.logo-w(src="./public/assets/images/174679621770428x160.png", alt="")
+						//- img.block.logo-primary(src="images/logo-f.svg", alt="")
+					
+					#menuMain.offcanvas.bg-primary.offcanvas-start(tabindex='-1' aria-labelledby='staticBackdropLabel')
+						.offcanvas-header.p-16
+							a.logo-brand(href='index.html') 
+								img.block.logo-w(src="./public/assets/images/174679621770428x160.png", alt="")
+							button.btn-close(type='button' data-bs-dismiss='offcanvas' aria-label='Close')
+						.offcanvas-body.flex(class="md:justify-between")
+							ul.navbar-nav.justify-end.gap-x-1(class='max-sm:flex max-sm:flex-col')
+								each item, key in arr
+									li.nav-item
+										a.nav-link(aria-current='page' href=`${item.link}.html` class=' max-sm:text-28' class=`${page === item.link ? 'active':''}`)= item.text
+										if(key === 1)
+											ul.nav-submenu
+												li
+													a(href='#') 
+														span Dog Supplies
+													ul.nav-submenu
+														li
+															a(href='#') 
+																span Food & Treats
+														li
+															a(href='#') 
+																span Toys
+														li
+															a(href='#') 
+																span Beds & Furniture
+														li
+															a(href='#') 
+																span Outdoor Supplies
+														li
+															a(href='#') 
+																span Clothing
+															ul.nav-submenu
+																li
+																	a(href='#') 
+																		span Sweaters and Hoodies
+																li
+																	a(href='#') 
+																		span Raincoats
+																li
+																	a(href='#') 
+																		span T-Shirts
+																li
+																	a(href='#') 
+																		span Booties
+																li
+																	a(href='#') 
+																		span Hats/Caps
+												li
+													a(href='#') 
+														span Cat Supplies
+													ul.nav-submenu
+														li
+															a(href='#') 
+																span Food & Treats
+														li
+															a(href='#') 
+																span Toys
+														li
+															a(href='#') 
+																span Beds & Furniture
+												li
+													a(href='#') 
+														span Bird Supplies
+													ul.nav-submenu
+														li
+															a(href='#') 
+																span Food & Treats
+														li
+															a(href='#') 
+																span Toys
+														li
+															a(href='#') 
+																span Furniture
+												li
+													a(href='#') 
+														span Fish Supplies
+													ul.nav-submenu
+														li
+															a(href='#') 
+																span Food
+														li
+															a(href='#') 
+																span Aquariums
+														li
+															a(href='#') 
+																span Rocks & Decorations
+
+								
+							.group-right.flex.gap-x-8px.items-center(class="md:.ml-auto")
+								a.btn-hotline.text-20.font-bold.btn.bg-grey.rounded-4.px-16.flex.justify-center.items-center.gap-x-8px.text-white.py-10px(href="contact.html" class='hover:bg-primary max-md:py-10px')  
+									i.fa-solid.fa-headset 
+									| 012345678
+								.btn-search.icon.w-46.h-46.rounded-4.bg-grey.p-2.text-white.flex.justify-center.items-center.bg-white-opacity.flex-shrink-0(class='hover:bg-primary' data-bs-toggle="modal" data-bs-target="#formSearch")
+									i.fa-solid.fa-magnifying-glass
+								.btn-user.icon.w-46.h-44.rounded-4.bg-grey.p-2.text-white.flex.justify-center.items-center.bg-white-opacity.flex-shrink-0(class='hover:bg-primary md:h-46' data-bs-toggle="modal" data-bs-target="#formSearch")
+									i.fa-solid.fa-user
+								.language.dropdown.dropdown-hover.rounded-8.text-white
+									.language-btn.flex.justify-center.font-medium.items-center.px-16.py-10px(class="md:px-24 md:py-12" data-bs-toggle='dropdown' aria-expanded='false')
+										| VN
+									ul.dropdown-menu.dropdown-menu-end
+										li
+											a.dropdown-item(href='#') VN
+										li
+											a.dropdown-item(href='#') EN
+										//- li
+											a.dropdown-item(href='#') Something else here
+					button.navbar-toggler.text-white(type='button' data-bs-toggle="offcanvas" href="#offcanvasExample3" role="button" aria-controls="offcanvasExample")
+						span.navbar-toggler-icon
 		#offcanvasExample3.offcanvas.offcanvas-start.offcanvasExample3(data-bs-scroll='false' data-bs-backdrop='true' tabindex='-1' aria-labelledby='offcanvasExampleLabel')
 			.offcanvas-header.pb-1.position-relative.px-1.pt-2.mx-3
 				h5#offcanvasExampleLabel.offcanvas-title.mx-auto
@@ -1273,131 +1400,6 @@ mixin header(page)
 									li
 										a.dropdown-item(href='#') Tiếng anh
 
-mixin header-2(page)
-	-
-		var arr = [
-			{text:'Trang chủ', link:'index'},
-			{text:'Giới thiệu', link:'about'},
-			{text:'Dịch vụ', link:'services'},
-			{text:'Dự án', link:'project'},
-			{text:'Tin tức', link:'news'},
-			{text:'Tuyển dụng', link:'recruiment'},
-			//- {text:'Liên hệ', link:'contact.html'},
-		]
-	header.header-3 
-		.bg
-		nav.navbar.navbar-expand-lg
-			.container
-				a.logo-brand(href='index.html') 
-					img.block.logo-w(src="./public/assets/images/174679621770428x160.png", alt="")
-					//- img.block.logo-primary(src="images/logo-f.svg", alt="")
-				
-				#menuMain.offcanvas.bg-primary.offcanvas-start(tabindex='-1' aria-labelledby='staticBackdropLabel')
-					.offcanvas-header.p-16
-						a.logo-brand(href='index.html') 
-							img.block.logo-w(src="./public/assets/images/174679621770428x160.png", alt="")
-						button.btn-close(type='button' data-bs-dismiss='offcanvas' aria-label='Close')
-					.offcanvas-body.flex(class="md:justify-between")
-						ul.navbar-nav.justify-end.gap-x-1(class='max-sm:flex max-sm:flex-col')
-							each item, key in arr
-								li.nav-item
-									a.nav-link(aria-current='page' href=`${item.link}.html` class=' max-sm:text-28' class=`${page === item.link ? 'active':''}`)= item.text
-									if(key === 1)
-										ul.nav-submenu
-											li
-												a(href='#') 
-													span Dog Supplies
-												ul.nav-submenu
-													li
-														a(href='#') 
-															span Food & Treats
-													li
-														a(href='#') 
-															span Toys
-													li
-														a(href='#') 
-															span Beds & Furniture
-													li
-														a(href='#') 
-															span Outdoor Supplies
-													li
-														a(href='#') 
-															span Clothing
-														ul.nav-submenu
-															li
-																a(href='#') 
-																	span Sweaters and Hoodies
-															li
-																a(href='#') 
-																	span Raincoats
-															li
-																a(href='#') 
-																	span T-Shirts
-															li
-																a(href='#') 
-																	span Booties
-															li
-																a(href='#') 
-																	span Hats/Caps
-											li
-												a(href='#') 
-													span Cat Supplies
-												ul.nav-submenu
-													li
-														a(href='#') 
-															span Food & Treats
-													li
-														a(href='#') 
-															span Toys
-													li
-														a(href='#') 
-															span Beds & Furniture
-											li
-												a(href='#') 
-													span Bird Supplies
-												ul.nav-submenu
-													li
-														a(href='#') 
-															span Food & Treats
-													li
-														a(href='#') 
-															span Toys
-													li
-														a(href='#') 
-															span Furniture
-											li
-												a(href='#') 
-													span Fish Supplies
-												ul.nav-submenu
-													li
-														a(href='#') 
-															span Food
-													li
-														a(href='#') 
-															span Aquariums
-													li
-														a(href='#') 
-															span Rocks & Decorations
-
-							
-						.group-right.flex.gap-x-8px.items-center(class="md:.ml-auto")
-							a.btn-hotline.text-20.font-bold.btn.bg-grey.rounded-4.px-16.flex.justify-center.items-center.gap-x-8px.text-white.py-10px(href="contact.html" class='hover:bg-primary max-md:py-10px')  
-								i.fa-solid.fa-headset 
-								| 012345678
-							.btn-search.icon.w-46.h-46.rounded-4.bg-grey.p-2.text-white.flex.justify-center.items-center.bg-white-opacity.flex-shrink-0(class='hover:bg-primary' data-bs-toggle="modal" data-bs-target="#formSearch")
-								i.fa-solid.fa-magnifying-glass
-							.btn-user.icon.w-46.h-44.rounded-4.bg-grey.p-2.text-white.flex.justify-center.items-center.bg-white-opacity.flex-shrink-0(class='hover:bg-primary md:h-46' data-bs-toggle="modal" data-bs-target="#formSearch")
-								i.fa-solid.fa-user
-							.language.dropdown.dropdown-hover.rounded-8.text-white
-								.language-btn.flex.justify-center.font-medium.items-center.px-16.py-10px(class="md:px-24 md:py-12" data-bs-toggle='dropdown' aria-expanded='false')
-									| VN
-								ul.dropdown-menu.dropdown-menu-end
-									li
-										a.dropdown-item(href='#') VN
-									li
-										a.dropdown-item(href='#') EN
-									//- li
-										a.dropdown-item(href='#') Something else here
-				button.navbar-toggler.text-white(type='button' data-bs-toggle="offcanvas" href="#offcanvasExample3" role="button" aria-controls="offcanvasExample")
-					span.navbar-toggler-icon
+//- mixin header-2(page)
+	
 

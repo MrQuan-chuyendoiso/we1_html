@@ -519,6 +519,9 @@ a, button, img {
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
+#header-main-sticky .navbar-nav a.nav-link {
+  color: #333;
+}
 
 @media (max-width: 992px) {
   #header-sticky {

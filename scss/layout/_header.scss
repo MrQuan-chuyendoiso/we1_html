@@ -87,6 +87,9 @@
       flex-shrink: 0;
     }
   }
+  .navbar-nav a.nav-link {
+    color: #333;
+  }
 }
 #header-sticky {
   @include max_991 {
