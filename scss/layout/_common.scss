@@ -242,7 +242,7 @@ a, button, img {
 .row {
   @include max_sm {
     margin-left: -4px;
-    padding-right: -4px;
+    margin-right: -4px;
   }
   &>* {
   @include max_sm {

@@ -295,7 +295,7 @@ a, button, img {
 @media (max-width: 640px) {
   .row {
     margin-left: -4px;
-    padding-right: -4px;
+    margin-right: -4px;
   }
 }
 @media (max-width: 640px) {
@@ -1790,23 +1790,6 @@ header .btn-close:before, header .btn-close:after {
   padding: 0;
 }
 
-.section_banner .banner_slide .slick-slide a {
-  display: block;
-  padding-top: 40.9%;
-  position: relative;
-}
-
-.section_banner .banner_slide .slick-slide a img {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-
 .banner_slide .slick-dots li {
   width: 10px;
   height: auto;
@@ -2818,4 +2801,27 @@ header .btn-close:before, header .btn-close:after {
   overflow: hidden;
   -webkit-transition: max-height 0.3s ease;
   transition: max-height 0.3s ease;
+}
+
+.special-products {
+  background-color: #E7F6FD;
+}
+.special-products .background-content {
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 0;
+  padding: 0 !important;
+  margin-bottom: 12px;
+  padding: 12px;
+}
+.special-products .slide .imgDrop {
+  padding-top: 75% !important;
+  border-radius: 8px;
+}
+.special-products .swiper-slide {
+  border-radius: 8px;
+}
+.special-products .swiper-container-thumbs .swiper-slide {
+  background-color: transparent;
 }

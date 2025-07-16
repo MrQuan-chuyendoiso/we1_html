@@ -318,21 +318,21 @@
 .section_banner .banner_slide .slick-slide {
   padding: 0;
 }
-.section_banner .banner_slide .slick-slide a {
-  display: block;
-  padding-top: 40.9%;
-  position: relative;
-}
-.section_banner .banner_slide .slick-slide a img {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
+// .section_banner .banner_slide .slick-slide a {
+//   display: block;
+//   padding-top: 40.9%;
+//   position: relative;
+// }
+// .section_banner .banner_slide .slick-slide a img {
+//   position: absolute;
+//   top: 0;
+//   bottom: 0;
+//   left: 0;
+//   right: 0;
+//   height: 100%;
+//   -o-object-fit: cover;
+//      object-fit: cover;
+// }
 
 .banner_slide .slick-dots li {
   width: 10px;

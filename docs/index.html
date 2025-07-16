@@ -756,8 +756,14 @@
             <div class="col-12">
               <!-- Main Slider-->
               <div class="banner_slide">
-                <div><a class="d-block w-100 rounded-10" href="#" title="Banner 1"><img class="img-cover" src="./public/assets/images/slide2_01af15a43aa946beb009a32ade31afc9.jpg" alt="Banner 1"></a></div>
-                <div><a class="d-block w-100 rounded-10" href="#" title="Banner 2"><img class="img-cover" src="./public/assets/images/slide_56749911034a4ecb841b932a9f8c9f32.jpg" alt="Banner 2"></a></div>
+                <div><a class="d-block w-100 rounded-10" href="#" title="Banner 1">
+                    <picture class="block">
+                      <source class="img-cover block" media="(min-width:768px)" srcset="./public/assets/images/banner_pc1.jpg"><img class="img-cover block" src="./public/assets/images/banner_sp1.jpg" alt="Flowers" style="width:auto;">
+                    </picture></a></div>
+                <div><a class="d-block w-100 rounded-10" href="#" title="Banner 2">
+                    <picture class="block">
+                      <source class="img-cover" media="(min-width:768px)" srcset="./public/assets/images/banner_pc2.jpg"><img class="img-cover" src="./public/assets/images/banner_sp2.jpg" alt="Flowers" style="width:auto;">
+                    </picture></a></div>
               </div>
             </div>
             <!-- Right Banners-->

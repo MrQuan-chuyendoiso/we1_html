@@ -485,3 +485,28 @@ main {
     overflow: hidden;
     transition: max-height 0.3s ease;
 }
+.special-products {
+    background-color: #E7F6FD;
+    .background-content {
+      background-color: transparent;
+      box-shadow: none;
+      border-radius: 0;
+      padding: 0 !important;
+      margin-bottom: 12px;
+      padding: 12px;
+  }
+  .slide .imgDrop {
+    padding-top: 3/4*100%!important;
+    border-radius: 8px;
+  }
+  .swiper-slide {
+    border-radius: 8px;
+  }
+   .swiper-container-thumbs .swiper-slide {
+    background-color: transparent;
+    // padding: 0;
+  }
+  .swiper-container-thumbs {
+
+  }
+}
