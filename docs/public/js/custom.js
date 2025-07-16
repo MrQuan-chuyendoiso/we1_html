@@ -254,7 +254,7 @@ document.addEventListener("DOMContentLoaded", function () {
       visible = true;
 
       // ✅ Đổi màu chữ khi scroll xuống
-      document.querySelectorAll(".navbar-nav a.nav-link").forEach(link => {
+      document.querySelectorAll("header .navbar-nav a.nav-link").forEach(link => {
         link.style.setProperty("color", "#333", "important");
       });
 

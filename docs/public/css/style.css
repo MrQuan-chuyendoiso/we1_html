@@ -1790,6 +1790,16 @@ header .btn-close:before, header .btn-close:after {
   padding: 0;
 }
 
+.banner-full-width {
+  margin-bottom: 0 !important;
+}
+.banner-full-width .slick-slide {
+  padding: 0;
+}
+.banner-full-width .slick-slide img {
+  margin: auto;
+}
+
 .banner_slide .slick-dots li {
   width: 10px;
   height: auto;
@@ -2824,4 +2834,7 @@ header .btn-close:before, header .btn-close:after {
 }
 .special-products .swiper-container-thumbs .swiper-slide {
   background-color: transparent;
+}
+.special-products .product-info-head {
+  border-bottom: none;
 }

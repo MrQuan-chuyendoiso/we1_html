@@ -333,7 +333,15 @@
 //   -o-object-fit: cover;
 //      object-fit: cover;
 // }
-
+.banner-full-width {
+  margin-bottom: 0!important;
+  .slick-slide {
+    padding: 0;
+    img {
+      margin: auto;
+    }
+  }
+}
 .banner_slide .slick-dots li {
   width: 10px;
   height: auto;
