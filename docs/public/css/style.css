@@ -292,6 +292,16 @@ a, button, img {
   width: 28px;
 }
 
+button {
+  border: none;
+  background-color: transparent;
+  color: inherit;
+}
+
+a {
+  color: inherit;
+}
+
 @media (max-width: 640px) {
   .row {
     margin-left: -4px;
@@ -2593,6 +2603,7 @@ header .btn-close:before, header .btn-close:after {
 
 .btn-main:hover {
   opacity: 0.8;
+  font-weight: bold;
 }
 
 .btn-main i {

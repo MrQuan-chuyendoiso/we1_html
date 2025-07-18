@@ -3,6 +3,9 @@ module.exports = {
     './docs/**/*.{html,js}'
   ],
   plugins: [require('@tailwindcss/typography')],
+  corePlugins: {
+    preflight: false,
+  },
   theme: {
     extend: {
       fontFamily: {
@@ -66,6 +69,7 @@ module.exports = {
         'orange':'#ef8528',
         'gray2': '#f3f4f6',
         'white-opacity':'rgba(255,255,255,.2)',
+        'red':'#b50303',
        },
        borderRadius: {
         '4':'4px',

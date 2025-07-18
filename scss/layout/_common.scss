@@ -239,6 +239,14 @@ a, button, img {
     width: 28px;
   }
 }
+button {
+  border: none;
+  background-color: transparent;
+  color: inherit;
+}
+a {
+  color: inherit;
+}
 .row {
   @include max_sm {
     margin-left: -4px;

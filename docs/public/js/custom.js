@@ -254,7 +254,7 @@ document.addEventListener("DOMContentLoaded", function () {
       visible = true;
 
       // ✅ Đổi màu chữ khi scroll xuống
-      document.querySelectorAll("header .navbar-nav a.nav-link").forEach(link => {
+      document.querySelectorAll("#header-main-sticky .navbar-nav a.nav-link").forEach(link => {
         link.style.setProperty("color", "#333", "important");
       });
 
@@ -264,9 +264,9 @@ document.addEventListener("DOMContentLoaded", function () {
       visible = false;
 
       // ✅ Trả lại màu chữ mặc định khi scroll lên
-      document.querySelectorAll(".navbar-nav a.nav-link").forEach(link => {
-        link.style.removeProperty("color");
-      });
+      // document.querySelectorAll(".navbar-nav a.nav-link").forEach(link => {
+      //   link.style.removeProperty("color");
+      // });
     }
 
     document.body.classList.toggle("is-scrolling", y > lastY);

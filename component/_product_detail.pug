@@ -21,11 +21,11 @@ mixin slick-slider()
                             img.image(loading='lazy' src='./public/assets/images/Screenshot_4-2.png' alt='Tổ Yến Đảo0')
                         else 
                             img.image(loading='lazy' src="./public/assets/images/Screenshot_6-1.png", alt="")
-mixin product_detail()
-    .special-products.py-16(class="md:py-40")
+mixin product-detail-show-home()
+    section.special-products.py-16(class="md:py-48")
         .container.margin-top-10
             .row
-                .col-12.margin-bottom-10
+                //- .col-12.margin-bottom-10
                     nav(aria-label='breadcrumb')
                         ol.breadcrumb
                             li.breadcrumb-item
@@ -70,17 +70,17 @@ mixin product_detail()
                                         .col-4.col-md-3
                                             .inner.bg-white.rounded-3.py-16.px-8px 
                                                 .icon.w-40.h-40.flex.justify-center.items-center.text-32.text-primary.mx-auto
-                                                    img.w-full(src="admin/public/images/brand/171143514356SUZUKI.jpg", alt="")
+                                                    img.w-full(src="https://file.hstatic.net/200000865177/file/cam-nang_7b1c2041fc624dbbb73509f39a24a55f.png", alt="")
                                                 .text-primary.mt-8px.text-center Hình
                                         .col-4.col-md-3
                                             .inner.bg-white.rounded-3.py-16.px-8px 
                                                 .icon.w-40.h-40.flex.justify-center.items-center.text-32.text-primary.mx-auto
-                                                    img.w-full(src="admin/public/images/brand/171143514356SUZUKI.jpg", alt="")
+                                                    img.w-full(src="https://file.hstatic.net/200000865177/file/cam-nang_7b1c2041fc624dbbb73509f39a24a55f.png", alt="")
                                                 .text-primary.mt-8px.text-center Hình
                                         .col-4.col-md-3
                                             .inner.bg-white.rounded-3.py-16.px-8px 
                                                 .icon.w-40.h-40.flex.justify-center.items-center.text-32.text-primary.mx-auto
-                                                    img.w-full(src="admin/public/images/brand/171143514356SUZUKI.jpg", alt="")
+                                                    img.w-full(src="https://file.hstatic.net/200000865177/file/cam-nang_7b1c2041fc624dbbb73509f39a24a55f.png", alt="")
                                                 .text-primary.mt-8px.text-center Hình
                                     
                                     .product-info-content.mt-24
@@ -92,36 +92,37 @@ mixin product_detail()
                                                 i.fa-solid.fa-cart-shopping
                                                 | THÊM VÀO GIỎ HÀNG
                                         .col-12.col-md-4
-                                            button.btn-main.btn-gray
+                                            button.btn-main.bg-orange.text-white(class="hover:shadow-lg")
                                                 i.fa-solid.fa-headset
                                                 | YÊU CẦU TƯ VẤN
                                         .col-12.col-md-4
-                                            button.btn-main.btn-gray
+                                            button.btn-main.bg-red.text-white(class="hover:shadow-lg")
                                                 i.fa.fa-phone
                                                 | 0847 865 568
                                         .col-12.col-md-4
-                                            button.btn-main.btn-primary
+                                            button.btn-main.btn-primary(class="hover:shadow-lg")
                                                 i.fa-solid.fa-users-viewfinder
                                                 |  Xem Chi Tiết
                                     h3.product-info-ttl.mt-24 chia sẻ
                                     ul.flex.mt-12.gap-4px.flex-wrap 
                                         li
-                                            a.flex-shrink-0.w-36.flex-shrink-0.h-36.flex.justify-center.items-center.rounded-50p.bg-primary.text-white(href="#") 
+                                            a.flex-shrink-0.w-36.flex-shrink-0.h-36.flex.justify-center.items-center.rounded-50p.bg-primary.text-white(href="#" class="hover:shadow-lg") 
                                                 i.fa-brands.fa-facebook-f
                                         li
-                                            a.flex-shrink-0.w-36.flex-shrink-0.h-36.flex.justify-center.items-center.rounded-50p.bg-primary.text-white(href="#") 
+                                            a.flex-shrink-0.w-36.flex-shrink-0.h-36.flex.justify-center.items-center.rounded-50p.bg-primary.text-white(href="#" class="hover:shadow-lg") 
                                                 i.fa-brands.fa-tiktok
                                         li
-                                            a.flex-shrink-0.w-36.flex-shrink-0.h-36.flex.justify-center.items-center.rounded-50p.bg-primary.text-white(href="#") 
+                                            a.flex-shrink-0.w-36.flex-shrink-0.h-36.flex.justify-center.items-center.rounded-50p.bg-primary.text-white(href="#" class="hover:shadow-lg") 
                                                 i.fa-brands.fa-twitter
                                         li
-                                            a.flex-shrink-0.w-36.flex-shrink-0.h-36.flex.justify-center.items-center.rounded-50p.bg-primary.text-white(href="#") 
+                                            a.flex-shrink-0.w-36.flex-shrink-0.h-36.flex.justify-center.items-center.rounded-50p.bg-primary.text-white(href="#" class="hover:shadow-lg") 
                                                 i.fa-brands.fa-threads
                                         li
-                                            a.flex-shrink-0.w-36.flex-shrink-0.h-36.flex.justify-center.items-center.rounded-50p.bg-primary.text-white(href="#") 
+                                            a.flex-shrink-0.w-36.flex-shrink-0.h-36.flex.justify-center.items-center.rounded-50p.bg-primary.text-white(href="#" class="hover:shadow-lg") 
                                                 i.fa-brands.fa-pinterest-p
 
-    .mt-40                                              
+mixin product_detail()
+                                              
     .container.margin-top-10
         .row
             .col-12.margin-bottom-10
