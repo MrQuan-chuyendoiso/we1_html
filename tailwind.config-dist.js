@@ -8,6 +8,13 @@ module.exports = {
   },
   theme: {
     extend: {
+      screens: {
+        sm: '576px',
+        md: '768px',
+        lg: '992px',     // sửa từ 1024px về 992px như Bootstrap
+        xl: '1200px',
+        '2xl': '1400px',
+      },
       fontFamily: {
         a: 'Oswald, ui-serif', // Adds a new `font-display` class
       },

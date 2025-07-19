@@ -133,9 +133,6 @@ $(document).ready(function () {
 // =========================
 // new update 6/2025
 // ===========================
-$( document ).ready(function() {
-    console.log( "ready!" );
-});
 numSlick = 0;
 function sliderList($sliderName, $toshow, $toshow_1024, $rows) {
     $($sliderName).each( function() {
@@ -274,3 +271,70 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+jQuery(document).ready(function($) {
+  function setupMenu($scope) {
+    $scope.find('li').each(function() {
+      var $li = $(this);
+      if ($li.children('.nav-submenu').length) {
+        $li.addClass('menu-dropdown');
+        if ($li.children('.btn-submenu').length == 0) {
+          $li.prepend('<button type="button" class="btn-submenu"></button>');
+        }
+        $li.children('.nav-submenu').hide(); // Ẩn ban đầu
+        setupMenu($li.children('.nav-submenu')); // Đệ quy cấp con
+      }
+    });
+  }
+
+  setupMenu($('.navbar-nav'));
+
+  // Xử lý click btn-submenu
+  $('.navbar-nav').on('click', '.btn-submenu', function(e) {
+    e.preventDefault();
+    var $li = $(this).closest('li');
+    var $submenu = $li.children('.nav-submenu');
+
+    // Đóng tất cả anh em cùng cấp
+    $li.siblings('.active').each(function() {
+      $(this).removeClass('active').children('.nav-submenu:visible').stop(true, true).slideUp(350);
+    });
+
+    // Toggle li hiện tại
+    if ($li.hasClass('active')) {
+      $li.removeClass('active');
+      $submenu.stop(true, true).slideUp(350);
+    } else {
+      $li.addClass('active');
+      $submenu.stop(true, true).slideDown(350);
+    }
+  });
+
+  // Nút đóng toàn bộ
+  $('.btn-close').on('click', function(e) {
+    e.preventDefault();
+    $('.navbar-nav li.active').removeClass('active').children('.nav-submenu:visible').stop(true, true).slideUp(350);
+  });
+});
+
+
+document.addEventListener('DOMContentLoaded', function () {
+      console.log('DOM Loaded');
+
+      window.addEventListener('scroll', function () {
+        console.log('Scrolled! scrollY =', window.scrollY);
+
+        const header = document.querySelector('header .header-3');
+        if (!header) {
+          console.log('Không tìm thấy <header>');
+          return;
+        }
+
+        if (window.scrollY > 0) {
+          console.log('Thêm class is-scrolled');
+          header.classList.add('is-scrolled');
+        } else {
+          console.log('Gỡ class is-scrolled');
+          header.classList.remove('is-scrolled');
+        }
+      });
+    });
