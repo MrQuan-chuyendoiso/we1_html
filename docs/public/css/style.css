@@ -33,6 +33,7 @@
   --cl_tit_fl: #ffffff;
   --bg_fl_1: #ff8e4d;
   --bg_fl_2: #ff5c00;
+  --nav-link: #fff;
 }
 
 main {
@@ -726,6 +727,16 @@ a {
     background-color: rgba(0, 0, 0, 0.7);
   }
 }
+@media (min-width: 992px) {
+  .header-3.is-scrolled .navbar {
+    padding: 0;
+  }
+}
+@media (min-width: 992px) {
+  .header-3.is-scrolled .logo-brand {
+    width: 161px;
+  }
+}
 .header-3 .container {
   position: relative;
 }
@@ -775,6 +786,13 @@ a {
   display: block;
   position: relative;
   width: 165px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+@media (min-width: 992px) {
+  .header-3 .logo-brand {
+    margin-right: 16px;
+  }
 }
 @media (min-width: 1200px) {
   .header-3 .logo-brand {
@@ -809,6 +827,10 @@ a {
 .header-3 .language .dropdown-menu {
   position: absolute;
   right: 0;
+}
+.header-3 .navbar {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 @media (max-width: 768px) {
   .header-3 .navbar {
@@ -895,13 +917,12 @@ a {
 .header-3 .nav-link {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  color: #fff;
+  color: var(--nav-link);
   padding: 12px 18px !important;
   border-radius: 4px;
 }
 @media (max-width: 640px) {
   .header-3 .nav-link {
-    color: #fff;
     padding: 12px 0 !important;
   }
 }
@@ -909,6 +930,12 @@ a {
   .header-3 .nav-link:hover, .header-3 .nav-link.active {
     position: relative;
     background-color: var(--primary);
+  }
+}
+@media (min-width: 992px) {
+  .header-3 .nav-link:hover, .header-3 .nav-link.active {
+    -webkit-box-shadow: inset 0 0 220px rgba(0, 0, 0, 0.3);
+            box-shadow: inset 0 0 220px rgba(0, 0, 0, 0.3);
   }
 }
 .header-3 .nav-link:hover {
@@ -1245,6 +1272,105 @@ header .btn-close:before, header .btn-close:after {
         -ms-flex-positive: 1;
             flex-grow: 1;
   }
+}
+
+.dropdown-hover {
+  padding: 4px 0;
+  margin: -4px 0;
+}
+.dropdown-hover .dropdown-btn {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.dropdown-hover .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  display: block;
+  opacity: 0;
+  left: 0 !important;
+  pointer-events: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  min-width: 120px;
+}
+.dropdown-hover:hover .dropdown-btn {
+  opacity: 0.7;
+}
+.dropdown-hover:hover .dropdown-menu {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.fade-flip {
+  -webkit-transform: rotateX(-90deg);
+          transform: rotateX(-90deg);
+  opacity: 0;
+  -webkit-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+
+.fade-flip.show {
+  opacity: 1;
+  -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
+}
+
+.fade-flip .modal-dialog {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 30%;
+  -webkit-transform: translateY(-50%) !important;
+          transform: translateY(-50%) !important;
+}
+.fade-flip .modal-dialog .modal-header {
+  position: relative;
+}
+.fade-flip .modal-dialog .modal-header .btn-close {
+  position: absolute;
+  top: -16px;
+  right: -24px;
+  width: 36px;
+  font-size: 16px;
+  height: 36px;
+  padding: 0;
+  background-size: 13px;
+  border-radius: 50%;
+  opacity: 1;
+  -webkit-filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7484%) hue-rotate(201deg) brightness(96%) contrast(104%);
+          filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7484%) hue-rotate(201deg) brightness(96%) contrast(104%);
+}
+.fade-flip .modal-dialog .modal-header .btn-close:hover {
+  opacity: 0.7;
+}
+.fade-flip .modal-dialog .form-search {
+  width: 100%;
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.fade-flip .modal-dialog .form-search input {
+  height: 48px;
+  display: block;
+  background-color: #fafafa;
+  border: 1px solid var(--primary);
+  border-radius: 4px;
+  width: 100%;
+  padding: 8px 75px 8px 16px;
+}
+.fade-flip .modal-dialog .form-search .btn-submit {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 60px;
+  color: #fff;
+  background-color: var(--primary);
+}
+
+.modal-backdrop.show {
+  opacity: 0.7;
 }
 
 .fe-footer {

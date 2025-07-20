@@ -1,7 +1,7 @@
 mixin header(page)
 	-
 		var arr = [
-			{text:'Trang chủ', link:'index'},
+			{text:'Trang chủ', link:'index2'},
 			{text:'Giới thiệu', link:'about'},
 			{text:'Dịch vụ', link:'services'},
 			{text:'Dự án', link:'project'},
@@ -111,11 +111,21 @@ mixin header(page)
 							a(href="#").btn-hotline.text-20.font-bold.btn.shadow.rounded-4.px-16.flex.justify-center.items-center.gap-x-8px.text-white.py-10px(class='md:bg-primary md:shadow max-md:text-primary max-md:py-10px max-2xl:hidden')  
 								i.fa-solid.fa-headset 
 								| 012345678
-							a(href="#").btn-search.icon.w-46.h-46.rounded-4.p-2.text-white.flex.justify-center.items-center.bg-white-opacity.flex-shrink-0(class='md:bg-primary md:shadow max-md:text-primary md:h-46' data-bs-toggle="modal" data-bs-target="#")
+							a(href="#").btn-search.icon.w-46.h-46.rounded-4.p-2.text-white.flex.justify-center.items-center.bg-white-opacity.flex-shrink-0(class='md:bg-primary md:shadow max-md:text-primary md:h-46' data-bs-toggle="modal" data-bs-target="#flipModal")
 								i.fa-solid.fa-magnifying-glass
-							a(href="#").btn-user.icon.w-46.h-44.rounded-4.p-2.text-white.flex.justify-center.items-center.bg-white-opacity.flex-shrink-0(class='md:bg-primary md:shadow max-md:text-primary md:h-46 max-md:hidden' data-bs-toggle="modal" data-bs-target="#")
-								i.fa-solid.fa-user
-							a(href="#").btn-cart.icon.w-46.h-44.rounded-4.p-2.text-white.flex.justify-center.items-center.bg-white-opacity.flex-shrink-0(class='md:bg-primary md:shadow max-md:text-primary md:h-46' data-bs-toggle="modal" data-bs-target="#")
+							.dropdown.dropdown-hover
+								.dropdown-btn.btn-user.icon.w-46.h-44.rounded-4.p-2.text-white.flex.justify-center.items-center.bg-white-opacity.flex-shrink-0(class='md:bg-primary md:shadow max-md:text-primary md:h-46 max-md:hidden')
+									i.fa-solid.fa-user
+								ul.dropdown-menu.dropdown-menu-end
+									li
+										a.dropdown-item.flex.gap-x-2.items-center(href='#') 
+											i.fa-solid.fa-user
+											| Đăng nhập
+									li
+										a.dropdown-item.flex.gap-x-2.items-center(href='#') 
+											i.fa-solid.fa-user-plus
+											| Đăng ký
+							a(href="#").btn-cart.icon.w-46.h-44.rounded-4.p-2.text-white.flex.justify-center.items-center.bg-white-opacity.flex-shrink-0(class='md:bg-primary md:shadow max-md:text-primary md:h-46')
 								i.fa-solid.fa-shopping-cart
 							.language.dropdown.dropdown-hover.rounded-8.text-white(class="max-md:hidden")
 								.language-btn.flex.justify-center.font-medium.items-center.px-16.py-10px(class="md:px-24 md:py-12 md:bg-primary " data-bs-toggle='dropdown' aria-expanded='false')
@@ -129,6 +139,7 @@ mixin header(page)
 										a.dropdown-item(href='#') Something else here
 						button.navbar-toggler.text-white(type='button' data-bs-toggle="offcanvas" href="#offcanvasExample3" role="button" aria-controls="offcanvasExample")
 							span.navbar-toggler-icon
+
 		else
 			.header-top.d-none.d-md-block()
 				.container-fluid.px-3.px-sm-5.py-2
@@ -1388,6 +1399,16 @@ mixin header(page)
 										a.dropdown-item(href='#') Tiếng việt
 									li
 										a.dropdown-item(href='#') Tiếng anh
+	if(page === "index2")
+		#flipModal.modal.fade-flip(tabindex='-1' role='dialog' aria-labelledby='myModalLabel')
+			.modal-dialog(role='document')
+				.modal-content
+					.modal-header
+						form.form-search(action="") 
+							input(type="text" placeholder="Nhập từ tìm kiếm ...")
+							button.btn-submit 
+								i.fa-solid.fa-magnifying-glass
+						button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
 
 //- mixin header-2(page)
 	
