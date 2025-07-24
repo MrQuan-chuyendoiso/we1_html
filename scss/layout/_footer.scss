@@ -165,7 +165,7 @@
     padding: 24px 0 0;
     color: rgba(255,255,255,.8);
     z-index: 1;
-    border-top: 2px solid var(--primary);
+    border-top: 3px solid var(--primary);
     @include min_lg {
         padding: 32px 0 0;
         border-top-width: 4px;
@@ -195,16 +195,19 @@
         z-index: 1;
     }
     .logo-f {
-        width: 200px;
-        margin-bottom: -12px;
-        @include min_md {
-        width: 265px;}
+        // width: 200px;
+        // margin-bottom: -12px;
+        // @include min_md {
+        // width: 265px;}
+        img {
+            max-width:100%;
+        }
     }
     .ttl-f {
         position: relative;
         padding-bottom: 12px;
         border-bottom: 1px solid rgba(255,255,255,.3);
-        @include min_2xl {margin-right: 24px;}
+        // @include min_2xl {margin-right: 24px;}
         &::before {
             position: absolute;
             bottom: -1px;
@@ -232,10 +235,21 @@
         font-style: normal;
         padding: 10px 16px;
         margin-top: 16px;
+        @include min_sm {
+            br {display: none;}
+        }
     }
     .list-social {
         @include max-sm {
             margin-right: -12px;
+        }
+    }
+    .menu-f {
+        li {
+            &+li {
+                border-top: 1px solid rgba(255,255,255,.2);
+                padding-top: 10px;
+            }
         }
     }
 }

@@ -4,12 +4,11 @@ mixin footer()
             .bg.bg-primary
             .container
                 .row.gap-y-24 
-                    .col-12
-                        .logo-f 
-                            img.block.w-full(src="https://we1.io.vn/admin/public/images/footer/174634384745428x160.png", alt="")
                     .col-12.col-lg-12.col-xl-4   
                         h4.ttl-f.text-white.text-16 CTY TNHH Công Nghệ VPlus Việt Nam
-                        ul.list-contact.flex.flex-col.gap-y-8px.mt-16 
+                        .logo-f 
+                            img(src="https://we1.io.vn/admin/public/images/footer/174634384745428x160.png", alt="")
+                        ul.list-contact.flex.flex-col.gap-y-8px 
                             li.flex.gap-x-2
                                 i.fa-solid.fa-map-location-dot
                                 p
@@ -41,19 +40,23 @@ mixin footer()
                             .col-5.col-md-4.col-xl-3
                                 h4.ttl-f.text-white.text-16.ttl-f 
                                     span Giới thiệu
-                                ul.menu-f.flex.flex-col.gap-y-8px.mt-16 
+                                ul.menu-f.flex.flex-col.gap-y-8px.mt-24 
                                     each item in ['Về chúng tôi', 'Tuyển dụng','Tài liệu', 'Video','Khuyến mãi','Tin tức']
                                         li
-                                            a(href="#")= item 
+                                            a.flex.gap-x-8px(href="#")
+                                                i.fa-solid.fa-arrow-up-right-from-square.mt-2px
+                                                span= item 
                                 ul.list-contact.flex.flex-col.gap-y-8px.mt-16 
                             .col-7.col-md-4.col-xl-4
                                 div(class="max-sm:pl-24")
                                     h4.ttl-f.text-white.text-16.ttl-f 
                                         span Chính sách
-                                    ul.menu-f.flex.flex-col.gap-y-8px.mt-16
+                                    ul.menu-f.flex.flex-col.gap-y-8px.mt-24
                                         each item in ['Hình thức đặt hàng', 'Hình thức thanh toán','Phương thức vận chuyển', 'Chính sách đổi trả','Chính sách bảo hành','Chính sách bảo mật']
                                             li
-                                                a(href="#")= item 
+                                                a.flex.gap-x-8px(href="#")
+                                                    i.fa-solid.fa-shield-halved.mt-2px
+                                                    span= item 
                             .col-12.col-md-4.col-xl-5
                                 .row.gap-y-24 
                                     .col-5.col-md-12  
@@ -65,13 +68,23 @@ mixin footer()
                                                     a.block.rounded-50p.bg-white.imgDrop(href="#" class="hover:shadow-lg max-md:w-28 max-md:h-28 md:h-36 lg:h-40") 
                                                         img.w-full(src=`./public/assets/images/ss-${item}.png`, alt="")
                                     
+                                    .col-12.col-md-12(class="max-sm:order-9 ")
+                                        //- div(class="max-sm:pl-24")
+                                        h4.ttl-f.text-white.text-16.ttl-f
+                                            span Hình thức thanh toán
+                                        .payment-accept.gap-2.mt-8px
+                                            img.first.lazy.loaded(src='https://file.hstatic.net/200000823693/file/payment-1_2c94a9495fa04f4ab8b11be786441266.png' data-src='https://file.hstatic.net/200000823693/file/payment-1_2c94a9495fa04f4ab8b11be786441266.png' alt='payment-1')
+                                            img.lazy.loaded(src='https://file.hstatic.net/200000823693/file/payment-2_bdbf0ab7d5d24e138faa24e497b38a9b.png' data-src='https://file.hstatic.net/200000823693/file/payment-2_bdbf0ab7d5d24e138faa24e497b38a9b.png' alt='payment-2')
+                                            img.lazy.loaded(src='https://file.hstatic.net/200000823693/file/payment-3_3a8dba86bfd74a85be3db17837d4c9c6.png' data-src='https://file.hstatic.net/200000823693/file/payment-3_3a8dba86bfd74a85be3db17837d4c9c6.png' alt='payment-3')
+                                            img.lazy.loaded(src='https://file.hstatic.net/200000823693/file/payment-4_f03f301a303c448db851de3e9e91ade2.png' data-src='https://file.hstatic.net/200000823693/file/payment-4_f03f301a303c448db851de3e9e91ade2.png' alt='payment-4')
+
                                     .col-7.col-md-12 
                                         div(class="max-sm:pl-24")
                                             h4.ttl-f.text-white.text-16.ttl-f
                                                 span Bộ công thương
                                             .bg-white.rounded-8.images-bct.mt-8px
                                                 img.w-full(src="./public/assets/images/bct.png", alt="")
-            address Bản quyền thuộc về CÔNG TY CỔ PHẦN SIÊU THỊ IN ẤN | Cung cấp bởi 
+            address Bản quyền thuộc về CÔNG TY CỔ PHẦN SIÊU THỊ IN ẤN | <br>Cung cấp bởi 
                 a(href="#") 
                     strong Thietkeweb365.vn
     else
