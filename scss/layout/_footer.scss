@@ -252,4 +252,11 @@
             }
         }
     }
+    .ttl-sub {
+        border-bottom: 1px solid rgba(255,255,255,.5);
+        span {
+            display: inline-block;
+            background-color: #fff;
+        }
+    }
 }

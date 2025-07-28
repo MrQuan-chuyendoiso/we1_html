@@ -704,7 +704,8 @@ a {
   top: 0;
   left: 0;
   right: 0;
-  height: 350px;
+  height: 100%;
+  z-index: 1;
   background-image: -webkit-gradient(linear, left top, left bottom, from(var(--primary)), to(rgba(0, 0, 0, 0)));
   background-image: linear-gradient(to bottom, var(--primary), rgba(0, 0, 0, 0));
 }
@@ -715,6 +716,9 @@ a {
     background-color: #fff;
   }
 }
+.header-3 .navbar {
+  z-index: 2;
+}
 
 @media (max-width: 768px) {
   .header-3 {
@@ -724,7 +728,20 @@ a {
 }
 @media (min-width: 768px) {
   .header-3.is-scrolled {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-image: none;
+    background-color: var(--primary);
+    opacity: 0.95;
+  }
+  .header-3.is-scrolled::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    opacity: 0.15;
+    z-index: 1;
   }
 }
 @media (min-width: 992px) {
@@ -983,6 +1000,25 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+body:not(.header-sticky) .fe-header {
+  position: sticky;
+}
+body:not(.header-sticky) .fe-header .header-3 .bg {
+  background-image: none;
+  background-color: var(--primary);
+}
+body:not(.header-sticky) .fe-header .header-3 .bg::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  opacity: 0.15;
+  z-index: 1;
 }
 
 .bg-fixed .scrollTop .nav-item > .btn-submenu:before {
@@ -1726,6 +1762,13 @@ header .btn-close:before, header .btn-close:after {
 .footer-2 .menu-f li + li {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   padding-top: 10px;
+}
+.footer-2 .ttl-sub {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.footer-2 .ttl-sub span {
+  display: inline-block;
+  background-color: #fff;
 }
 
 .banner-nav {

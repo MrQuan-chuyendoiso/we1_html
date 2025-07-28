@@ -1,4 +1,4 @@
-mixin header(page)
+mixin header(page, bodyClass)
 	-
 		var arr = [
 			{text:'Trang chủ', link:'index2'},
@@ -11,7 +11,7 @@ mixin header(page)
 		]
 	header.fe-header.w-100(style='background: white;')
 		if(page === "index2")
-			.header-3 
+			.header-3
 				.bg
 				nav.navbar.navbar-expand-lg
 					.container

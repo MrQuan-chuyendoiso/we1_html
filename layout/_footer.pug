@@ -87,6 +87,28 @@ mixin footer()
             address Bản quyền thuộc về CÔNG TY CỔ PHẦN SIÊU THỊ IN ẤN | <br>Cung cấp bởi 
                 a(href="#") 
                     strong Thietkeweb365.vn
+        //- footer.footer-2.text-14
+            .bg
+            .bg-img.imgDrop 
+                img(src="", alt="")
+            .container 
+                .row 
+                    .col-12.col-lg-6.col-xl-7 
+                        .row 
+                            .col-12.col-lg-7 
+                                .logo-f 
+                                    img(src="https://we1.io.vn/admin/public/images/footer/174634384745428x160.png", alt="")
+                                h4.text-white.text-18 CTY TNHH Công Nghệ VPlus Việt Nam
+                                h4.text-white.text-16.mt-24.ttl-sub
+                                    span Mạng xã hội
+                                ul.list-social.mt-16.flex.flex-wrap.gap-y-2(class="md:gap-3 max-md:gap-x-8px") 
+                                    each item in ['fb', 'shopee', 'zalo', 'ytb']
+                                        li.w-28.flex-shrink-0( class="md:w-36 md:h-36 lg:w-40 lg:h-40")
+                                            a.block.rounded-50p.bg-white.imgDrop(href="#" class="hover:shadow-lg max-md:w-28 max-md:h-28 md:h-36 lg:h-40") 
+                                                img.w-full(src=`./public/assets/images/ss-${item}.png`, alt="")
+                            .col-12.col-lg-5 
+                    .col-12.col-lg-6.col-xl-5 
+
     else
         footer.fe-footer
             section
