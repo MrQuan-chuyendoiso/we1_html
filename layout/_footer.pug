@@ -87,18 +87,47 @@ mixin footer()
             address Bản quyền thuộc về CÔNG TY CỔ PHẦN SIÊU THỊ IN ẤN | <br>Cung cấp bởi 
                 a(href="#") 
                     strong Thietkeweb365.vn
-        //- footer.footer-2.text-14
+        footer.footer-3.text-14
             .bg
             .bg-img.imgDrop 
-                img(src="", alt="")
+                img(src="https://png.pngtree.com/background/20250119/original/pngtree-textured-backdrop-with-dark-green-leaf-pattern-picture-image_13403196.jpg", alt="")
             .container 
                 .row 
                     .col-12.col-lg-6.col-xl-7 
-                        .row 
-                            .col-12.col-lg-7 
+                        .row.gap-y-24 
+                            .col-12.col-sx-8.col-lg-7(class="2xl:pr-40")  
                                 .logo-f 
                                     img(src="https://we1.io.vn/admin/public/images/footer/174634384745428x160.png", alt="")
                                 h4.text-white.text-18 CTY TNHH Công Nghệ VPlus Việt Nam
+                                //- a.btn-hotline.text-20.font-bold.btn.shadow.rounded-4.px-16.flex.justify-center.items-center.gap-x-8px.text-white.py-10px(class='md:bg-primary md:shadow max-md:text-primary max-md:py-10px max-2xl:hidden' href='#')
+                                    i.fa-solid.fa-headset  
+                                    | 012345678
+                                ul.list-contact.flex.flex-col.gap-y-8px.mt-16 
+                                    li.flex.gap-x-2
+                                        i.fa-solid.fa-map-location-dot
+                                        p
+                                            strong  Hà Nội: 
+                                            | 58 Trần Khát Chân, Bạch Đằng, Hai Bà Trưng, Hà Nội
+                                    //- li.flex.gap-x-2
+                                        i.fa-solid.fa-map-location-dot
+                                        p
+                                            strong  HCM: 
+                                            | Lầu 6, 182 Lê Đại Hành, P.15, Quận 11, Tp.HCM
+                                    li.flex.gap-x-2
+                                        i.fa-solid.fa-phone
+                                        p
+                                            strong  Hotline: 
+                                            | 0936 87 6667
+                                    li.flex.gap-x-2
+                                        i.fa-solid.fa-envelope
+                                        p
+                                            strong  Email: 
+                                            | vplusvn.thangth@gmail.com
+                                    //- li.flex.gap-x-2
+                                        i.fa-solid.fa-print
+                                        p
+                                            strong  MST: 
+                                            | 0202154517
                                 h4.text-white.text-16.mt-24.ttl-sub
                                     span Mạng xã hội
                                 ul.list-social.mt-16.flex.flex-wrap.gap-y-2(class="md:gap-3 max-md:gap-x-8px") 
@@ -106,8 +135,31 @@ mixin footer()
                                         li.w-28.flex-shrink-0( class="md:w-36 md:h-36 lg:w-40 lg:h-40")
                                             a.block.rounded-50p.bg-white.imgDrop(href="#" class="hover:shadow-lg max-md:w-28 max-md:h-28 md:h-36 lg:h-40") 
                                                 img.w-full(src=`./public/assets/images/ss-${item}.png`, alt="")
-                            .col-12.col-lg-5 
-                    .col-12.col-lg-6.col-xl-5 
+                            .col-8.col-sx-4.col-lg-5
+                                h4.text-white.text-16.mt-24.ttl-sub
+                                    span Qr code
+                                .box-f.bg-primary 
+                                    img.w-full.icon-color-white(src="./public/assets/images/qr.png", alt="")
+                    .col-12.col-lg-6.col-xl-5(class="2xl:pl-40") 
+                        h4.text-white.text-16.mt-24.ttl-sub
+                            span Liên hệ
+                        .box-f.mt-16
+                            .text There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum
+                            form.mt-16(action="")
+                                .row
+                                    .col
+                                        input.form-control(type='text' placeholder='First name' aria-label='First name')
+                                    .col
+                                        input.form-control(type='text' placeholder='Last name' aria-label='Last name')
+                                .mt-3
+                                    textarea#exampleFormControlTextarea1.form-control(rows='3' placeholder="Nội dung")
+                                .mt-3 
+                                    button.btn-primary.btn-submit-f Gửi yêu cầu
+
+
+            address Bản quyền thuộc về CÔNG TY CỔ PHẦN SIÊU THỊ IN ẤN | <br>Cung cấp bởi 
+                a(href="#") 
+                    strong Thietkeweb365.vn
 
     else
         footer.fe-footer

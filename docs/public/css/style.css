@@ -331,6 +331,11 @@ a {
   color: #fff !important;
 }
 
+.icon-color-white {
+  -webkit-filter: brightness(0) saturate(100%) invert(100%) sepia(6%) saturate(23%) hue-rotate(187deg) brightness(106%) contrast(105%);
+          filter: brightness(0) saturate(100%) invert(100%) sepia(6%) saturate(23%) hue-rotate(187deg) brightness(106%) contrast(105%);
+}
+
 .slick-lightbox-slick-item {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
@@ -1674,7 +1679,8 @@ header .btn-close:before, header .btn-close:after {
   opacity: 1;
 }
 
-.footer-2 {
+.footer-2,
+.footer-3 {
   position: relative;
   padding: 24px 0 0;
   color: rgba(255, 255, 255, 0.8);
@@ -1682,23 +1688,28 @@ header .btn-close:before, header .btn-close:after {
   border-top: 3px solid var(--primary);
 }
 @media (min-width: 992px) {
-  .footer-2 {
+  .footer-2,
+  .footer-3 {
     padding: 32px 0 0;
     border-top-width: 4px;
   }
 }
-.footer-2 a:hover {
+.footer-2 a:hover,
+.footer-3 a:hover {
   color: #fff;
 }
-.footer-2 .bg {
+.footer-2 .bg,
+.footer-3 .bg {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   z-index: -1;
+  height: 100%;
 }
-.footer-2 .bg:before {
+.footer-2 .bg:before,
+.footer-3 .bg:before {
   position: absolute;
   content: "";
   top: 0;
@@ -1707,19 +1718,33 @@ header .btn-close:before, header .btn-close:after {
   right: 0;
   background-color: rgba(0, 0, 0, 0.4);
 }
-.footer-2 .container {
+.footer-2 .bg-img,
+.footer-3 .bg-img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  z-index: -2;
+}
+.footer-2 .container,
+.footer-3 .container {
   position: relative;
   z-index: 1;
 }
-.footer-2 .logo-f img {
+.footer-2 .logo-f img,
+.footer-3 .logo-f img {
   max-width: 100%;
 }
-.footer-2 .ttl-f {
+.footer-2 .ttl-f,
+.footer-3 .ttl-f {
   position: relative;
   padding-bottom: 12px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
-.footer-2 .ttl-f::before {
+.footer-2 .ttl-f::before,
+.footer-3 .ttl-f::before {
   position: absolute;
   bottom: -1px;
   left: 0;
@@ -1729,46 +1754,80 @@ header .btn-close:before, header .btn-close:after {
   display: block;
   width: 50px;
 }
-.footer-2 .images-bct {
+.footer-2 .images-bct,
+.footer-3 .images-bct {
   padding-right: 20px;
   padding-left: 8px;
   max-width: 140px;
 }
 @media (min-width: 640px) {
-  .footer-2 .images-bct {
+  .footer-2 .images-bct,
+  .footer-3 .images-bct {
     max-width: 190px;
   }
 }
-.footer-2 address {
+.footer-2 address,
+.footer-3 address {
   display: block;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.4);
   text-align: center;
   margin-bottom: 0;
   font-size: 12px;
   font-style: normal;
-  padding: 10px 16px;
+  padding: 12px 16px;
   margin-top: 16px;
+  color: rgba(255, 255, 255, 0.8);
 }
 @media (min-width: 640px) {
-  .footer-2 address br {
+  .footer-2 address br,
+  .footer-3 address br {
     display: none;
   }
 }
 @media (max-width: 640px) {
-  .footer-2 .list-social {
+  .footer-2 .list-social,
+  .footer-3 .list-social {
     margin-right: -12px;
   }
 }
-.footer-2 .menu-f li + li {
+.footer-2 .menu-f li + li,
+.footer-3 .menu-f li + li {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   padding-top: 10px;
 }
-.footer-2 .ttl-sub {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+.footer-2 .ttl-sub,
+.footer-3 .ttl-sub {
+  overflow: hidden;
+  border-bottom: 1px solid var(--primary);
 }
-.footer-2 .ttl-sub span {
+.footer-2 .ttl-sub span,
+.footer-3 .ttl-sub span {
   display: inline-block;
-  background-color: #fff;
+  background-color: var(--primary);
+  padding: 8px 12px;
+  position: relative;
+}
+.footer-2 .ttl-sub span:before,
+.footer-3 .ttl-sub span:before {
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  right: -16px;
+  width: 80px;
+  z-index: -1;
+  content: "";
+  background-color: var(--primary);
+  -webkit-transform: skew(24deg);
+          transform: skew(24deg);
+}
+.footer-2 .btn-submit-f,
+.footer-3 .btn-submit-f {
+  padding: 8px 20px;
+  border-radius: 4px;
+}
+
+.footer-3 {
+  border: none;
 }
 
 .banner-nav {
