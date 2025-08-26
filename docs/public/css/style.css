@@ -1830,6 +1830,16 @@ header .btn-close:before, header .btn-close:after {
   border: none;
 }
 
+.footer-2 .icon-social,
+.footer-3 .icon-social {
+    border-radius: 8px;
+}
+
+.footer-2 .icon-social:hover,
+.footer-3 .icon-social:hover {
+    opacity:0.8 ;
+}
+
 .banner-nav {
   background-color: var(--mainColor);
   background-image: -webkit-gradient(linear, left top, left bottom, from(var(--mainColor)), to(#fff));
@@ -2960,7 +2970,8 @@ header .btn-close:before, header .btn-close:after {
   }
 }
 .list-option span:hover {
-  background-color: #ddd;
+  background-color: var(--primary);
+  color: #fff;
 }
 
 .list-option span.active {

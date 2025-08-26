@@ -1133,3 +1133,23 @@ div.owl-theme .owl-dots .owl-dot:hover span {
     max-width: 100% !important;
     min-height: 100% !important;
 }
+
+
+/* bđs */
+.intro-text {
+  padding: 0 180px;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .intro-text {
+    padding: 0 80px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .intro-text {
+    padding: 0 20px;
+  }
+}

@@ -1,0 +1,134 @@
+.footer-6 {
+  position: relative;
+  padding: 24px 0 0;
+  color: rgba(255, 255, 255, 0.8);
+  z-index: 1;
+  border-top: 3px solid var(--primary);
+}
+@media (min-width: 992px) {
+  .footer-6 {
+    padding: 32px 0 0;
+    border-top-width: 4px;
+  }
+}
+.footer-6 a:hover {
+  color: #fff;
+}
+.footer-6 .bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+}
+.footer-6 .bg:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.footer-6 .bg-img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  z-index: -2;
+}
+.footer-6 .container {
+  position: relative;
+  z-index: 1;
+}
+.footer-6 .logo-f img {
+  max-width: 100%;
+}
+.footer-6 .ttl-f {
+  position: relative;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.footer-6 .ttl-f::before {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  height: 2px;
+  background-color: #fff;
+  content: "";
+  display: block;
+  width: 50px;
+}
+.footer-6 .images-bct {
+  padding-right: 20px;
+  padding-left: 8px;
+  max-width: 140px;
+}
+@media (min-width: 640px) {
+  .footer-6 .images-bct {
+    max-width: 190px;
+  }
+}
+.footer-6 address {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 12px;
+  font-style: normal;
+  padding: 12px 16px;
+  margin-top: 16px;
+  color: rgba(255, 255, 255, 0.8);
+}
+@media (min-width: 640px) {
+  .footer-6 address br {
+    display: none;
+  }
+}
+@media (max-width: 640px) {
+  .footer-6 .list-social {
+    margin-right: -12px;
+  }
+}
+.footer-6 .menu-f li + li {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 10px;
+}
+.footer-6 .ttl-sub {
+  overflow: hidden;
+  border-bottom: 1px solid var(--primary);
+}
+.footer-6 .ttl-sub span {
+  display: inline-block;
+  background-color: var(--primary);
+  padding: 8px 12px;
+  position: relative;
+}
+.footer-6 .ttl-sub span:before {
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  right: -16px;
+  width: 80px;
+  z-index: -1;
+  content: "";
+  background-color: var(--primary);
+  -webkit-transform: skew(24deg);
+          transform: skew(24deg);
+}
+.footer-6 .btn-submit-f {
+  padding: 8px 20px;
+  border-radius: 4px;
+}
+
+.footer-6 .icon-social{
+    border-radius: 8px;
+}
+
+.footer-6 .icon-social:hover{
+    opacity:0.8 ;
+}

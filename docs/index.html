@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="public/css/product/base.css" type="text/css">
     <link rel="stylesheet" href="public/css/product/detail.css" type="text/css">
     <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="public/css/bds/style.css">
   </head>
   <body>
     <header class="fe-header w-100" style="background: white;">
@@ -398,6 +399,7 @@
                       </li>
                       <li class="nav-item"><a class="nav-link d-flex justify-content-center align-items-center text-uppercase" href="/nuoc-rua-chen"><span class="me-1"> </span><span> Nước Rửa Chén </span></a></li>
                       <li class="nav-item"><a class="nav-link d-flex justify-content-center align-items-center text-uppercase" href="/nuoc-lau-san"><span class="me-1"> </span><span> Nước Lau Sàn </span></a></li>
+                      <li class="nav-item"><a class="nav-link d-flex justify-content-center align-items-center text-uppercase" href="./bds-list.html"><span class="me-1"> </span><span> Bất động sản </span></a></li>
                       <li class="nav-item"><a class="nav-link d-flex justify-content-center align-items-center text-uppercase" href="/gioi-thieu"><span class="me-1"> </span><span> Giới Thiệu </span></a></li>
                       <li class="nav-item"><a class="nav-link d-flex justify-content-center align-items-center text-uppercase" href="/tin-tuc"><span class="me-1"> </span><span> Tin tức </span></a></li>
                       <li class="nav-item"><a class="nav-link d-flex justify-content-center align-items-center text-uppercase" href="/lien-he"><span class="me-1"> </span><span> Liên Hệ </span></a></li>
@@ -951,6 +953,218 @@
           </div>
         </div>
       </section>
+     <!-- bộ lọc -css trong file style.css của bds  -->
+<section class="filter-wrapper">
+  <!-- filter -->
+  <div class="filter-section">
+    <div class="filter-tabs">
+      <button class="tab-button active">Nhà đất bán</button>
+      <button class="tab-button">Nhà đất cho thuê</button>
+      <button class="tab-button">Dự án</button>
+    </div>
+    <div class="search-bar">
+      <input type="text" placeholder="Trên toàn quốc" class="search-input">
+      <button class="search-button">Tìm kiếm</button>
+    </div>
+    <div class="filter-options">
+      <div class="filter-dropdown">
+        <button class="dropdown-button">Loại nhà đất</button>
+        <div class="dropdown-content">
+          <a href="#">Nhà riêng</a>
+          <a href="#">Căn hộ</a>
+          <a href="#">Đất nền</a>
+        </div>
+      </div>
+      <div class="filter-dropdown">
+        <button class="dropdown-button">Mức giá</button>
+        <div class="dropdown-content">
+          <a href="#">Dưới 1 tỷ</a>
+          <a href="#">1 - 3 tỷ</a>
+          <a href="#">Trên 3 tỷ</a>
+        </div>
+      </div>
+      <div class="filter-dropdown">
+        <button class="dropdown-button">Diện tích</button>
+        <div class="dropdown-content">
+          <a href="#">Dưới 50 m²</a>
+          <a href="#">50 - 100 m²</a>
+          <a href="#">Trên 100 m²</a>
+        </div>
+      </div>
+      <div class="filter-dropdown">
+        <button class="dropdown-button">Hướng</button>
+        <div class="dropdown-content">
+          <a href="#">Đông</a>
+          <a href="#">Tây</a>
+          <a href="#">Nam</a>
+          <a href="#">Bắc</a>
+        </div>
+      </div>
+      <div class="filter-dropdown large-dropdown">
+        <button class="dropdown-button">Đơn vị hành chính</button>
+        <div class="dropdown-content">
+          <a href="#">Hà Nội</a>
+          <a href="#">Hồ Chí Minh</a>
+          <a href="#">Đà Nẵng</a>
+          <a href="#">Hải Phòng</a>
+          <a href="#">Cần Thơ</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ảnh bên phải -->
+  <div class="filter-banner">
+    <img src="public/assets/images/filterdemo.png" alt="Quảng cáo">
+  </div>
+</section>
+
+     <!-- Kiểm tra sổ đỏ section -css trong file style.css của bds-->
+      <section class="red-book-check-section">
+  <h2 class="section-title">KIỂM TRA SỔ ĐỎ TRỰC TUYẾN</h2>
+  <div class="search-form-container">
+    <form class="search-form">
+      <input type="text" class="form-input" placeholder="Số tờ ...">
+      <input type="text" class="form-input" placeholder="Số block ...">
+      <div class="form-dropdown">
+        <select class="form-select">
+          <option value="">Thuộc dự án</option>
+          </select>
+      </div>
+      <input type="text" class="form-input" placeholder="Tên chủ sở hữu ...">
+      <input type="text" class="form-input" placeholder="Số điện thoại ...">
+      <div class="radio-group">
+        <label>Bạn có muốn ký gửi bán nhanh lô đất này?</label>
+        <label><input type="radio" name="kygui" value="yes">Có</label>
+        <label><input type="radio" name="kygui" value="no">Không</label>
+      </div>
+      <input type="text" class="form-input" placeholder="Nhập giá bán ...">
+      <button type="submit" class="submit-button">KIỂM TRA</button>
+    </form>
+  </div>
+</section>
+<!-- kí gửi -css trong file style.css của bds-->
+ <section class="rs-main-section">
+   <div class="rs-main-container">
+       <div class="rs-header">
+           <h1>KÝ GỬI 1 LẦN CẢ TRIỆU NGƯỜI XEM</h1>
+           <p>Ngay bây giờ có 999 khách hàng đang xem website cùng bạn</p>
+       </div>
+   
+       <div class="rs-content-wrapper">
+           <div class="rs-form-section">
+               <h2>Thông Tin Ký Gửi</h2>
+               <form id="depositForm">
+                   <div class="rs-form-group">
+                       <input type="text" placeholder="Số lô...">
+                   </div>
+                   <div class="rs-form-group">
+                       <input type="text" placeholder="Số block...">
+                   </div>
+                   <div class="rs-form-group">
+                       <select>
+                           <option value="">Dự án...</option>
+                           <option value="du-an-a">Dự án A</option>
+                           <option value="du-an-b">Dự án B</option>
+                       </select>
+                   </div>
+                   <div class="rs-form-group">
+                       <input type="text" placeholder="Giá bán mong muốn...">
+                   </div>
+              <div class="rs-form-row">
+                <div class="rs-form-group">
+                  <input type="text" placeholder="Họ và tên...">
+                </div>
+
+                <div class="rs-form-group">
+                  <select>
+                    <option value="">Giới tính</option>
+                    <option value="anh">Anh</option>
+                    <option value="chi">Chị</option>
+                  </select>
+                </div>
+              </div>
+                  <div class="rs-form-group">
+                     <div class="rs-form-group">
+                           <input type="text" placeholder="Số điện thoại...">
+                       </div>
+                  </div>
+
+                   <div class="rs-form-group">
+                       <input type="email" placeholder="Địa chỉ email...">
+                   </div>
+                   <button type="submit" class="rs-submit-btn">KÝ GỬI NGAY</button>
+               </form>
+           </div>
+   <div class="rs-video-section" id="video-trigger">
+     <video preload="metadata" poster="https://file.hstatic.net/200000865177/article/video_7_fbc95109d85543329be6eb4934e0fa72.jpg"></video>
+     
+     <!-- nút play -->
+     <div class="play-button">
+       ▶
+     </div>
+   </div>
+   
+   </div>
+   </div>
+   <div id="videoModal" class="rs-modal">
+       <div class="rs-modal-content">
+           <span class="rs-close-btn">&times;</span>
+           <video id="videoPlayer" controls></video>
+       </div>
+   </div>
+ </section>
+      <!-- bđs 1-css trong file style.css của bds -->
+      <section class="bds-section">
+        <div class="bds-container">
+          <div class="bds-header">
+            <h1 class="bds-title">Bất động sản dành cho bạn</h1>
+            <div class="bds-divider">
+              <span></span>
+            </div>
+            <div class="intro-text">
+              <p>Khám phá ngay cơ hội hiếm có để sở hữu bất động sản nằm tại vị trí vàng giữa trung tâm thành phố, hội tụ đầy đủ tiện ích hiện đại, tiềm năng sinh lời vượt trội và không gian sống đẳng cấp mà bạn luôn mơ ước</p>
+            </div>
+          </div>
+
+          <div class="bds-filter">
+            <button class="filter-tab active" data-filter="all">Tất cả</button>
+            <button class="filter-tab" data-filter="nhapho">Nhà phố, Căn hộ</button>
+            <button class="filter-tab" data-filter="bietthu">Biệt Thự</button>
+            <button class="filter-tab" data-filter="datnen">Đất nền</button>
+          </div>
+
+          <div>
+            <div id="realEstateCarousel"></div>
+          </div>
+
+          <div class="bds-btn-wrap">
+            <a href="./bds-list.html" class="btn-viewAll">Xem tất cả</a>
+          </div>
+        </div>
+      </section>
+<!-- bđs 2 -->
+    <section class="bds-section">
+        <div class="bds-container">
+          <div class="bds-header">
+               <h1 class="bds-title">Bất động sản dành cho bạn</h1>
+            <div class="bds-divider">
+              <span></span>
+            </div>
+            <div class="intro-text">
+              <p>Khám phá ngay cơ hội hiếm có để sở hữu bất động sản nằm tại vị trí vàng giữa trung tâm thành phố, hội tụ đầy đủ tiện ích hiện đại, tiềm năng sinh lời vượt trội và không gian sống đẳng cấp mà bạn luôn mơ ước</p>
+            </div>
+          </div>
+     <div>
+      <div id="realEstateCarouselTop"></div>
+      <div id="realEstateCarouselBottom"></div>
+     </div>     
+        <div style="text-align: center; margin-top: 1rem;">
+          <a href="./bds-list.html" style="color: #6b7280; text-decoration: underline; transition: color 0.2s;" onmouseover="this.style.color='#4b5563'" onmouseout="this.style.color='#6b7280'">Xem tất cả</a>
+        </div>
+      </div>
+    </section>
+
       <section class="sm:py-60 py-32" style="background-color: #e6e6e6;">
         <div class="container">
           <div class="bg-white rounded-8 pb-12 box-shadow sm:px-16">
@@ -4821,7 +5035,467 @@
       
           
     </script>
-<!-- phần category cho text -->
+<script>
+// Thêm trường 'type' vào mảng dữ liệu
+const realEstateItems = [
+    { id: 1, type: "nhapho", title: "Bán nhà đường ô tô tránh nhau, xe tải 3 tấn đi thoải mái", description: "Sân để xe máy rộng rãi, an toàn, ngay cạnh phòng khách lớn. Phòng khách ...", price: "5.5 tỷ", area: "72 m²", location: "Quận 1, TP.HCM", newLocation: "Vinhomes Central Park, Bình Thạnh", images: ["./public/assets/images/BDS/item1/1.png", "./public/assets/images/BDS/item1/2.png", "./public/assets/images/BDS/item1/3.png", "./public/assets/images/BDS/item1/4.png"], authorImage: "./public/assets/images/BDS/item1/profile.png", phoneNumber: "0847865568", authorName: "Nguyễn Thị Nhung", gmail: "test@gmail.com" },
+    { id: 2, type: "canho", title: "Căn hộ chung cư cao cấp, view đẹp, sân rộng , gần trung tâm", description: "Căn hộ 2 phòng ngủ, 2 toilet, ban công thoáng đãng, đầy đủ tiện nghi...", price: "3.5 tỷ", area: "72 m²", location: "Quận 1, TP.HCM", newLocation: "Vinhomes Central Park, Bình Thạnh", images: ["./public/assets/images/BDS/item2/1.png", "./public/assets/images/BDS/item2/2.png", "./public/assets/images/BDS/item2/3.png", "./public/assets/images/BDS/item2/4.png"], authorImage: "./public/assets/images/BDS/item2/profile.png", phoneNumber: "0847865568", authorName: "Nguyễn Văn Quang", gmail: "test@gmail.com" },
+    { id: 3, type: "bietthu", title: "Biệt thự sân vườn hiện đại, khu dân cư an ninh, sân rộng", description: "Biệt thự 3 tầng với sân vườn rộng rãi, hồ bơi riêng và gara ô tô, mang đến ...", price: "6.5 tỷ", area: "82 m²", location: "Quận 1, TP.HCM", newLocation: "Vinhomes Central Park, Bình Thạnh", images: ["./public/assets/images/BDS/item3/1.png", "./public/assets/images/BDS/item3/2.png", "./public/assets/images/BDS/item3/3.png", "./public/assets/images/BDS/item3/4.png"], authorImage: "./public/assets/images/BDS/item3/profile.png", phoneNumber: "0847865568", authorName: "Trần Thị Lan", gmail: "test@gmail.com" },
+    { id: 4, type: "datnen", title: "Bán lô đất nền thổ cư, sổ đỏ chính chủ, đường lớn, sân rộng", description: "Lô đất vuông vắn với mặt tiền đường rộng 12m, vị trí đắc địa gần chợ và trường học, thuận tiện ...", price: "6.5 tỷ", area: "82 m²", location: "Quận 1, TP.HCM", newLocation: "Vinhomes Central Park, Bình Thạnh", images: ["./public/assets/images/BDS/item4/1.png", "./public/assets/images/BDS/item4/2.png", "./public/assets/images/BDS/item4/3.png", "./public/assets/images/BDS/item4/4.png"], authorImage: "./public/assets/images/BDS/item4/profile.png", phoneNumber: "0847865568", authorName: "Nguyễn Thị Hạnh", gmail: "test@gmail.com" },
+    { id: 5, type: "nhapho", title: "Nhà phố 4 tầng, thiết kế hiện đại, đầy đủ nội thất, sân rộng", description: "Nhà mới xây gồm 4 phòng ngủ, 3 toilet, có ban công và sân thượng, thiết kế hiện đại, ...", price: "6.5 tỷ", area: "82 m²", location: "Quận 1, TP.HCM", newLocation: "Vinhomes Central Park, Bình Thạnh", images: ["./public/assets/images/BDS/item5/1.png", "./public/assets/images/BDS/item5/2.png", "./public/assets/images/BDS/item5/3.png", "./public/assets/images/BDS/item5/4.png"], authorImage: "./public/assets/images/BDS/item5/profile.png", phoneNumber: "0847865568", authorName: "Nguyễn Thị Thanh", gmail: "test@gmail.com" },
+    { id: 6, type: "canho", title: "Căn hộ dịch vụ cao cấp, nằm trong tòa nhà văn phòng, sân rộng", description: "Căn hộ đầy đủ tiện nghi, thiết kế sang trọng, view sông Sài Gòn...", price: "6.5 tỷ", area: "82 m²", location: "Quận 1, TP.HCM", newLocation: "Vinhomes Central Park, Bình Thạnh", images: ["./public/assets/images/BDS/item6/1.png", "./public/assets/images/BDS/item6/2.png", "./public/assets/images/BDS/item6/3.png", "./public/assets/images/BDS/item6/4.png"], authorImage: "./public/assets/images/BDS/item6/profile.png", phoneNumber: "0847865568", authorName: "Nguyễn Thị Hạnh", gmail: "test@gmail.com" },
+    { id: 7, type: "bietthu", title: "Biệt thự ven sông, không gian yên tĩnh và mát mẻ, sân rộng", description: "Biệt thự 2 tầng, có vườn cây, hồ bơi, phù hợp nghỉ dưỡng, có sân to rộng ,...", price: "6.5 tỷ", area: "82 m²", location: "Quận 1, TP.HCM", newLocation: "Vinhomes Central Park, Bình Thạnh", images: ["./public/assets/images/BDS/item7/1.png", "./public/assets/images/BDS/item7/2.png", "./public/assets/images/BDS/item7/3.png", "./public/assets/images/BDS/item7/4.png"], authorImage: "./public/assets/images/BDS/item7/profile.png", phoneNumber: "0847865568", authorName: "Nguyễn Thị Hạnh", gmail: "test@gmail.com" },
+    { id: 8, type: "datnen", title: "Lô đất nền gần ven biển, tiềm năng du lịch lớn, sân rộng", description: "Lô đất diện tích 1000m2, sổ đỏ đầy đủ, thích hợp làm homestay...", price: "6.5 tỷ", area: "82 m²", location: "Quận 1, TP.HCM", newLocation: "Vinhomes Central Park, Bình Thạnh", images: ["./public/assets/images/BDS/item8/1.png", "./public/assets/images/BDS/item8/2.png", "./public/assets/images/BDS/item8/3.png", "./public/assets/images/BDS/item8/4.png"], authorImage: "./public/assets/images/BDS/item8/profile.png", phoneNumber: "0847865568", authorName: "Nguyễn Thị Hạnh", gmail: "test@gmail.com" },
+    { id: 9, type: "nhapho", title: "Bán nhà phố mặt tiền kinh doanh, vị trí siêu đẹp, sân rộng", description: "Nhà 3 tầng, mặt tiền rộng 5m, vỉa hè, khu vực buôn bán sầm uất...", price: "6.5 tỷ", area: "82 m²", location: "Quận 1, TP.HCM", newLocation: "Vinhomes Central Park, Bình Thạnh", images: ["./public/assets/images/BDS/item9/1.png", "./public/assets/images/BDS/item9/2.png", "./public/assets/images/BDS/item9/3.png", "./public/assets/images/BDS/item9/4.png"], authorImage: "./public/assets/images/BDS/item9/profile.png", phoneNumber: "0847865568", authorName: "Nguyễn Thị Hạnh", gmail: "test@gmail.com" },
+    { id: 10, type: "datnen", title: "Đất nền khu dân cư mới, giá rẻ, sổ hồng riêng, sân rộng", description: "Lô đất 100m2, đường nhựa 8m, gần KCN, thích hợp đầu tư lâu dài...", price: "6.5 tỷ", area: "82 m²", location: "Quận 1, TP.HCM", newLocation: "Vinhomes Central Park, Bình Thạnh", images: ["./public/assets/images/BDS/item10/1.png", "./public/assets/images/BDS/item10/2.png", "./public/assets/images/BDS/item10/3.png", "./public/assets/images/BDS/item10/4.png"], authorImage: "./public/assets/images/BDS/item10/profile.png", phoneNumber: "0847865568", authorName: "Nguyễn Thị Hạnh", gmail: "test@gmail.com" },
+];
+
+let currentFilter = 'all';
+
+function renderRealEstateItems() {
+    const carousel = $("#realEstateCarousel");
+    const carouselTop = $("#realEstateCarouselTop");
+    const carouselBottom = $("#realEstateCarouselBottom");
+    
+    // Hủy Slick Carousel trước khi render lại
+    if (carousel.hasClass('slick-initialized')) {
+        carousel.slick('unslick');
+    }
+    if (carouselTop.hasClass('slick-initialized')) {
+        carouselTop.slick('unslick');
+    }
+    if (carouselBottom.hasClass('slick-initialized')) {
+        carouselBottom.slick('unslick');
+    }
+
+    carousel.empty();
+    carouselTop.empty();
+    carouselBottom.empty();
+
+    const filteredItems = realEstateItems.filter(item => {
+        if (currentFilter === 'all') {
+            return true;
+        }
+        if (currentFilter === 'nhapho') {
+            return item.type === 'nhapho' || item.type === 'canho';
+        }
+        return item.type === currentFilter;
+    });
+
+    if (filteredItems.length === 0) {
+        carouselTop.append('<p style="text-align: center; color: #6b7280; font-style: italic;">Không có bất động sản nào thuộc loại này.</p>');
+        carouselBottom.hide();
+        return;
+    }
+    
+    // Ẩn hàng dưới khi có filter
+    // if (currentFilter !== 'all') {
+    //     carouselBottom.hide();
+    //     carouselTop.css('margin-top', '0');
+    //     renderCarousel(carouselTop, filteredItems);
+    // } else {
+    //     carouselBottom.show();
+    //     carouselTop.css('margin-top', '3rem'); // Khoảng cách giữa 2 carousel
+        
+    //     // Render hàng trên (1 -> 10)
+    //     renderCarousel(carouselTop, filteredItems);
+        
+    //     // Render hàng dưới (10 -> 1)
+    //     const reversedItems = [...filteredItems].reverse();
+    //     renderCarousel(carouselBottom, reversedItems);
+    // }
+
+    renderCarousel(carousel, filteredItems);
+    renderCarousel2(carouselTop, filteredItems);
+    renderCarousel3(carouselBottom, [...filteredItems].reverse());
+
+}
+
+function renderCarousel(container, items) {
+    items.forEach((item) => {
+  const itemHTML = `
+    <div class="bds-item" onclick="window.location.href='bds-detail.html?id=${item.id}'">
+      <div class="bds-card">
+        <div class="bds-card-image">
+          <img id="mainImage${item.id}" src="${item.images[0]}" alt="Ảnh chính" />
+        </div>
+
+        <div class="bds-thumbs">
+          ${item.images
+            .map(
+              (image, index) => `
+              <img
+                onclick="event.stopPropagation(); changeImage(${item.id}, this);"
+                src="${image}"
+                class="thumb-${item.id}"
+                style="border-color:${index === 0 ? '#22c55e' : 'transparent'}"
+              />
+            `
+            )
+            .join("")}
+        </div>
+
+        <div class="bds-content">
+          <div>
+            <h2 class="bds-title">${item.title}</h2>
+            <p class="bds-desc">${item.description}</p>
+          </div>
+
+          <div class="bds-meta">
+            <span class="bds-price">${item.price}</span>
+            <div class="bds-area"><i class="fa-solid fa-ruler-combined"></i>${item.area}</div>
+            <span class="bds-type">
+              <i class="fa-solid fa-house"></i>
+              ${item.type === 'nhapho' ? 'Nhà phố' : item.type === 'canho' ? 'Căn hộ' : item.type === 'bietthu' ? 'Biệt thự' : 'Đất nền'}
+            </span>
+          </div>
+
+          <div class="bds-location">
+            <div class="bds-old-location"><i class="fa-solid fa-location-dot"></i>${item.location}</div>
+            <div class="bds-new-location"><i class="fa-solid fa-map-location-dot"></i>${item.newLocation}</div>
+          </div>
+
+          <div class="bds-actions">
+            <img src="${item.authorImage}" alt="Tác giả" title="${item.authorName}" class="bds-author" onclick="event.stopPropagation();" />
+            <button class="bds-btn call-btn" onclick="event.stopPropagation();">
+              <i class="fa-solid fa-phone"></i>${item.phoneNumber}
+            </button>
+            <button class="bds-btn consult-btn" onclick="event.stopPropagation();">
+              <i class="fa-solid fa-envelope"></i> Yêu cầu tư vấn
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+        container.append(itemHTML);
+    });
+
+    
+    
+    // Khởi tạo Slick Carousel nếu có items
+    if (items.length > 0) {
+        container.slick({
+            dots: true,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+    }
+}
+
+// section 2:top
+function renderCarousel2(container, items) {
+    items.forEach((item) => {
+        const itemHTML = `
+    <div class="bds-item" onclick="window.location.href='bds-detail.html?id=${item.id}'">
+      <div class="bds-card">
+        <div class="bds-card-image">
+          <img id="mainImage2${item.id}" src="${item.images[0]}" alt="Ảnh chính" />
+        </div>
+
+        <div class="bds-thumbs">
+          ${item.images
+            .map(
+              (image, index) => `
+              <img
+                onclick="event.stopPropagation(); changeImage(${item.id}, this);"
+                src="${image}"
+                class="thumb-${item.id}"
+                style="border-color:${index === 0 ? '#22c55e' : 'transparent'}"
+              />
+            `
+            )
+            .join("")}
+        </div>
+
+        <div class="bds-content">
+          <div>
+            <h2 class="bds-title">${item.title}</h2>
+            <p class="bds-desc">${item.description}</p>
+          </div>
+
+          <div class="bds-meta">
+            <span class="bds-price">${item.price}</span>
+            <div class="bds-area"><i class="fa-solid fa-ruler-combined"></i>${item.area}</div>
+            <span class="bds-type">
+              <i class="fa-solid fa-house"></i>
+              ${item.type === 'nhapho' ? 'Nhà phố' : item.type === 'canho' ? 'Căn hộ' : item.type === 'bietthu' ? 'Biệt thự' : 'Đất nền'}
+            </span>
+          </div>
+
+          <div class="bds-location">
+            <div class="bds-old-location"><i class="fa-solid fa-location-dot"></i>${item.location}</div>
+            <div class="bds-new-location"><i class="fa-solid fa-map-location-dot"></i>${item.newLocation}</div>
+          </div>
+
+          <div class="bds-actions">
+            <img src="${item.authorImage}" alt="Tác giả" title="${item.authorName}" class="bds-author" onclick="event.stopPropagation();" />
+            <button class="bds-btn call-btn" onclick="event.stopPropagation();">
+              <i class="fa-solid fa-phone"></i>${item.phoneNumber}
+            </button>
+            <button class="bds-btn consult-btn" onclick="event.stopPropagation();">
+              <i class="fa-solid fa-envelope"></i> Yêu cầu tư vấn
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+        container.append(itemHTML);
+    });
+    
+    // Khởi tạo Slick Carousel nếu có items
+    if (items.length > 0) {
+        container.slick({
+            dots: true,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+    }
+}
+
+// section 3:boottom
+function renderCarousel3(container, items) {
+    items.forEach((item) => {
+       const itemHTML = `
+    <div class="bds-item" onclick="window.location.href='bds-detail.html?id=${item.id}'">
+      <div class="bds-card">
+        <div class="bds-card-image">
+          <img id="mainImage3${item.id}" src="${item.images[0]}" alt="Ảnh chính" />
+        </div>
+
+        <div class="bds-thumbs">
+          ${item.images
+            .map(
+              (image, index) => `
+              <img
+                onclick="event.stopPropagation(); changeImage(${item.id}, this);"
+                src="${image}"
+                class="thumb-${item.id}"
+                style="border-color:${index === 0 ? '#22c55e' : 'transparent'}"
+              />
+            `
+            )
+            .join("")}
+        </div>
+
+        <div class="bds-content">
+          <div>
+            <h2 class="bds-title">${item.title}</h2>
+            <p class="bds-desc">${item.description}</p>
+          </div>
+
+          <div class="bds-meta">
+            <span class="bds-price">${item.price}</span>
+            <div class="bds-area"><i class="fa-solid fa-ruler-combined"></i>${item.area}</div>
+            <span class="bds-type">
+              <i class="fa-solid fa-house"></i>
+              ${item.type === 'nhapho' ? 'Nhà phố' : item.type === 'canho' ? 'Căn hộ' : item.type === 'bietthu' ? 'Biệt thự' : 'Đất nền'}
+            </span>
+          </div>
+
+          <div class="bds-location">
+            <div class="bds-old-location"><i class="fa-solid fa-location-dot"></i>${item.location}</div>
+            <div class="bds-new-location"><i class="fa-solid fa-map-location-dot"></i>${item.newLocation}</div>
+          </div>
+
+          <div class="bds-actions">
+            <img src="${item.authorImage}" alt="Tác giả" title="${item.authorName}" class="bds-author" onclick="event.stopPropagation();" />
+            <button class="bds-btn call-btn" onclick="event.stopPropagation();">
+              <i class="fa-solid fa-phone"></i>${item.phoneNumber}
+            </button>
+            <button class="bds-btn consult-btn" onclick="event.stopPropagation();">
+              <i class="fa-solid fa-envelope"></i> Yêu cầu tư vấn
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+        container.append(itemHTML);
+    });
+    
+    // Khởi tạo Slick Carousel nếu có items
+    if (items.length > 0) {
+        container.slick({
+            dots: true,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+    }
+}
+
+// thay đổi ảnh chính khi click vào ảnh thu nhỏ
+function changeImage(itemIndex, el) {
+    const mainImage = document.getElementById("mainImage" + itemIndex);
+    mainImage.src = el.src;
+    // section2:top
+    const mainImage2 = document.getElementById("mainImage2" + itemIndex);
+    mainImage2.src = el.src;
+       // section2:bottom
+    const mainImage3 = document.getElementById("mainImage3" + itemIndex);
+    mainImage3.src = el.src;
+
+    document.querySelectorAll(".thumb-" + itemIndex).forEach((img) => {
+        img.style.borderColor = "transparent";
+        img.onmouseout = () => img.style.borderColor = "transparent";
+    });
+    el.style.borderColor = "#22c55e";
+    el.onmouseout = () => el.style.borderColor = "#22c55e";
+}
+
+document.querySelectorAll('.filter-tab').forEach(button => {
+    button.addEventListener('click', (e) => {
+        const filterType = e.target.getAttribute('data-filter');
+        currentFilter = filterType;
+
+        document.querySelectorAll('.filter-tab').forEach(btn => btn.classList.remove('active'));
+        e.target.classList.add('active');
+
+        renderRealEstateItems();
+    });
+});
+
+const style = document.createElement('style');
+style.innerHTML = `
+    .filter-tab.active {
+        background-color: #059669 !important;
+        color: #ffffff !important;
+        border-color: #059669 !important;
+    }
+    .filter-tab:hover {
+        background-color: #059669 !important;
+        color: #ffffff !important;
+    }
+`;
+document.head.appendChild(style);
+
+document.addEventListener("DOMContentLoaded", renderRealEstateItems);
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Script cho dropdowns
+  const dropdowns = document.querySelectorAll('.filter-dropdown');
+  dropdowns.forEach(dropdown => {
+    dropdown.addEventListener('click', function(event) {
+      event.stopPropagation();
+      dropdowns.forEach(otherDropdown => {
+        if (otherDropdown !== this) {
+          otherDropdown.classList.remove('show');
+        }
+      });
+      this.classList.toggle('show');
+    });
+  });
+  document.addEventListener('click', function() {
+    dropdowns.forEach(dropdown => {
+      dropdown.classList.remove('show');
+    });
+  });
+
+  // Script cho tabs
+  const tabButtons = document.querySelectorAll('.tab-button');
+  tabButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      // Gỡ class 'active' khỏi tất cả các nút tab
+      tabButtons.forEach(btn => {
+        btn.classList.remove('active');
+      });
+      // Thêm class 'active' vào nút vừa click
+      this.classList.add('active');
+    });
+  });
+});
+</script>
+ <script>
+    const videoTrigger = document.getElementById('video-trigger');
+    const videoModal = document.getElementById('videoModal');
+    const closeBtn = document.querySelector('.rs-close-btn');
+    const videoPlayer = document.getElementById('videoPlayer');
+
+    const videoSrc = "./public/assets/images/videodemo.mp4"; 
+
+    videoTrigger.onclick = function() {
+        videoModal.style.display = "flex";
+        videoPlayer.src = videoSrc;
+        videoPlayer.play();
+    };
+
+    closeBtn.onclick = function() {
+        videoModal.style.display = "none";
+        videoPlayer.pause();
+        videoPlayer.src = "";
+    };
+
+    window.onclick = function(event) {
+        if (event.target == videoModal) {
+            videoModal.style.display = "none";
+            videoPlayer.pause();
+            videoPlayer.src = "";
+        }
+    };
+    </script>
+    <!-- phần category cho text -->
 <script>
   function debounce(fn, wait) {
     let t;
@@ -4887,12 +5561,13 @@
       setTimeout(runAll, 0);
     });
 
-    // gắn sự kiện để re-run sau khi slick reflow
+    // Nếu dùng slick, gắn sự kiện để re-run sau khi slick reflow
     if (window.jQuery) {
       jQuery('.slick-category-design').on('init reInit setPosition afterChange', runAll);
     }
   })();
 </script>
+
 
   </body>
 </html>
