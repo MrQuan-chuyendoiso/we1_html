@@ -251,8 +251,11 @@ document.addEventListener("DOMContentLoaded", function () {
       visible = true;
 
       // ✅ Đổi màu chữ khi scroll xuống
-      document.querySelectorAll("#header-main-sticky .navbar-nav a.nav-link").forEach(link => {
+      document.querySelectorAll("#header-main-sticky ul a").forEach(link => {
         link.style.setProperty("color", "#333", "important");
+      });
+      document.querySelectorAll("#header-main-sticky ul").forEach(link => {
+        link.style.setProperty("background-color", "#fff", "important");
       });
 
     } else if (y <= triggerY && visible) {
