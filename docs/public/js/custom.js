@@ -252,10 +252,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // ✅ Đổi màu chữ khi scroll xuống
       document.querySelectorAll("#header-main-sticky ul a").forEach(link => {
-        link.style.setProperty("color", "#333", "important");
+        link.style.setProperty("color", "#333", "");
       });
       document.querySelectorAll("#header-main-sticky ul").forEach(link => {
-        link.style.setProperty("background-color", "#fff", "important");
+        link.style.setProperty("background-color", "#fff", "");
       });
 
     } else if (y <= triggerY && visible) {
