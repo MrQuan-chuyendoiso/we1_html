@@ -662,3 +662,11 @@ $(document).ready(function(){
         //         }
         //     });
         });
+
+$(window).on("scroll", function () {
+  if ($(this).scrollTop() === 0) {
+    $(".link-is-scroll").css("opacity", "0"); // ẩn khi lên đầu
+  } else {
+    $(".link-is-scroll").css("opacity", "1"); // hiển thị khi kéo xuống
+  }
+});
