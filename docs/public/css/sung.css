@@ -1,3 +1,90 @@
+/* header */
+.fe-header .box-icon .icon {
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.05); 
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  transition: all 0.3s ease; 
+}
+
+.fe-header .box-icon .icon:hover {
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0.15);
+  transform: scale(1.1); 
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+.fe-header .box-icon .icon svg,
+.fe-header .box-icon .icon img {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease;
+}
+
+.fe-header .box-icon .icon:hover svg,
+.fe-header .box-icon .icon:hover img {
+  transform: scale(1.15);
+}
+
+.fe-header .header-top {
+    border-bottom: 1px solid red;
+}
+
+.navbar-nav .nav-link {
+  white-space: nowrap;   
+  display: inline-flex;  
+  align-items: center;   
+  justify-content: center;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-wrap: wrap;       
+  justify-content: center;
+  gap: 10px;             
+}
+
+.navbar-nav .nav-link {
+  white-space: nowrap;   
+  display: inline-flex;  
+  align-items: center;   
+  line-height: 1.2; 
+  padding: 9px;
+}
+
+/* Cả menu căn giữa */
+.navbar-nav {
+  display: flex;
+  flex-wrap: wrap;       
+  justify-content: center;
+  gap: 10px;             
+  row-gap: 4px;
+}
+
+.marquee{
+    max-width: 50%;
+}
+
+/*  */
+.link-is-scroll{
+  cursor: pointer;
+}
+
+.link_chat_social img {
+  position: relative;
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 8px;
+}
+
 /* bộ lọc */
 .filter-wrapper {
   display: flex;
