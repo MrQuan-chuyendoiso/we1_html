@@ -321,22 +321,22 @@ jQuery(document).ready(function($) {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-      console.log('DOM Loaded');
+      // console.log('DOM Loaded');
 
       window.addEventListener('scroll', function () {
-        console.log('Scrolled! scrollY =', window.scrollY);
+        // console.log('Scrolled! scrollY =', window.scrollY);
 
         const header = document.querySelector('header .header-3');
         if (!header) {
-          console.log('Không tìm thấy <header>');
+          // console.log('Không tìm thấy <header>');
           return;
         }
 
         if (window.scrollY > 0) {
-          console.log('Thêm class is-scrolled');
+          // console.log('Thêm class is-scrolled');
           header.classList.add('is-scrolled');
         } else {
-          console.log('Gỡ class is-scrolled');
+          // console.log('Gỡ class is-scrolled');
           header.classList.remove('is-scrolled');
         }
       });
