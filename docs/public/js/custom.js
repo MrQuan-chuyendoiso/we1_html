@@ -128,6 +128,40 @@ $(document).ready(function () {
       }
     });
   }
+
+  function groupSingleItemMenuLists() {
+    $('.header-bottom .sub-menu.sub-menu-list').each(function () {
+      var $submenu = $(this);
+
+      if ($submenu.hasClass('single-menu-lists-grouped')) {
+        return;
+      }
+
+      var $singleItems = $submenu.children('.sub-menu-item').filter(function () {
+        return $(this).children('.menu-list').first().children('li').length === 1;
+      });
+
+      if ($singleItems.length < 2) {
+        return;
+      }
+
+      var $shortStack = $('<li class="sub-menu-item sub-menu-item-short-stack"><ul class="menu-list"></ul></li>');
+      var $shortList = $shortStack.children('.menu-list');
+
+      $singleItems.each(function () {
+        var $item = $(this);
+        var $onlyLink = $item.children('.menu-list').first().children('li').first();
+
+        $onlyLink.addClass('active single-menu-item-active');
+        $shortList.append($onlyLink);
+        $item.remove();
+      });
+
+      $submenu.addClass('single-menu-lists-grouped').append($shortStack);
+    });
+  }
+
+  groupSingleItemMenuLists();
 });
 
 // =========================

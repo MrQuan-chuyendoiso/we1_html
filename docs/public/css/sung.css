@@ -4001,13 +4001,13 @@ li.nav-item.sv-menu:hover {
 }
 
 /* submenu cấp 2 */
-.multi-col .sv-item > .nav-submenu {
+.multi-col .sv-item>.nav-submenu {
   position: absolute;
   top: 0;
-  left: -30% !important; 
+  left: -30% !important;
 }
 
-.one-col .sv-item > .nav-submenu {
+.one-col .sv-item>.nav-submenu {
   position: absolute;
   top: 0;
   left: 100% !important;
@@ -4021,4 +4021,50 @@ li.nav-item.sv-menu:hover {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
+}
+
+/* single-menu-lists-grouped: gộp items không có menu cấp 3 vào 1 cột */
+.fe-header .header-bottom .sub-menu.sub-menu-list.single-menu-lists-grouped {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)) minmax(172px, 0.78fr);
+  grid-auto-rows: max-content;
+  align-items: start;
+}
+
+.fe-header .header-bottom .sub-menu.sub-menu-list>.sub-menu-item-short-stack {
+  grid-column: -2 / -1;
+  grid-row: 1;
+  align-self: start;
+  height: fit-content;
+  background: var(--fe-menu-bg, #fff);
+  border-color: rgba(2, 130, 165, 0.18);
+  box-shadow: inset 3px 0 0 rgba(2, 130, 165, 0.28);
+}
+
+.fe-header .header-bottom .sub-menu.sub-menu-list>.sub-menu-item-short-stack .menu-list li {
+  display: flex;
+  align-items: center;
+  min-height: 39px;
+  color: var(--fe-menu-text, var(--textColor)) !important;
+  background: var(--fe-menu-bg, #fff) !important;
+  border-bottom: 1px solid rgba(2, 130, 165, 0.1);
+  font-weight: var(--fe-menu-font-weight, 600);
+}
+
+.fe-header .header-bottom .sub-menu.sub-menu-list>.sub-menu-item-short-stack .menu-list li.active,
+.fe-header .header-bottom .sub-menu.sub-menu-list>.sub-menu-item-short-stack .menu-list li.single-menu-item-active {
+  background: var(--fe-menu-hover-bg, rgba(2, 130, 165, 0.08)) !important;
+}
+
+.fe-header .header-bottom .sub-menu.sub-menu-list>.sub-menu-item-short-stack .menu-list li.active a,
+.fe-header .header-bottom .sub-menu.sub-menu-list>.sub-menu-item-short-stack .menu-list li.single-menu-item-active a {
+  color: #fff !important;
+}
+
+.fe-header .header-bottom .sub-menu.sub-menu-list>.sub-menu-item-short-stack .menu-list li:first-child:not(.active):not(.single-menu-item-active) {
+  color: var(--fe-menu-text, var(--textColor)) !important;
+}
+
+.fe-header .header-bottom .sub-menu.sub-menu-list>.sub-menu-item-short-stack .menu-list li:last-child {
+  border-bottom: 0;
 }
