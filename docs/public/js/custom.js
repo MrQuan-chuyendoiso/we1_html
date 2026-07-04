@@ -129,6 +129,34 @@ $(document).ready(function () {
     });
   }
 
+  function sortMenuByLevel3Count() {
+    // Cấp 1 (Top Level) - sorting left to right based on level 3 items
+    $('.header-bottom .menu').each(function () {
+      var $menu = $(this);
+      var $menuItems = $menu.children('.menu-item');
+      $menuItems.sort(function (a, b) {
+        var countA = $(a).find('.sub-menu-list .menu-list > li').length;
+        var countB = $(b).find('.sub-menu-list .menu-list > li').length;
+        return countB - countA;
+      });
+      $menu.append($menuItems);
+    });
+
+    // Cấp 2 (Mega Menu Columns) - sorting left to right based on level 3 items
+    $('.header-bottom .sub-menu.sub-menu-list').each(function () {
+      var $submenu = $(this);
+      var $columns = $submenu.children('.sub-menu-item');
+
+      $columns.sort(function (a, b) {
+        var countA = $(a).find('.menu-list > li').length;
+        var countB = $(b).find('.menu-list > li').length;
+        return countB - countA;
+      });
+
+      $submenu.append($columns);
+    });
+  }
+
   function groupSingleItemMenuLists() {
     $('.header-bottom .sub-menu.sub-menu-list').each(function () {
       var $submenu = $(this);
@@ -161,7 +189,35 @@ $(document).ready(function () {
     });
   }
 
+  function groupNavbarItemsWithoutLevel3() {
+    var $dropdowns = $('.header-bottom-2 .navbar-nav .dropdown-menu, .banner-nav .navbar-nav .dropdown-menu');
+
+    $dropdowns.each(function () {
+      var $menu = $(this);
+
+      if ($menu.hasClass('no-level3-grouped')) return;
+
+      var $withLevel3 = $menu.children('li').filter(function () {
+        return $(this).children('ul.dropdown-menu.submenu-level-2, ul.submenu-level-2').length > 0;
+      });
+
+      var $withoutLevel3 = $menu.children('li').filter(function () {
+        return $(this).children('ul.dropdown-menu.submenu-level-2, ul.submenu-level-2').length === 0;
+      });
+
+      if ($withLevel3.length === 0 || $withoutLevel3.length < 2) return;
+
+      $menu.addClass('no-level3-grouped');
+
+      var $column = $('<li class="nav-item no-level3-column"><ul class="list-unstyled mb-0"></ul></li>');
+      $withoutLevel3.detach().appendTo($column.children('ul'));
+      $menu.append($column);
+    });
+  }
+
+  sortMenuByLevel3Count();
   groupSingleItemMenuLists();
+  groupNavbarItemsWithoutLevel3();
 });
 
 // =========================
@@ -169,61 +225,61 @@ $(document).ready(function () {
 // ===========================
 numSlick = 0;
 function sliderList($sliderName, $toshow, $toshow_1024, $rows) {
-    $($sliderName).each( function() {
-        numSlick++;
-        $(this).addClass( 'slider-' + numSlick ).slick({
-            slidesToShow: $toshow,
-            rows: $rows,
-            slidesToScroll: 1,
-            arrow: true,
-            autoplay: true,
-            pauseOnHover: true,
-            //- rtl: true,
-            responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                slidesToShow: $toshow_1024,
-                }
-            },{
-                breakpoint: 991,
-                settings: {
-                slidesToShow: 4,
-                }
-            },{
-                breakpoint: 768,
-                settings: {
-                slidesToShow: 3,
-                }
-            },{
-                breakpoint: 576,
-                settings: {
-                slidesToShow: 2,
-                }
-            }
-            ]
-        });
+  $($sliderName).each(function () {
+    numSlick++;
+    $(this).addClass('slider-' + numSlick).slick({
+      slidesToShow: $toshow,
+      rows: $rows,
+      slidesToScroll: 1,
+      arrow: true,
+      autoplay: true,
+      pauseOnHover: true,
+      //- rtl: true,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: $toshow_1024,
+          }
+        }, {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 4,
+          }
+        }, {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 3,
+          }
+        }, {
+          breakpoint: 576,
+          settings: {
+            slidesToShow: 2,
+          }
+        }
+      ]
     });
+  });
 };
 function sliderSmallItem($sliderName, $toshow, $toshow_991, $rows) {
-    $($sliderName).each( function() {
-        numSlick++;
-        $(this).addClass( 'slider-' + numSlick ).slick({
-            slidesToShow: $toshow,
-            rows: $rows,
-            slidesToScroll: 1,
-            arrow: true,
-            autoplay: true,
-            pauseOnHover: true,
-            //- rtl: true,
-            responsive: [{
-                breakpoint: 991,
-                settings: {
-                slidesToShow: $toshow_991,
-                }
-            }]
-        });
+  $($sliderName).each(function () {
+    numSlick++;
+    $(this).addClass('slider-' + numSlick).slick({
+      slidesToShow: $toshow,
+      rows: $rows,
+      slidesToScroll: 1,
+      arrow: true,
+      autoplay: true,
+      pauseOnHover: true,
+      //- rtl: true,
+      responsive: [{
+        breakpoint: 991,
+        settings: {
+          slidesToShow: $toshow_991,
+        }
+      }]
     });
+  });
 };
 function setEqualHeightSlickItems() {
   var maxHeight = 0;
@@ -241,8 +297,8 @@ $('.slick-row-2').on('setPosition', function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const headerMain   = document.querySelector("#header-sticky");
-  const headerWrap   = document.querySelector(".fe-header");
+  const headerMain = document.querySelector("#header-sticky");
+  const headerWrap = document.querySelector(".fe-header");
   const originalLogo = document.querySelector("#logo");
 
   if (!headerMain || !headerWrap || !originalLogo) return;
@@ -308,9 +364,9 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-jQuery(document).ready(function($) {
+jQuery(document).ready(function ($) {
   function setupMenu($scope) {
-    $scope.find('li').each(function() {
+    $scope.find('li').each(function () {
       var $li = $(this);
       if ($li.children('.nav-submenu').length) {
         $li.addClass('menu-dropdown');
@@ -326,13 +382,13 @@ jQuery(document).ready(function($) {
   setupMenu($('.navbar-nav'));
 
   // Xử lý click btn-submenu
-  $('.navbar-nav').on('click', '.btn-submenu', function(e) {
+  $('.navbar-nav').on('click', '.btn-submenu', function (e) {
     e.preventDefault();
     var $li = $(this).closest('li');
     var $submenu = $li.children('.nav-submenu');
 
     // Đóng tất cả anh em cùng cấp
-    $li.siblings('.active').each(function() {
+    $li.siblings('.active').each(function () {
       $(this).removeClass('active').children('.nav-submenu:visible').stop(true, true).slideUp(350);
     });
 
@@ -347,7 +403,7 @@ jQuery(document).ready(function($) {
   });
 
   // Nút đóng toàn bộ
-  $('.btn-close').on('click', function(e) {
+  $('.btn-close').on('click', function (e) {
     e.preventDefault();
     $('.navbar-nav li.active').removeClass('active').children('.nav-submenu:visible').stop(true, true).slideUp(350);
   });
@@ -355,23 +411,23 @@ jQuery(document).ready(function($) {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-      // console.log('DOM Loaded');
+  // console.log('DOM Loaded');
 
-      window.addEventListener('scroll', function () {
-        // console.log('Scrolled! scrollY =', window.scrollY);
+  window.addEventListener('scroll', function () {
+    // console.log('Scrolled! scrollY =', window.scrollY);
 
-        const header = document.querySelector('header .header-3');
-        if (!header) {
-          // console.log('Không tìm thấy <header>');
-          return;
-        }
+    const header = document.querySelector('header .header-3');
+    if (!header) {
+      // console.log('Không tìm thấy <header>');
+      return;
+    }
 
-        if (window.scrollY > 0) {
-          // console.log('Thêm class is-scrolled');
-          header.classList.add('is-scrolled');
-        } else {
-          // console.log('Gỡ class is-scrolled');
-          header.classList.remove('is-scrolled');
-        }
-      });
-    });
+    if (window.scrollY > 0) {
+      // console.log('Thêm class is-scrolled');
+      header.classList.add('is-scrolled');
+    } else {
+      // console.log('Gỡ class is-scrolled');
+      header.classList.remove('is-scrolled');
+    }
+  });
+});
