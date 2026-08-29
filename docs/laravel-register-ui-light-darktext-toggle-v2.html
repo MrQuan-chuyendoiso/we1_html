@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Đăng ký tài khoản</title>
+  <style>
+    :root{
+      --bg:#f3f6fb;
+      --card:#ffffff;
+      --text:#0b1324;        /* darker main text */
+      --muted:#374151;       /* darker secondary text */
+      --line:#e5e7eb;
+      --primary:#2563eb;
+      --primary2:#1d4ed8;
+      --shadow:0 20px 40px rgba(0,0,0,.08);
+      --radius:20px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui,-apple-system,Segoe UI,Roboto,Arial;
+      background:
+        radial-gradient(1200px 600px at 15% 0%, rgba(37,99,235,.12), transparent 60%),
+        radial-gradient(900px 500px at 85% 10%, rgba(16,185,129,.10), transparent 55%),
+        var(--bg);
+      color:var(--text);
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:24px;
+    }
+    .card{
+      width:min(1080px,100%);
+      background:var(--card);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:36px 40px;
+    }
+    h1{
+      text-align:center;
+      margin:0;
+      font-size:26px;
+      font-weight:800;
+    }
+    .desc{
+      text-align:center;
+      margin:10px auto 26px;
+      max-width:680px;
+      font-size:15px;
+      line-height:1.6;
+      color:var(--muted);
+    }
+
+    .tabs{
+      display:flex;
+      justify-content:center;
+      gap:16px;
+      margin-bottom:28px;
+    }
+    .tab{
+      padding:10px 18px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background:#fff;
+      cursor:pointer;
+      font-weight:700;
+      color:var(--text);
+    }
+    .tab.active{
+      background:var(--primary);
+      color:#fff;
+      border-color:transparent;
+    }
+
+    .content{
+      display:grid;
+      grid-template-columns:1.2fr .8fr;
+      gap:40px;
+    }
+    @media(max-width:900px){
+      .content{grid-template-columns:1fr}
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:16px;
+    }
+    .full{grid-column:1/-1}
+    label{
+      font-size:14px;
+      font-weight:600;
+      color:#111827;
+    }
+    input{
+      margin-top:6px;
+      width:100%;
+      padding:12px 14px;
+      border-radius:14px;
+      border:1px solid var(--line);
+      font-size:14px;
+      color:var(--text);
+    }
+
+    .actions{
+      margin-top:26px;
+      display:flex;
+      gap:14px;
+    }
+    .btn{
+      padding:12px 22px;
+      border-radius:999px;
+      font-weight:700;
+      cursor:pointer;
+      border:0;
+    }
+    .btn.primary{
+      background:var(--primary);
+      color:#fff;
+    }
+    .btn.ghost{
+      background:#fff;
+      border:1px solid var(--line);
+      color:var(--text);
+    }
+
+    /* Gmail box */
+    .gmail-box{
+      padding:24px 26px;
+      border:1px solid var(--line);
+      border-radius:20px;
+      background:#fafafa;
+    }
+    .gmail-box h3{
+      margin:0 0 8px;
+      font-size:18px;
+      font-weight:800;
+    }
+    .gmail-box p{
+      margin:0 0 16px;
+      font-size:14px;
+      color:var(--muted);
+      line-height:1.6;
+    }
+    .gbtn{
+      width:100%;
+      padding:14px;
+      border-radius:14px;
+      border:1px solid var(--line);
+      background:#fff;
+      font-weight:700;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      cursor:pointer;
+    }
+    .gicon{
+      width:18px;height:18px;border-radius:4px;
+      background:conic-gradient(from 45deg,#4285F4,#34A853,#FBBC05,#EA4335,#4285F4);
+    }
+    .secure{
+      margin-top:14px;
+      font-size:13px;
+      color:#374151;
+    }
+  
+    .pass-wrap{position:relative}
+    .toggle-pass{
+      position:absolute;
+      right:10px;
+      top:50%;
+      transform:translateY(-50%);
+      border:1px solid var(--line);
+      background:#fff;
+      color:var(--text);
+      padding:7px 10px;
+      border-radius:999px;
+      cursor:pointer;
+      font-weight:700;
+      font-size:12px;
+    }
+    .toggle-pass:active{transform:translateY(-50%) scale(.98)}
+
+  
+    /* Gmail tab (đặc trưng Google/Gmail) */
+    .tab.gmail-tab{
+      background:linear-gradient(135deg,#EA4335,#FBBC05);
+      color:#fff;
+      border-color:transparent;
+    }
+    .tab.gmail-tab:hover{filter:brightness(.98)}
+    /* Căn giữa nút Hiện/Ẩn trong ô mật khẩu (tránh lệch do margin collapse) */
+    .pass-wrap{position:relative; padding-top:6px;}
+    .pass-wrap input{margin-top:0;}
+
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Đăng ký tài khoản</h1>
+    <div class="desc">
+      Tạo tài khoản ngay để không bỏ lỡ các tiện ích và quyền lợi dành riêng cho thành viên.<br>
+      Đăng ký nhanh gọn, bảo mật cao, hỗ trợ số điện thoại hoặc Gmail – bắt đầu trải nghiệm ngay!
+    </div>
+
+    <div class="tabs">
+      <button class="tab active">Đăng ký bằng Số điện thoại</button>
+      <button class="tab gmail-tab">Đăng ký bằng Gmail</button>
+    </div>
+
+    <div class="content">
+      <!-- FORM -->
+      <div>
+        <div class="grid">
+          <div>
+            <label>Họ và tên</label>
+            <input placeholder="Nguyễn Văn A">
+          </div>
+          <div>
+            <label>Số điện thoại</label>
+            <input placeholder="0912xxxxxx">
+          </div>
+          <div>
+            <label>Email</label>
+            <input placeholder="you@email.com">
+          </div>
+          <div>
+            <label>Địa chỉ</label>
+            <input placeholder="Số nhà, đường, quận/huyện">
+          </div>
+          <div class="full">
+            <label>Tên đăng nhập</label>
+            <input placeholder="username">
+          </div>
+          <div>
+            <label>Mật khẩu</label>
+            <div class="pass-wrap">
+              <input id="password" type="password" placeholder="********">
+              <button class="toggle-pass" type="button" data-target="password">Hiện</button>
+            </div>
+          </div>
+          <div>
+            <label>Nhập lại mật khẩu</label>
+            <div class="pass-wrap">
+              <input id="password2" type="password" placeholder="********">
+              <button class="toggle-pass" type="button" data-target="password2">Hiện</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button class="btn primary">Tạo tài khoản</button>
+          <button class="btn ghost">Nhập lại</button>
+        </div>
+      </div>
+
+      <!-- GMAIL -->
+      <div class="gmail-box">
+        <h3>Đăng ký nhanh bằng Gmail</h3>
+        <p>Không cần nhập form, chỉ 1 cú nhấp để tạo tài khoản và bắt đầu sử dụng ngay.</p>
+        <button class="gbtn">
+          <span class="gicon"></span>
+          Tiếp tục với Google
+        </button>
+        <div class="secure">
+          🔒 Bảo mật cao · Không lưu mật khẩu Google · Đăng nhập nhanh cho những lần sau
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll('.toggle-pass').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const id = btn.getAttribute('data-target');
+        const input = document.getElementById(id);
+        const isPass = input.type === 'password';
+        input.type = isPass ? 'text' : 'password';
+        btn.textContent = isPass ? 'Ẩn' : 'Hiện';
+      });
+    });
+  </script>
+
+</body>
+</html>

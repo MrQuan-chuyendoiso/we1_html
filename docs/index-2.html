@@ -1,767 +1,1443 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <!-- start seo-->
-    <title>Mỹ phẩm</title>
-    <meta name="keywords" content="Mỹ phẩm">
-    <meta name="description" content="Mỹ phẩm">
-    <meta name="robots" content="index,follow,max-snippet:-1,max-video-preview:-1,max-image-preview:large">
-    <link rel="icon" type="image/x-icon" href="admin/public/images/footer/17408141534560x60.png">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet" type="text/css">
-    <link href="ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="public/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="public/assets/css/slick.css" type="text/css">
-    <link rel="stylesheet" href="public/assets/css/slick-lightbox.css">
-    <link rel="stylesheet" href="public/assets/css/slick-theme.css" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
-    <link href="public/assets/style.css" rel="stylesheet" type="text/css">
-    <link href="public/assets/style-2.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="public/css/tailwin-dist.css">
-    <!-- home-->
-    <link href="public/assets/home.css" rel="stylesheet" type="text/css">
-    <!-- product-->
-    <link rel="stylesheet" href="public/css/product/base.css" type="text/css">
-    <link rel="stylesheet" href="public/css/product/detail.css" type="text/css">
-    <link rel="stylesheet" href="public/css/style.css">
 
-    <link rel="stylesheet" href="public/css/sung.css">
-  </head>
-  <body class="header-sticky">
-    <header class="fe-header w-100" style="background: white;">
-      <div class="header-3">
-        <div class="bg"></div>
-        <nav class="navbar navbar-expand-lg">
-          <div class="container"><a class="logo-brand" href="index.html"> <img class="block logo-w" src="https://we1.io.vn/admin/public/images/footer/174634384745428x160.png" alt=""/></a>
-            <div class="offcanvas bg-primary offcanvas-start" id="menuMain" tabindex="-1" aria-labelledby="staticBackdropLabel">
-              <div class="offcanvas-body flex md:justify-between">
-                <ul class="navbar-nav justify-end gap-x-1 max-sm:flex max-sm:flex-col">
-                  <li class="nav-item"><a class="nav-link  max-sm:text-28 active" aria-current="page" href="index2.html">Trang chủ</a>
-                  </li>
-                  <li class="nav-item"><a class="nav-link  max-sm:text-28" aria-current="page" href="about.html">Giới thiệu</a>
-                    <ul class="nav-submenu">
-                      <li><a href="#"> <span>Dog Supplies</span></a>
-                        <ul class="nav-submenu">
-                          <li><a href="#"> <span>Food & Treats</span></a></li>
-                          <li><a href="#"> <span>Toys</span></a></li>
-                          <li><a href="#"> <span>Beds & Furniture</span></a></li>
-                          <li><a href="#"> <span>Outdoor Supplies</span></a></li>
-                          <li><a href="#"> <span>Clothing</span></a>
-                            <ul class="nav-submenu">
-                              <li><a href="#"> <span>Sweaters and Hoodies</span></a></li>
-                              <li><a href="#"> <span>Raincoats</span></a></li>
-                              <li><a href="#"> <span>T-Shirts</span></a></li>
-                              <li><a href="#"> <span>Booties</span></a></li>
-                              <li><a href="#"> <span>Hats/Caps</span></a></li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </li>
-                      <li><a href="#"> <span>Cat Supplies</span></a>
-                        <ul class="nav-submenu">
-                          <li><a href="#"> <span>Food & Treats</span></a></li>
-                          <li><a href="#"> <span>Toys</span></a></li>
-                          <li><a href="#"> <span>Beds & Furniture</span></a></li>
-                        </ul>
-                      </li>
-                      <li><a href="#"> <span>Bird Supplies</span></a>
-                        <ul class="nav-submenu">
-                          <li><a href="#"> <span>Food & Treats</span></a></li>
-                          <li><a href="#"> <span>Toys</span></a></li>
-                          <li><a href="#"> <span>Furniture</span></a></li>
-                        </ul>
-                      </li>
-                      <li><a href="#"> <span>Fish Supplies</span></a>
-                        <ul class="nav-submenu">
-                          <li><a href="#"> <span>Food</span></a></li>
-                          <li><a href="#"> <span>Aquariums</span></a></li>
-                          <li><a href="#"> <span>Rocks & Decorations</span></a></li>
-                        </ul>
-                      </li>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <!-- start seo-->
+  <title>Mỹ phẩm</title>
+  <meta name="keywords" content="Mỹ phẩm">
+  <meta name="description" content="Mỹ phẩm">
+  <meta name="robots" content="index,follow,max-snippet:-1,max-video-preview:-1,max-image-preview:large">
+  <link rel="icon" type="image/x-icon" href="admin/public/images/footer/17408141534560x60.png">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet" type="text/css">
+  <link href="ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="public/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="public/assets/css/slick.css" type="text/css">
+  <link rel="stylesheet" href="public/assets/css/slick-lightbox.css">
+  <link rel="stylesheet" href="public/assets/css/slick-theme.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+  <link href="public/assets/style.css" rel="stylesheet" type="text/css">
+  <link href="public/assets/style-2.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="public/css/tailwin-dist.css">
+  <!-- home-->
+  <link href="public/assets/home.css" rel="stylesheet" type="text/css">
+  <!-- product-->
+  <link rel="stylesheet" href="public/css/product/base.css" type="text/css">
+  <link rel="stylesheet" href="public/css/product/detail.css" type="text/css">
+  <link rel="stylesheet" href="public/css/style.css">
+
+  <link rel="stylesheet" href="public/css/sung.css">
+</head>
+
+<body class="header-sticky">
+  <header class="fe-header w-100" style="background: white;">
+    <div class="header-3">
+      <div class="bg"></div>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container"><a class="logo-brand" href="index.html"> <img class="block logo-w"
+              src="https://we1.io.vn/admin/public/images/footer/174634384745428x160.png" alt="" /></a>
+          <div class="offcanvas bg-primary offcanvas-start" id="menuMain" tabindex="-1"
+            aria-labelledby="staticBackdropLabel">
+            <div class="offcanvas-body flex md:justify-between">
+              <ul class="navbar-nav justify-end gap-x-1 max-sm:flex max-sm:flex-col">
+                <li class="nav-item"><a class="nav-link  max-sm:text-28 active" aria-current="page"
+                    href="index2.html">Trang chủ</a>
+                </li>
+                <li class="nav-item"><a class="nav-link  max-sm:text-28" aria-current="page" href="about.html">Giới
+                    thiệu</a>
+                  <ul class="nav-submenu">
+                    <li><a href="#"> <span>Dog Supplies</span></a>
+                      <ul class="nav-submenu">
+                        <li><a href="#"> <span>Food & Treats</span></a></li>
+                        <li><a href="#"> <span>Toys</span></a></li>
+                        <li><a href="#"> <span>Beds & Furniture</span></a></li>
+                        <li><a href="#"> <span>Outdoor Supplies</span></a></li>
+                        <li><a href="#"> <span>Clothing</span></a>
+                          <ul class="nav-submenu">
+                            <li><a href="#"> <span>Sweaters and Hoodies</span></a></li>
+                            <li><a href="#"> <span>Raincoats</span></a></li>
+                            <li><a href="#"> <span>T-Shirts</span></a></li>
+                            <li><a href="#"> <span>Booties</span></a></li>
+                            <li><a href="#"> <span>Hats/Caps</span></a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a href="#"> <span>Cat Supplies</span></a>
+                      <ul class="nav-submenu">
+                        <li><a href="#"> <span>Food & Treats</span></a></li>
+                        <li><a href="#"> <span>Toys</span></a></li>
+                        <li><a href="#"> <span>Beds & Furniture</span></a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#"> <span>Bird Supplies</span></a>
+                      <ul class="nav-submenu">
+                        <li><a href="#"> <span>Food & Treats</span></a></li>
+                        <li><a href="#"> <span>Toys</span></a></li>
+                        <li><a href="#"> <span>Furniture</span></a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#"> <span>Fish Supplies</span></a>
+                      <ul class="nav-submenu">
+                        <li><a href="#"> <span>Food</span></a></li>
+                        <li><a href="#"> <span>Aquariums</span></a></li>
+                        <li><a href="#"> <span>Rocks & Decorations</span></a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link  max-sm:text-28" aria-current="page" href="services.html">Dịch
+                    vụ</a>
+                </li>
+                <li class="nav-item"><a class="nav-link  max-sm:text-28" aria-current="page" href="project.html">Dự
+                    án</a>
+                </li>
+                <li class="nav-item"><a class="nav-link  max-sm:text-28" aria-current="page" href="news.html">Tin
+                    tức</a>
+                </li>
+                <li class="nav-item"><a class="nav-link  max-sm:text-28" aria-current="page"
+                    href="recruiment.html">Tuyển dụng</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="group-right flex gap-x-8px items-center md:ml-auto"><a
+              class="btn-hotline text-20 font-bold btn shadow rounded-4 px-16 flex justify-center items-center gap-x-8px text-white py-10px md:bg-primary md:shadow max-md:text-primary max-md:py-10px max-2xl:hidden"
+              href="#"> <i class="fa-solid fa-headset"> </i>012345678</a><a
+              class="btn-search icon w-46 h-46 rounded-4 p-2 text-white flex justify-center items-center bg-white-opacity flex-shrink-0 md:bg-primary md:shadow max-md:text-primary md:h-46"
+              href="#" data-bs-toggle="modal" data-bs-target="#flipModal"><i
+                class="fa-solid fa-magnifying-glass"></i></a>
+            <div class="dropdown dropdown-hover">
+              <div
+                class="dropdown-btn btn-user icon w-46 h-44 rounded-4 p-2 text-white flex justify-center items-center bg-white-opacity flex-shrink-0 md:bg-primary md:shadow max-md:text-primary md:h-46 max-md:hidden">
+                <i class="fa-solid fa-user"></i>
+              </div>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item flex gap-x-8px items-center" href="#"> <i class="fa-solid fa-user"></i>Đăng
+                    nhập</a></li>
+                <li><a class="dropdown-item flex gap-x-8px items-center" href="#"> <i
+                      class="fa-solid fa-user-plus"></i>Đăng ký</a></li>
+              </ul>
+            </div><a
+              class="btn-cart icon w-46 h-44 rounded-4 p-2 text-white flex justify-center items-center bg-white-opacity flex-shrink-0 md:bg-primary md:shadow max-md:text-primary md:h-46"
+              href="#"><i class="fa-solid fa-shopping-cart"></i></a>
+            <div class="language dropdown dropdown-hover rounded-8 text-white max-md:hidden">
+              <div
+                class="language-btn flex justify-center font-medium items-center px-16 py-10px md:px-24 md:py-12 md:bg-primary "
+                data-bs-toggle="dropdown" aria-expanded="false">VN</div>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="#">VN</a></li>
+                <li><a class="dropdown-item" href="#">EN</a></li>
+              </ul>
+            </div>
+          </div>
+          <button class="navbar-toggler text-white" type="button" data-bs-toggle="offcanvas" href="#offcanvasExample3"
+            role="button" aria-controls="offcanvasExample"><span class="navbar-toggler-icon"></span></button>
+        </div>
+      </nav>
+    </div>
+    <div class="offcanvas offcanvas-start offcanvasExample3" id="offcanvasExample3" data-bs-scroll="false"
+      data-bs-backdrop="true" tabindex="-1" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header pb-1 position-relative px-1 pt-2 mx-3">
+        <h5 class="offcanvas-title mx-auto" id="offcanvasExampleLabel"><img class="w-100" width="250"
+            src="https://we1.io.vn/admin/public/images/header/174679621770428x160.png" alt="logo" /></h5>
+        <button class="btn-close position-absolute z-1 end-0" id="btn-close-sidebar" type="button"
+          data-bs-dismiss="offcanvas" aria-label="Close"><i class="icon-close"></i></button>
+      </div>
+      <div class="px-3 py-2">
+        <div class="header-search d-block w-100">
+          <form class="form-inline" action="tat-ca-san-pham" method="GET">
+            <div class="input-group flex-nowrap">
+              <input class="form-control" type="text" name="search" placeholder="Tìm kiếm Sản phẩm &amp; Dịch vụ ?" />
+              <div class="input-group-append bg-light">
+                <button class="btn" type="submit" aria-label="Tìm kiếm Sản phẩm &amp; Dịch vụ ?"><i class="fa fa-search"
+                    aria-hidden="true"></i></button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="offcanvas-body pt-1 px-3 d-flex justify-content-between flex-column">
+        <ul class="border-top">
+          <li class="menu-item d-flex align-items-center py-2 has-sub-menu toggle-menu-list"><a
+              class="menu-link py-1 d-flex align-items-center gap-1 text-dark text-uppercase" href="#"><img
+                class="item-img"
+                src="https://file.hstatic.net/200000865177/file/cam-nang_7b1c2041fc624dbbb73509f39a24a55f.png"
+                alt="alt" /> Ấn phẩm văn phòng</a><i class="fa-solid fa-caret-down text-dark px-1"></i>
+            <ul class="sub-menu sub-menu-list">
+              <li class="sub-menu-item">
+                <ul class="menu-list sub-menu-list-1">
+                  <!-- Danh thiếp - Namecards-->
+                  <li class="py-2 text-dark toggle-menu-list-2"><a class="fw-bold text-dark" href="#"> Danh thiếp -
+                      Namecards</a><i class="fa-solid fa-caret-down text-dark"></i>
+                    <ul class="sub-menu-list-2">
+                      <li class="px-3 py-2 text-dark">- Danh thiếp Giấy mỹ thuật</li>
+                      <li class="px-3 py-2 text-dark">- Danh thiếp chuẩn</li>
+                      <li class="px-3 py-2 text-dark">- Danh Thiếp Kỹ Thuật Số</li>
+                      <li class="px-3 py-2 text-dark">- Danh Thiếp Thông Minh</li>
+                      <li class="px-3 py-2 text-dark">- Danh Thiếp Dập Nổi/ Chìm</li>
+                      <li class="px-3 py-2 text-dark">- Danh Thiếp Ngọc Trai</li>
+                      <li class="px-3 py-2 text-dark">- Danh Thiếp Giấy Nhựa</li>
+                      <li class="px-3 py-2 text-dark">- Danh Thiếp Bo Góc Chuẩn</li>
+                      <li class="px-3 py-2 text-dark">- Danh Thiếp Vuông Bo Góc</li>
+                      <li class="px-3 py-2 text-dark">- Danh Thiếp Highlight</li>
+                      <li class="px-3 py-2 text-dark">- Danh Thiếp Gấp Đôi</li>
+                      <li class="px-3 py-2 text-dark">- Danh Thiếp Vuông</li>
                     </ul>
                   </li>
-                  <li class="nav-item"><a class="nav-link  max-sm:text-28" aria-current="page" href="services.html">Dịch vụ</a>
-                  </li>
-                  <li class="nav-item"><a class="nav-link  max-sm:text-28" aria-current="page" href="project.html">Dự án</a>
-                  </li>
-                  <li class="nav-item"><a class="nav-link  max-sm:text-28" aria-current="page" href="news.html">Tin tức</a>
-                  </li>
-                  <li class="nav-item"><a class="nav-link  max-sm:text-28" aria-current="page" href="recruiment.html">Tuyển dụng</a>
+                </ul>
+              </li>
+              <li class="sub-menu-item">
+                <ul class="menu-list sub-menu-list-1">
+                  <!-- Bao thư - Envelopes-->
+                  <li class="py-2 text-dark toggle-menu-list-2"><a class="fw-bold text-dark" href="#"> Bao thư -
+                      Envelopes</a><i class="fa-solid fa-caret-down text-dark"></i>
+                    <ul class="sub-menu-list-2">
+                      <li class="px-3 py-2 text-dark">- Bao thư lấy ngay</li>
+                      <li class="px-3 py-2 text-dark">- Bao thư nhỏ</li>
+                      <li class="px-3 py-2 text-dark">- Bao thư trung</li>
+                      <li class="px-3 py-2 text-dark">- Bao thư lớn</li>
+                      <li class="px-3 py-2 text-dark">- Bao thư giấy Kraft</li>
+                      <li class="px-3 py-2 text-dark">- Bao thư cửa sổ kính</li>
+                    </ul>
                   </li>
                 </ul>
-              </div>
-            </div>
-            <div class="group-right flex gap-x-8px items-center md:ml-auto"><a class="btn-hotline text-20 font-bold btn shadow rounded-4 px-16 flex justify-center items-center gap-x-8px text-white py-10px md:bg-primary md:shadow max-md:text-primary max-md:py-10px max-2xl:hidden" href="#"> <i class="fa-solid fa-headset"> </i>012345678</a><a class="btn-search icon w-46 h-46 rounded-4 p-2 text-white flex justify-center items-center bg-white-opacity flex-shrink-0 md:bg-primary md:shadow max-md:text-primary md:h-46" href="#" data-bs-toggle="modal" data-bs-target="#flipModal"><i class="fa-solid fa-magnifying-glass"></i></a>
-              <div class="dropdown dropdown-hover">
-                <div class="dropdown-btn btn-user icon w-46 h-44 rounded-4 p-2 text-white flex justify-center items-center bg-white-opacity flex-shrink-0 md:bg-primary md:shadow max-md:text-primary md:h-46 max-md:hidden"><i class="fa-solid fa-user"></i></div>
-                <ul class="dropdown-menu dropdown-menu-end">
-                  <li><a class="dropdown-item flex gap-x-8px items-center" href="#"> <i class="fa-solid fa-user"></i>Đăng nhập</a></li>
-                  <li><a class="dropdown-item flex gap-x-8px items-center" href="#"> <i class="fa-solid fa-user-plus"></i>Đăng ký</a></li>
+              </li>
+              <li class="sub-menu-item">
+                <ul class="menu-list sub-menu-list-1">
+                  <!-- Áo thun đồng phục-->
+                  <li class="py-2 text-dark toggle-menu-list-2"><a class="fw-bold text-dark" href="href"> Áo thun đồng
+                      phục</a><i class="fa-solid fa-caret-down text-dark"></i>
+                    <ul class="sub-menu-list-2">
+                      <li class="px-3 py-2 text-dark">- Áo thun đồng phục cổ trụ</li>
+                      <li class="px-3 py-2 text-dark">- Áo thun đồng phục cổ tròn</li>
+                      <!-- Giấy ghi chú - Block notes-->
+                      <li class="px-3 py-2 text-dark">- Giấy ghi chú - Block notes</li>
+                      <li class="px-3 py-2 text-dark">- Giấy ghi chú</li>
+                      <!-- Giấy tiêu đề - Letterheads-->
+                      <li class="px-3 py-2 text-dark">- Giấy tiêu đề - Letterheads</li>
+                      <li class="px-3 py-2 text-dark">- Giấy tiêu đề số lượng ít</li>
+                      <li class="px-3 py-2 text-dark">- Giấy tiêu đề số lượng lớn</li>
+                      <!-- Bìa đựng hồ sơ - Folders-->
+                      <li class="px-3 py-2 text-dark">- Bìa đựng hồ sơ - Folders</li>
+                      <li class="px-3 py-2 text-dark">- Bìa đựng hồ sơ 1 tay gấp</li>
+                      <li class="px-3 py-2 text-dark">- Bìa đựng hồ sơ 2 tay gấp</li>
+                      <li class="px-3 py-2 text-dark">- Bìa đựng hồ sơ cao cấp</li>
+                    </ul>
+                  </li>
                 </ul>
-              </div><a class="btn-cart icon w-46 h-44 rounded-4 p-2 text-white flex justify-center items-center bg-white-opacity flex-shrink-0 md:bg-primary md:shadow max-md:text-primary md:h-46" href="#"><i class="fa-solid fa-shopping-cart"></i></a>
-              <div class="language dropdown dropdown-hover rounded-8 text-white max-md:hidden">
-                <div class="language-btn flex justify-center font-medium items-center px-16 py-10px md:px-24 md:py-12 md:bg-primary " data-bs-toggle="dropdown" aria-expanded="false">VN</div>
-                <ul class="dropdown-menu dropdown-menu-end">
-                  <li><a class="dropdown-item" href="#">VN</a></li>
-                  <li><a class="dropdown-item" href="#">EN</a></li>
-                </ul>
-              </div>
-            </div>
-            <button class="navbar-toggler text-white" type="button" data-bs-toggle="offcanvas" href="#offcanvasExample3" role="button" aria-controls="offcanvasExample"><span class="navbar-toggler-icon"></span></button>
-          </div>
-        </nav>
-      </div>
-      <div class="offcanvas offcanvas-start offcanvasExample3" id="offcanvasExample3" data-bs-scroll="false" data-bs-backdrop="true" tabindex="-1" aria-labelledby="offcanvasExampleLabel">
-        <div class="offcanvas-header pb-1 position-relative px-1 pt-2 mx-3">
-          <h5 class="offcanvas-title mx-auto" id="offcanvasExampleLabel"><img class="w-100" width="250" src="https://we1.io.vn/admin/public/images/header/174679621770428x160.png" alt="logo"/></h5>
-          <button class="btn-close position-absolute z-1 end-0" id="btn-close-sidebar" type="button" data-bs-dismiss="offcanvas" aria-label="Close"><i class="icon-close"></i></button>
-        </div>
-        <div class="px-3 py-2">
-          <div class="header-search d-block w-100">
-            <form class="form-inline" action="tat-ca-san-pham" method="GET">
-              <div class="input-group flex-nowrap">
-                <input class="form-control" type="text" name="search" placeholder="Tìm kiếm Sản phẩm &amp; Dịch vụ ?"/>
-                <div class="input-group-append bg-light">
-                  <button class="btn" type="submit" aria-label="Tìm kiếm Sản phẩm &amp; Dịch vụ ?"><i class="fa fa-search" aria-hidden="true"></i></button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="offcanvas-body pt-1 px-3 d-flex justify-content-between flex-column">
-          <ul class="border-top">
-            <li class="menu-item d-flex align-items-center py-2 has-sub-menu toggle-menu-list"><a class="menu-link py-1 d-flex align-items-center gap-1 text-dark text-uppercase" href="#"><img class="item-img" src="https://file.hstatic.net/200000865177/file/cam-nang_7b1c2041fc624dbbb73509f39a24a55f.png" alt="alt"/>                                Ấn phẩm văn phòng</a><i class="fa-solid fa-caret-down text-dark px-1"></i>
-              <ul class="sub-menu sub-menu-list">
-                <li class="sub-menu-item">
-                  <ul class="menu-list sub-menu-list-1">
-                    <!-- Danh thiếp - Namecards-->
-                    <li class="py-2 text-dark toggle-menu-list-2"><a class="fw-bold text-dark" href="#"> Danh thiếp - Namecards</a><i class="fa-solid fa-caret-down text-dark"></i>
-                      <ul class="sub-menu-list-2">
-                        <li class="px-3 py-2 text-dark">- Danh thiếp Giấy mỹ thuật</li>
-                        <li class="px-3 py-2 text-dark">- Danh thiếp chuẩn</li>
-                        <li class="px-3 py-2 text-dark">- Danh Thiếp Kỹ Thuật Số</li>
-                        <li class="px-3 py-2 text-dark">- Danh Thiếp Thông Minh</li>
-                        <li class="px-3 py-2 text-dark">- Danh Thiếp Dập Nổi/ Chìm</li>
-                        <li class="px-3 py-2 text-dark">- Danh Thiếp Ngọc Trai</li>
-                        <li class="px-3 py-2 text-dark">- Danh Thiếp Giấy Nhựa</li>
-                        <li class="px-3 py-2 text-dark">- Danh Thiếp Bo Góc Chuẩn</li>
-                        <li class="px-3 py-2 text-dark">- Danh Thiếp Vuông Bo Góc</li>
-                        <li class="px-3 py-2 text-dark">- Danh Thiếp Highlight</li>
-                        <li class="px-3 py-2 text-dark">- Danh Thiếp Gấp Đôi</li>
-                        <li class="px-3 py-2 text-dark">- Danh Thiếp Vuông</li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-                <li class="sub-menu-item">
-                  <ul class="menu-list sub-menu-list-1">
-                    <!-- Bao thư - Envelopes-->
-                    <li class="py-2 text-dark toggle-menu-list-2"><a class="fw-bold text-dark" href="#"> Bao thư - Envelopes</a><i class="fa-solid fa-caret-down text-dark"></i>
-                      <ul class="sub-menu-list-2">
-                        <li class="px-3 py-2 text-dark">- Bao thư lấy ngay</li>
-                        <li class="px-3 py-2 text-dark">- Bao thư nhỏ</li>
-                        <li class="px-3 py-2 text-dark">- Bao thư trung</li>
-                        <li class="px-3 py-2 text-dark">- Bao thư lớn</li>
-                        <li class="px-3 py-2 text-dark">- Bao thư giấy Kraft</li>
-                        <li class="px-3 py-2 text-dark">- Bao thư cửa sổ kính</li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-                <li class="sub-menu-item">
-                  <ul class="menu-list sub-menu-list-1">
-                    <!-- Áo thun đồng phục-->
-                    <li class="py-2 text-dark toggle-menu-list-2"><a class="fw-bold text-dark" href="href"> Áo thun đồng phục</a><i class="fa-solid fa-caret-down text-dark"></i>
-                      <ul class="sub-menu-list-2">
-                        <li class="px-3 py-2 text-dark">- Áo thun đồng phục cổ trụ</li>
-                        <li class="px-3 py-2 text-dark">- Áo thun đồng phục cổ tròn</li>
-                        <!-- Giấy ghi chú - Block notes-->
-                        <li class="px-3 py-2 text-dark">- Giấy ghi chú - Block notes</li>
-                        <li class="px-3 py-2 text-dark">- Giấy ghi chú</li>
-                        <!-- Giấy tiêu đề - Letterheads-->
-                        <li class="px-3 py-2 text-dark">- Giấy tiêu đề - Letterheads</li>
-                        <li class="px-3 py-2 text-dark">- Giấy tiêu đề số lượng ít</li>
-                        <li class="px-3 py-2 text-dark">- Giấy tiêu đề số lượng lớn</li>
-                        <!-- Bìa đựng hồ sơ - Folders-->
-                        <li class="px-3 py-2 text-dark">- Bìa đựng hồ sơ - Folders</li>
-                        <li class="px-3 py-2 text-dark">- Bìa đựng hồ sơ 1 tay gấp</li>
-                        <li class="px-3 py-2 text-dark">- Bìa đựng hồ sơ 2 tay gấp</li>
-                        <li class="px-3 py-2 text-dark">- Bìa đựng hồ sơ cao cấp</li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li class="menu-item d-flex align-items-center py-2 has-sub-menu toggle-menu-list"><a class="menu-link py-1 d-flex align-items-center gap-1 text-dark text-uppercase" href="#"><img class="item-img" src="https://file.hstatic.net/200000865177/file/cam-nang_7b1c2041fc624dbbb73509f39a24a55f.png" alt="alt"/>                                Ấn phẩm</a><i class="fa-solid fa-caret-down text-dark px-1"></i>
-              <ul class="sub-menu sub-menu-list">
-                <li class="sub-menu-item">
-                  <ul class="menu-list sub-menu-list-1">
-                    <!-- Danh thiếp - Namecards-->
-                    <li class="py-2 text-dark toggle-menu-list-2"><a class="fw-bold text-dark" href="#"> Danh thiếp - Namecards</a><i class="fa-solid fa-caret-down text-dark"></i>
-                      <ul class="sub-menu-list-2">
-                        <li class="px-3 py-2 text-dark">- Danh thiếp Giấy mỹ thuật</li>
-                        <li class="px-3 py-2 text-dark">- Danh thiếp chuẩn</li>
-                        <li class="px-3 py-2 text-dark">- Danh Thiếp Kỹ Thuật Số</li>
-                        <li class="px-3 py-2 text-dark">- Danh Thiếp Thông Minh</li>
-                        <li class="px-3 py-2 text-dark">- Danh Thiếp Dập Nổi/ Chìm</li>
-                        <li class="px-3 py-2 text-dark">- Danh Thiếp Ngọc Trai</li>
-                        <li class="px-3 py-2 text-dark">- Danh Thiếp Giấy Nhựa</li>
-                        <li class="px-3 py-2 text-dark">- Danh Thiếp Bo Góc Chuẩn</li>
-                        <li class="px-3 py-2 text-dark">- Danh Thiếp Vuông Bo Góc</li>
-                        <li class="px-3 py-2 text-dark">- Danh Thiếp Highlight</li>
-                        <li class="px-3 py-2 text-dark">- Danh Thiếp Gấp Đôi</li>
-                        <li class="px-3 py-2 text-dark">- Danh Thiếp Vuông</li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-                <li class="sub-menu-item">
-                  <ul class="menu-list sub-menu-list-1">
-                    <!-- Bao thư - Envelopes-->
-                    <li class="py-2 text-dark toggle-menu-list-2"><a class="fw-bold text-dark" href="#"> Bao thư - Envelopes</a><i class="fa-solid fa-caret-down text-dark"></i>
-                      <ul class="sub-menu-list-2">
-                        <li class="px-3 py-2 text-dark">- Bao thư lấy ngay</li>
-                        <li class="px-3 py-2 text-dark">- Bao thư nhỏ</li>
-                        <li class="px-3 py-2 text-dark">- Bao thư trung</li>
-                        <li class="px-3 py-2 text-dark">- Bao thư lớn</li>
-                        <li class="px-3 py-2 text-dark">- Bao thư giấy Kraft</li>
-                        <li class="px-3 py-2 text-dark">- Bao thư cửa sổ kính</li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-                <li class="sub-menu-item">
-                  <ul class="menu-list sub-menu-list-1">
-                    <!-- Áo thun đồng phục-->
-                    <li class="py-2 text-dark toggle-menu-list-2"><a class="fw-bold text-dark" href="#">Áo thun đồng phục</a><i class="fa-solid fa-caret-down text-dark"></i>
-                      <ul class="sub-menu-list-2">
-                        <li class="px-3 py-2 text-dark">- Áo thun đồng phục cổ trụ</li>
-                        <li class="px-3 py-2 text-dark">- Áo thun đồng phục cổ tròn</li>
-                        <!-- Giấy ghi chú - Block notes-->
-                        <li class="px-3 py-2 text-dark">- Giấy ghi chú - Block notes</li>
-                        <li class="px-3 py-2 text-dark">- Giấy ghi chú</li>
-                        <!-- Giấy tiêu đề - Letterheads-->
-                        <li class="px-3 py-2 text-dark">- Giấy tiêu đề - Letterheads</li>
-                        <li class="px-3 py-2 text-dark">- Giấy tiêu đề số lượng ít</li>
-                        <li class="px-3 py-2 text-dark">- Giấy tiêu đề số lượng lớn</li>
-                        <!-- Bìa đựng hồ sơ - Folders-->
-                        <li class="px-3 py-2 text-dark">- Bìa đựng hồ sơ - Folders</li>
-                        <li class="px-3 py-2 text-dark">- Bìa đựng hồ sơ 1 tay gấp</li>
-                        <li class="px-3 py-2 text-dark">- Bìa đựng hồ sơ 2 tay gấp</li>
-                        <li class="px-3 py-2 text-dark">- Bìa đựng hồ sơ cao cấp</li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <div class="foo_mid border-top text-dark"><a class="btn-hotline d-flex gap-2 align-items-center" href="#"><img src="./admin/public/images/header/icon-hotline.png" alt="alt" width="36"/>
-              <div class="d-flex flex-column fw-bold"><span class="text-sub">Holine & Zalo</span><span class="fs-5">0909090909</span></div></a>
-            <div class="border-top d-flex py-2 gap-2"><a class="btn-login d-flex gap-2 align-items-center" href="#"><img src="./admin/public/images/header/icon-login.png" alt="alt" width="20" height="20"/><span>Đăng nhập</span></a><a class="btn-login d-flex gap-2 align-items-center" href="https://vip2.io.vn/dang-ky-tai-khoan"><img src="./admin/public/images/header/icon-register.png" alt="alt" width="20" height="20"/><span>Đăng ký</span></a></div>
-            <div class="py-2 border-top">
-              <p class="mb-2 position-relative fw-bold">Kết nối mạng xã hội</p>
-              <div class="d-flex position-relative social mb-1 mx-0 gap-1"><a class="position-relative iso sitdown modal-open d-inline-block facebook mr-1" href="href" target="_blank" title="Facebook"><img class="lazy loaded" src="https://file.hstatic.net/200000785527/file/facebook_ce742afdcdea4026a633915bdfdce6f5.png" alt="facebook" width="32" height="32"/></a><a class="position-relative iso sitdown modal-open d-inline-block twitter mr-1" href="href" target="_blank" title="Twitter"><img class="lazy loaded" src="https://file.hstatic.net/200000785527/file/twitter_b15cb1006ec04c63855aef2dec8fac47.png" alt="twitter" width="32" height="32"/></a><a class="position-relative iso sitdown modal-open d-inline-block instagram mr-1" href="href" target="_blank" title="Instagram+"><img class="lazy loaded" src="https://file.hstatic.net/200000785527/file/instagram_45effdfd0d0e47d986a7c8b1a8e2ab01.png" alt="instagram" width="32" height="32"/></a><a class="position-relative iso sitdown modal-open d-inline-block youtube mr-1" href="href" target="_blank" title="Youtube"><img class="lazy loaded" src="https://file.hstatic.net/200000785527/file/youtube_749d73527fb94f2c8d005d2ffdb1ca10.png" alt="youtube" width="32" height="32"/></a><a class="position-relative iso sitdown modal-open d-inline-block shopee mr-1" href="href" target="_blank" title="Shopee"><img class="lazy loaded" src="https://file.hstatic.net/200000785527/file/shopee_efcb449798c24dd4a4a312f1ad9e3e8d.png" alt="Shopee" width="32" height="32"/></a><a class="position-relative iso sitdown modal-open d-inline-block lazada mr-1" href="href" target="_blank" title="Lazada"><img class="lazy loaded" src="https://file.hstatic.net/200000785527/file/lazada_0080ef48005044af8ba3f720097866f7.jpg" alt="Lazada" width="32" height="32"/></a></div>
-            </div>
-            <div class="mb-2 border-top">
-              <address class="my-2">
-                <h5 class="mb-2"><strong>Công ty TNHH công nghệ VPlus Việt Nam</strong></h5>
-                <p class="mb-1"><b>SDT: </b><a class="text-dark" href="tel:1900636099" title="1900.636.099">1900.636.099</a></p>
-                <p class="m-0"><b>Email: </b><a class="text-dark" href="mailto:support@haravan.com" title="support@haravan.com">support@haravan.com</a></p>
-                <p class="mb-1"><b>Hà Nội: </b>Tầng 3, tòa nhà The Artemis, số 03 Lê Trọng Tấn, Khương Mai, Thanh Xuân, Hà Nội</p>
-                <p class="mb-1"><b>Hotline: </b><a class="text-dark" href="tel:1900636099" title="1900.636.099">1900.636.099</a></p>
-                <p class="mb-1"><b>HCM: </b>Lầu 6, 182 Lê Đại Hành, P.15, Quận 11, Tp.HCM</p>
-              </address>
-            </div>
-            <div class="border-top text-dark">
-              <p class="mt-2 position-relative fw-bold">Phương thức thanh toán</p>
-              <div class="d-flex py-2 gap-4">
-                <div class="footer-column-1">
-                  <div class="payment-accept gap-1 mx-0"><img class="first lazy loaded" width="47px" src="https://file.hstatic.net/200000823693/file/payment-1_2c94a9495fa04f4ab8b11be786441266.png" alt="payment-1"/><img class="lazy loaded" width="47px" src="https://file.hstatic.net/200000823693/file/payment-2_bdbf0ab7d5d24e138faa24e497b38a9b.png" alt="payment-2"/><img class="lazy loaded" width="47px" src="https://file.hstatic.net/200000823693/file/payment-3_3a8dba86bfd74a85be3db17837d4c9c6.png" alt="payment-3"/><img class="lazy loaded" width="47px" src="https://file.hstatic.net/200000823693/file/payment-4_f03f301a303c448db851de3e9e91ade2.png" alt="payment-4"/></div>
-                </div>
-                <div class="btn-language dropdown-language">
-                  <p class="d-flex align-items-center justify-content-center gap-2 mb-0"><span>Ngôn ngữ</span><i class="fa-solid fa-caret-down"></i></p>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Tiếng việt</a></li>
-                    <li><a class="dropdown-item" href="#">Tiếng anh</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <div class="modal fade-flip" id="flipModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <form class="form-search" action=""> 
-              <input type="text" placeholder="Nhập từ tìm kiếm ..."/>
-              <button class="btn-submit"> <i class="fa-solid fa-magnifying-glass"></i></button>
-            </form>
-            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <main> 
-      <div class="banner_slide banner-full-width">
-        <div><a class="d-block w-100 rounded-10" href="#" title="Banner 1">
-            <picture class="block">
-              <source class="img-cover block" media="(min-width:768px)" srcset="./public/assets/images/banner_pc1.jpg"><img class="img-cover block" src="./public/assets/images/banner_sp1.jpg" alt="Flowers" style="width:auto;">
-            </picture></a></div>
-        <div><a class="d-block w-100 rounded-10" href="#" title="Banner 2">
-            <picture class="block">
-              <source class="img-cover" media="(min-width:768px)" srcset="./public/assets/images/banner_pc2.jpg"><img class="img-cover" src="./public/assets/images/banner_sp2.jpg" alt="Flowers" style="width:auto;">
-            </picture></a></div>
-      </div>
-      <div class="scroll-top-btn" style="display: block;"><i class="fa fa-arrow-up"></i><span class="hover-text">Top</span></div>
-      <div class="link_chat_social position-fixed">
-        <div class="link_cart link-is-scroll"><a>
-            <div class="phone-vr-img-circle" style="width: 50px; height: 50px; position: relative;">
-              <div class="phone-vr-circle-fill"></div><i class="fa-solid fa-cart-plus" style="position: absolute; animation: phonering-alo-circle-img-anim 1s infinite ease-in-out; bottom: 12px; left: 12px; font-size: 24px; color: #ffffff;"></i>
-            </div></a></div>
-        <div class="link_login link-is-scroll"><a href title="Đặt lịch" data-bs-toggle="modal" data-bs-target="#popup-dat-lich">
-            <div class="phone-vr-img-circle" style="width: 50px; height: 50px; position: relative;">
-              <div class="phone-vr-circle-fill"></div><i class="fa-solid fa-user" style="position: absolute; animation: phonering-alo-circle-img-anim 1s infinite ease-in-out; bottom: 12px; left: 12px; font-size: 24px; color: #ffffff;"></i>
-            </div></a></div>
-        <div class="link_dat_lich"><a href title="Đặt lịch" data-bs-toggle="modal" data-bs-target="#popup-dat-lich">
-            <div class="phone-vr-img-circle" style="width: 50px; height: 50px; position: relative;">
-              <div class="phone-vr-circle-fill"></div><i class="fa-solid fa-calendar-days" style="position: absolute; animation: phonering-alo-circle-img-anim 1s infinite ease-in-out; bottom: 12px; left: 12px; font-size: 30px; color: #ffffff;"></i>
-            </div></a></div>
-        <div class="link_chat_facebook"><a href="https://www.m.me/514902838382434" target="_blank">
-            <div class="phone-vr-img-circle">
-              <div class="phone-vr-circle-fill"></div><img loading="lazy" src="https://we1.io.vn/public/assets/images/link_chat_facebook.png" alt="link_chat">
-            </div></a></div>
-        <div class="link_chat_zalo"><a href="https://www.zalo.me/0847865568" target="_blank">
-            <div class="phone-vr-img-circle">
-              <div class="phone-vr-circle-fill"></div><img loading="lazy" src="https://we1.io.vn/public/assets/images/link_chat_zalo.png" alt="link_chat">
-            </div></a></div>
-        <div class="link_call"><a href="tel:0847 865 568" target="_blank">
-            <div class="phone-vr-img-circle">
-              <div class="phone-vr-circle-fill"></div><img loading="lazy" src="https://we1.io.vn/public/assets/images/call.png" alt="link_chat">
-            </div></a></div>
-      </div>
-    </main>
-    <footer class="footer-2 text-14">    
-      <div class="bg bg-primary"></div>
-      <div class="container">
-        <div class="row gap-y-24"> 
-          <div class="col-12 col-lg-12 col-xl-4">  
-            <h4 class="ttl-f text-white text-16">CTY TNHH Công Nghệ VPlus Việt Nam</h4>
-            <div class="logo-f"> <img src="https://we1.io.vn/admin/public/images/footer/174634384745428x160.png" alt=""/></div>
-            <ul class="list-contact flex flex-col gap-y-8px"> 
-              <li class="flex gap-x-2"><i class="fa-solid fa-map-location-dot"></i>
-                <p><strong> Hà Nội: </strong>58 Trần Khát Chân, Bạch Đằng, Hai Bà Trưng, Hà Nội</p>
-              </li>
-              <li class="flex gap-x-2"><i class="fa-solid fa-map-location-dot"></i>
-                <p><strong> HCM: </strong>Lầu 6, 182 Lê Đại Hành, P.15, Quận 11, Tp.HCM</p>
-              </li>
-              <li class="flex gap-x-2"><i class="fa-solid fa-phone"></i>
-                <p><strong> Hotline: </strong>0936 87 6667</p>
-              </li>
-              <li class="flex gap-x-2"><i class="fa-solid fa-envelope"></i>
-                <p><strong> Email: </strong>vplusvn.thangth@gmail.com</p>
-              </li>
-              <li class="flex gap-x-2"><i class="fa-solid fa-print"></i>
-                <p><strong> MST: </strong>0202154517</p>
               </li>
             </ul>
-          </div>
-          <div class="col-12 col-lg-12 col-xl-8"> 
-            <div class="row gap-y-24"> 
-              <div class="col-5 col-md-4 col-xl-3">
-                <h4 class="ttl-f text-white text-16 ttl-f"> <span>Giới thiệu</span></h4>
-                <ul class="menu-f flex flex-col gap-y-8px mt-24"> 
-                  <li><a class="flex gap-x-8px" href="#"><i class="fa-solid fa-arrow-up-right-from-square mt-2px"></i><span>Về chúng tôi</span></a></li>
-                  <li><a class="flex gap-x-8px" href="#"><i class="fa-solid fa-arrow-up-right-from-square mt-2px"></i><span>Tuyển dụng</span></a></li>
-                  <li><a class="flex gap-x-8px" href="#"><i class="fa-solid fa-arrow-up-right-from-square mt-2px"></i><span>Tài liệu</span></a></li>
-                  <li><a class="flex gap-x-8px" href="#"><i class="fa-solid fa-arrow-up-right-from-square mt-2px"></i><span>Video</span></a></li>
-                  <li><a class="flex gap-x-8px" href="#"><i class="fa-solid fa-arrow-up-right-from-square mt-2px"></i><span>Khuyến mãi</span></a></li>
-                  <li><a class="flex gap-x-8px" href="#"><i class="fa-solid fa-arrow-up-right-from-square mt-2px"></i><span>Tin tức</span></a></li>
-                </ul>
-                <ul class="list-contact flex flex-col gap-y-8px mt-16"> </ul>
-              </div>
-              <div class="col-7 col-md-4 col-xl-4">
-                <div class="max-sm:pl-24">
-                  <h4 class="ttl-f text-white text-16 ttl-f"> <span>Chính sách</span></h4>
-                  <ul class="menu-f flex flex-col gap-y-8px mt-24">
-                    <li><a class="flex gap-x-8px" href="#"><i class="fa-solid fa-shield-halved mt-2px"></i><span>Hình thức đặt hàng</span></a></li>
-                    <li><a class="flex gap-x-8px" href="#"><i class="fa-solid fa-shield-halved mt-2px"></i><span>Hình thức thanh toán</span></a></li>
-                    <li><a class="flex gap-x-8px" href="#"><i class="fa-solid fa-shield-halved mt-2px"></i><span>Phương thức vận chuyển</span></a></li>
-                    <li><a class="flex gap-x-8px" href="#"><i class="fa-solid fa-shield-halved mt-2px"></i><span>Chính sách đổi trả</span></a></li>
-                    <li><a class="flex gap-x-8px" href="#"><i class="fa-solid fa-shield-halved mt-2px"></i><span>Chính sách bảo hành</span></a></li>
-                    <li><a class="flex gap-x-8px" href="#"><i class="fa-solid fa-shield-halved mt-2px"></i><span>Chính sách bảo mật</span></a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-12 col-md-4 col-xl-5">
-                <div class="row gap-y-24"> 
-                  <div class="col-5 col-md-12"> 
-                    <h4 class="ttl-f text-white text-16 ttl-f"> <span>Mạng xã hội</span></h4>
-                    <ul class="list-social mt-16 flex flex-wrap gap-y-2 md:gap-3 max-md:gap-x-8px"> 
-                      <li class="w-28 flex-shrink-0 md:w-36 md:h-36 lg:w-40 lg:h-40"><a class="icon-social block bg-white imgDrop hover:shadow-lg max-md:w-28 max-md:h-28 md:h-36 lg:h-40" href="#"> <img class="w-full" src="./public/assets/images/ss-fb.png" alt=""/></a></li>
-                      <li class="w-28 flex-shrink-0 md:w-36 md:h-36 lg:w-40 lg:h-40"><a class="icon-social block bg-white imgDrop hover:shadow-lg max-md:w-28 max-md:h-28 md:h-36 lg:h-40" href="#"> <img class="w-full" src="./public/assets/images/ss-shopee.png" alt=""/></a></li>
-                      <li class="w-28 flex-shrink-0 md:w-36 md:h-36 lg:w-40 lg:h-40"><a class="icon-social block bg-white imgDrop hover:shadow-lg max-md:w-28 max-md:h-28 md:h-36 lg:h-40" href="#"> <img class="w-full" src="./public/assets/images/ss-zalo.png" alt=""/></a></li>
-                      <li class="w-28 flex-shrink-0 md:w-36 md:h-36 lg:w-40 lg:h-40"><a class="icon-social block bg-white imgDrop hover:shadow-lg max-md:w-28 max-md:h-28 md:h-36 lg:h-40" href="#"> <img class="w-full" src="./public/assets/images/ss-ytb.png" alt=""/></a></li>
+          </li>
+          <li class="menu-item d-flex align-items-center py-2 has-sub-menu toggle-menu-list"><a
+              class="menu-link py-1 d-flex align-items-center gap-1 text-dark text-uppercase" href="#"><img
+                class="item-img"
+                src="https://file.hstatic.net/200000865177/file/cam-nang_7b1c2041fc624dbbb73509f39a24a55f.png"
+                alt="alt" /> Ấn phẩm</a><i class="fa-solid fa-caret-down text-dark px-1"></i>
+            <ul class="sub-menu sub-menu-list">
+              <li class="sub-menu-item">
+                <ul class="menu-list sub-menu-list-1">
+                  <!-- Danh thiếp - Namecards-->
+                  <li class="py-2 text-dark toggle-menu-list-2"><a class="fw-bold text-dark" href="#"> Danh thiếp -
+                      Namecards</a><i class="fa-solid fa-caret-down text-dark"></i>
+                    <ul class="sub-menu-list-2">
+                      <li class="px-3 py-2 text-dark">- Danh thiếp Giấy mỹ thuật</li>
+                      <li class="px-3 py-2 text-dark">- Danh thiếp chuẩn</li>
+                      <li class="px-3 py-2 text-dark">- Danh Thiếp Kỹ Thuật Số</li>
+                      <li class="px-3 py-2 text-dark">- Danh Thiếp Thông Minh</li>
+                      <li class="px-3 py-2 text-dark">- Danh Thiếp Dập Nổi/ Chìm</li>
+                      <li class="px-3 py-2 text-dark">- Danh Thiếp Ngọc Trai</li>
+                      <li class="px-3 py-2 text-dark">- Danh Thiếp Giấy Nhựa</li>
+                      <li class="px-3 py-2 text-dark">- Danh Thiếp Bo Góc Chuẩn</li>
+                      <li class="px-3 py-2 text-dark">- Danh Thiếp Vuông Bo Góc</li>
+                      <li class="px-3 py-2 text-dark">- Danh Thiếp Highlight</li>
+                      <li class="px-3 py-2 text-dark">- Danh Thiếp Gấp Đôi</li>
+                      <li class="px-3 py-2 text-dark">- Danh Thiếp Vuông</li>
                     </ul>
-                  </div>
-                  <div class="col-12 col-md-12 max-sm:order-9 ">
-                    <h4 class="ttl-f text-white text-16 ttl-f"><span>Hình thức thanh toán</span></h4>
-                    <div class="payment-accept gap-2 mt-8px"><img class="first lazy loaded" src="https://file.hstatic.net/200000823693/file/payment-1_2c94a9495fa04f4ab8b11be786441266.png" data-src="https://file.hstatic.net/200000823693/file/payment-1_2c94a9495fa04f4ab8b11be786441266.png" alt="payment-1"/><img class="lazy loaded" src="https://file.hstatic.net/200000823693/file/payment-2_bdbf0ab7d5d24e138faa24e497b38a9b.png" data-src="https://file.hstatic.net/200000823693/file/payment-2_bdbf0ab7d5d24e138faa24e497b38a9b.png" alt="payment-2"/><img class="lazy loaded" src="https://file.hstatic.net/200000823693/file/payment-3_3a8dba86bfd74a85be3db17837d4c9c6.png" data-src="https://file.hstatic.net/200000823693/file/payment-3_3a8dba86bfd74a85be3db17837d4c9c6.png" alt="payment-3"/><img class="lazy loaded" src="https://file.hstatic.net/200000823693/file/payment-4_f03f301a303c448db851de3e9e91ade2.png" data-src="https://file.hstatic.net/200000823693/file/payment-4_f03f301a303c448db851de3e9e91ade2.png" alt="payment-4"/></div>
-                  </div>
-                  <div class="col-7 col-md-12"> 
-                    <div class="max-sm:pl-24">
-                      <h4 class="ttl-f text-white text-16 ttl-f"><span>Bộ công thương</span></h4>
-                      <div class="bg-white rounded-8 images-bct mt-8px"><img class="w-full" src="./public/assets/images/bct.png" alt=""/></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <address>Bản quyền thuộc về CÔNG TY CỔ PHẦN SIÊU THỊ IN ẤN | <br>Cung cấp bởi <a href="#"> <strong>Thietkeweb365.vn</strong></a></address>
-    </footer>
-    <footer class="footer-3 text-14">
-      <div class="bg"></div>
-      <div class="bg-img imgDrop"> <img src="https://png.pngtree.com/background/20250119/original/pngtree-textured-backdrop-with-dark-green-leaf-pattern-picture-image_13403196.jpg" alt=""/></div>
-      <div class="container"> 
-        <div class="row"> 
-          <div class="col-12 col-lg-6 col-xl-7"> 
-            <div class="row gap-y-24"> 
-              <div class="col-12 col-sx-8 col-lg-7 2xl:pr-40"> 
-                <div class="logo-f"> <img src="https://we1.io.vn/admin/public/images/footer/174634384745428x160.png" alt=""/></div>
-                <h4 class="text-white text-18">CTY TNHH Công Nghệ VPlus Việt Nam</h4>
-                <ul class="list-contact flex flex-col gap-y-8px mt-16"> 
-                  <li class="flex gap-x-2"><i class="fa-solid fa-map-location-dot"></i>
-                    <p><strong> Hà Nội: </strong>58 Trần Khát Chân, Bạch Đằng, Hai Bà Trưng, Hà Nội</p>
-                  </li>
-                  <li class="flex gap-x-2"><i class="fa-solid fa-phone"></i>
-                    <p><strong> Hotline: </strong>0936 87 6667</p>
-                  </li>
-                  <li class="flex gap-x-2"><i class="fa-solid fa-envelope"></i>
-                    <p><strong> Email: </strong>vplusvn.thangth@gmail.com</p>
                   </li>
                 </ul>
-                <h4 class="text-white text-16 mt-24 ttl-sub"><span>Mạng xã hội</span></h4>
-                <ul class="list-social mt-16 flex flex-wrap gap-y-2 md:gap-3 max-md:gap-x-8px"> 
-                  <li class="w-28 flex-shrink-0 md:w-36 md:h-36 lg:w-40 lg:h-40"><a class="icon-social block bg-white imgDrop hover:shadow-lg max-md:w-28 max-md:h-28 md:h-36 lg:h-40" href="#"> <img class="w-full" src="./public/assets/images/ss-fb.png" alt=""/></a></li>
-                  <li class="w-28 flex-shrink-0 md:w-36 md:h-36 lg:w-40 lg:h-40"><a class="icon-social block bg-white imgDrop hover:shadow-lg max-md:w-28 max-md:h-28 md:h-36 lg:h-40" href="#"> <img class="w-full" src="./public/assets/images/ss-shopee.png" alt=""/></a></li>
-                  <li class="w-28 flex-shrink-0 md:w-36 md:h-36 lg:w-40 lg:h-40"><a class="icon-social block bg-white imgDrop hover:shadow-lg max-md:w-28 max-md:h-28 md:h-36 lg:h-40" href="#"> <img class="w-full" src="./public/assets/images/ss-zalo.png" alt=""/></a></li>
-                  <li class="w-28 flex-shrink-0 md:w-36 md:h-36 lg:w-40 lg:h-40"><a class="icon-social block bg-white imgDrop hover:shadow-lg max-md:w-28 max-md:h-28 md:h-36 lg:h-40" href="#"> <img class="w-full" src="./public/assets/images/ss-ytb.png" alt=""/></a></li>
+              </li>
+              <li class="sub-menu-item">
+                <ul class="menu-list sub-menu-list-1">
+                  <!-- Bao thư - Envelopes-->
+                  <li class="py-2 text-dark toggle-menu-list-2"><a class="fw-bold text-dark" href="#"> Bao thư -
+                      Envelopes</a><i class="fa-solid fa-caret-down text-dark"></i>
+                    <ul class="sub-menu-list-2">
+                      <li class="px-3 py-2 text-dark">- Bao thư lấy ngay</li>
+                      <li class="px-3 py-2 text-dark">- Bao thư nhỏ</li>
+                      <li class="px-3 py-2 text-dark">- Bao thư trung</li>
+                      <li class="px-3 py-2 text-dark">- Bao thư lớn</li>
+                      <li class="px-3 py-2 text-dark">- Bao thư giấy Kraft</li>
+                      <li class="px-3 py-2 text-dark">- Bao thư cửa sổ kính</li>
+                    </ul>
+                  </li>
                 </ul>
-              </div>
-              <div class="col-8 col-sx-4 col-lg-5">
-                <h4 class="text-white text-16 mt-24 ttl-sub"><span>Qr code</span></h4>
-                <div class="box-f bg-primary"> <img class="w-full icon-color-white" src="./public/assets/images/qr.png" alt=""/></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-lg-6 col-xl-5 2xl:pl-40"> 
-            <h4 class="text-white text-16 mt-24 ttl-sub"><span>Liên hệ</span></h4>
-            <div class="box-f mt-16">
-              <div class="text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum</div>
-              <form class="mt-16" action="">
-                <div class="row">
-                  <div class="col">
-                    <input class="form-control" type="text" placeholder="First name" aria-label="First name"/>
-                  </div>
-                  <div class="col">
-                    <input class="form-control" type="text" placeholder="Last name" aria-label="Last name"/>
-                  </div>
-                </div>
-                <div class="mt-3">
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Nội dung"></textarea>
-                </div>
-                <div class="mt-3"> 
-                  <button class="btn-primary btn-submit-f">Gửi yêu cầu</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-      <address>Bản quyền thuộc về CÔNG TY CỔ PHẦN SIÊU THỊ IN ẤN | <br>Cung cấp bởi <a href="#"> <strong>Thietkeweb365.vn</strong></a></address>
-    </footer>
-    <footer class="footer-4 text-14">
-    <div class="bg-img" style="background-image: url('https://png.pngtree.com/background/20250119/original/pngtree-textured-backdrop-with-dark-green-leaf-pattern-picture-image_13403196.jpg');"></div>
-<div class="bg bg-primary-overlay"></div>
-    <div class="container">
-        <div class="row gap-y-24">
-            <div class="col-12 col-lg-12 col-xl-4">
-                <h4 class="ttl-f text-white text-16">CTY TNHH Công Nghệ VPlus Việt Nam</h4>
-                <div class="logo-f"> <img src="https://we1.io.vn/admin/public/images/footer/174634384745428x160.png" alt=""/></div>
-                <ul class="list-contact flex flex-col gap-y-8px">
-                    <li class="flex gap-x-2"><i class="fa-solid fa-map-location-dot"></i>
-                        <p><strong> Hà Nội: </strong>58 Trần Khát Chân, Bạch Đằng, Hai Bà Trưng, Hà Nội</p>
-                    </li>
-                    <li class="flex gap-x-2"><i class="fa-solid fa-map-location-dot"></i>
-                        <p><strong> HCM: </strong>Lầu 6, 182 Lê Đại Hành, P.15, Quận 11, Tp.HCM</p>
-                    </li>
-                    <li class="flex gap-x-2"><i class="fa-solid fa-phone"></i>
-                        <p><strong> Hotline: </strong>0936 87 6667</p>
-                    </li>
-                    <li class="flex gap-x-2"><i class="fa-solid fa-envelope"></i>
-                        <p><strong> Email: </strong>vplusvn.thangth@gmail.com</p>
-                    </li>
-                    <li class="flex gap-x-2"><i class="fa-solid fa-print"></i>
-                        <p><strong> MST: </strong>0202154517</p>
-                    </li>
+              </li>
+              <li class="sub-menu-item">
+                <ul class="menu-list sub-menu-list-1">
+                  <!-- Áo thun đồng phục-->
+                  <li class="py-2 text-dark toggle-menu-list-2"><a class="fw-bold text-dark" href="#">Áo thun đồng
+                      phục</a><i class="fa-solid fa-caret-down text-dark"></i>
+                    <ul class="sub-menu-list-2">
+                      <li class="px-3 py-2 text-dark">- Áo thun đồng phục cổ trụ</li>
+                      <li class="px-3 py-2 text-dark">- Áo thun đồng phục cổ tròn</li>
+                      <!-- Giấy ghi chú - Block notes-->
+                      <li class="px-3 py-2 text-dark">- Giấy ghi chú - Block notes</li>
+                      <li class="px-3 py-2 text-dark">- Giấy ghi chú</li>
+                      <!-- Giấy tiêu đề - Letterheads-->
+                      <li class="px-3 py-2 text-dark">- Giấy tiêu đề - Letterheads</li>
+                      <li class="px-3 py-2 text-dark">- Giấy tiêu đề số lượng ít</li>
+                      <li class="px-3 py-2 text-dark">- Giấy tiêu đề số lượng lớn</li>
+                      <!-- Bìa đựng hồ sơ - Folders-->
+                      <li class="px-3 py-2 text-dark">- Bìa đựng hồ sơ - Folders</li>
+                      <li class="px-3 py-2 text-dark">- Bìa đựng hồ sơ 1 tay gấp</li>
+                      <li class="px-3 py-2 text-dark">- Bìa đựng hồ sơ 2 tay gấp</li>
+                      <li class="px-3 py-2 text-dark">- Bìa đựng hồ sơ cao cấp</li>
+                    </ul>
+                  </li>
                 </ul>
-            </div>
-            <div class="col-12 col-lg-12 col-xl-8">
-                <div class="row gap-y-24">
-                    <div class="col-5 col-md-4 col-xl-3">
-                        <h4 class="ttl-f text-white text-16 ttl-f"> <span>Giới thiệu</span></h4>
-                        <ul class="menu-f flex flex-col gap-y-8px mt-24">
-                            <li><a class="flex gap-x-8px" href="#"><i class="fa-solid fa-arrow-up-right-from-square mt-2px"></i><span>Về chúng tôi</span></a></li>
-                            <li><a class="flex gap-x-8px" href="#"><i class="fa-solid fa-arrow-up-right-from-square mt-2px"></i><span>Tuyển dụng</span></a></li>
-                            <li><a class="flex gap-x-8px" href="#"><i class="fa-solid fa-arrow-up-right-from-square mt-2px"></i><span>Tài liệu</span></a></li>
-                            <li><a class="flex gap-x-8px" href="#"><i class="fa-solid fa-arrow-up-right-from-square mt-2px"></i><span>Video</span></a></li>
-                            <li><a class="flex gap-x-8px" href="#"><i class="fa-solid fa-arrow-up-right-from-square mt-2px"></i><span>Khuyến mãi</span></a></li>
-                            <li><a class="flex gap-x-8px" href="#"><i class="fa-solid fa-arrow-up-right-from-square mt-2px"></i><span>Tin tức</span></a></li>
-                        </ul>
-                        <ul class="list-contact flex flex-col gap-y-8px mt-16"> </ul>
-                    </div>
-                    <div class="col-7 col-md-4 col-xl-4">
-                        <div class="max-sm:pl-24">
-                            <h4 class="ttl-f text-white text-16 ttl-f"> <span>Chính sách</span></h4>
-                            <ul class="menu-f flex flex-col gap-y-8px mt-24">
-                                <li><a class="flex gap-x-8px" href="#"><i class="fa-solid fa-shield-halved mt-2px"></i><span>Hình thức đặt hàng</span></a></li>
-                                <li><a class="flex gap-x-8px" href="#"><i class="fa-solid fa-shield-halved mt-2px"></i><span>Hình thức thanh toán</span></a></li>
-                                <li><a class="flex gap-x-8px" href="#"><i class="fa-solid fa-shield-halved mt-2px"></i><span>Phương thức vận chuyển</span></a></li>
-                                <li><a class="flex gap-x-8px" href="#"><i class="fa-solid fa-shield-halved mt-2px"></i><span>Chính sách đổi trả</span></a></li>
-                                <li><a class="flex gap-x-8px" href="#"><i class="fa-solid fa-shield-halved mt-2px"></i><span>Chính sách bảo hành</span></a></li>
-                                <li><a class="flex gap-x-8px" href="#"><i class="fa-solid fa-shield-halved mt-2px"></i><span>Chính sách bảo mật</span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4 col-xl-5">
-                        <div class="row gap-y-24">
-                            <div class="col-5 col-md-12">
-                                <h4 class="ttl-f text-white text-16 ttl-f"> <span>Mạng xã hội</span></h4>
-                                <ul class="list-social mt-16 flex flex-wrap gap-y-2 md:gap-3 max-md:gap-x-8px">
-                                    <li class="w-28 flex-shrink-0 md:w-36 md:h-36 lg:w-40 lg:h-40"><a class="icon-social block bg-white imgDrop hover:shadow-lg max-md:w-28 max-md:h-28 md:h-36 lg:h-40" href="#"> <img class="w-full" src="./public/assets/images/ss-fb.png" alt=""/></a></li>
-                                    <li class="w-28 flex-shrink-0 md:w-36 md:h-36 lg:w-40 lg:h-40"><a class="icon-social block bg-white imgDrop hover:shadow-lg max-md:w-28 max-md:h-28 md:h-36 lg:h-40" href="#"> <img class="w-full" src="./public/assets/images/ss-shopee.png" alt=""/></a></li>
-                                    <li class="w-28 flex-shrink-0 md:w-36 md:h-36 lg:w-40 lg:h-40"><a class="icon-social block bg-white imgDrop hover:shadow-lg max-md:w-28 max-md:h-28 md:h-36 lg:h-40" href="#"> <img class="w-full" src="./public/assets/images/ss-zalo.png" alt=""/></a></li>
-                                    <li class="w-28 flex-shrink-0 md:w-36 md:h-36 lg:w-40 lg:h-40"><a class="icon-social block bg-white imgDrop hover:shadow-lg max-md:w-28 max-md:h-28 md:h-36 lg:h-40" href="#"> <img class="w-full" src="./public/assets/images/ss-ytb.png" alt=""/></a></li>
-                                </ul>
-                            </div>
-                            <div class="col-12 col-md-12 max-sm:order-9 ">
-                                <h4 class="ttl-f text-white text-16 ttl-f"><span>Hình thức thanh toán</span></h4>
-                                <div class="payment-accept gap-2 mt-8px"><img class="first lazy loaded" src="https://file.hstatic.net/200000823693/file/payment-1_2c94a9495fa04f4ab8b11be786441266.png" data-src="https://file.hstatic.net/200000823693/file/payment-1_2c94a9495fa04f4ab8b11be786441266.png" alt="payment-1"/><img class="lazy loaded" src="https://file.hstatic.net/200000823693/file/payment-2_bdbf0ab7d5d24e138faa24e497b38a9b.png" data-src="https://file.hstatic.net/200000823693/file/payment-2_bdbf0ab7d5d24e138faa24e497b38a9b.png" alt="payment-2"/><img class="lazy loaded" src="https://file.hstatic.net/200000823693/file/payment-3_3a8dba86bfd74a85be3db17837d4c9c6.png" data-src="https://file.hstatic.net/200000823693/file/payment-3_3a8dba86bfd74a85be3db17837d4c9c6.png" alt="payment-3"/><img class="lazy loaded" src="https://file.hstatic.net/200000823693/file/payment-4_f03f301a303c448db851de3e9e91ade2.png" data-src="https://file.hstatic.net/200000823693/file/payment-4_f03f301a303c448db851de3e9e91ade2.png" alt="payment-4"/></div>
-                            </div>
-                            <div class="col-7 col-md-12">
-                                <div class="max-sm:pl-24">
-                                    <h4 class="ttl-f text-white text-16 ttl-f"><span>Bộ công thương</span></h4>
-                                    <div class="bg-white rounded-8 images-bct mt-8px"><img class="w-full" src="./public/assets/images/bct.png" alt=""/></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <address>Bản quyền thuộc về CÔNG TY CỔ PHẦN SIÊU THỊ IN ẤN | <br>Cung cấp bởi <a href="#"> <strong>Thietkeweb365.vn</strong></a></address>
-</footer>
- <footer class="footer-5 text-14">
-   <div class="bg-img" style="background-image: url('https://png.pngtree.com/background/20250119/original/pngtree-textured-backdrop-with-dark-green-leaf-pattern-picture-image_13403196.jpg');"></div>
-<div class="bg bg-primary-overlay"></div>
-  <div class="container">
-    <div class="row gap-y-24">
-      <div class="col-12 col-lg-12 col-xl-4">
-        <h4 class="ttl-f text-white text-16">CTY TNHH Công Nghệ APlus Việt Nam</h4>
-        <div class="logo-f">
-          <img src="https://we1.io.vn/admin/public/images/footer/174634384745428x160.png" alt="" />
-        </div>
-        <ul class="list-contact flex flex-col gap-y-8px">
-          <li class="flex gap-x-2">
-            <i class="fa-solid fa-map-location-dot"></i>
-            <p><strong> Hà Nội: </strong>58 Trần Khát Chân, Bạch Đằng, Hai Bà Trưng, Hà Nội</p>
-          </li>
-          <li class="flex gap-x-2">
-            <i class="fa-solid fa-map-location-dot"></i>
-            <p><strong> HCM: </strong>Lầu 6, 182 Lê Đại Hành, P.15, Quận 11, Tp.HCM</p>
-          </li>
-          <li class="flex gap-x-2">
-            <i class="fa-solid fa-phone"></i>
-            <p><strong> Hotline: </strong>0936 87 6667</p>
-          </li>
-          <li class="flex gap-x-2">
-            <i class="fa-solid fa-envelope"></i>
-            <p><strong> Email: </strong>vplusvn.thangth@gmail.com</p>
-          </li>
-          <li class="flex gap-x-2">
-            <i class="fa-solid fa-print"></i>
-            <p><strong> MST: </strong>0202154517</p>
+              </li>
+            </ul>
           </li>
         </ul>
-      </div>
-      <div class="col-12 col-lg-12 col-xl-8">
-        <div class="row gap-y-24">
-          <div class="col-12 col-md-4 col-xl-3">
-            <h4 class="ttl-f text-white text-16 ttl-f"><span>Giới thiệu</span></h4>
-            <ul class="menu-f flex flex-col gap-y-8px mt-24">
-              <li>
-                <a class="flex gap-x-8px" href="#"><i class="fa-solid fa-arrow-up-right-from-square mt-2px"></i><span>Về chúng tôi</span></a>
-              </li>
-              <li>
-                <a class="flex gap-x-8px" href="#"><i class="fa-solid fa-arrow-up-right-from-square mt-2px"></i><span>Tuyển dụng</span></a>
-              </li>
-              <li>
-                <a class="flex gap-x-8px" href="#"><i class="fa-solid fa-arrow-up-right-from-square mt-2px"></i><span>Tài liệu</span></a>
-              </li>
-              <li>
-                <a class="flex gap-x-8px" href="#"><i class="fa-solid fa-arrow-up-right-from-square mt-2px"></i><span>Video</span></a>
-              </li>
-              <li>
-                <a class="flex gap-x-8px" href="#"><i class="fa-solid fa-arrow-up-right-from-square mt-2px"></i><span>Khuyến mãi</span></a>
-              </li>
-              <li>
-                <a class="flex gap-x-8px" href="#"><i class="fa-solid fa-arrow-up-right-from-square mt-2px"></i><span>Tin tức</span></a>
-              </li>
-            </ul>
-            <ul class="list-contact flex flex-col gap-y-8px mt-16"></ul>
+        <div class="foo_mid border-top text-dark"><a class="btn-hotline d-flex gap-2 align-items-center" href="#"><img
+              src="./admin/public/images/header/icon-hotline.png" alt="alt" width="36" />
+            <div class="d-flex flex-column fw-bold"><span class="text-sub">Holine & Zalo</span><span
+                class="fs-5">0909090909</span></div>
+          </a>
+          <div class="border-top d-flex py-2 gap-2"><a class="btn-login d-flex gap-2 align-items-center" href="#"><img
+                src="./admin/public/images/header/icon-login.png" alt="alt" width="20" height="20" /><span>Đăng
+                nhập</span></a><a class="btn-login d-flex gap-2 align-items-center"
+              href="https://vip2.io.vn/dang-ky-tai-khoan"><img src="./admin/public/images/header/icon-register.png"
+                alt="alt" width="20" height="20" /><span>Đăng ký</span></a></div>
+          <div class="py-2 border-top">
+            <p class="mb-2 position-relative fw-bold">Kết nối mạng xã hội</p>
+            <div class="d-flex position-relative social mb-1 mx-0 gap-1"><a
+                class="position-relative iso sitdown modal-open d-inline-block facebook mr-1" href="href"
+                target="_blank" title="Facebook"><img class="lazy loaded"
+                  src="https://file.hstatic.net/200000785527/file/facebook_ce742afdcdea4026a633915bdfdce6f5.png"
+                  alt="facebook" width="32" height="32" /></a><a
+                class="position-relative iso sitdown modal-open d-inline-block twitter mr-1" href="href" target="_blank"
+                title="Twitter"><img class="lazy loaded"
+                  src="https://file.hstatic.net/200000785527/file/twitter_b15cb1006ec04c63855aef2dec8fac47.png"
+                  alt="twitter" width="32" height="32" /></a><a
+                class="position-relative iso sitdown modal-open d-inline-block instagram mr-1" href="href"
+                target="_blank" title="Instagram+"><img class="lazy loaded"
+                  src="https://file.hstatic.net/200000785527/file/instagram_45effdfd0d0e47d986a7c8b1a8e2ab01.png"
+                  alt="instagram" width="32" height="32" /></a><a
+                class="position-relative iso sitdown modal-open d-inline-block youtube mr-1" href="href" target="_blank"
+                title="Youtube"><img class="lazy loaded"
+                  src="https://file.hstatic.net/200000785527/file/youtube_749d73527fb94f2c8d005d2ffdb1ca10.png"
+                  alt="youtube" width="32" height="32" /></a><a
+                class="position-relative iso sitdown modal-open d-inline-block shopee mr-1" href="href" target="_blank"
+                title="Shopee"><img class="lazy loaded"
+                  src="https://file.hstatic.net/200000785527/file/shopee_efcb449798c24dd4a4a312f1ad9e3e8d.png"
+                  alt="Shopee" width="32" height="32" /></a><a
+                class="position-relative iso sitdown modal-open d-inline-block lazada mr-1" href="href" target="_blank"
+                title="Lazada"><img class="lazy loaded"
+                  src="https://file.hstatic.net/200000785527/file/lazada_0080ef48005044af8ba3f720097866f7.jpg"
+                  alt="Lazada" width="32" height="32" /></a></div>
           </div>
-          <div class="col-12 col-md-4 col-xl-4">
-                        <div class="row gap-y-24">
-                            <div class="col-5 col-md-12">
-                                <h4 class="ttl-f text-white text-16 ttl-f"> <span>Mạng xã hội</span></h4>
-                                <ul class="list-social mt-16 flex flex-wrap gap-y-2 md:gap-3 max-md:gap-x-8px">
-                                    <li class="w-28 flex-shrink-0 md:w-36 md:h-36 lg:w-40 lg:h-40"><a class="icon-social block bg-white imgDrop hover:shadow-lg max-md:w-28 max-md:h-28 md:h-36 lg:h-40" href="#"> <img class="w-full" src="./public/assets/images/ss-fb.png" alt=""/></a></li>
-                                    <li class="w-28 flex-shrink-0 md:w-36 md:h-36 lg:w-40 lg:h-40"><a class="icon-social block bg-white imgDrop hover:shadow-lg max-md:w-28 max-md:h-28 md:h-36 lg:h-40" href="#"> <img class="w-full" src="./public/assets/images/ss-shopee.png" alt=""/></a></li>
-                                    <li class="w-28 flex-shrink-0 md:w-36 md:h-36 lg:w-40 lg:h-40"><a class="icon-social block bg-white imgDrop hover:shadow-lg max-md:w-28 max-md:h-28 md:h-36 lg:h-40" href="#"> <img class="w-full" src="./public/assets/images/ss-zalo.png" alt=""/></a></li>
-                                    <li class="w-28 flex-shrink-0 md:w-36 md:h-36 lg:w-40 lg:h-40"><a class="icon-social block bg-white imgDrop hover:shadow-lg max-md:w-28 max-md:h-28 md:h-36 lg:h-40" href="#"> <img class="w-full" src="./public/assets/images/ss-ytb.png" alt=""/></a></li>
-                                </ul>
-                            </div>
-                            <div class="col-12 col-md-12 max-sm:order-9 ">
-                                <h4 class="ttl-f text-white text-16 ttl-f"><span>Hình thức thanh toán</span></h4>
-                                <div class="payment-accept gap-2 mt-8px"><img class="first lazy loaded" src="https://file.hstatic.net/200000823693/file/payment-1_2c94a9495fa04f4ab8b11be786441266.png" data-src="https://file.hstatic.net/200000823693/file/payment-1_2c94a9495fa04f4ab8b11be786441266.png" alt="payment-1"/><img class="lazy loaded" src="https://file.hstatic.net/200000823693/file/payment-2_bdbf0ab7d5d24e138faa24e497b38a9b.png" data-src="https://file.hstatic.net/200000823693/file/payment-2_bdbf0ab7d5d24e138faa24e497b38a9b.png" alt="payment-2"/><img class="lazy loaded" src="https://file.hstatic.net/200000823693/file/payment-3_3a8dba86bfd74a85be3db17837d4c9c6.png" data-src="https://file.hstatic.net/200000823693/file/payment-3_3a8dba86bfd74a85be3db17837d4c9c6.png" alt="payment-3"/><img class="lazy loaded" src="https://file.hstatic.net/200000823693/file/payment-4_f03f301a303c448db851de3e9e91ade2.png" data-src="https://file.hstatic.net/200000823693/file/payment-4_f03f301a303c448db851de3e9e91ade2.png" alt="payment-4"/></div>
-                            </div>
-                            <div class="col-7 col-md-12">
-                                <div class="max-sm:pl-24">
-                                    <h4 class="ttl-f text-white text-16 ttl-f"><span>Bộ công thương</span></h4>
-                                    <div class="bg-white rounded-8 images-bct mt-8px"><img class="w-full" src="./public/assets/images/bct.png" alt=""/></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-          <div class="col-12 col-md-4 col-xl-5">
-            <h4 class="ttl-f text-white text-16 ttl-f"><span>Bản đồ</span></h4>
-            <div class="map-container mt-24">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.5204123547846!2d105.86016667500593!3d21.01185018063715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135abf10b80f135%3A0x6339463b2f8a845!2zNTggVHLhuqduIEtow6F0IENow6JuLCBUaGFuaCBMxrDGoW5nLCBIYWkgQsOgIFRyxrBuZywgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1700689622287!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="mb-2 border-top">
+            <address class="my-2">
+              <h5 class="mb-2"><strong>Công ty TNHH công nghệ VPlus Việt Nam</strong></h5>
+              <p class="mb-1"><b>SDT: </b><a class="text-dark" href="tel:1900636099"
+                  title="1900.636.099">1900.636.099</a></p>
+              <p class="m-0"><b>Email: </b><a class="text-dark" href="mailto:support@haravan.com"
+                  title="support@haravan.com">support@haravan.com</a></p>
+              <p class="mb-1"><b>Hà Nội: </b>Tầng 3, tòa nhà The Artemis, số 03 Lê Trọng Tấn, Khương Mai, Thanh Xuân, Hà
+                Nội</p>
+              <p class="mb-1"><b>Hotline: </b><a class="text-dark" href="tel:1900636099"
+                  title="1900.636.099">1900.636.099</a></p>
+              <p class="mb-1"><b>HCM: </b>Lầu 6, 182 Lê Đại Hành, P.15, Quận 11, Tp.HCM</p>
+            </address>
+          </div>
+          <div class="border-top text-dark">
+            <p class="mt-2 position-relative fw-bold">Phương thức thanh toán</p>
+            <div class="d-flex py-2 gap-4">
+              <div class="footer-column-1">
+                <div class="payment-accept gap-1 mx-0"><img class="first lazy loaded" width="47px"
+                    src="https://file.hstatic.net/200000823693/file/payment-1_2c94a9495fa04f4ab8b11be786441266.png"
+                    alt="payment-1" /><img class="lazy loaded" width="47px"
+                    src="https://file.hstatic.net/200000823693/file/payment-2_bdbf0ab7d5d24e138faa24e497b38a9b.png"
+                    alt="payment-2" /><img class="lazy loaded" width="47px"
+                    src="https://file.hstatic.net/200000823693/file/payment-3_3a8dba86bfd74a85be3db17837d4c9c6.png"
+                    alt="payment-3" /><img class="lazy loaded" width="47px"
+                    src="https://file.hstatic.net/200000823693/file/payment-4_f03f301a303c448db851de3e9e91ade2.png"
+                    alt="payment-4" /></div>
+              </div>
+              <div class="btn-language dropdown-language">
+                <p class="d-flex align-items-center justify-content-center gap-2 mb-0"><span>Ngôn ngữ</span><i
+                    class="fa-solid fa-caret-down"></i></p>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Tiếng việt</a></li>
+                  <li><a class="dropdown-item" href="#">Tiếng anh</a></li>
+                </ul>
+              </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="modal fade-flip" id="flipModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <form class="form-search" action="">
+            <input type="text" placeholder="Nhập từ tìm kiếm ..." />
+            <button class="btn-submit"> <i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+          <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
       </div>
     </div>
   </div>
-  <address>Bản quyền thuộc về CÔNG TY CỔ PHẦN SIÊU THỊ IN ẤN | <br />Cung cấp bởi <a href="#"><strong>Thietkeweb365.vn</strong></a></address>
-</footer>
-<footer class="footer-6 text-14">
-  <div class="bg"></div>
-  <div class="bg-img imgDrop"><img src="https://png.pngtree.com/background/20250119/original/pngtree-textured-backdrop-with-dark-green-leaf-pattern-picture-image_13403196.jpg" alt="" /></div>
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-6 col-xl-7">
-        <div class="row gap-y-24">
-          <div class="col-12 col-sx-8 col-lg-7 2xl:pr-40">
-            <div class="logo-f"><img src="https://we1.io.vn/admin/public/images/footer/174634384745428x160.png" alt="" /></div>
-            <h4 class="text-white text-18">CTY TNHH Công Nghệ VPlus Việt Nam</h4>
-            <ul class="list-contact flex flex-col gap-y-8px mt-16">
-              <li class="flex gap-x-2"><i class="fa-solid fa-map-location-dot"></i>
-                <p><strong> Hà Nội: </strong>58 Trần Khát Chân, Bạch Đằng, Hai Bà Trưng, Hà Nội</p>
-              </li>
-              <li class="flex gap-x-2"><i class="fa-solid fa-phone"></i>
-                <p><strong> Hotline: </strong>0936 87 6667</p>
-              </li>
-              <li class="flex gap-x-2"><i class="fa-solid fa-envelope"></i>
-                <p><strong> Email: </strong>vplusvn.thangth@gmail.com</p>
-              </li>
-            </ul>
-            <h4 class="text-white text-16 mt-24 ttl-sub"><span>Mạng xã hội</span></h4>
-            <ul class="list-social mt-16 flex flex-wrap gap-y-2 md:gap-3 max-md:gap-x-8px">
-              <li class="w-28 flex-shrink-0 md:w-36 md:h-36 lg:w-40 lg:h-40"><a class="icon-social block bg-white imgDrop hover:shadow-lg max-md:w-28 max-md:h-28 md:h-36 lg:h-40" href="#"> <img class="w-full" src="./public/assets/images/ss-fb.png" alt="" /></a></li>
-              <li class="w-28 flex-shrink-0 md:w-36 md:h-36 lg:w-40 lg:h-40"><a class="icon-social block bg-white imgDrop hover:shadow-lg max-md:w-28 max-md:h-28 md:h-36 lg:h-40" href="#"> <img class="w-full" src="./public/assets/images/ss-shopee.png" alt="" /></a></li>
-              <li class="w-28 flex-shrink-0 md:w-36 md:h-36 lg:w-40 lg:h-40"><a class="icon-social block bg-white imgDrop hover:shadow-lg max-md:w-28 max-md:h-28 md:h-36 lg:h-40" href="#"> <img class="w-full" src="./public/assets/images/ss-zalo.png" alt="" /></a></li>
-              <li class="w-28 flex-shrink-0 md:w-36 md:h-36 lg:w-40 lg:h-40"><a class="icon-social block bg-white imgDrop hover:shadow-lg max-md:w-28 max-md:h-28 md:h-36 lg:h-40" href="#"> <img class="w-full" src="./public/assets/images/ss-ytb.png" alt="" /></a></li>
-            </ul>
+  <main>
+    <div class="banner_slide banner-full-width">
+      <div><a class="d-block w-100 rounded-10" href="#" title="Banner 1">
+          <picture class="block">
+            <source class="img-cover block" media="(min-width:768px)" srcset="./public/assets/images/banner_pc1.jpg">
+            <img class="img-cover block" src="./public/assets/images/banner_sp1.jpg" alt="Flowers" style="width:auto;">
+          </picture>
+        </a></div>
+      <div><a class="d-block w-100 rounded-10" href="#" title="Banner 2">
+          <picture class="block">
+            <source class="img-cover" media="(min-width:768px)" srcset="./public/assets/images/banner_pc2.jpg"><img
+              class="img-cover" src="./public/assets/images/banner_sp2.jpg" alt="Flowers" style="width:auto;">
+          </picture>
+        </a></div>
+    </div>
+    <div class="scroll-top-btn" style="display: block;"><i class="fa fa-arrow-up"></i><span
+        class="hover-text">Top</span></div>
+    <div class="link_chat_social position-fixed">
+      <div class="link_cart link-is-scroll"><a>
+          <div class="phone-vr-img-circle" style="width: 50px; height: 50px; position: relative;">
+            <div class="phone-vr-circle-fill"></div><i class="fa-solid fa-cart-plus"
+              style="position: absolute; animation: phonering-alo-circle-img-anim 1s infinite ease-in-out; bottom: 12px; left: 12px; font-size: 24px; color: #ffffff;"></i>
           </div>
-          <div class="col-8 col-sx-4 col-lg-5">
-            <h4 class="text-white text-16 mt-24 ttl-sub"><span>Liên hệ</span></h4>
-            <ul class="menu-f flex flex-col gap-y-8px mt-24">
-              <li><a class="flex gap-x-8px" href="#"><i class="fa-solid fa-arrow-up-right-from-square mt-2px"></i><span>Về chúng tôi</span></a></li>
-              <li><a class="flex gap-x-8px" href="#"><i class="fa-solid fa-arrow-up-right-from-square mt-2px"></i><span>Tuyển dụng</span></a></li>
-              <li><a class="flex gap-x-8px" href="#"><i class="fa-solid fa-arrow-up-right-from-square mt-2px"></i><span>Tài liệu</span></a></li>
-              <li><a class="flex gap-x-8px" href="#"><i class="fa-solid fa-arrow-up-right-from-square mt-2px"></i><span>Video</span></a></li>
-              <li><a class="flex gap-x-8px" href="#"><i class="fa-solid fa-arrow-up-right-from-square mt-2px"></i><span>Khuyến mãi</span></a></li>
-              <li><a class="flex gap-x-8px" href="#"><i class="fa-solid fa-arrow-up-right-from-square mt-2px"></i><span>Tin tức</span></a></li>
-            </ul>
+        </a></div>
+      <div class="link_login link-is-scroll"><a href title="Đặt lịch" data-bs-toggle="modal"
+          data-bs-target="#popup-dat-lich">
+          <div class="phone-vr-img-circle" style="width: 50px; height: 50px; position: relative;">
+            <div class="phone-vr-circle-fill"></div><i class="fa-solid fa-user"
+              style="position: absolute; animation: phonering-alo-circle-img-anim 1s infinite ease-in-out; bottom: 12px; left: 12px; font-size: 24px; color: #ffffff;"></i>
+          </div>
+        </a></div>
+      <div class="link_dat_lich"><a href title="Đặt lịch" data-bs-toggle="modal" data-bs-target="#popup-dat-lich">
+          <div class="phone-vr-img-circle" style="width: 50px; height: 50px; position: relative;">
+            <div class="phone-vr-circle-fill"></div><i class="fa-solid fa-calendar-days"
+              style="position: absolute; animation: phonering-alo-circle-img-anim 1s infinite ease-in-out; bottom: 12px; left: 12px; font-size: 30px; color: #ffffff;"></i>
+          </div>
+        </a></div>
+      <div class="link_chat_facebook"><a href="https://www.m.me/514902838382434" target="_blank">
+          <div class="phone-vr-img-circle">
+            <div class="phone-vr-circle-fill"></div><img loading="lazy"
+              src="https://we1.io.vn/public/assets/images/link_chat_facebook.png" alt="link_chat">
+          </div>
+        </a></div>
+      <div class="link_chat_zalo"><a href="https://www.zalo.me/0847865568" target="_blank">
+          <div class="phone-vr-img-circle">
+            <div class="phone-vr-circle-fill"></div><img loading="lazy"
+              src="https://we1.io.vn/public/assets/images/link_chat_zalo.png" alt="link_chat">
+          </div>
+        </a></div>
+      <div class="link_call"><a href="tel:0847 865 568" target="_blank">
+          <div class="phone-vr-img-circle">
+            <div class="phone-vr-circle-fill"></div><img loading="lazy"
+              src="https://we1.io.vn/public/assets/images/call.png" alt="link_chat">
+          </div>
+        </a></div>
+    </div>
+  </main>
+  <h3 style="text-align: center;">Không nền</h3>
+  <footer class="footer-2 text-14">
+    <div class="bg bg-primary"></div>
+    <div class="container">
+      <div class="row gap-y-24">
+        <div class="col-12 col-lg-12 col-xl-4">
+          <h4 class="ttl-f text-white text-16">CTY TNHH Công Nghệ VPlus Việt Nam</h4>
+          <div class="logo-f"> <img src="https://we1.io.vn/admin/public/images/footer/174634384745428x160.png" alt="" />
+          </div>
+          <ul class="list-contact flex flex-col gap-y-8px">
+            <li class="flex gap-x-2"><i class="fa-solid fa-map-location-dot"></i>
+              <p><strong> Hà Nội: </strong>58 Trần Khát Chân, Bạch Đằng, Hai Bà Trưng, Hà Nội</p>
+            </li>
+            <li class="flex gap-x-2"><i class="fa-solid fa-map-location-dot"></i>
+              <p><strong> HCM: </strong>Lầu 6, 182 Lê Đại Hành, P.15, Quận 11, Tp.HCM</p>
+            </li>
+            <li class="flex gap-x-2"><i class="fa-solid fa-phone"></i>
+              <p><strong> Hotline: </strong>0936 87 6667</p>
+            </li>
+            <li class="flex gap-x-2"><i class="fa-solid fa-envelope"></i>
+              <p><strong> Email: </strong>vplusvn.thangth@gmail.com</p>
+            </li>
+            <li class="flex gap-x-2"><i class="fa-solid fa-print"></i>
+              <p><strong> MST: </strong>0202154517</p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-12 col-xl-8">
+          <div class="row gap-y-24">
+            <div class="col-5 col-md-4 col-xl-3">
+              <h4 class="ttl-f text-white text-16 ttl-f"> <span>Giới thiệu</span></h4>
+              <ul class="menu-f flex flex-col gap-y-8px mt-24">
+                <li><a class="flex gap-x-8px" href="#"><i
+                      class="fa-solid fa-arrow-up-right-from-square mt-2px"></i><span>Về chúng tôi</span></a></li>
+                <li><a class="flex gap-x-8px" href="#"><i
+                      class="fa-solid fa-arrow-up-right-from-square mt-2px"></i><span>Tuyển dụng</span></a></li>
+                <li><a class="flex gap-x-8px" href="#"><i
+                      class="fa-solid fa-arrow-up-right-from-square mt-2px"></i><span>Tài liệu</span></a></li>
+                <li><a class="flex gap-x-8px" href="#"><i
+                      class="fa-solid fa-arrow-up-right-from-square mt-2px"></i><span>Video</span></a></li>
+                <li><a class="flex gap-x-8px" href="#"><i
+                      class="fa-solid fa-arrow-up-right-from-square mt-2px"></i><span>Khuyến mãi</span></a></li>
+                <li><a class="flex gap-x-8px" href="#"><i
+                      class="fa-solid fa-arrow-up-right-from-square mt-2px"></i><span>Tin tức</span></a></li>
+              </ul>
+              <ul class="list-contact flex flex-col gap-y-8px mt-16"> </ul>
+            </div>
+            <div class="col-7 col-md-4 col-xl-4">
+              <div class="max-sm:pl-24">
+                <h4 class="ttl-f text-white text-16 ttl-f"> <span>Chính sách</span></h4>
+                <ul class="menu-f flex flex-col gap-y-8px mt-24">
+                  <li><a class="flex gap-x-8px" href="#"><i class="fa-solid fa-shield-halved mt-2px"></i><span>Hình thức
+                        đặt hàng</span></a></li>
+                  <li><a class="flex gap-x-8px" href="#"><i class="fa-solid fa-shield-halved mt-2px"></i><span>Hình thức
+                        thanh toán</span></a></li>
+                  <li><a class="flex gap-x-8px" href="#"><i class="fa-solid fa-shield-halved mt-2px"></i><span>Phương
+                        thức vận chuyển</span></a></li>
+                  <li><a class="flex gap-x-8px" href="#"><i class="fa-solid fa-shield-halved mt-2px"></i><span>Chính
+                        sách đổi trả</span></a></li>
+                  <li><a class="flex gap-x-8px" href="#"><i class="fa-solid fa-shield-halved mt-2px"></i><span>Chính
+                        sách bảo hành</span></a></li>
+                  <li><a class="flex gap-x-8px" href="#"><i class="fa-solid fa-shield-halved mt-2px"></i><span>Chính
+                        sách bảo mật</span></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 col-xl-5">
+              <div class="row gap-y-24">
+                <div class="col-5 col-md-12">
+                  <h4 class="ttl-f text-white text-16 ttl-f"> <span>Mạng xã hội</span></h4>
+                  <ul class="list-social mt-16 flex flex-wrap gap-y-2 md:gap-3 max-md:gap-x-8px">
+                    <li class="w-28 flex-shrink-0 md:w-36 md:h-36 lg:w-40 lg:h-40"><a
+                        class="icon-social block bg-white imgDrop hover:shadow-lg max-md:w-28 max-md:h-28 md:h-36 lg:h-40"
+                        href="#"> <img class="w-full" src="./public/assets/images/ss-fb.png" alt="" /></a></li>
+                    <li class="w-28 flex-shrink-0 md:w-36 md:h-36 lg:w-40 lg:h-40"><a
+                        class="icon-social block bg-white imgDrop hover:shadow-lg max-md:w-28 max-md:h-28 md:h-36 lg:h-40"
+                        href="#"> <img class="w-full" src="./public/assets/images/ss-shopee.png" alt="" /></a></li>
+                    <li class="w-28 flex-shrink-0 md:w-36 md:h-36 lg:w-40 lg:h-40"><a
+                        class="icon-social block bg-white imgDrop hover:shadow-lg max-md:w-28 max-md:h-28 md:h-36 lg:h-40"
+                        href="#"> <img class="w-full" src="./public/assets/images/ss-zalo.png" alt="" /></a></li>
+                    <li class="w-28 flex-shrink-0 md:w-36 md:h-36 lg:w-40 lg:h-40"><a
+                        class="icon-social block bg-white imgDrop hover:shadow-lg max-md:w-28 max-md:h-28 md:h-36 lg:h-40"
+                        href="#"> <img class="w-full" src="./public/assets/images/ss-ytb.png" alt="" /></a></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-md-12 max-sm:order-9 ">
+                  <h4 class="ttl-f text-white text-16 ttl-f"><span>Hình thức thanh toán</span></h4>
+                  <div class="payment-accept gap-2 mt-8px"><img class="first lazy loaded"
+                      src="https://file.hstatic.net/200000823693/file/payment-1_2c94a9495fa04f4ab8b11be786441266.png"
+                      data-src="https://file.hstatic.net/200000823693/file/payment-1_2c94a9495fa04f4ab8b11be786441266.png"
+                      alt="payment-1" /><img class="lazy loaded"
+                      src="https://file.hstatic.net/200000823693/file/payment-2_bdbf0ab7d5d24e138faa24e497b38a9b.png"
+                      data-src="https://file.hstatic.net/200000823693/file/payment-2_bdbf0ab7d5d24e138faa24e497b38a9b.png"
+                      alt="payment-2" /><img class="lazy loaded"
+                      src="https://file.hstatic.net/200000823693/file/payment-3_3a8dba86bfd74a85be3db17837d4c9c6.png"
+                      data-src="https://file.hstatic.net/200000823693/file/payment-3_3a8dba86bfd74a85be3db17837d4c9c6.png"
+                      alt="payment-3" /><img class="lazy loaded"
+                      src="https://file.hstatic.net/200000823693/file/payment-4_f03f301a303c448db851de3e9e91ade2.png"
+                      data-src="https://file.hstatic.net/200000823693/file/payment-4_f03f301a303c448db851de3e9e91ade2.png"
+                      alt="payment-4" /></div>
+                </div>
+                <div class="col-7 col-md-12">
+                  <div class="max-sm:pl-24">
+                    <h4 class="ttl-f text-white text-16 ttl-f"><span>Bộ công thương</span></h4>
+                    <div class="bg-white rounded-8 images-bct mt-8px"><img class="w-full"
+                        src="./public/assets/images/bct.png" alt="" /></div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-12 col-lg-6 col-xl-5 2xl:pl-40">
-        <h4 class="text-white text-16 mt-24 ttl-sub"><span>Liên hệ</span></h4>
-        <div class="box-f mt-16">
-          <div class="text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum</div>
-          <form class="mt-16" action="">
-            <div class="row">
-              <div class="col">
-                <input class="form-control" type="text" placeholder="First name" aria-label="First name" />
+    </div>
+    <address>Bản quyền thuộc về CÔNG TY CỔ PHẦN SIÊU THỊ IN ẤN | <br>Cung cấp bởi <a href="#">
+        <strong>Thietkeweb365.vn</strong></a></address>
+  </footer>
+  <!-- footer-7 -->
+  <footer class="footer-2 text-14">
+    <div class="bg bg-primary"></div>
+    <div class="container">
+      <div class="row gap-y-24">
+        <div class="col-12 col-lg-12 col-xl-4">
+          <div class="row gap-y-24">
+
+            <div class="col-12">
+              <h4 class="ttl-f text-16">Xây Dựng Nhà Đà Nẵng HNDC</h4>
+              <div class="logo-f"> <img
+                  src="https://xaydungnhadanang.io.vn/admin/public/images/footer/176216509786logo-xay-dung-nha.png"
+                  alt="Xây Dựng Nhà Đà Nẵng HNDC"></div>
+              <ul class="list-contact flex flex-col gap-y-8px">
+                <li class="flex gap-x-2"><i class="fa-solid fa-map-location-dot"></i>
+                  <p><strong> Địa chỉ: </strong>43 Nguyễn Duy, Khuê Trung, Cẩm Lệ, Đà Nẵng</p>
+                </li>
+                <li class="flex gap-x-2"><i class="fa-solid fa-phone"></i>
+                  <p><strong> Hotline: </strong>0913 613 477</p>
+                </li>
+                <li class="flex gap-x-2"><i class="fa-solid fa-envelope"></i>
+                  <p><strong> Email: </strong>thauxaynhadn@gmail.com</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-12">
+              <h4 class="ttl-f text-16 ttl-f"> <span>Mạng xã hội</span></h4>
+              <ul class="list-social mt-16 flex flex-wrap gap-y-2 md:gap-3 max-md:gap-x-8px">
+                <li class="w-28 flex-shrink-0 md:w-36 md:h-36 lg:w-40 lg:h-40"><a
+                    class="icon-social block bg-white imgDrop hover:shadow-lg max-md:w-28 max-md:h-28 md:h-36 lg:h-40"
+                    href="#"> <img class="w-full" src="./public/assets/images/ss-fb.png" alt="" /></a></li>
+                <li class="w-28 flex-shrink-0 md:w-36 md:h-36 lg:w-40 lg:h-40"><a
+                    class="icon-social block bg-white imgDrop hover:shadow-lg max-md:w-28 max-md:h-28 md:h-36 lg:h-40"
+                    href="#"> <img class="w-full" src="./public/assets/images/tiktok-logo.png" alt="" /></a></li>
+                <li class="w-28 flex-shrink-0 md:w-36 md:h-36 lg:w-40 lg:h-40"><a
+                    class="icon-social block bg-white imgDrop hover:shadow-lg max-md:w-28 max-md:h-28 md:h-36 lg:h-40"
+                    href="#"> <img class="w-full" src="./public/assets/images/twitter-logo.png" alt="" /></a></li>
+                <li class="w-28 flex-shrink-0 md:w-36 md:h-36 lg:w-40 lg:h-40"><a
+                    class="icon-social block bg-white imgDrop hover:shadow-lg max-md:w-28 max-md:h-28 md:h-36 lg:h-40"
+                    href="#"> <img class="w-full" src="./public/assets/images/ss-ytb.png" alt="" /></a></li>
+              </ul>
+            </div>
+            <div class="col-12">
+              <div class="max-sm:pl-24">
+                <h4 class="ttl-f text-white text-16 ttl-f"><span>Bộ công thương</span></h4>
+                <div class="bg-white rounded-8 images-bct mt-8px"><img class="w-full"
+                    src="./public/assets/images/bct.png" alt="" /></div>
               </div>
-              <div class="col">
-                <input class="form-control" type="text" placeholder="Last name" aria-label="Last name" />
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-12 col-xl-8">
+          <div class="row gap-y-24">
+            <div class="col-5 col-md-4 col-xl-3">
+              <h4 class="ttl-f text-16 ttl-f"> <span> Xây dựng nhà Đà Nẵng </span></h4>
+              <ul class="menu-f flex flex-col gap-y-8px mt-24">
+                <li>
+                  <a class="flex gap-x-8px" href="">
+
+                    <span>Xây Nhà Biệt Thự</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="flex gap-x-8px" href="">
+
+                    <span>Xây Nhà Phố</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="flex gap-x-8px" href="">
+
+                    <span>Xây Nhà Liền Kề</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="flex gap-x-8px" href="">
+
+                    <span>Xây Nhà Cấp 4</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="flex gap-x-8px" href="">
+
+                    <span>Xây Nhà Tiền Chế</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="flex gap-x-8px" href="">
+
+                    <span>Xây Nhà Ống</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="flex gap-x-8px" href="">
+
+                    <span>Xây Nhà Vườn</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="flex gap-x-8px" href="">
+
+                    <span>Xây nhà Nghỉ Dưỡng</span>
+                  </a>
+                </li>
+              </ul>
+              <ul class="list-contact flex flex-col gap-y-8px mt-16"> </ul>
+            </div>
+            <div class="col-7 col-md-4 col-xl-4">
+              <div class="max-sm:pl-24">
+                <h4 class="ttl-f text-16 ttl-f"> <span>Xây dựng nhà theo khu vực</span></h4>
+                <ul class="menu-f flex flex-col gap-y-8px mt-24">
+                  <li>
+                    <a class="flex gap-x-8px" href="">
+
+                      <span>Xây Dựng Nhà Hải Châu</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="flex gap-x-8px" href="">
+
+                      <span>Xây Dựng Nhà Thanh Khê</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="flex gap-x-8px" href="">
+
+                      <span>Xây Dựng Nhà Liên Chiểu</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="flex gap-x-8px" href="">
+
+                      <span>Xây Dựng Nhà Sơn Trà</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="flex gap-x-8px" href="">
+
+                      <span>Xây Dựng Nhà Ngũ Hành Sơn</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="flex gap-x-8px" href="">
+
+                      <span>Xây Dựng Nhà Cẩm Lệ</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="flex gap-x-8px" href="">
+
+                      <span>Xây Dựng Nhà Hòa Vang</span>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
-            <div class="mt-3">
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Nội dung"></textarea>
+            <div class="col-12 col-md-4 col-xl-5">
+              <div class="map-wrapper">
+                <h4 class="ttl-f text-16 ttl-f">
+                  <span>Tìm Chúng Tôi Trên Bản Đồ</span>
+                </h4>
+
+                  <iframe class="gap-y-8px mt-24" style="width: 100% !important; height: 250px !important; border: 10px solid #000"
+                    src="https://www.google.com/maps?q=43+Nguyễn+Duy,+Khuê+Trung,+Cẩm+Lệ,+Đà+Nẵng&output=embed"
+                    loading="lazy">
+                  </iframe>
+
+                  <div class="map-address">
+                    <h5>Xây Dựng Nhà Đà Nẵng HNDC</h5>
+                    <p>43 Nguyễn Duy, Khuê Trung, Cẩm Lệ, Đà Nẵng</p>
+                  </div>
+              </div>
             </div>
-            <div class="mt-3">
-              <button class="btn-primary btn-submit-f">Gửi yêu cầu</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <address>Bản quyền thuộc về Xây Dựng Nhà Đà Nẵng HNDC | <br>Cung cấp bởi <a href="https://thietkeweb365.vn">
+        <strong>Thietkeweb365.vn</strong></a></address>
+  </footer>
+  <!--  -->
+  <footer class="footer-2 text-14">
+    <div class="bg bg-primary"></div>
+    <div class="container">
+      <div class="row gap-y-24">
+        <div class="col-12 col-lg-12 col-xl-4">
+          <div class="row gap-y-24">
+
+            <div class="col-12">
+              <h4 class="ttl-f text-16">Xây Dựng Nhà Đà Nẵng HNDC</h4>
+              <div class="logo-f"> <img
+                  src="https://xaydungnhadanang.io.vn/admin/public/images/footer/176216509786logo-xay-dung-nha.png"
+                  alt="Xây Dựng Nhà Đà Nẵng HNDC"></div>
+              <ul class="list-contact flex flex-col gap-y-8px">
+                <li class="flex gap-x-2"><i class="fa-solid fa-map-location-dot"></i>
+                  <p><strong> Địa chỉ: </strong>43 Nguyễn Duy, Khuê Trung, Cẩm Lệ, Đà Nẵng</p>
+                </li>
+                <li class="flex gap-x-2"><i class="fa-solid fa-phone"></i>
+                  <p><strong> Hotline: </strong>0913 613 477</p>
+                </li>
+                <li class="flex gap-x-2"><i class="fa-solid fa-envelope"></i>
+                  <p><strong> Email: </strong>thauxaynhadn@gmail.com</p>
+                </li>
+              </ul>
             </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-12 col-xl-8">
+          <div class="row gap-y-24">
+            <div class="col-5 col-md-4 col-xl-3">
+              <h4 class="ttl-f text-16 ttl-f"> <span> Xây dựng nhà Đà Nẵng </span></h4>
+              <ul class="menu-f flex flex-col gap-y-8px mt-24">
+                <li>
+                  <a class="flex gap-x-8px" href="">
+
+                    <span>Xây Nhà Biệt Thự</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="flex gap-x-8px" href="">
+
+                    <span>Xây Nhà Phố</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="flex gap-x-8px" href="">
+
+                    <span>Xây Nhà Liền Kề</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="flex gap-x-8px" href="">
+
+                    <span>Xây Nhà Cấp 4</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="flex gap-x-8px" href="">
+
+                    <span>Xây Nhà Tiền Chế</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="flex gap-x-8px" href="">
+
+                    <span>Xây Nhà Ống</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="flex gap-x-8px" href="">
+
+                    <span>Xây Nhà Vườn</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="flex gap-x-8px" href="">
+
+                    <span>Xây nhà Nghỉ Dưỡng</span>
+                  </a>
+                </li>
+              </ul>
+              <ul class="list-contact flex flex-col gap-y-8px mt-16"> </ul>
+            </div>
+            <div class="col-7 col-md-4 col-xl-4">
+              <div class="row gap-y-24">
+                <div class="col-5 col-md-12">
+                  <h4 class="ttl-f text-white text-16 ttl-f"> <span>Mạng xã hội</span></h4>
+                  <ul class="list-social mt-16 flex flex-wrap gap-y-2 md:gap-3 max-md:gap-x-8px">
+                    <li class="w-28 flex-shrink-0 md:w-36 md:h-36 lg:w-40 lg:h-40"><a
+                        class="icon-social block bg-white imgDrop hover:shadow-lg max-md:w-28 max-md:h-28 md:h-36 lg:h-40"
+                        href="#"> <img class="w-full" src="./public/assets/images/ss-fb.png" alt="" /></a></li>
+                    <li class="w-28 flex-shrink-0 md:w-36 md:h-36 lg:w-40 lg:h-40"><a
+                        class="icon-social block bg-white imgDrop hover:shadow-lg max-md:w-28 max-md:h-28 md:h-36 lg:h-40"
+                        href="#"> <img class="w-full" src="./public/assets/images/ss-shopee.png" alt="" /></a></li>
+                    <li class="w-28 flex-shrink-0 md:w-36 md:h-36 lg:w-40 lg:h-40"><a
+                        class="icon-social block bg-white imgDrop hover:shadow-lg max-md:w-28 max-md:h-28 md:h-36 lg:h-40"
+                        href="#"> <img class="w-full" src="./public/assets/images/ss-zalo.png" alt="" /></a></li>
+                    <li class="w-28 flex-shrink-0 md:w-36 md:h-36 lg:w-40 lg:h-40"><a
+                        class="icon-social block bg-white imgDrop hover:shadow-lg max-md:w-28 max-md:h-28 md:h-36 lg:h-40"
+                        href="#"> <img class="w-full" src="./public/assets/images/ss-ytb.png" alt="" /></a></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-md-12 max-sm:order-9 ">
+                  <h4 class="ttl-f text-white text-16 ttl-f"><span>Hình thức thanh toán</span></h4>
+                  <div class="payment-accept gap-2 mt-8px"><img class="first lazy loaded"
+                      src="https://file.hstatic.net/200000823693/file/payment-1_2c94a9495fa04f4ab8b11be786441266.png"
+                      data-src="https://file.hstatic.net/200000823693/file/payment-1_2c94a9495fa04f4ab8b11be786441266.png"
+                      alt="payment-1" /><img class="lazy loaded"
+                      src="https://file.hstatic.net/200000823693/file/payment-2_bdbf0ab7d5d24e138faa24e497b38a9b.png"
+                      data-src="https://file.hstatic.net/200000823693/file/payment-2_bdbf0ab7d5d24e138faa24e497b38a9b.png"
+                      alt="payment-2" /><img class="lazy loaded"
+                      src="https://file.hstatic.net/200000823693/file/payment-3_3a8dba86bfd74a85be3db17837d4c9c6.png"
+                      data-src="https://file.hstatic.net/200000823693/file/payment-3_3a8dba86bfd74a85be3db17837d4c9c6.png"
+                      alt="payment-3" /><img class="lazy loaded"
+                      src="https://file.hstatic.net/200000823693/file/payment-4_f03f301a303c448db851de3e9e91ade2.png"
+                      data-src="https://file.hstatic.net/200000823693/file/payment-4_f03f301a303c448db851de3e9e91ade2.png"
+                      alt="payment-4" /></div>
+                </div>
+                <div class="col-7 col-md-12">
+                  <div class="max-sm:pl-24">
+                    <h4 class="ttl-f text-white text-16 ttl-f"><span>Bộ công thương</span></h4>
+                    <div class="bg-white rounded-8 images-bct mt-8px"><img class="w-full"
+                        src="./public/assets/images/bct.png" alt="" /></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-4 col-xl-5">
+              <div class="map-wrapper">
+                <h4 class="ttl-f text-16 ttl-f">
+                  <span>Tìm Chúng Tôi Trên Bản Đồ</span>
+                </h4>
+
+                  <iframe class="gap-y-8px mt-24" style="width: 100% !important; height: 250px !important; border: 10px solid #000"
+                    src="https://www.google.com/maps?q=43+Nguyễn+Duy,+Khuê+Trung,+Cẩm+Lệ,+Đà+Nẵng&output=embed"
+                    loading="lazy">
+                  </iframe>
+
+                  <div class="map-address">
+                    <h5>Xây Dựng Nhà Đà Nẵng HNDC</h5>
+                    <p>43 Nguyễn Duy, Khuê Trung, Cẩm Lệ, Đà Nẵng</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <address>Bản quyền thuộc về Xây Dựng Nhà Đà Nẵng HNDC | <br>Cung cấp bởi <a href="https://thietkeweb365.vn">
+        <strong>Thietkeweb365.vn</strong></a></address>
+  </footer>
+  <h3 style="text-align: center;">Có nền</h3>
+  <footer class="footer-4 text-14">
+    <div class="bg-img"
+      style="background-image: url('https://png.pngtree.com/background/20250119/original/pngtree-textured-backdrop-with-dark-green-leaf-pattern-picture-image_13403196.jpg');">
+    </div>
+    <div class="bg-overlay" style="--footer-overlay: 0.5;"></div>
+    <div class="container">
+      <div class="row gap-y-24">
+        <div class="col-12 col-lg-12 col-xl-4">
+          <h4 class="ttl-f text-white text-16">CTY TNHH Công Nghệ VPlus Việt Nam</h4>
+          <div class="logo-f"> <img src="https://we1.io.vn/admin/public/images/footer/174634384745428x160.png" alt="" />
+          </div>
+          <ul class="list-contact flex flex-col gap-y-8px">
+            <li class="flex gap-x-2"><i class="fa-solid fa-map-location-dot"></i>
+              <p><strong> Hà Nội: </strong>58 Trần Khát Chân, Bạch Đằng, Hai Bà Trưng, Hà Nội</p>
+            </li>
+            <li class="flex gap-x-2"><i class="fa-solid fa-map-location-dot"></i>
+              <p><strong> HCM: </strong>Lầu 6, 182 Lê Đại Hành, P.15, Quận 11, Tp.HCM</p>
+            </li>
+            <li class="flex gap-x-2"><i class="fa-solid fa-phone"></i>
+              <p><strong> Hotline: </strong>0936 87 6667</p>
+            </li>
+            <li class="flex gap-x-2"><i class="fa-solid fa-envelope"></i>
+              <p><strong> Email: </strong>vplusvn.thangth@gmail.com</p>
+            </li>
+            <li class="flex gap-x-2"><i class="fa-solid fa-print"></i>
+              <p><strong> MST: </strong>0202154517</p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-12 col-xl-8">
+          <div class="row gap-y-24">
+            <div class="col-5 col-md-4 col-xl-3">
+              <h4 class="ttl-f text-white text-16 ttl-f"> <span>Giới thiệu</span></h4>
+              <ul class="menu-f flex flex-col gap-y-8px mt-24">
+                <li><a class="flex gap-x-8px" href="#"><i
+                      class="fa-solid fa-arrow-up-right-from-square mt-2px"></i><span>Về chúng tôi</span></a></li>
+                <li><a class="flex gap-x-8px" href="#"><i
+                      class="fa-solid fa-arrow-up-right-from-square mt-2px"></i><span>Tuyển dụng</span></a></li>
+                <li><a class="flex gap-x-8px" href="#"><i
+                      class="fa-solid fa-arrow-up-right-from-square mt-2px"></i><span>Tài liệu</span></a></li>
+                <li><a class="flex gap-x-8px" href="#"><i
+                      class="fa-solid fa-arrow-up-right-from-square mt-2px"></i><span>Video</span></a></li>
+                <li><a class="flex gap-x-8px" href="#"><i
+                      class="fa-solid fa-arrow-up-right-from-square mt-2px"></i><span>Khuyến mãi</span></a></li>
+                <li><a class="flex gap-x-8px" href="#"><i
+                      class="fa-solid fa-arrow-up-right-from-square mt-2px"></i><span>Tin tức</span></a></li>
+              </ul>
+              <ul class="list-contact flex flex-col gap-y-8px mt-16"> </ul>
+            </div>
+            <div class="col-7 col-md-4 col-xl-4">
+              <div class="max-sm:pl-24">
+                <h4 class="ttl-f text-white text-16 ttl-f"> <span>Chính sách</span></h4>
+                <ul class="menu-f flex flex-col gap-y-8px mt-24">
+                  <li><a class="flex gap-x-8px" href="#"><i class="fa-solid fa-shield-halved mt-2px"></i><span>Hình thức
+                        đặt hàng</span></a></li>
+                  <li><a class="flex gap-x-8px" href="#"><i class="fa-solid fa-shield-halved mt-2px"></i><span>Hình thức
+                        thanh toán</span></a></li>
+                  <li><a class="flex gap-x-8px" href="#"><i class="fa-solid fa-shield-halved mt-2px"></i><span>Phương
+                        thức vận chuyển</span></a></li>
+                  <li><a class="flex gap-x-8px" href="#"><i class="fa-solid fa-shield-halved mt-2px"></i><span>Chính
+                        sách đổi trả</span></a></li>
+                  <li><a class="flex gap-x-8px" href="#"><i class="fa-solid fa-shield-halved mt-2px"></i><span>Chính
+                        sách bảo hành</span></a></li>
+                  <li><a class="flex gap-x-8px" href="#"><i class="fa-solid fa-shield-halved mt-2px"></i><span>Chính
+                        sách bảo mật</span></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 col-xl-5">
+              <div class="row gap-y-24">
+                <div class="col-5 col-md-12">
+                  <h4 class="ttl-f text-white text-16 ttl-f"> <span>Mạng xã hội</span></h4>
+                  <ul class="list-social mt-16 flex flex-wrap gap-y-2 md:gap-3 max-md:gap-x-8px">
+                    <li class="w-28 flex-shrink-0 md:w-36 md:h-36 lg:w-40 lg:h-40"><a
+                        class="icon-social block bg-white imgDrop hover:shadow-lg max-md:w-28 max-md:h-28 md:h-36 lg:h-40"
+                        href="#"> <img class="w-full" src="./public/assets/images/ss-fb.png" alt="" /></a></li>
+                    <li class="w-28 flex-shrink-0 md:w-36 md:h-36 lg:w-40 lg:h-40"><a
+                        class="icon-social block bg-white imgDrop hover:shadow-lg max-md:w-28 max-md:h-28 md:h-36 lg:h-40"
+                        href="#"> <img class="w-full" src="./public/assets/images/ss-shopee.png" alt="" /></a></li>
+                    <li class="w-28 flex-shrink-0 md:w-36 md:h-36 lg:w-40 lg:h-40"><a
+                        class="icon-social block bg-white imgDrop hover:shadow-lg max-md:w-28 max-md:h-28 md:h-36 lg:h-40"
+                        href="#"> <img class="w-full" src="./public/assets/images/ss-zalo.png" alt="" /></a></li>
+                    <li class="w-28 flex-shrink-0 md:w-36 md:h-36 lg:w-40 lg:h-40"><a
+                        class="icon-social block bg-white imgDrop hover:shadow-lg max-md:w-28 max-md:h-28 md:h-36 lg:h-40"
+                        href="#"> <img class="w-full" src="./public/assets/images/ss-ytb.png" alt="" /></a></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-md-12 max-sm:order-9 ">
+                  <h4 class="ttl-f text-white text-16 ttl-f"><span>Hình thức thanh toán</span></h4>
+                  <div class="payment-accept gap-2 mt-8px"><img class="first lazy loaded"
+                      src="https://file.hstatic.net/200000823693/file/payment-1_2c94a9495fa04f4ab8b11be786441266.png"
+                      data-src="https://file.hstatic.net/200000823693/file/payment-1_2c94a9495fa04f4ab8b11be786441266.png"
+                      alt="payment-1" /><img class="lazy loaded"
+                      src="https://file.hstatic.net/200000823693/file/payment-2_bdbf0ab7d5d24e138faa24e497b38a9b.png"
+                      data-src="https://file.hstatic.net/200000823693/file/payment-2_bdbf0ab7d5d24e138faa24e497b38a9b.png"
+                      alt="payment-2" /><img class="lazy loaded"
+                      src="https://file.hstatic.net/200000823693/file/payment-3_3a8dba86bfd74a85be3db17837d4c9c6.png"
+                      data-src="https://file.hstatic.net/200000823693/file/payment-3_3a8dba86bfd74a85be3db17837d4c9c6.png"
+                      alt="payment-3" /><img class="lazy loaded"
+                      src="https://file.hstatic.net/200000823693/file/payment-4_f03f301a303c448db851de3e9e91ade2.png"
+                      data-src="https://file.hstatic.net/200000823693/file/payment-4_f03f301a303c448db851de3e9e91ade2.png"
+                      alt="payment-4" /></div>
+                </div>
+                <div class="col-7 col-md-12">
+                  <div class="max-sm:pl-24">
+                    <h4 class="ttl-f text-white text-16 ttl-f"><span>Bộ công thương</span></h4>
+                    <div class="bg-white rounded-8 images-bct mt-8px"><img class="w-full"
+                        src="./public/assets/images/bct.png" alt="" /></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <address>Bản quyền thuộc về CÔNG TY CỔ PHẦN SIÊU THỊ IN ẤN | <br>Cung cấp bởi <a href="#">
+        <strong>Thietkeweb365.vn</strong></a></address>
+  </footer>
+  <footer class="footer-5 text-14">
+    <div class="bg-img"
+      style="background-image: url('https://png.pngtree.com/background/20250119/original/pngtree-textured-backdrop-with-dark-green-leaf-pattern-picture-image_13403196.jpg');">
+    </div>
+    <div class="bg-overlay" style="--footer-overlay: 0.5;"></div>
+    <div class="container">
+      <div class="row gap-y-24">
+        <div class="col-12 col-lg-12 col-xl-4">
+          <h4 class="ttl-f text-white text-16">CTY TNHH Công Nghệ APlus Việt Nam</h4>
+          <div class="logo-f">
+            <img src="https://we1.io.vn/admin/public/images/footer/174634384745428x160.png" alt="" />
+          </div>
+          <ul class="list-contact flex flex-col gap-y-8px">
+            <li class="flex gap-x-2">
+              <i class="fa-solid fa-map-location-dot"></i>
+              <p><strong> Hà Nội: </strong>58 Trần Khát Chân, Bạch Đằng, Hai Bà Trưng, Hà Nội</p>
+            </li>
+            <li class="flex gap-x-2">
+              <i class="fa-solid fa-map-location-dot"></i>
+              <p><strong> HCM: </strong>Lầu 6, 182 Lê Đại Hành, P.15, Quận 11, Tp.HCM</p>
+            </li>
+            <li class="flex gap-x-2">
+              <i class="fa-solid fa-phone"></i>
+              <p><strong> Hotline: </strong>0936 87 6667</p>
+            </li>
+            <li class="flex gap-x-2">
+              <i class="fa-solid fa-envelope"></i>
+              <p><strong> Email: </strong>vplusvn.thangth@gmail.com</p>
+            </li>
+            <li class="flex gap-x-2">
+              <i class="fa-solid fa-print"></i>
+              <p><strong> MST: </strong>0202154517</p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-12 col-xl-8">
+          <div class="row gap-y-24">
+            <div class="col-12 col-md-4 col-xl-3">
+              <h4 class="ttl-f text-white text-16 ttl-f"><span>Giới thiệu</span></h4>
+              <ul class="menu-f flex flex-col gap-y-8px mt-24">
+                <li>
+                  <a class="flex gap-x-8px" href="#"><i
+                      class="fa-solid fa-arrow-up-right-from-square mt-2px"></i><span>Về chúng tôi</span></a>
+                </li>
+                <li>
+                  <a class="flex gap-x-8px" href="#"><i
+                      class="fa-solid fa-arrow-up-right-from-square mt-2px"></i><span>Tuyển dụng</span></a>
+                </li>
+                <li>
+                  <a class="flex gap-x-8px" href="#"><i
+                      class="fa-solid fa-arrow-up-right-from-square mt-2px"></i><span>Tài liệu</span></a>
+                </li>
+                <li>
+                  <a class="flex gap-x-8px" href="#"><i
+                      class="fa-solid fa-arrow-up-right-from-square mt-2px"></i><span>Video</span></a>
+                </li>
+                <li>
+                  <a class="flex gap-x-8px" href="#"><i
+                      class="fa-solid fa-arrow-up-right-from-square mt-2px"></i><span>Khuyến mãi</span></a>
+                </li>
+                <li>
+                  <a class="flex gap-x-8px" href="#"><i
+                      class="fa-solid fa-arrow-up-right-from-square mt-2px"></i><span>Tin tức</span></a>
+                </li>
+              </ul>
+              <ul class="list-contact flex flex-col gap-y-8px mt-16"></ul>
+            </div>
+            <div class="col-12 col-md-4 col-xl-4">
+              <div class="row gap-y-24">
+                <div class="col-5 col-md-12">
+                  <h4 class="ttl-f text-white text-16 ttl-f"> <span>Mạng xã hội</span></h4>
+                  <ul class="list-social mt-16 flex flex-wrap gap-y-2 md:gap-3 max-md:gap-x-8px">
+                    <li class="w-28 flex-shrink-0 md:w-36 md:h-36 lg:w-40 lg:h-40"><a
+                        class="icon-social block bg-white imgDrop hover:shadow-lg max-md:w-28 max-md:h-28 md:h-36 lg:h-40"
+                        href="#"> <img class="w-full" src="./public/assets/images/ss-fb.png" alt="" /></a></li>
+                    <li class="w-28 flex-shrink-0 md:w-36 md:h-36 lg:w-40 lg:h-40"><a
+                        class="icon-social block bg-white imgDrop hover:shadow-lg max-md:w-28 max-md:h-28 md:h-36 lg:h-40"
+                        href="#"> <img class="w-full" src="./public/assets/images/ss-shopee.png" alt="" /></a></li>
+                    <li class="w-28 flex-shrink-0 md:w-36 md:h-36 lg:w-40 lg:h-40"><a
+                        class="icon-social block bg-white imgDrop hover:shadow-lg max-md:w-28 max-md:h-28 md:h-36 lg:h-40"
+                        href="#"> <img class="w-full" src="./public/assets/images/ss-zalo.png" alt="" /></a></li>
+                    <li class="w-28 flex-shrink-0 md:w-36 md:h-36 lg:w-40 lg:h-40"><a
+                        class="icon-social block bg-white imgDrop hover:shadow-lg max-md:w-28 max-md:h-28 md:h-36 lg:h-40"
+                        href="#"> <img class="w-full" src="./public/assets/images/ss-ytb.png" alt="" /></a></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-md-12 max-sm:order-9 ">
+                  <h4 class="ttl-f text-white text-16 ttl-f"><span>Hình thức thanh toán</span></h4>
+                  <div class="payment-accept gap-2 mt-8px"><img class="first lazy loaded"
+                      src="https://file.hstatic.net/200000823693/file/payment-1_2c94a9495fa04f4ab8b11be786441266.png"
+                      data-src="https://file.hstatic.net/200000823693/file/payment-1_2c94a9495fa04f4ab8b11be786441266.png"
+                      alt="payment-1" /><img class="lazy loaded"
+                      src="https://file.hstatic.net/200000823693/file/payment-2_bdbf0ab7d5d24e138faa24e497b38a9b.png"
+                      data-src="https://file.hstatic.net/200000823693/file/payment-2_bdbf0ab7d5d24e138faa24e497b38a9b.png"
+                      alt="payment-2" /><img class="lazy loaded"
+                      src="https://file.hstatic.net/200000823693/file/payment-3_3a8dba86bfd74a85be3db17837d4c9c6.png"
+                      data-src="https://file.hstatic.net/200000823693/file/payment-3_3a8dba86bfd74a85be3db17837d4c9c6.png"
+                      alt="payment-3" /><img class="lazy loaded"
+                      src="https://file.hstatic.net/200000823693/file/payment-4_f03f301a303c448db851de3e9e91ade2.png"
+                      data-src="https://file.hstatic.net/200000823693/file/payment-4_f03f301a303c448db851de3e9e91ade2.png"
+                      alt="payment-4" /></div>
+                </div>
+                <div class="col-7 col-md-12">
+                  <div class="max-sm:pl-24">
+                    <h4 class="ttl-f text-white text-16 ttl-f"><span>Bộ công thương</span></h4>
+                    <div class="bg-white rounded-8 images-bct mt-8px"><img class="w-full"
+                        src="./public/assets/images/bct.png" alt="" /></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 col-xl-5">
+              <h4 class="ttl-f text-white text-16 ttl-f"><span>Bản đồ</span></h4>
+                <iframe style="width: 100% !important; height: 250px !important; border: 10px solid #000"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.5204123547846!2d105.86016667500593!3d21.01185018063715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135abf10b80f135%3A0x6339463b2f8a845!2zNTggVHLhuqduIEtow6F0IENow6JuLCBUaGFuaCBMxrDGoW5nLCBIYWkgQsOgIFRyxrBuZywgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1700689622287!5m2!1svi!2s"
+                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <address>Bản quyền thuộc về CÔNG TY CỔ PHẦN SIÊU THỊ IN ẤN | <br />Cung cấp bởi <a
+        href="#"><strong>Thietkeweb365.vn</strong></a></address>
+  </footer>
+  <!-- 50% -->
+  <footer class="footer-3 text-14">
+    <div class="bg"></div>
+    <div class="bg-img imgDrop"> <img
+        src="https://png.pngtree.com/background/20250119/original/pngtree-textured-backdrop-with-dark-green-leaf-pattern-picture-image_13403196.jpg"
+        alt="" /></div>
+    <div class="bg-overlay" style="--footer-overlay: 0.5;"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6 col-xl-7">
+          <div class="row gap-y-24">
+            <div class="col-12 col-sx-8 col-lg-7 2xl:pr-40">
+              <div class="logo-f"> <img src="https://we1.io.vn/admin/public/images/footer/174634384745428x160.png"
+                  alt="" /></div>
+              <h4 class="text-white text-18">CTY TNHH Công Nghệ VPlus Việt Nam</h4>
+              <ul class="list-contact flex flex-col gap-y-8px mt-16">
+                <li class="flex gap-x-2"><i class="fa-solid fa-map-location-dot"></i>
+                  <p><strong> Hà Nội: </strong>58 Trần Khát Chân, Bạch Đằng, Hai Bà Trưng, Hà Nội</p>
+                </li>
+                <li class="flex gap-x-2"><i class="fa-solid fa-phone"></i>
+                  <p><strong> Hotline: </strong>0936 87 6667</p>
+                </li>
+                <li class="flex gap-x-2"><i class="fa-solid fa-envelope"></i>
+                  <p><strong> Email: </strong>vplusvn.thangth@gmail.com</p>
+                </li>
+              </ul>
+              <h4 class="text-white text-16 mt-24 ttl-sub"><span>Mạng xã hội</span></h4>
+              <ul class="list-social mt-16 flex flex-wrap gap-y-2 md:gap-3 max-md:gap-x-8px">
+                <li class="w-28 flex-shrink-0 md:w-36 md:h-36 lg:w-40 lg:h-40"><a
+                    class="icon-social block bg-white imgDrop hover:shadow-lg max-md:w-28 max-md:h-28 md:h-36 lg:h-40"
+                    href="#"> <img class="w-full" src="./public/assets/images/ss-fb.png" alt="" /></a></li>
+                <li class="w-28 flex-shrink-0 md:w-36 md:h-36 lg:w-40 lg:h-40"><a
+                    class="icon-social block bg-white imgDrop hover:shadow-lg max-md:w-28 max-md:h-28 md:h-36 lg:h-40"
+                    href="#"> <img class="w-full" src="./public/assets/images/ss-shopee.png" alt="" /></a></li>
+                <li class="w-28 flex-shrink-0 md:w-36 md:h-36 lg:w-40 lg:h-40"><a
+                    class="icon-social block bg-white imgDrop hover:shadow-lg max-md:w-28 max-md:h-28 md:h-36 lg:h-40"
+                    href="#"> <img class="w-full" src="./public/assets/images/ss-zalo.png" alt="" /></a></li>
+                <li class="w-28 flex-shrink-0 md:w-36 md:h-36 lg:w-40 lg:h-40"><a
+                    class="icon-social block bg-white imgDrop hover:shadow-lg max-md:w-28 max-md:h-28 md:h-36 lg:h-40"
+                    href="#"> <img class="w-full" src="./public/assets/images/ss-ytb.png" alt="" /></a></li>
+              </ul>
+            </div>
+            <div class="col-8 col-sx-4 col-lg-5">
+              <h4 class="text-white text-16 mt-24 ttl-sub"><span>Qr code</span></h4>
+              <div class="box-f bg-primary"> <img class="w-full icon-color-white" src="./public/assets/images/qr.png"
+                  alt="" /></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 col-xl-5 2xl:pl-40">
+          <h4 class="text-white text-16 mt-24 ttl-sub"><span>Liên hệ</span></h4>
+          <div class="box-f mt-16">
+            <div class="text">There are many variations of passages of Lorem Ipsum available, but the majority have
+              suffered alteration in some form, by injected humour, or randomised words which don't look even slightly
+              believable. If you are going to use a passage of Lorem Ipsum</div>
+            <form class="mt-16" action="">
+              <div class="row">
+                <div class="col">
+                  <input class="form-control" type="text" placeholder="Họ và tên" aria-label="Full name" />
+                </div>
+                <div class="col">
+                  <input class="form-control" type="number" placeholder="Số điện thoại" aria-label="Phone number" />
+                </div>
+              </div>
+              <div class="mt-3">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                  placeholder="Nội dung"></textarea>
+              </div>
+              <div class="mt-3 text-right-button">
+                <button class="btn-primary btn-submit-f">Gửi yêu cầu</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <address>Bản quyền thuộc về CÔNG TY CỔ PHẦN SIÊU THỊ IN ẤN | <br>Cung cấp bởi <a href="#">
+        <strong>Thietkeweb365.vn</strong></a></address>
+  </footer>
+  <!-- 60% -->
+  <footer class="footer-6 text-14">
+    <div class="bg-img imgDrop"><img
+        src="https://png.pngtree.com/background/20250119/original/pngtree-textured-backdrop-with-dark-green-leaf-pattern-picture-image_13403196.jpg"
+        alt="" /></div>
+    <div class="bg-overlay" style="--footer-overlay: 0.6;"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6 col-xl-7">
+          <div class="row gap-y-24">
+            <div class="col-12 col-sx-8 col-lg-7 2xl:pr-40">
+              <div class="logo-f"><img src="https://we1.io.vn/admin/public/images/footer/174634384745428x160.png"
+                  alt="" /></div>
+              <h4 class="text-white text-18">CTY TNHH Công Nghệ VPlus Việt Nam</h4>
+              <ul class="list-contact flex flex-col gap-y-8px mt-16">
+                <li class="flex gap-x-2"><i class="fa-solid fa-map-location-dot"></i>
+                  <p><strong> Hà Nội: </strong>58 Trần Khát Chân, Bạch Đằng, Hai Bà Trưng, Hà Nội</p>
+                </li>
+                <li class="flex gap-x-2"><i class="fa-solid fa-phone"></i>
+                  <p><strong> Hotline: </strong>0936 87 6667</p>
+                </li>
+                <li class="flex gap-x-2"><i class="fa-solid fa-envelope"></i>
+                  <p><strong> Email: </strong>vplusvn.thangth@gmail.com</p>
+                </li>
+              </ul>
+              <h4 class="text-white text-16 mt-24 ttl-sub"><span>Mạng xã hội</span></h4>
+              <ul class="list-social mt-16 flex flex-wrap gap-y-2 md:gap-3 max-md:gap-x-8px">
+                <li class="w-28 flex-shrink-0 md:w-36 md:h-36 lg:w-40 lg:h-40"><a
+                    class="icon-social block bg-white imgDrop hover:shadow-lg max-md:w-28 max-md:h-28 md:h-36 lg:h-40"
+                    href="#"> <img class="w-full" src="./public/assets/images/ss-fb.png" alt="" /></a></li>
+                <li class="w-28 flex-shrink-0 md:w-36 md:h-36 lg:w-40 lg:h-40"><a
+                    class="icon-social block bg-white imgDrop hover:shadow-lg max-md:w-28 max-md:h-28 md:h-36 lg:h-40"
+                    href="#"> <img class="w-full" src="./public/assets/images/ss-shopee.png" alt="" /></a></li>
+                <li class="w-28 flex-shrink-0 md:w-36 md:h-36 lg:w-40 lg:h-40"><a
+                    class="icon-social block bg-white imgDrop hover:shadow-lg max-md:w-28 max-md:h-28 md:h-36 lg:h-40"
+                    href="#"> <img class="w-full" src="./public/assets/images/ss-zalo.png" alt="" /></a></li>
+                <li class="w-28 flex-shrink-0 md:w-36 md:h-36 lg:w-40 lg:h-40"><a
+                    class="icon-social block bg-white imgDrop hover:shadow-lg max-md:w-28 max-md:h-28 md:h-36 lg:h-40"
+                    href="#"> <img class="w-full" src="./public/assets/images/ss-ytb.png" alt="" /></a></li>
+              </ul>
+              <div class="col-12">
+                <div class="max-sm:pl-24">
+                  <h4 class="text-white text-16 mt-24 ttl-sub"><span>Bộ công thương</span></h4>
+                  <div class="bg-white rounded-8 images-bct mt-8px"><img class="w-full"
+                      src="./public/assets/images/bct.png" alt="" /></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-8 col-sx-4 col-lg-5">
+              <h4 class="text-white text-16 mt-24 ttl-sub"><span>Liên hệ</span></h4>
+              <ul class="menu-f flex flex-col gap-y-8px mt-24">
+                <li><a class="flex gap-x-8px" href="#"><i
+                      class="fa-solid fa-arrow-up-right-from-square mt-2px"></i><span>Về chúng tôi</span></a></li>
+                <li><a class="flex gap-x-8px" href="#"><i
+                      class="fa-solid fa-arrow-up-right-from-square mt-2px"></i><span>Tuyển dụng</span></a></li>
+                <li><a class="flex gap-x-8px" href="#"><i
+                      class="fa-solid fa-arrow-up-right-from-square mt-2px"></i><span>Tài liệu</span></a></li>
+                <li><a class="flex gap-x-8px" href="#"><i
+                      class="fa-solid fa-arrow-up-right-from-square mt-2px"></i><span>Video</span></a></li>
+                <li><a class="flex gap-x-8px" href="#"><i
+                      class="fa-solid fa-arrow-up-right-from-square mt-2px"></i><span>Khuyến mãi</span></a></li>
+                <li><a class="flex gap-x-8px" href="#"><i
+                      class="fa-solid fa-arrow-up-right-from-square mt-2px"></i><span>Tin tức</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 col-xl-5 2xl:pl-40">
+          <h4 class="text-white text-16 mt-24 ttl-sub"><span>Liên hệ</span></h4>
+          <div class="box-f mt-16">
+            <div class="text">There are many variations of passages of Lorem Ipsum available, but the majority have
+              suffered alteration in some form, by injected humour, or randomised words which don't look even slightly
+              believable. If you are going to use a passage of Lorem Ipsum</div>
+            <form class="mt-16" action="">
+              <div class="row">
+                <div class="col">
+                  <input class="form-control" type="text" placeholder="Họ và tên" aria-label="Full name" />
+                </div>
+                <div class="col">
+                  <input class="form-control" type="number" placeholder="Số điện thoại" aria-label="Phone number" />
+                </div>
+              </div>
+              <div class="mt-3">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                  placeholder="Nội dung"></textarea>
+              </div>
+              <div class="mt-3 text-right-button">
+                <button class="btn-primary btn-submit-f">Gửi yêu cầu</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <address>Bản quyền thuộc về CÔNG TY CỔ PHẦN SIÊU THỊ IN ẤN | <br>Cung cấp bởi <a href="#">
+        <strong>Thietkeweb365.vn</strong></a></address>
+  </footer>
+  <!-- 90% -->
+  <footer class="footer-6 text-14">
+    <div class="bg-img imgDrop"><img
+        src="https://png.pngtree.com/background/20250119/original/pngtree-textured-backdrop-with-dark-green-leaf-pattern-picture-image_13403196.jpg"
+        alt="" /></div>
+    <div class="bg-overlay" style="--footer-overlay: 0.9;"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6 col-xl-7">
+          <div class="row gap-y-24">
+            <div class="col-12 col-sx-8 col-lg-7 2xl:pr-40">
+              <div class="logo-f"><img src="https://we1.io.vn/admin/public/images/footer/174634384745428x160.png"
+                  alt="" /></div>
+              <h4 class="text-white text-18">CTY TNHH Công Nghệ VPlus Việt Nam</h4>
+              <ul class="list-contact flex flex-col gap-y-8px mt-16">
+                <li class="flex gap-x-2"><i class="fa-solid fa-map-location-dot"></i>
+                  <p><strong> Hà Nội: </strong>58 Trần Khát Chân, Bạch Đằng, Hai Bà Trưng, Hà Nội</p>
+                </li>
+                <li class="flex gap-x-2"><i class="fa-solid fa-phone"></i>
+                  <p><strong> Hotline: </strong>0936 87 6667</p>
+                </li>
+                <li class="flex gap-x-2"><i class="fa-solid fa-envelope"></i>
+                  <p><strong> Email: </strong>vplusvn.thangth@gmail.com</p>
+                </li>
+              </ul>
+              <h4 class="text-white text-16 mt-24 ttl-sub"><span>Mạng xã hội</span></h4>
+              <ul class="list-social mt-16 flex flex-wrap gap-y-2 md:gap-3 max-md:gap-x-8px">
+                <li class="w-28 flex-shrink-0 md:w-36 md:h-36 lg:w-40 lg:h-40"><a
+                    class="icon-social block bg-white imgDrop hover:shadow-lg max-md:w-28 max-md:h-28 md:h-36 lg:h-40"
+                    href="#"> <img class="w-full" src="./public/assets/images/ss-fb.png" alt="" /></a></li>
+                <li class="w-28 flex-shrink-0 md:w-36 md:h-36 lg:w-40 lg:h-40"><a
+                    class="icon-social block bg-white imgDrop hover:shadow-lg max-md:w-28 max-md:h-28 md:h-36 lg:h-40"
+                    href="#"> <img class="w-full" src="./public/assets/images/ss-shopee.png" alt="" /></a></li>
+                <li class="w-28 flex-shrink-0 md:w-36 md:h-36 lg:w-40 lg:h-40"><a
+                    class="icon-social block bg-white imgDrop hover:shadow-lg max-md:w-28 max-md:h-28 md:h-36 lg:h-40"
+                    href="#"> <img class="w-full" src="./public/assets/images/ss-zalo.png" alt="" /></a></li>
+                <li class="w-28 flex-shrink-0 md:w-36 md:h-36 lg:w-40 lg:h-40"><a
+                    class="icon-social block bg-white imgDrop hover:shadow-lg max-md:w-28 max-md:h-28 md:h-36 lg:h-40"
+                    href="#"> <img class="w-full" src="./public/assets/images/ss-ytb.png" alt="" /></a></li>
+              </ul>
+              <div class="col-12">
+                <div class="max-sm:pl-24">
+                  <h4 class="text-white text-16 mt-24 ttl-sub"><span>Bộ công thương</span></h4>
+                  <div class="bg-white rounded-8 images-bct mt-8px"><img class="w-full"
+                      src="./public/assets/images/bct.png" alt="" /></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-8 col-sx-4 col-lg-5">
+              <h4 class="text-white text-16 mt-24 ttl-sub"><span>Liên hệ</span></h4>
+              <ul class="menu-f flex flex-col gap-y-8px mt-24">
+                <li><a class="flex gap-x-8px" href="#"><i
+                      class="fa-solid fa-arrow-up-right-from-square mt-2px"></i><span>Về chúng tôi</span></a></li>
+                <li><a class="flex gap-x-8px" href="#"><i
+                      class="fa-solid fa-arrow-up-right-from-square mt-2px"></i><span>Tuyển dụng</span></a></li>
+                <li><a class="flex gap-x-8px" href="#"><i
+                      class="fa-solid fa-arrow-up-right-from-square mt-2px"></i><span>Tài liệu</span></a></li>
+                <li><a class="flex gap-x-8px" href="#"><i
+                      class="fa-solid fa-arrow-up-right-from-square mt-2px"></i><span>Video</span></a></li>
+                <li><a class="flex gap-x-8px" href="#"><i
+                      class="fa-solid fa-arrow-up-right-from-square mt-2px"></i><span>Khuyến mãi</span></a></li>
+                <li><a class="flex gap-x-8px" href="#"><i
+                      class="fa-solid fa-arrow-up-right-from-square mt-2px"></i><span>Tin tức</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 col-xl-5 2xl:pl-40">
+          <h4 class="text-white text-16 mt-24 ttl-sub"><span>Bản đồ</span></h4>
+            <iframe class="gap-y-8px mt-24" style="width: 100% !important; height: 250px !important; border: 10px solid #000"
+              src="https://www.google.com/maps?q=43+Nguyễn+Duy,+Khuê+Trung,+Cẩm+Lệ,+Đà+Nẵng&output=embed"
+              loading="lazy">
+            </iframe>
+
+            <div class="map-address">
+              <h5>Xây Dựng Nhà Đà Nẵng HNDC</h5>
+              <p>43 Nguyễn Duy, Khuê Trung, Cẩm Lệ, Đà Nẵng</p>
+            </div>
+        </div>
+      </div>
+    </div>
+    <address>Bản quyền thuộc về CÔNG TY CỔ PHẦN SIÊU THỊ IN ẤN | <br>Cung cấp bởi <a href="#">
+        <strong>Thietkeweb365.vn</strong></a></address>
+  </footer>
+  <div class="modal fade" id="formSearch" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <form class="flex" role="search">
+            <div class="flex-grow-1">
+              <input class="w-full form-control h-40 border border-gray px-16 focus:outline-none focus:border-primary"
+                type="search" placeholder="Nhập từ khóa" aria-label="Search">
+            </div>
+            <input class="h-40 w-90 flex-shrink-0 bg-primary text-white" type="submit" value="Tìm kiếm">
           </form>
         </div>
       </div>
     </div>
   </div>
-  <address>Bản quyền thuộc về CÔNG TY CỔ PHẦN SIÊU THỊ IN ẤN | <br>Cung cấp bởi <a href="#"> <strong>Thietkeweb365.vn</strong></a></address>
-</footer>
-    <div class="modal fade" id="formSearch" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-body">
-            <form class="flex" role="search">
-              <div class="flex-grow-1">
-                <input class="w-full form-control h-40 border border-gray px-16 focus:outline-none focus:border-primary" type="search" placeholder="Nhập từ khóa" aria-label="Search">
-              </div>
-              <input class="h-40 w-90 flex-shrink-0 bg-primary text-white" type="submit" value="Tìm kiếm">
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-    <script src="public/assets/js/jquery.min.js"></script>
-    <script src="public/assets/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
-    <script src="public/assets/js/slick.min.js"></script>
-    <script src="public/assets/js/slick-lightbox.js"></script>
-    <!-- <script src="ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>-->
-    <!-- validate js-->
-    <script src="public/assets/js/jquery.validate.min.js"></script>
-    <script src="public/assets/js/additional-methods.min.js"></script>
-    <script src="public/js/home.js"></script>
-    <script src="public/js/home-custom.js"></script>
-    <script src="public/js/contact.js"></script>
-    <script src="public/js/quote_and_promotion.js"></script>
-    <script src="public/js/custom.js"></script>
-    <script src="public/js/product_detail.js"></script>
-  </body>
+  <script src="public/assets/js/jquery.min.js"></script>
+  <script src="public/assets/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+  <script src="public/assets/js/slick.min.js"></script>
+  <script src="public/assets/js/slick-lightbox.js"></script>
+  <!-- <script src="ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>-->
+  <!-- validate js-->
+  <script src="public/assets/js/jquery.validate.min.js"></script>
+  <script src="public/assets/js/additional-methods.min.js"></script>
+  <script src="public/js/home.js"></script>
+  <script src="public/js/home-custom.js"></script>
+  <script src="public/js/contact.js"></script>
+  <script src="public/js/quote_and_promotion.js"></script>
+  <script src="public/js/custom.js"></script>
+  <script src="public/js/product_detail.js"></script>
+</body>
+
 </html>
